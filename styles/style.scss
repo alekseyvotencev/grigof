@@ -1,0 +1,853 @@
+@import '_fonts.scss';
+@import '_set.scss';
+
+.header {
+    padding-top: 1.4rem;
+
+    .container {
+        width: 164rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__left {
+
+        &-schedule {
+            margin-bottom: 2.4rem;
+            font-family: 'FuturaPT';
+            font-size: 1.9rem;
+            line-height: 2.6rem;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        &-nav {
+
+            &-list {
+                display: flex;
+            }
+
+            &-item {
+                &:not(:last-child) {
+                    margin-right: 4rem;
+                }
+            }
+
+            &-link {
+                font-size: 1.9rem;
+                line-height: 2.6rem;
+            }
+
+        }
+    }
+
+    &__logo {
+        width: 19.4rem;
+        object-fit: contain;
+        max-width: 100%;
+    }
+
+    &__right {
+
+        &-top {
+            margin-bottom: 2.5rem;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        &-phone {
+            margin-right: 7rem;
+            font-family: 'FuturaPT';
+            font-size: 1.9rem;
+            line-height: 2.6rem;
+        }
+
+        &-nav {
+
+            &-list {
+                display: flex;
+                align-items: center;
+            }
+
+            &-item {
+
+                &:not(:last-child) {
+                    margin-right: 4rem;
+                }
+            }
+
+            &-link {
+                font-size: 1.9rem;
+                line-height: 2.6rem;
+            }
+
+        }
+    }
+}
+
+.hero {
+    padding-bottom: 17.8rem;
+
+    .swiper__hero-container {
+        width: 100%;
+
+        .swiper-slide {
+            img {
+                width: auto;
+            }
+        }
+    }
+}
+
+.exclusive {
+    padding-top: 11rem;
+    background: url(../images/exclusiveBG.png) no-repeat;
+
+    &__container {
+        margin: 0 auto;
+        margin-bottom: 8rem;
+        width: 150rem;
+        display: flex;
+        align-items: center;
+    }
+
+    &__description {
+        margin-right: 6rem;
+        font-family: 'FuturaPT';
+        width: 28.5rem;
+        font-size: 1.9rem;
+        line-height: 2.2rem;
+        color: rgba(8, 8, 8, 0.5);
+    }
+
+    &__heading {
+        width: 68.8rem;
+        font-size: 7rem;
+        line-height: 9rem;
+        text-transform: uppercase;
+        color: #080808;
+    }
+
+    &__btn {
+        margin-left: auto;
+    }
+
+    .swiper__exclusive-container {
+        margin-bottom: 23.7rem;
+        width: 100%;
+
+        .swiper-slide {
+            padding-left: 4.2rem;
+            padding-right: 4.1rem;
+            padding-bottom: 3.5rem;
+            width: 57.5rem;
+            height: 36rem;
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            background-color: #1B1B1B;
+            border: 1px solid #FFFFFF;
+
+            .swiper-jewelry {
+                width: auto;
+                height: auto;
+                max-width: 100%;
+                position: absolute;
+                top: 0;
+            }
+        }
+
+        .slide1 {
+            .swiper-jewelry {
+                top: 5rem;
+            }
+        }
+
+        .swiper-bottom {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .swiper-heading {
+            font-family: 'FuturaPT';
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+            letter-spacing: 0.16rem;
+            text-transform: uppercase;
+        }
+
+        .swiper-container-horizontal>.swiper-pagination-bullets,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+            margin-bottom: 1.9rem;
+            position: relative;
+            bottom: auto;
+            font-family: 'FuturaPT';
+            font-size: 1.9rem;
+            line-height: 2.6rem;
+            color: rgba(255, 255, 255, 0.3);
+            text-align: left;
+
+            &::before {
+                content: '(';
+            }
+
+            &::after {
+                content: ')';
+            }
+        }
+    }
+
+    .swiper__exclusive-buttons {
+        padding: 5.4rem 14rem 13.1rem;
+        display: flex;
+        justify-content: space-between;
+        background: linear-gradient(180deg, #000000 0%, rgba(8, 8, 8, 0) 93.89%);
+
+        .swiper-buttons-scroll {
+            font-family: 'FuturaPT';
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+            letter-spacing: 0.2rem;
+            text-transform: uppercase;
+        }
+
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+            display: none;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            margin-top: 0;
+            left: auto;
+            right: auto;
+            top: auto;
+            position: relative;
+            width: auto;
+            height: auto;
+            max-width: 100%;
+        }
+
+        .swiper-button-prev {
+            transform: rotateY(180deg);
+        }
+    }
+
+
+}
+
+
+
+.services {
+    padding-top: 3.8rem;
+    padding-bottom: 17.9rem;
+
+    .container {
+        width: 160rem;
+        position: relative;
+    }
+
+    &__heading {
+        margin: 0 auto;
+        margin-bottom: 5.5rem;
+        width: 64.6rem;
+        font-size: 7rem;
+        line-height: 9rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__tabs {
+        margin-bottom: 12.5rem;
+        padding-top: 3.6rem;
+        padding-bottom: 3.6rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+        &-list {
+            margin: 0 auto;
+            width: 164rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &-item {
+            width: 13.5rem;
+            font-family: 'FuturaPT';
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: .2rem;
+        }
+    }
+
+    &__content {
+        padding: 6.8rem 5.1rem 6.8rem 1rem;
+        width: 86.9rem;
+        text-align: right;
+        background: rgba(21, 21, 21, 0.3);
+        backdrop-filter: blur(40px);
+        transform: translateY(5.2rem);
+        z-index: 2;
+
+        &-heading {
+            margin-bottom: 4.1rem;
+            font-size: 4rem;
+            line-height: 5.6rem;
+            text-transform: uppercase;
+        }
+
+        &-description {
+            margin-bottom: 5.2rem;
+            font-family: 'FuturaPT';
+            font-size: 1.9rem;
+            line-height: 2.6rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        &-link {
+            font-family: 'FuturaPT';
+            letter-spacing: .2rem;
+            text-align: right;
+            text-transform: uppercase;
+
+            img {
+                width: auto;
+                display: inline-block;
+                max-width: 100%;
+                margin-left: 3.9rem;
+            }
+        }
+    }
+
+    &__content-img {
+        width: auto;
+        max-width: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+}
+
+.price {
+    padding-bottom: 17.5rem;
+
+    &__heading {
+        margin-bottom: 6.5rem;
+        font-size: 7rem;
+        line-height: 9rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__subheading {
+        margin-top: 20rem;
+        margin-left: 12.8rem;
+        display: inline-block;
+        font-size: 4rem;
+        line-height: 4.6rem;
+        height: 29.2rem;
+        text-align: left;
+        text-transform: uppercase;
+        writing-mode: vertical-rl;
+        transform: scale(-1);
+        vertical-align: middle;
+    }
+
+    &__jewelry-order {
+        margin-bottom: 3.4rem;
+        font-family: 'FuturaPT';
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        color: rgba(255, 255, 255, 0.3);
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+    }
+
+    &__jewelry-img {
+        margin-bottom: 2rem;
+    }
+
+    &__jewelry-name {
+        margin-bottom: 2.8rem;
+        font-size: 4rem;
+        line-height: 5.6rem;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+    }
+
+    &__jewelry-number {
+        font-family: 'FuturaPT';
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+    }
+
+    .swiper__price-container {
+        margin: 0;
+        width: calc(100vw - 12.8rem - 3.9rem - 9.2rem);
+        display: inline-block;
+
+
+        .swiper-slide {
+            width: 42rem;
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            align-items: flex-start;
+
+            img {
+                width: auto;
+            }
+        }
+    }
+}
+
+.stages {
+    padding-bottom: 19rem;
+
+    &__heading {
+        margin: 0 auto;
+        margin-bottom: 5.5rem;
+        font-size: 7rem;
+        line-height: 9rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__block {
+        margin-bottom: 6.7rem;
+        padding-top: 5.8rem;
+        padding-bottom: 5.8rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    &__tabs {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-item {
+            font-family: 'FuturaPT';
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+            text-align: center;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+
+            &:not(:last-child) {
+                margin-right: 11.6rem;
+            }
+        }
+    }
+
+    &__list {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        &-item {
+            width: 35rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &:not(:last-child) {
+                margin-right: 9rem;
+            }
+        }
+    }
+
+    &__item {
+
+        &-number {
+            width: 23.3rem;
+            height: 24.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            line-height: 4.4rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            background: url(../images/svg/stagesPolygon.svg) center/contain no-repeat;
+        }
+
+        &-name {
+            margin-bottom: 0.6rem;
+            font-size: 4rem;
+            line-height: 5.6rem;
+            text-align: center;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+        }
+
+        &-description {
+            font-family: 'FuturaPT';
+            font-size: 1.9rem;
+            line-height: 2.2rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+}
+
+.examples {
+    position: relative;
+
+    &__heading {
+        position: absolute;
+        top: 16.8rem;
+        left: 13.9rem;
+        font-size: 7rem;
+        line-height: 9rem;
+        text-transform: uppercase;
+        z-index: 2;
+    }
+
+    .swiper__examples {
+        &-slide {
+            padding-top: 27.5rem;
+            padding-left: 13.9rem;
+            padding-bottom: 19rem;
+            min-height: 104.5rem;
+            display: flex;
+            flex-direction: column;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            &:nth-child(1) {
+                background-image: url(../images/examples1.png);
+            }
+
+            &:nth-child(2) {
+                background-image: url(../images/examples1.png);
+            }
+
+            &:nth-child(3) {
+                background-image: url(../images/examples1.png);
+            }
+        }
+
+        &-name,
+        &-detail {
+            margin-bottom: .4rem;
+            font-family: 'FuturaPT';
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
+
+        &-detail {
+            margin-bottom: 0;
+        }
+
+        &-pagination {
+            margin-top: auto;
+            display: inline-block;
+            position: relative;
+            bottom: auto;
+            left: auto;
+            width: auto;
+            font-size: 4rem;
+            line-height: 4.4rem;
+            text-align: left;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
+    }
+
+    &__video {
+        padding: 5.6rem 5.9rem;
+        position: absolute;
+        bottom: 20rem;
+        right: 0;
+        width: 87rem;
+        background: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(50px);
+        z-index: 2;
+
+        &-container {
+            position: relative;
+        }
+
+        &-heading {
+            margin-bottom: 3rem;
+            font-family: 'FuturaPT';
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
+
+        .swiper__video {
+            margin-bottom: 4.2rem;
+
+            &-slide {
+                padding: 1.5rem;
+                display: flex;
+                width: 22.3rem;
+                min-height: 28rem;
+                align-items: flex-end;
+                justify-content: flex-start;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+
+                &:nth-child(1n) {
+                    background-image: url(../images/swiperVideo1.png);
+                }
+
+                &:nth-child(2n) {
+                    background-image: url(../images/swiperVideo2.png);
+                }
+
+                &:nth-child(3n) {
+                    background-image: url(../images/swiperVideo3.png);
+                }
+            }
+
+            &-text {
+                display: flex;
+                align-items: center;
+            }
+
+            &-btn {
+                margin-right: 1.4rem;
+
+                img {
+                    width: auto;
+                    max-width: 100%;
+                }
+            }
+
+            &-name {
+                font-family: 'FuturaPT';
+                font-size: 1.5rem;
+                line-height: 1.9rem;
+
+                span {
+                    font-weight: 300;
+                }
+            }
+
+            &-next,
+            &-prev {
+                display: inline-block;
+
+                img {
+                    width: auto;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            &-prev {
+                margin-right: 2rem;
+                transform: scaleX(-1);
+            }
+        }
+
+        .swiper-pagination {
+            left: 50%;
+            bottom: 0;
+        }
+
+        .swiper-pagination-bullet {
+            width: 6px;
+            height: 6px;
+            background-color: transparent;
+            opacity: 1;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+
+            &-active {
+                border: 1px solid rgba(255, 255, 255, 1);
+            }
+
+            &:not(:last-child) {
+                margin-right: 1.2rem;
+            }
+        }
+    }
+}
+
+.about {
+    padding-top: 17rem;
+    padding-bottom: 16.8rem;
+
+    .container {
+        width: 164rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__left {
+        width: 76.5rem;
+
+        &-img1,
+        &-img2 {
+            width: auto;
+        }
+
+        &-img2 {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+
+        &-images {
+            position: relative;
+        }
+
+        &-heading {
+            margin-bottom: 4.6rem;
+            font-size: 7rem;
+            line-height: 12.3rem;
+            text-transform: uppercase;
+        }
+
+        &-description {
+            margin-bottom: 13rem;
+            font-family: 'FuturaPT';
+            font-size: 1.9rem;
+            line-height: 2.6rem;
+        }
+    }
+
+
+
+    &__right {
+        width: 61rem;
+
+        &-img3 {
+            margin-bottom: 11.5rem;
+            width: auto;
+        }
+
+        &-title {
+            font-family: 'FuturaPT';
+            font-size: 1.9rem;
+            line-height: 2.6rem;
+        }
+
+        &-list {
+            &-item {
+                margin-left: 1em;
+                font-family: 'FuturaPT';
+                font-size: 1.9rem;
+                line-height: 2.6rem;
+                list-style: inside;
+                list-style-position: outside;
+            }
+        }
+
+    }
+}
+
+.reviews {
+    padding-left: 14rem;
+    display: flex;
+
+    &__left {
+        margin-bottom: 14.6rem;
+        width: 58rem;
+    }
+
+    &__heading {
+        font-size: 7rem;
+        line-height: 9rem;
+        text-transform: uppercase;
+    }
+
+    .swiper__reviews {
+        &-item {
+            font-family: 'FuturaPT';
+            font-size: 1.9rem;
+            line-height: 2.6rem;
+        }
+    }
+
+    &__right {
+        .swiper__reviews {
+            &-slide {
+                width: fit-content;
+
+                img {
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+.feedback {
+    padding-top: 20rem;
+    position: relative;
+
+    .container {
+        width: 164rem;
+        position: relative;
+    }
+
+    &__left-img {
+        width: auto;
+        position: absolute;
+        left: 0;
+    }
+
+    &__right-img {
+        width: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &__title {
+        margin-bottom: 1.8rem;
+        font-family: 'FuturaPT';
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        margin-bottom: 6rem;
+        font-size: 7rem;
+        line-height: 9rem;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        margin-bottom: 8rem;
+        width: 40rem;
+        font-family: 'FuturaPT';
+        font-size: 1.9rem;
+        line-height: 2.6rem;
+        color: rgba(255, 255, 255, 0.5);
+    }
+}
