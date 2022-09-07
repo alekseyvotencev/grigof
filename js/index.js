@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper__exclusive-container', {
+const swiper = new Swiper('.swiper__exclusive', {
     direction: 'horizontal',
     loop: true,
     slidesPerView: "auto",
@@ -26,7 +26,7 @@ const swiper2 = new Swiper('.swiper__price-container', {
     spaceBetween: 50,
 });
 
-const swiper3 = new Swiper('.swiper__hero-container', {
+const swiper3 = new Swiper('.swiper__hero', {
     direction: 'horizontal',
     loop: true,
     slidesPerView: 3,

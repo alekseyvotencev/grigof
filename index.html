@@ -68,7 +68,7 @@
 
     <main>
         <section class="hero">
-            <div class="swiper-container swiper__hero-container">
+            <div class="swiper-container swiper__hero">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="images/hero1.png" alt="">
@@ -88,6 +88,8 @@
         </section>
 
         <section class="exclusive">
+            <img src="images/woman.png" alt="" class="exclusive__woman-img">
+            <img src="images/man.png" alt="" class="exclusive__man-img">
             <div class="exclusive__container">
                 <p class="exclusive__description">Высочайшее качество, индивидуальный и творческий подход к каждому
                     заказу, безмерная страсть ремеслу</p>
@@ -97,7 +99,8 @@
                 </button>
             </div>
 
-            <div class="swiper-container swiper__exclusive-container">
+            <div class="swiper-container swiper__exclusive">
+
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slide1">
                         <img src="images/ring.png" alt="" class="swiper-jewelry">
@@ -445,10 +448,15 @@
         </section>
 
         <section class="feedback">
-            
+
             <div class="container">
-                <!-- <img src="images/feedback1.png" alt="" class="feedback__left-img"> -->
-                <img src="images/feedback2.png" alt="" class="feedback__right-img">
+                <img src="images/feedback1.png" alt="" class="feedback__left-img">
+                <img src="images/svg/feedbackNotice.svg" alt="" class="feedback__notice">
+                <div class="feedback__right-img">
+                    <img src="images/feedback2.png" alt="">
+                    <p>авторские украшения на заказ</p>
+                </div>
+
                 <div class="feedback__left">
                     <h1 class="feedback__title">grigof jewels</h1>
                     <h2 class="feedback__subtitle">обратная связь</h2>
@@ -460,20 +468,91 @@
                 <div class="feedback__right">
 
                     <form action="#" class="feedback__form">
-                        <div>
-                            <input type="text">
-                            <input type="tel">
-                            <input type="email">
+                        <div class="feedback__input-container">
+                            <input type="text" class="feedback__input" placeholder="ваше имя">
+                            <input type="tel" class="feedback__input" placeholder="Телефон">
+                            <input type="email" class="feedback__input" placeholder="e-mail">
                         </div>
-                        <input type="text">
-                        <button>отправить</button>
+                        <input type="text" class="feedback__input-big" placeholder="Сообщение">
+                        <button class="feedback__form-btn">отправить</button>
                     </form>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="container">
+                <img src="images/headerLogo.png" alt="Логотип" class="footer__logo">
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">Портфолио</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">Цены</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">В наличии</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">О бренде</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">Драгоценные камни</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">Купить сертификат</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">Отзывы</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">Ремонт</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">B2B</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__info">
+                    <p class="footer__info-text"> г. Москва, метро "Автозаводская". БЦ "Омега Плаза".<br>
+                        Ленинская слобода 19. 2 этаж, офис 2034/2
+                    </p>
+                    <p class="footer__info-text">Пн-Пт: 11:00 - 19:00 только по записи</p>
+                    <a href="tel:+74996479997" class="footer__info-link">+7 499 647 99 97</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <ul class="footer__bottom-list">
+                <li class="footer__bottom-item">
+                    <a href="#" class="footer__bottom-link">
+                        <img src="images/svg/vk.svg" alt="">
+                    </a>
+                </li>
+                <li class="footer__bottom-item">
+                    <a href="#" class="footer__bottom-link">
+                        <img src="images/svg/insta.svg" alt="">
+                    </a>
+                </li>
+                <li class="footer__bottom-item">
+                    <a href="#" class="footer__bottom-link">
+                        <img src="images/svg/yt.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <p class="footer__bottom-copyright">Все права защищены 2017-2022 GRIGOF JEWELLERY Studio</p>
+        </div>
+    </footer>
     <script defer src="js/swiper-bundle.min.js"></script>
     <script defer src="js/index.js"></script>
 </body>

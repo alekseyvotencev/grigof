@@ -215,16 +215,34 @@ input[type=number] {
 .hero {
   padding-bottom: 17.8rem;
 }
-.hero .swiper__hero-container {
+.hero .swiper__hero {
   width: 100%;
 }
-.hero .swiper__hero-container .swiper-slide img {
+.hero .swiper__hero .swiper-slide img {
   width: auto;
+}
+.hero .swiper__hero .swiper-slide-active {
+  background: url(../images/heroBG.png) center/contain no-repeat;
 }
 
 .exclusive {
   padding-top: 11rem;
   background: url(../images/exclusiveBG.png) no-repeat;
+  position: relative;
+}
+.exclusive__woman-img {
+  width: auto;
+  position: absolute;
+  left: 50rem;
+  bottom: 28rem;
+  z-index: 2;
+}
+.exclusive__man-img {
+  width: auto;
+  position: absolute;
+  right: 38rem;
+  bottom: 28rem;
+  z-index: 2;
 }
 .exclusive__container {
   margin: 0 auto;
@@ -251,11 +269,11 @@ input[type=number] {
 .exclusive__btn {
   margin-left: auto;
 }
-.exclusive .swiper__exclusive-container {
+.exclusive .swiper__exclusive {
   margin-bottom: 23.7rem;
   width: 100%;
 }
-.exclusive .swiper__exclusive-container .swiper-slide {
+.exclusive .swiper__exclusive .swiper-slide {
   padding-left: 4.2rem;
   padding-right: 4.1rem;
   padding-bottom: 3.5rem;
@@ -269,31 +287,32 @@ input[type=number] {
   background-color: #1B1B1B;
   border: 1px solid #FFFFFF;
 }
-.exclusive .swiper__exclusive-container .swiper-slide .swiper-jewelry {
-  width: auto;
-  height: auto;
+.exclusive .swiper__exclusive .swiper-slide .swiper-jewelry {
+  height: 26.5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
   max-width: 100%;
   position: absolute;
   top: 0;
 }
-.exclusive .swiper__exclusive-container .slide1 .swiper-jewelry {
-  top: 5rem;
+.exclusive .swiper__exclusive .slide1 .swiper-jewelry {
+  top: 4rem;
 }
-.exclusive .swiper__exclusive-container .swiper-bottom {
+.exclusive .swiper__exclusive .swiper-bottom {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.exclusive .swiper__exclusive-container .swiper-heading {
+.exclusive .swiper__exclusive .swiper-heading {
   font-family: "FuturaPT";
   font-size: 1.5rem;
   line-height: 2.2rem;
   letter-spacing: 0.16rem;
   text-transform: uppercase;
 }
-.exclusive .swiper__exclusive-container .swiper-container-horizontal > .swiper-pagination-bullets,
-.exclusive .swiper__exclusive-container .swiper-pagination-custom,
-.exclusive .swiper__exclusive-container .swiper-pagination-fraction {
+.exclusive .swiper__exclusive .swiper-container-horizontal > .swiper-pagination-bullets,
+.exclusive .swiper__exclusive .swiper-pagination-custom,
+.exclusive .swiper__exclusive .swiper-pagination-fraction {
   margin-bottom: 1.9rem;
   position: relative;
   bottom: auto;
@@ -303,14 +322,14 @@ input[type=number] {
   color: rgba(255, 255, 255, 0.3);
   text-align: left;
 }
-.exclusive .swiper__exclusive-container .swiper-container-horizontal > .swiper-pagination-bullets::before,
-.exclusive .swiper__exclusive-container .swiper-pagination-custom::before,
-.exclusive .swiper__exclusive-container .swiper-pagination-fraction::before {
+.exclusive .swiper__exclusive .swiper-container-horizontal > .swiper-pagination-bullets::before,
+.exclusive .swiper__exclusive .swiper-pagination-custom::before,
+.exclusive .swiper__exclusive .swiper-pagination-fraction::before {
   content: "(";
 }
-.exclusive .swiper__exclusive-container .swiper-container-horizontal > .swiper-pagination-bullets::after,
-.exclusive .swiper__exclusive-container .swiper-pagination-custom::after,
-.exclusive .swiper__exclusive-container .swiper-pagination-fraction::after {
+.exclusive .swiper__exclusive .swiper-container-horizontal > .swiper-pagination-bullets::after,
+.exclusive .swiper__exclusive .swiper-pagination-custom::after,
+.exclusive .swiper__exclusive .swiper-pagination-fraction::after {
   content: ")";
 }
 .exclusive .swiper__exclusive-buttons {
@@ -468,6 +487,8 @@ input[type=number] {
 }
 .price__jewelry-img {
   margin-bottom: 2rem;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .price__jewelry-name {
   margin-bottom: 2.8rem;
@@ -494,9 +515,6 @@ input[type=number] {
   position: relative;
   flex-direction: column;
   align-items: flex-start;
-}
-.price .swiper__price-container .swiper-slide img {
-  width: auto;
 }
 
 .stages {
@@ -579,6 +597,7 @@ input[type=number] {
 
 .examples {
   position: relative;
+  overflow: hidden;
 }
 .examples__heading {
   position: absolute;
@@ -637,7 +656,7 @@ input[type=number] {
   padding: 5.6rem 5.9rem;
   position: absolute;
   bottom: 20rem;
-  right: 0;
+  right: -15rem;
   width: 87rem;
   background: rgba(0, 0, 0, 0.4);
   -webkit-backdrop-filter: blur(50px);
@@ -657,6 +676,7 @@ input[type=number] {
 }
 .examples__video .swiper__video {
   margin-bottom: 4.2rem;
+  z-index: 2;
 }
 .examples__video .swiper__video-slide {
   padding: 1.5rem;
@@ -814,23 +834,48 @@ input[type=number] {
 }
 
 .feedback {
-  padding-top: 20rem;
+  padding-top: 27.6rem;
+  padding-bottom: 20rem;
   position: relative;
 }
 .feedback .container {
   width: 164rem;
   position: relative;
 }
+.feedback__left {
+  margin-bottom: 7.5rem;
+}
+.feedback__notice {
+  width: auto;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
 .feedback__left-img {
   width: auto;
   position: absolute;
-  left: 0;
+  left: -14rem;
+  bottom: 1.6rem;
 }
 .feedback__right-img {
-  width: auto;
   position: absolute;
-  top: 0;
+  top: -7.2rem;
   right: 0;
+}
+.feedback__right-img img {
+  width: auto;
+}
+.feedback__right-img p {
+  position: absolute;
+  top: 3.2rem;
+  left: 3rem;
+  width: 15rem;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
 }
 .feedback__title {
   margin-bottom: 1.8rem;
@@ -854,78 +899,164 @@ input[type=number] {
   line-height: 2.6rem;
   color: rgba(255, 255, 255, 0.5);
 }
-.feedback__right {
+.feedback__form {
   margin-left: auto;
+  width: 95.8rem;
 }
-.feedback .myInput {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 19px;
-  color: #333;
-  border: none;
+.feedback__form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26.6rem;
+  min-height: 13.8rem;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  background: url(../images/svg/feedbackBtn.svg) center/contain no-repeat;
 }
-.feedback .myInput:focus-visible {
-  outline: none;
+.feedback__input-container {
+  margin-bottom: 5.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
-.feedback .myInput {
+.feedback__input, .feedback__input-big {
+  padding-top: 3.1rem;
+  padding-bottom: 1.8rem;
   position: relative;
-  padding: 0;
-  padding-top: 15px;
-  padding-bottom: 4px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19.07px;
-  background: none;
+  font-family: "FuturaPT";
+  font-size: 1.9rem;
+  line-height: 2.6rem;
+  color: #FFFFFF;
+  background-color: transparent;
   border: none;
-  border-bottom: 1px solid #C8C5D1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
-.feedback .myInput::-moz-placeholder {
-  position: absolute;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19.07px;
-  color: #B0B0B0;
-  -moz-transition-property: transform, font-size;
-  transition-property: transform, font-size;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in;
+.feedback__input::-moz-placeholder, .feedback__input-big::-moz-placeholder {
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  -moz-transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
 }
-.feedback .myInput:-ms-input-placeholder {
-  position: absolute;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19.07px;
-  color: #B0B0B0;
-  -ms-transition-property: transform, font-size;
-  transition-property: transform, font-size;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in;
+.feedback__input:-ms-input-placeholder, .feedback__input-big:-ms-input-placeholder {
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  -ms-transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
 }
-.feedback .myInput::placeholder {
-  position: absolute;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19.07px;
-  color: #B0B0B0;
-  transition-property: transform, font-size;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in;
+.feedback__input::placeholder, .feedback__input-big::placeholder {
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  transition: transform 0.2s ease-in;
 }
-.feedback .myInput:hover {
-  cursor: pointer;
+.feedback__input:not(:last-child), .feedback__input-big:not(:last-child) {
+  margin-right: 5rem;
 }
-.feedback .myInput:focus-visible {
+.feedback__input:focus-visible, .feedback__input-big:focus-visible {
   outline: none;
 }
-.feedback .myInput:focus-visible::-moz-placeholder {
-  transform: translateY(-15px);
-  font-size: 10px;
+.feedback__input:focus-visible::-moz-placeholder, .feedback__input-big:focus-visible::-moz-placeholder {
+  transform: translateY(-3.1rem);
 }
-.feedback .myInput:focus-visible:-ms-input-placeholder {
-  transform: translateY(-15px);
-  font-size: 10px;
+.feedback__input:focus-visible:-ms-input-placeholder, .feedback__input-big:focus-visible:-ms-input-placeholder {
+  transform: translateY(-3.1rem);
 }
-.feedback .myInput:focus-visible::placeholder {
-  transform: translateY(-15px);
-  font-size: 10px;
+.feedback__input:focus-visible::placeholder, .feedback__input-big:focus-visible::placeholder {
+  transform: translateY(-3.1rem);
+}
+.feedback__input {
+  flex: 1 1 auto;
+}
+.feedback__input-big {
+  margin-bottom: 4.6rem;
+  width: 100%;
+}
+.feedback__input-big:not(:last-child) {
+  margin-right: 0;
+}
+
+.footer__logo {
+  margin-right: 16rem;
+  width: 19.4rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.footer__top {
+  padding-bottom: 70px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.footer__top .container {
+  width: 164rem;
+  display: flex;
+}
+.footer__nav {
+  display: flex;
+}
+.footer__nav-list {
+  display: flex;
+  flex-direction: column;
+}
+.footer__nav-list:not(:last-child) {
+  margin-right: 15rem;
+}
+.footer__nav-item:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.footer__nav-link {
+  font-family: "FuturaPT";
+  font-size: 1.9rem;
+  line-height: 2.6rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer__info {
+  margin-left: auto;
+  width: 47rem;
+  text-align: right;
+}
+.footer__info-text {
+  margin-bottom: 2rem;
+}
+.footer__info-text, .footer__info-link {
+  font-family: "FuturaPT";
+  font-size: 1.9rem;
+  line-height: 2.6rem;
+}
+.footer__bottom {
+  padding-top: 8.6rem;
+  padding-bottom: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer__bottom-list {
+  margin-bottom: 2.2rem;
+  display: flex;
+}
+.footer__bottom-item:not(:last-child) {
+  margin-right: 5rem;
+}
+.footer__bottom-link img {
+  width: auto;
+}
+.footer__bottom-copyright {
+  font-family: "FuturaPT";
+  font-size: 1.9rem;
+  line-height: 2.6rem;
+  color: rgba(255, 255, 255, 0.5);
 }/*# sourceMappingURL=style.css.map */

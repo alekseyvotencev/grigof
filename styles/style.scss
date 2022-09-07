@@ -90,12 +90,17 @@
 .hero {
     padding-bottom: 17.8rem;
 
-    .swiper__hero-container {
+
+    .swiper__hero {
         width: 100%;
 
         .swiper-slide {
             img {
                 width: auto;
+            }
+
+            &-active {
+                background: url(../images/heroBG.png) center/contain no-repeat;
             }
         }
     }
@@ -104,6 +109,23 @@
 .exclusive {
     padding-top: 11rem;
     background: url(../images/exclusiveBG.png) no-repeat;
+    position: relative;
+
+    &__woman-img {
+        width: auto;
+        position: absolute;
+        left: 50rem;
+        bottom: 28rem;
+        z-index: 2;
+    }
+
+    &__man-img {
+        width: auto;
+        position: absolute;
+        right: 38rem;
+        bottom: 28rem;
+        z-index: 2;
+    }
 
     &__container {
         margin: 0 auto;
@@ -134,7 +156,7 @@
         margin-left: auto;
     }
 
-    .swiper__exclusive-container {
+    .swiper__exclusive {
         margin-bottom: 23.7rem;
         width: 100%;
 
@@ -153,8 +175,8 @@
             border: 1px solid #FFFFFF;
 
             .swiper-jewelry {
-                width: auto;
-                height: auto;
+                height: 26.5rem;
+                object-fit: contain;
                 max-width: 100%;
                 position: absolute;
                 top: 0;
@@ -163,7 +185,7 @@
 
         .slide1 {
             .swiper-jewelry {
-                top: 5rem;
+                top: 4rem;
             }
         }
 
@@ -380,6 +402,7 @@
 
     &__jewelry-img {
         margin-bottom: 2rem;
+        object-fit: contain;
     }
 
     &__jewelry-name {
@@ -410,10 +433,6 @@
             position: relative;
             flex-direction: column;
             align-items: flex-start;
-
-            img {
-                width: auto;
-            }
         }
     }
 }
@@ -512,6 +531,7 @@
 
 .examples {
     position: relative;
+    overflow: hidden;
 
     &__heading {
         position: absolute;
@@ -581,7 +601,7 @@
         padding: 5.6rem 5.9rem;
         position: absolute;
         bottom: 20rem;
-        right: 0;
+        right: -15rem;
         width: 87rem;
         background: rgba(0, 0, 0, 0.4);
         backdrop-filter: blur(50px);
@@ -602,6 +622,7 @@
 
         .swiper__video {
             margin-bottom: 4.2rem;
+            z-index: 2;
 
             &-slide {
                 padding: 1.5rem;
@@ -805,7 +826,8 @@
 }
 
 .feedback {
-    padding-top: 20rem;
+    padding-top: 27.6rem;
+    padding-bottom: 20rem;
     position: relative;
 
     .container {
@@ -813,17 +835,45 @@
         position: relative;
     }
 
+    &__left {
+        margin-bottom: 7.5rem;
+    }
+
+    &__notice {
+        width: auto;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
     &__left-img {
         width: auto;
         position: absolute;
-        left: 0;
+        left: -14rem;
+        bottom: 1.6rem;
     }
 
     &__right-img {
-        width: auto;
         position: absolute;
-        top: 0;
+        top: -7.2rem;
         right: 0;
+
+        img {
+            width: auto;
+        }
+
+        p {
+            position: absolute;
+            top: 3.2rem;
+            left: 3rem;
+            width: 15rem;
+            font-family: 'FuturaPT';
+            font-size: 1.5rem;
+            line-height: 2.1rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.5);
+        }
     }
 
     &__title {
@@ -851,56 +901,174 @@
         color: rgba(255, 255, 255, 0.5);
     }
 
-    &__right {
+    &__form {
         margin-left: auto;
+        width: 95.8rem;
+
+        &-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 26.6rem;
+            min-height: 13.8rem;
+            font-family: 'FuturaPT';
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            background: url(../images/svg/feedbackBtn.svg) center/contain no-repeat;
+        }
     }
 
-    .myInput {
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 19px;
-        color: #333;
-        border: none;
+    &__input-container {
+        margin-bottom: 5.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
     }
-    
-    .myInput:focus-visible {
-        outline: none;
-    }
-    
-    .myInput {
+
+    &__input,
+    &__input-big {
+        padding-top: 3.1rem;
+        padding-bottom: 1.8rem;
         position: relative;
-        padding: 0;
-        padding-top: 15px;
-        padding-bottom: 4px;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 19.07px;
-        background: none;
+        font-family: 'FuturaPT';
+        font-size: 1.9rem;
+        line-height: 2.6rem;
+        color: #FFFFFF;
+        background-color: transparent;
         border: none;
-        border-bottom: 1px solid #C8C5D1;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+        &::placeholder {
+            font-family: 'FuturaPT';
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+            color: rgba(255, 255, 255, 0.5);
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            transition: transform .2s ease-in;
+        }
+
+        &:not(:last-child) {
+            margin-right: 5rem;
+        }
+
+        &:focus-visible {
+            outline: none;
+
+            &::placeholder {
+                transform: translateY(-3.1rem);
+            }
+        }
     }
-    
-    .myInput::placeholder {
-        position: absolute;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 19.07px;
-        color: #B0B0B0;
-        transition-property: transform, font-size;
-        transition-duration: .2s;
-        transition-timing-function: ease-in;
+
+    &__input {
+        flex: 1 1 auto;
     }
-    
-    .myInput:hover {
-        cursor: pointer;
+
+    &__input-big {
+        margin-bottom: 4.6rem;
+        width: 100%;
+
+        &:not(:last-child) {
+            margin-right: 0;
+        }
     }
-    
-    .myInput:focus-visible {
-        outline: none;
+}
+
+.footer {
+
+    &__logo {
+        margin-right: 16rem;
+        width: 19.4rem;
+        object-fit: contain;
     }
-    
-    .myInput:focus-visible::placeholder {
-        transform: translateY(-15px);
-        font-size: 10px;
+
+    &__top {
+        padding-bottom: 70px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+        .container {
+            width: 164rem;
+            display: flex;
+        }
+    }
+
+    &__nav {
+        display: flex;
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+
+            &:not(:last-child) {
+                margin-right: 15rem;
+            }
+        }
+
+        &-item {
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
+
+        &-link {
+            font-family: 'FuturaPT';
+            font-size: 1.9rem;
+            line-height: 2.6rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+
+    &__info {
+        margin-left: auto;
+        width: 47rem;
+        text-align: right;
+
+        &-text {
+            margin-bottom: 2rem;
+        }
+
+        &-text,
+        &-link {
+            font-family: 'FuturaPT';
+            font-size: 1.9rem;
+            line-height: 2.6rem;
+        }
+    }
+
+    &__bottom {
+        padding-top: 8.6rem;
+        padding-bottom: 8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &-list {
+            margin-bottom: 2.2rem;
+            display: flex;
+        }
+
+        &-item {
+            &:not(:last-child) {
+                margin-right: 5rem;
+            }
+        }
+
+        &-link {
+            img {
+                width: auto;
+            }
+        }
+
+        &-copyright {
+            font-family: 'FuturaPT';
+            font-size: 1.9rem;
+            line-height: 2.6rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
     }
 }
