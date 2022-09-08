@@ -69,21 +69,23 @@
     <main>
         <section class="hero">
             <div class="swiper-container swiper__hero">
+
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="images/hero1.png" alt="">
+
                     </div>
                     <div class="swiper-slide">
                         <img src="images/hero2.png" alt="">
+
                     </div>
                     <div class="swiper-slide">
                         <img src="images/hero3.png" alt="">
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-scrollbar"></div>
+                <!-- <div class="swiper-pagination"></div> -->
+                <!-- <div class="swiper-button-prev"></div> -->
+                <!-- <div class="swiper-button-next"></div> -->
             </div>
         </section>
 
@@ -102,9 +104,12 @@
             <div class="swiper-container swiper__exclusive">
 
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide slide1">
+                    <div class="swiper-slide swiper__exclusive-slide">
+                        <a class="swiper__exclusive-link">
+                            подробнее
+                        </a>
                         <img src="images/ring.png" alt="" class="swiper-jewelry">
-                        <div class="swiper-pagination"></div>
+                        <span class="swiper__exclusive-pagination">(01)</span>
                         <div class="swiper-bottom">
                             <h5 class="swiper-heading">Кольца</h5>
                             <a href="#">
@@ -112,9 +117,12 @@
                             </a>
                         </div>
                     </div>
-                    <div class="swiper-slide slide2">
+                    <div class="swiper-slide swiper__exclusive-slide">
+                        <a class="swiper__exclusive-link">
+                            подробнее
+                        </a>
                         <img src="images/bracelet.png" alt="" class="swiper-jewelry">
-                        <div class="swiper-pagination"></div>
+                        <span class="swiper__exclusive-pagination">(02)</span>
                         <div class="swiper-bottom">
                             <h5 class="swiper-heading">Браслеты</h5>
                             <a href="#">
@@ -122,9 +130,12 @@
                             </a>
                         </div>
                     </div>
-                    <div class="swiper-slide slide3">
+                    <div class="swiper-slide swiper__exclusive-slide">
+                        <a class="swiper__exclusive-link">
+                            подробнее
+                        </a>
                         <img src="images/pendant.png" alt="" class="swiper-jewelry">
-                        <div class="swiper-pagination"></div>
+                        <span class="swiper__exclusive-pagination">(03)</span>
                         <div class="swiper-bottom">
                             <h5 class="swiper-heading">Подвески</h5>
                             <a href="#">
@@ -132,9 +143,12 @@
                             </a>
                         </div>
                     </div>
-                    <div class="swiper-slide slide4">
+                    <div class="swiper-slide swiper__exclusive-slide">
+                        <a class="swiper__exclusive-link">
+                            подробнее
+                        </a>
                         <img src="images/earrings.png" alt="" class="swiper-jewelry">
-                        <div class="swiper-pagination"></div>
+                        <span class="swiper__exclusive-pagination">(04)</span>
                         <div class="swiper-bottom">
                             <h5 class="swiper-heading">Серьги</h5>
                             <a href="#">
@@ -159,38 +173,192 @@
             <h2 class="services__heading">услуги ювелирной мастерской</h2>
             <div class="services__tabs">
                 <ul class="services__tabs-list">
-                    <li class="services__tabs-item">Изготовление изделий на заказ</li>
-                    <li class="services__tabs-item">Ювелирный ремонт</li>
-                    <li class="services__tabs-item">Ювелирная сварка</li>
-                    <li class="services__tabs-item">Огранка камней</li>
-                    <li class="services__tabs-item">Ювелирная оценка</li>
-                    <li class="services__tabs-item">Ювелирный дизайн</li>
-                    <li class="services__tabs-item">Гальваника</li>
+                    <li class="services__tabs-btn services__tabs-btn--active" data-path="order">Изготовление изделий на
+                        заказ</li>
+                    <li class="services__tabs-btn" data-path="repair">Ювелирный ремонт</li>
+                    <li class="services__tabs-btn" data-path="welding">Ювелирная сварка</li>
+                    <li class="services__tabs-btn" data-path="cutting">Огранка камней</li>
+                    <li class="services__tabs-btn" data-path="evaluation">Ювелирная оценка</li>
+                    <li class="services__tabs-btn" data-path="design">Ювелирный дизайн</li>
+                    <li class="services__tabs-btn" data-path="galvanic">Гальваника</li>
                 </ul>
             </div>
             <div class="container">
 
-                <div class="services__content">
-                    <h6 class="services__content-heading">Изготовление изделий на заказ</h6>
-                    <p class="services__content-description">Мастерская ведет производство ювелирных украшений на заказ
-                        по
-                        индивидуальным и типовым проектам.
-                        Основой для разработки модели может стать эскиз, фото и даже словесное описание — дизайнер учтет
-                        всю
-                        предоставленную информацию и постарается идеально трансформировать задумку в 3D-модель.
-                        Многолетний
-                        опыт и любовь к своему делу позволяют мастерам эффективно работать с редкими и драгоценными
-                        материалами, преобразуя их по желанию заказчика. Ювелиры могут изготовить для вас стильные
-                        аксессуары и настоящие семейные реликвии, выполняя работы на высочайшем уровне даже при
-                        сложнейшем
-                        дизайне изделий.</p>
-                    <a href="#" class="services__content-link">
-                        узнать подробнее
-                        <img src="images/svg/swiperArrow.svg" alt="">
-                    </a>
+                <div class="services__content services__content--active" data-target="order">
+                    <img src="images/custom.png" alt="Изготовление изделий на заказ" class="services__content-img">
+                    <div class="services__content-text">
+                        <h6 class="services__content-heading">Изготовление изделий на заказ</h6>
+                        <p class="services__content-description">Мастерская ведет производство ювелирных украшений на
+                            заказ
+                            по
+                            индивидуальным и типовым проектам.
+                            Основой для разработки модели может стать эскиз, фото и даже словесное описание — дизайнер
+                            учтет
+                            всю
+                            предоставленную информацию и постарается идеально трансформировать задумку в 3D-модель.
+                            Многолетний
+                            опыт и любовь к своему делу позволяют мастерам эффективно работать с редкими и драгоценными
+                            материалами, преобразуя их по желанию заказчика. Ювелиры могут изготовить для вас стильные
+                            аксессуары и настоящие семейные реликвии, выполняя работы на высочайшем уровне даже при
+                            сложнейшем
+                            дизайне изделий.</p>
+                        <a href="#" class="services__content-link">
+                            узнать подробнее
+                            <img src="images/svg/swiperArrow.svg" alt="">
+                        </a>
+                    </div>
                 </div>
 
-                <img src="images/custom.png" alt="Изготовление изделий на заказ" class="services__content-img">
+                <div class="services__content" data-target="repair">
+                    <img src="images/custom.png" alt="Изготовление изделий на заказ" class="services__content-img">
+                    <div class="services__content-text">
+                        <h6 class="services__content-heading">Изготовление изделий на заказ</h6>
+                        <p class="services__content-description">Мастерская ведет производство ювелирных украшений на
+                            заказ
+                            по
+                            индивидуальным и типовым проектам.
+                            Основой для разработки модели может стать эскиз, фото и даже словесное описание — дизайнер
+                            учтет
+                            всю
+                            предоставленную информацию и постарается идеально трансформировать задумку в 3D-модель.
+                            Многолетний
+                            опыт и любовь к своему делу позволяют мастерам эффективно работать с редкими и драгоценными
+                            материалами, преобразуя их по желанию заказчика. Ювелиры могут изготовить для вас стильные
+                            аксессуары и настоящие семейные реликвии, выполняя работы на высочайшем уровне даже при
+                            сложнейшем
+                            дизайне изделий.</p>
+                        <a href="#" class="services__content-link">
+                            узнать подробнее
+                            <img src="images/svg/swiperArrow.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="services__content" data-target="welding">
+                    <img src="images/custom.png" alt="Изготовление изделий на заказ" class="services__content-img">
+                    <div class="services__content-text">
+                        <h6 class="services__content-heading">Изготовление изделий на заказ</h6>
+                        <p class="services__content-description">Мастерская ведет производство ювелирных украшений на
+                            заказ
+                            по
+                            индивидуальным и типовым проектам.
+                            Основой для разработки модели может стать эскиз, фото и даже словесное описание — дизайнер
+                            учтет
+                            всю
+                            предоставленную информацию и постарается идеально трансформировать задумку в 3D-модель.
+                            Многолетний
+                            опыт и любовь к своему делу позволяют мастерам эффективно работать с редкими и драгоценными
+                            материалами, преобразуя их по желанию заказчика. Ювелиры могут изготовить для вас стильные
+                            аксессуары и настоящие семейные реликвии, выполняя работы на высочайшем уровне даже при
+                            сложнейшем
+                            дизайне изделий.</p>
+                        <a href="#" class="services__content-link">
+                            узнать подробнее
+                            <img src="images/svg/swiperArrow.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="services__content" data-target="cutting">
+                    <img src="images/custom.png" alt="Изготовление изделий на заказ" class="services__content-img">
+                    <div class="services__content-text">
+                        <h6 class="services__content-heading">Изготовление изделий на заказ</h6>
+                        <p class="services__content-description">Мастерская ведет производство ювелирных украшений на
+                            заказ
+                            по
+                            индивидуальным и типовым проектам.
+                            Основой для разработки модели может стать эскиз, фото и даже словесное описание — дизайнер
+                            учтет
+                            всю
+                            предоставленную информацию и постарается идеально трансформировать задумку в 3D-модель.
+                            Многолетний
+                            опыт и любовь к своему делу позволяют мастерам эффективно работать с редкими и драгоценными
+                            материалами, преобразуя их по желанию заказчика. Ювелиры могут изготовить для вас стильные
+                            аксессуары и настоящие семейные реликвии, выполняя работы на высочайшем уровне даже при
+                            сложнейшем
+                            дизайне изделий.</p>
+                        <a href="#" class="services__content-link">
+                            узнать подробнее
+                            <img src="images/svg/swiperArrow.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="services__content" data-target="evaluation">
+                    <img src="images/custom.png" alt="Изготовление изделий на заказ" class="services__content-img">
+                    <div class="services__content-text">
+                        <h6 class="services__content-heading">Изготовление изделий на заказ</h6>
+                        <p class="services__content-description">Мастерская ведет производство ювелирных украшений на
+                            заказ
+                            по
+                            индивидуальным и типовым проектам.
+                            Основой для разработки модели может стать эскиз, фото и даже словесное описание — дизайнер
+                            учтет
+                            всю
+                            предоставленную информацию и постарается идеально трансформировать задумку в 3D-модель.
+                            Многолетний
+                            опыт и любовь к своему делу позволяют мастерам эффективно работать с редкими и драгоценными
+                            материалами, преобразуя их по желанию заказчика. Ювелиры могут изготовить для вас стильные
+                            аксессуары и настоящие семейные реликвии, выполняя работы на высочайшем уровне даже при
+                            сложнейшем
+                            дизайне изделий.</p>
+                        <a href="#" class="services__content-link">
+                            узнать подробнее
+                            <img src="images/svg/swiperArrow.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="services__content" data-target="design">
+                    <img src="images/custom.png" alt="Изготовление изделий на заказ" class="services__content-img">
+                    <div class="services__content-text">
+                        <h6 class="services__content-heading">Изготовление изделий на заказ</h6>
+                        <p class="services__content-description">Мастерская ведет производство ювелирных украшений на
+                            заказ
+                            по
+                            индивидуальным и типовым проектам.
+                            Основой для разработки модели может стать эскиз, фото и даже словесное описание — дизайнер
+                            учтет
+                            всю
+                            предоставленную информацию и постарается идеально трансформировать задумку в 3D-модель.
+                            Многолетний
+                            опыт и любовь к своему делу позволяют мастерам эффективно работать с редкими и драгоценными
+                            материалами, преобразуя их по желанию заказчика. Ювелиры могут изготовить для вас стильные
+                            аксессуары и настоящие семейные реликвии, выполняя работы на высочайшем уровне даже при
+                            сложнейшем
+                            дизайне изделий.</p>
+                        <a href="#" class="services__content-link">
+                            узнать подробнее
+                            <img src="images/svg/swiperArrow.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="services__content" data-target="galvanic">
+                    <img src="images/custom.png" alt="Изготовление изделий на заказ" class="services__content-img">
+                    <div class="services__content-text">
+                        <h6 class="services__content-heading">Изготовление изделий на заказ</h6>
+                        <p class="services__content-description">Мастерская ведет производство ювелирных украшений на
+                            заказ
+                            по
+                            индивидуальным и типовым проектам.
+                            Основой для разработки модели может стать эскиз, фото и даже словесное описание — дизайнер
+                            учтет
+                            всю
+                            предоставленную информацию и постарается идеально трансформировать задумку в 3D-модель.
+                            Многолетний
+                            опыт и любовь к своему делу позволяют мастерам эффективно работать с редкими и драгоценными
+                            материалами, преобразуя их по желанию заказчика. Ювелиры могут изготовить для вас стильные
+                            аксессуары и настоящие семейные реликвии, выполняя работы на высочайшем уровне даже при
+                            сложнейшем
+                            дизайне изделий.</p>
+                        <a href="#" class="services__content-link">
+                            узнать подробнее
+                            <img src="images/svg/swiperArrow.svg" alt="">
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -235,13 +403,14 @@
             <h2 class="stages__heading">Этапы работы</h2>
             <div class="stages__block">
                 <ul class="stages__tabs">
-                    <li class="stages__tabs-item">Приобретение изделия из каталога</li>
-                    <li class="stages__tabs-item">Изделие на заказ</li>
-                    <li class="stages__tabs-item">Ремонт ювелирного изделия</li>
+                    <li class="stages__tabs-btn stages__tabs-btn--active" data-path="buy">Приобретение изделия из
+                        каталога</li>
+                    <li class="stages__tabs-btn" data-path="order">Изделие на заказ</li>
+                    <li class="stages__tabs-btn" data-path="repair">Ремонт ювелирного изделия</li>
                 </ul>
             </div>
 
-            <ul class="stages__list">
+            <ul class="stages__list stages__tab-item stages__tab-item--active" data-target="buy">
                 <li class="stages__list-item">
                     <div class="stages__item-number">01</div>
                     <h6 class="stages__item-name">выбор украшения</h6>
@@ -267,6 +436,61 @@
                         СНГ) или в нашем офисе в Москве</p>
                 </li>
             </ul>
+
+            <ul class="stages__list stages__tab-item" data-target="order">
+                <li class="stages__list-item">
+                    <div class="stages__item-number">01</div>
+                    <h6 class="stages__item-name">выбор украшения</h6>
+                    <p class="stages__item-description">На свой вкус выбираете украшение из нашего каталога изделий и
+                        добавляете его в корзину</p>
+                </li>
+                <li class="stages__list-item">
+                    <div class="stages__item-number">02</div>
+                    <h6 class="stages__item-name">Оформление</h6>
+                    <p class="stages__item-description">С нашей удобной системой заказа вам не придется тратить много
+                        времени, заполните имя и адрес</p>
+                </li>
+                <li class="stages__list-item">
+                    <div class="stages__item-number">03</div>
+                    <h6 class="stages__item-name">подтверждение</h6>
+                    <p class="stages__item-description">После оформление заказа с вами свяжется наш специалист для
+                        подтверждения покупки и уточнения деталей</p>
+                </li>
+                <li class="stages__list-item">
+                    <div class="stages__item-number">04</div>
+                    <h6 class="stages__item-name">Доставка</h6>
+                    <p class="stages__item-description">Получаете свой заказ с курьером (бесплатная доставка по России и
+                        СНГ) или в нашем офисе в Москве</p>
+                </li>
+            </ul>
+
+            <ul class="stages__list stages__tab-item" data-target="repair">
+                <li class="stages__list-item">
+                    <div class="stages__item-number">01</div>
+                    <h6 class="stages__item-name">выбор украшения</h6>
+                    <p class="stages__item-description">На свой вкус выбираете украшение из нашего каталога изделий и
+                        добавляете его в корзину</p>
+                </li>
+                <li class="stages__list-item">
+                    <div class="stages__item-number">02</div>
+                    <h6 class="stages__item-name">Оформление</h6>
+                    <p class="stages__item-description">С нашей удобной системой заказа вам не придется тратить много
+                        времени, заполните имя и адрес</p>
+                </li>
+                <li class="stages__list-item">
+                    <div class="stages__item-number">03</div>
+                    <h6 class="stages__item-name">подтверждение</h6>
+                    <p class="stages__item-description">После оформление заказа с вами свяжется наш специалист для
+                        подтверждения покупки и уточнения деталей</p>
+                </li>
+                <li class="stages__list-item">
+                    <div class="stages__item-number">04</div>
+                    <h6 class="stages__item-name">Доставка</h6>
+                    <p class="stages__item-description">Получаете свой заказ с курьером (бесплатная доставка по России и
+                        СНГ) или в нашем офисе в Москве</p>
+                </li>
+            </ul>
+
         </section>
 
         <section class="examples swiper-container swiper__examples">
@@ -335,17 +559,17 @@
                 <div class="swiper-slide swiper__examples-slide">
                     <h6 class="swiper__examples-name">помолвочное кольцо</h6>
                     <span class="swiper__examples-detail">585 проба</span>
-                    <div class="swiper-pagination swiper__examples-pagination"></div>
+                    <div class="swiper__examples-pagination">01</div>
                 </div>
                 <div class="swiper-slide swiper__examples-slide">
                     <h6 class="swiper__examples-name">помолвочное кольцо</h6>
                     <span class="swiper__examples-detail">585 проба</span>
-                    <div class="swiper-pagination swiper__examples-pagination"></div>
+                    <div class="swiper__examples-pagination">02</div>
                 </div>
                 <div class="swiper-slide swiper__examples-slide">
                     <h6 class="swiper__examples-name">помолвочное кольцо</h6>
                     <span class="swiper__examples-detail">585 проба</span>
-                    <div class="swiper-pagination swiper__examples-pagination"></div>
+                    <div class="swiper__examples-pagination">03</div>
                 </div>
             </div>
         </section>
@@ -393,6 +617,15 @@
         </section>
 
         <section class="reviews">
+            <div class="swiper-pagination swiper__reviews-pagintaion"></div>
+            <div class="swiper__reviews-btns">
+                <div class="swiper__reviews-prev">
+                    <img src="images/svg/swiperArrow.svg" alt="">
+                </div>
+                <div class="swiper__reviews-next">
+                    <img src="images/svg/swiperArrow.svg" alt="">
+                </div>
+            </div>
             <div class="reviews__left">
                 <h2 class="reviews__heading">отзывы клиентов</h2>
                 <div class="swiper-container swiper__reviews">
@@ -401,45 +634,73 @@
                             <p class="swiper__reviews-item">Спасибо огромное за ттакую потрясающую работу. Это было
                                 кольцо моей мечты! Ты, так скажем
                                 украсил все больше наш день! Спасибо большое!</p>
+                            <button class="reviews__left-btn">оставить отзыв</button>
                         </div>
                         <div class="swiper-slide swiper__reviews-slide">
                             <p class="swiper__reviews-item">Спасибо огромное за ттакую потрясающую работу. Это было
                                 кольцо моей мечты! Ты, так скажем
                                 украсил все больше наш день! Спасибо большое!</p>
+                            <button class="reviews__left-btn">оставить отзыв</button>
                         </div>
                         <div class="swiper-slide swiper__reviews-slide">
                             <p class="swiper__reviews-item">Спасибо огромное за ттакую потрясающую работу. Это было
                                 кольцо моей мечты! Ты, так скажем
                                 украсил все больше наш день! Спасибо большое!</p>
+                            <button class="reviews__left-btn">оставить отзыв</button>
+                        </div>
+                        <div class="swiper-slide swiper__reviews-slide">
+                            <p class="swiper__reviews-item">Спасибо огромное за ттакую потрясающую работу. Это было
+                                кольцо моей мечты! Ты, так скажем
+                                украсил все больше наш день! Спасибо большое!</p>
+                            <button class="reviews__left-btn">оставить отзыв</button>
+                        </div>
+                        <div class="swiper-slide swiper__reviews-slide">
+                            <p class="swiper__reviews-item">Спасибо огромное за ттакую потрясающую работу. Это было
+                                кольцо моей мечты! Ты, так скажем
+                                украсил все больше наш день! Спасибо большое!</p>
+                            <button class="reviews__left-btn">оставить отзыв</button>
                         </div>
                     </div>
-                    <!-- <div class="swiper-pagination"></div> -->
-                    <!-- <div class="swiper-button-prev"></div> -->
-                    <!-- <div class="swiper-button-next"></div> -->
                 </div>
+
             </div>
+
             <div class="reviews__right">
-                <div class="swiper-container swiper__reviews">
+                <div class="swiper-container swiper__screenshots">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide swiper__reviews-slide">
+                        <div class="swiper-slide swiper__screenshots-slide">
                             <img src="images/reviews1.png" alt="">
-                            <div>
-                                <span>Кольцо</span>
-                                <span>“С бриллиантом”</span>
+                            <div class="swiper__screenshots-text">
+                                <span class="swiper__screenshots-name">Кольцо</span>
+                                <span class="swiper__screenshots-detail">“С бриллиантом”</span>
                             </div>
                         </div>
-                        <div class="swiper-slide swiper__reviews-slide">
+                        <div class="swiper-slide swiper__screenshots-slide">
                             <img src="images/reviews1.png" alt="">
-                            <div>
-                                <span>Кольцо</span>
-                                <span>“С бриллиантом”</span>
+                            <div class="swiper__screenshots-text">
+                                <span class="swiper__screenshots-name">Кольцо</span>
+                                <span class="swiper__screenshots-detail">“С бриллиантом”</span>
                             </div>
                         </div>
-                        <div class="swiper-slide swiper__reviews-slide">
+                        <div class="swiper-slide swiper__screenshots-slide">
                             <img src="images/reviews1.png" alt="">
-                            <div>
-                                <span>Кольцо</span>
-                                <span>“С бриллиантом”</span>
+                            <div class="swiper__screenshots-text">
+                                <span class="swiper__screenshots-name">Кольцо</span>
+                                <span class="swiper__screenshots-detail">“С бриллиантом”</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper__screenshots-slide">
+                            <img src="images/reviews1.png" alt="">
+                            <div class="swiper__screenshots-text">
+                                <span class="swiper__screenshots-name">Кольцо</span>
+                                <span class="swiper__screenshots-detail">“С бриллиантом”</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper__screenshots-slide">
+                            <img src="images/reviews1.png" alt="">
+                            <div class="swiper__screenshots-text">
+                                <span class="swiper__screenshots-name">Кольцо</span>
+                                <span class="swiper__screenshots-detail">“С бриллиантом”</span>
                             </div>
                         </div>
                     </div>

@@ -1,17 +1,17 @@
-const swiper = new Swiper('.swiper__exclusive', {
+
+const swiperHero = new Swiper('.swiper__hero', {
     direction: 'horizontal',
     loop: true,
-    slidesPerView: "auto",
+    slidesPerView: 3,
+    centeredSlides: true,
+});
+
+const swiperExclusive = new Swiper('.swiper__exclusive', {
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 3.25,
     spaceBetween: 50,
-
-    pagination: {
-        el: '.swiper-pagination',
-        type: "fraction",
-        renderFraction: function (currentClass) {
-            return `<span class="' + ${currentClass} + '"></span>`;
-        }
-    },
-
+    centeredSlides: true,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -19,32 +19,24 @@ const swiper = new Swiper('.swiper__exclusive', {
 
 });
 
-const swiper2 = new Swiper('.swiper__price-container', {
+const swiperPrice = new Swiper('.swiper__price-container', {
     direction: 'horizontal',
     loop: true,
     slidesPerView: "auto",
     spaceBetween: 50,
 });
 
-const swiper3 = new Swiper('.swiper__hero', {
-    direction: 'horizontal',
-    loop: true,
-    slidesPerView: 3,
-    spaceBetween: 150,
-});
 
 
 const swiperExamples = new Swiper('.swiper__examples', {
     direction: 'horizontal',
     loop: true,
     slidesPerView: 1,
-    pagination: {
-        el: '.swiper__examples-pagination',
-        type: "fraction",
-        renderFraction: function (currentClass, totalClass, index, total) {
-            return `<span class="${currentClass}"></span>`;
-        }
+    autoplay: {
+        delay: 3000,
     },
+    speed: 800,
+    allowTouchMove: false,
 });
 
 const swiperVideo = new Swiper('.swiper__video', {
@@ -61,15 +53,66 @@ const swiperVideo = new Swiper('.swiper__video', {
     },
 });
 
-const swiperReviews = new Swiper('.swiper__reviews', {
+const swiperScreenshots = new Swiper('.swiper__screenshots', {
     direction: 'horizontal',
-    slidesPerView: 'auto',
+    loop: true,
+    slidesPerView: 3,
     spaceBetween: 50,
-    // navigation: {
-    //     nextEl: '.swiper__video-next',
-    //     prevEl: '.swiper__video-prev',
-    // },
-    // pagination: {
-    //     el: '.swiper__video-pagination',
-    // },
+});
+
+const swiperReviews = new Swiper('.swiper__reviews', {
+    direction: 'vertical',
+    slidesPerView: 1,
+    loop: true,
+    thumbs: {
+        swiper: swiperScreenshots,
+    },
+    navigation: {
+        nextEl: '.swiper__reviews-next',
+        prevEl: '.swiper__reviews-prev',
+    },
+    pagination: {
+        el: '.swiper__reviews-pagintaion',
+        clickable: true,
+    }
+});
+
+document.querySelectorAll('.services__tabs-btn').forEach(function (tabsBtn) {
+    tabsBtn.addEventListener('click', function (e) {
+        const path = e.currentTarget.dataset.path;
+
+        document.querySelectorAll('.services__tabs-btn').forEach(function (btn) {
+            btn.classList.remove('services__tabs-btn--active')
+        });
+
+        e.currentTarget.classList.add('services__tabs-btn--active');
+
+        document.querySelectorAll('.services__content').forEach(function (tab) {
+            tab.classList.remove('services__content--active')
+        });
+
+        document.querySelectorAll(`[data-target="${path}"]`).forEach(function (tab) {
+            tab.classList.add('services__content--active');
+        })
+    });
+});
+
+document.querySelectorAll('.stages__tabs-btn').forEach(function (tabsBtn) {
+    tabsBtn.addEventListener('click', function (e) {
+        const path = e.currentTarget.dataset.path;
+
+        document.querySelectorAll('.stages__tabs-btn').forEach(function (btn) {
+            btn.classList.remove('stages__tabs-btn--active')
+        });
+
+        e.currentTarget.classList.add('stages__tabs-btn--active');
+
+        document.querySelectorAll('.stages__tab-item').forEach(function (tab) {
+            tab.classList.remove('stages__tab-item--active')
+        });
+
+        document.querySelectorAll(`[data-target="${path}"]`).forEach(function (tab) {
+            tab.classList.add('stages__tab-item--active');
+        })
+    });
 });
