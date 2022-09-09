@@ -89,37 +89,174 @@
 
 .hero {
     padding-bottom: 17.8rem;
+    position: relative;
     background: url(../images/svg/heroPolygon.svg) center/contain no-repeat,
         url(../images//svg/heroRight.svg) center right/auto no-repeat,
         url(../images//svg/heroLeft.svg) center left/auto no-repeat,
         url(../images/heroBG.png) center/auto no-repeat;
+
+    .swiper__hero-pagination {
+        bottom: 15rem !important;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .swiper__hero-next,
+    .swiper__hero-prev {
+        position: absolute;
+        top: 55%;
+        z-index: 2;
+
+        img {
+            width: 4.1rem;
+            object-fit: contain;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .swiper__hero-next {
+        right: 20%;
+    }
+
+    .swiper__hero-prev {
+        left: 20%;
+        transform: rotateY(180deg);
+    }
+
+    .swiper-pagination-bullet {
+        width: 0.6rem;
+        height: 0.6rem;
+        background-color: transparent;
+        opacity: 1;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+
+        &-active {
+            border: 1px solid rgba(255, 255, 255, 1);
+        }
+
+        &:not(:last-child) {
+            margin-right: 1.2rem;
+        }
+    }
 
     .swiper__hero {
         padding-top: 15rem;
         width: 100%;
         min-height: 61.5rem;
 
-        .swiper-slide {
-            transition: all .2s ease-in;
+        &-number {
+            position: absolute;
+            top: -15rem;
+            left: 50%;
+            font-family: 'Forum';
+            font-size: 9rem;
+            line-height: 1;
+            text-align: center;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            transform: translateX(-50%);
+        }
 
-            .q {
-                transform: scale(.5);
+
+
+        .swiper-slide {
+            transition: transform .2s ease-in;
+
+            &-prev {
+                transform: translateX(-20%) scale(.5);
             }
 
-            img {
-                object-fit: contain;
-                transition: all .2s ease-in;
+            &-next {
+                transform: translateX(20%) scale(.5);
             }
 
             &-active {
+                transform: scale(1);
 
-                .q {
-                    transform: scale(1);
+                .swiper__hero-number {
+                    top: auto;
+                    bottom: 0;
+                    font-family: 'FuturaPT';
+                    font-size: 1.5rem;
+                    line-height: 2.2rem;
+
+                    &::before {
+                        content: '(';
+                    }
+
+                    &::after {
+                        content: ')';
+                    }
                 }
-
-                img {}
             }
         }
+
+        &-slide {
+            height: auto;
+
+            img {
+                object-fit: contain;
+            }
+        }
+    }
+
+    &__video {
+        position: absolute;
+        bottom: 8rem;
+        right: 15rem;
+        width: 27.5rem;
+        height: 15.3rem;
+        background: url(../images/svg/heroVideoBG.svg) center/contain no-repeat;
+        z-index: 3;
+
+        &-content {
+            transform: translate(-1rem, 1rem);
+        }
+
+        &-link {
+            position: absolute;
+            top: 1.4rem;
+            right: 2rem;
+            font-family: 'FuturaPT';
+            font-weight: 300;
+            font-size: 1.9rem;
+            line-height: 2.2rem;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        &-img {
+            width: 100%;
+            object-fit: contain;
+        }
+
+        &-btn {
+            position: absolute;
+            left: 1.2rem;
+            bottom: 1.6rem;
+            width: 5.6rem;
+            height: 5.2rem;
+
+            img {
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+    &__notice {
+        position: absolute;
+        bottom: 8rem;
+        left: 14rem;
+        width: 24.2rem;
+        font-family: 'FuturaPT';
+        font-size: 1.9rem;
+        line-height: 2.2rem;
     }
 }
 

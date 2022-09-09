@@ -214,27 +214,150 @@ input[type=number] {
 
 .hero {
   padding-bottom: 17.8rem;
+  position: relative;
   background: url(../images/svg/heroPolygon.svg) center/contain no-repeat, url(../images//svg/heroRight.svg) center right/auto no-repeat, url(../images//svg/heroLeft.svg) center left/auto no-repeat, url(../images/heroBG.png) center/auto no-repeat;
+}
+.hero .swiper__hero-pagination {
+  bottom: 15rem !important;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hero .swiper__hero-next,
+.hero .swiper__hero-prev {
+  position: absolute;
+  top: 55%;
+  z-index: 2;
+}
+.hero .swiper__hero-next img,
+.hero .swiper__hero-prev img {
+  width: 4.1rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.hero .swiper__hero-next:hover,
+.hero .swiper__hero-prev:hover {
+  cursor: pointer;
+}
+.hero .swiper__hero-next {
+  right: 20%;
+}
+.hero .swiper__hero-prev {
+  left: 20%;
+  transform: rotateY(180deg);
+}
+.hero .swiper-pagination-bullet {
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: transparent;
+  opacity: 1;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.hero .swiper-pagination-bullet-active {
+  border: 1px solid rgb(255, 255, 255);
+}
+.hero .swiper-pagination-bullet:not(:last-child) {
+  margin-right: 1.2rem;
 }
 .hero .swiper__hero {
   padding-top: 15rem;
   width: 100%;
   min-height: 61.5rem;
 }
+.hero .swiper__hero-number {
+  position: absolute;
+  top: -15rem;
+  left: 50%;
+  font-family: "Forum";
+  font-size: 9rem;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  transform: translateX(-50%);
+}
 .hero .swiper__hero .swiper-slide {
-  transition: all 0.2s ease-in;
+  transition: transform 0.2s ease-in;
 }
-.hero .swiper__hero .swiper-slide .q {
-  transform: scale(0.5);
+.hero .swiper__hero .swiper-slide-prev {
+  transform: translateX(-20%) scale(0.5);
 }
-.hero .swiper__hero .swiper-slide img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  transition: all 0.2s ease-in;
+.hero .swiper__hero .swiper-slide-next {
+  transform: translateX(20%) scale(0.5);
 }
-.hero .swiper__hero .swiper-slide-active .q {
+.hero .swiper__hero .swiper-slide-active {
   transform: scale(1);
 }
+.hero .swiper__hero .swiper-slide-active .swiper__hero-number {
+  top: auto;
+  bottom: 0;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+}
+.hero .swiper__hero .swiper-slide-active .swiper__hero-number::before {
+  content: "(";
+}
+.hero .swiper__hero .swiper-slide-active .swiper__hero-number::after {
+  content: ")";
+}
+.hero .swiper__hero-slide {
+  height: auto;
+}
+.hero .swiper__hero-slide img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.hero__video {
+  position: absolute;
+  bottom: 8rem;
+  right: 15rem;
+  width: 27.5rem;
+  height: 15.3rem;
+  background: url(../images/svg/heroVideoBG.svg) center/contain no-repeat;
+  z-index: 3;
+}
+.hero__video-content {
+  transform: translate(-1rem, 1rem);
+}
+.hero__video-link {
+  position: absolute;
+  top: 1.4rem;
+  right: 2rem;
+  font-family: "FuturaPT";
+  font-weight: 300;
+  font-size: 1.9rem;
+  line-height: 2.2rem;
+}
+.hero__video-link:hover {
+  cursor: pointer;
+}
+.hero__video-img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.hero__video-btn {
+  position: absolute;
+  left: 1.2rem;
+  bottom: 1.6rem;
+  width: 5.6rem;
+  height: 5.2rem;
+}
+.hero__video-btn img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.hero__notice {
+  position: absolute;
+  bottom: 8rem;
+  left: 14rem;
+  width: 24.2rem;
+  font-family: "FuturaPT";
+  font-size: 1.9rem;
+  line-height: 2.2rem;
+}
+
 .exclusive {
   padding-top: 11rem;
   background: url(../images/exclusiveBG.png) no-repeat;

@@ -68,24 +68,40 @@
 
     <main>
         <section class="hero">
+            <p class="hero__notice">
+                Изготавливаем украшения любой сложности
+            </p>
+            <div class="hero__video">
+                <div class="hero__video-content">
+                    <img src="images/heroVideo.png" alt="" class="hero__video-img">
+                    <a class="hero__video-link" href="#">смотреть</a>
+                    <button class="hero__video-btn">
+                        <img src="images/svg/swiperVideoBtn.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="swiper-pagination swiper__hero-pagination"></div>
             <div class="swiper-container swiper__hero">
-
+                <div class="swiper__hero-prev">
+                    <img src="images/svg/swiperArrow.svg" alt="">
+                </div>
+                <div class="swiper__hero-next">
+                    <img src="images/svg/swiperArrow.svg" alt="">
+                </div>
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                    <div class="swiper-slide swiper__hero-slide">
                         <img src="images/hero1.png" alt="">
-
+                        <span class="swiper__hero-number">01</span>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide swiper__hero-slide">
                         <img src="images/hero2.png" alt="">
-
+                        <span class="swiper__hero-number">02</span>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide swiper__hero-slide">
                         <img src="images/hero3.png" alt="">
+                        <span class="swiper__hero-number">03</span>
                     </div>
                 </div>
-                <!-- <div class="swiper-pagination"></div> -->
-                <!-- <div class="swiper-button-prev"></div> -->
-                <!-- <div class="swiper-button-next"></div> -->
             </div>
         </section>
 

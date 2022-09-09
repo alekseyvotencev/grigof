@@ -4,6 +4,14 @@ const swiperHero = new Swiper('.swiper__hero', {
     loop: true,
     slidesPerView: 3,
     centeredSlides: true,
+    allowTouchMove: false,
+    pagination: {
+        el: '.swiper__hero-pagination',
+    },
+    navigation: {
+        nextEl: '.swiper__hero-next',
+        prevEl: '.swiper__hero-prev',
+    },
 });
 
 const swiperExclusive = new Swiper('.swiper__exclusive', {
