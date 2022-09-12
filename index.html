@@ -96,6 +96,9 @@
                     <div class="swiper-slide swiper__hero-slide">
                         <img src="images/hero2.png" alt="">
                         <span class="swiper__hero-number">02</span>
+                        <h2 class="swiper__hero-heading">кольцо из золота</h2>
+                        <div class="swiper__hero-price">575 000₽</div>
+                        <a href="#" class="swiper__hero-link">подробнее</a>
                     </div>
                     <div class="swiper-slide swiper__hero-slide">
                         <img src="images/hero3.png" alt="">
@@ -126,9 +129,9 @@
                         </a>
                         <img src="images/ring.png" alt="" class="swiper-jewelry">
                         <span class="swiper__exclusive-pagination">(01)</span>
-                        <div class="swiper-bottom">
-                            <h5 class="swiper-heading">Кольца</h5>
-                            <a href="#">
+                        <div class="swiper__exclusive-bottom">
+                            <h5 class="swiper__exclusive-heading">Кольца</h5>
+                            <a href="#" class="swiper__exclusive-bottom-link">
                                 <img src="images/svg/swiperArrow.svg" alt="">
                             </a>
                         </div>
@@ -139,9 +142,9 @@
                         </a>
                         <img src="images/bracelet.png" alt="" class="swiper-jewelry">
                         <span class="swiper__exclusive-pagination">(02)</span>
-                        <div class="swiper-bottom">
-                            <h5 class="swiper-heading">Браслеты</h5>
-                            <a href="#">
+                        <div class="swiper__exclusive-bottom">
+                            <h5 class="swiper__exclusive-heading">Браслеты</h5>
+                            <a href="#" class="swiper__exclusive-bottom-link">
                                 <img src="images/svg/swiperArrow.svg" alt="">
                             </a>
                         </div>
@@ -152,9 +155,9 @@
                         </a>
                         <img src="images/pendant.png" alt="" class="swiper-jewelry">
                         <span class="swiper__exclusive-pagination">(03)</span>
-                        <div class="swiper-bottom">
-                            <h5 class="swiper-heading">Подвески</h5>
-                            <a href="#">
+                        <div class="swiper__exclusive-bottom">
+                            <h5 class="swiper__exclusive-heading">Подвески</h5>
+                            <a href="#" class="swiper__exclusive-bottom-link">
                                 <img src="images/svg/swiperArrow.svg" alt="">
                             </a>
                         </div>
@@ -165,9 +168,9 @@
                         </a>
                         <img src="images/earrings.png" alt="" class="swiper-jewelry">
                         <span class="swiper__exclusive-pagination">(04)</span>
-                        <div class="swiper-bottom">
-                            <h5 class="swiper-heading">Серьги</h5>
-                            <a href="#">
+                        <div class="swiper__exclusive-bottom">
+                            <h5 class="swiper__exclusive-heading">Серьги</h5>
+                            <a href="#" class="swiper__exclusive-bottom-link">
                                 <img src="images/svg/swiperArrow.svg" alt="">
                             </a>
                         </div>
@@ -175,11 +178,11 @@
                 </div>
             </div>
             <div class="swiper__exclusive-buttons">
-                <div class="swiper-button-prev">
+                <div class="swiper__exclusive-prev">
                     <img src="images/svg/swiperArrow.svg" alt="">
                 </div>
-                <span class="swiper-buttons-scroll">scroll down</span>
-                <div class="swiper-button-next">
+                <span class="swiper__exclusive-scroll">scroll down</span>
+                <div class="swiper__exclusive-next">
                     <img src="images/svg/swiperArrow.svg" alt="">
                 </div>
             </div>
@@ -202,178 +205,220 @@
             <div class="container">
 
                 <div class="services__content services__content--active" data-target="order">
-                    <img src="images/custom.png" alt="Изготовление изделий на заказ" class="services__content-img">
-                    <div class="services__content-text">
-                        <h6 class="services__content-heading">Изготовление изделий на заказ</h6>
-                        <p class="services__content-description">Мастерская ведет производство ювелирных украшений на
-                            заказ
-                            по
-                            индивидуальным и типовым проектам.
-                            Основой для разработки модели может стать эскиз, фото и даже словесное описание — дизайнер
-                            учтет
-                            всю
-                            предоставленную информацию и постарается идеально трансформировать задумку в 3D-модель.
-                            Многолетний
-                            опыт и любовь к своему делу позволяют мастерам эффективно работать с редкими и драгоценными
-                            материалами, преобразуя их по желанию заказчика. Ювелиры могут изготовить для вас стильные
-                            аксессуары и настоящие семейные реликвии, выполняя работы на высочайшем уровне даже при
-                            сложнейшем
-                            дизайне изделий.</p>
-                        <a href="#" class="services__content-link">
-                            узнать подробнее
-                            <img src="images/svg/swiperArrow.svg" alt="">
-                        </a>
+                    <div class="services__content-text-wrapper">
+                        <div class="services__content-text">
+                            <h6 class="services__content-heading">Изготовление изделий на заказ</h6>
+                            <p class="services__content-description">Мастерская ведет производство ювелирных украшений
+                                на
+                                заказ
+                                по
+                                индивидуальным и типовым проектам.
+                                Основой для разработки модели может стать эскиз, фото и даже словесное описание —
+                                дизайнер
+                                учтет
+                                всю
+                                предоставленную информацию и постарается идеально трансформировать задумку в 3D-модель.
+                                Многолетний
+                                опыт и любовь к своему делу позволяют мастерам эффективно работать с редкими и
+                                драгоценными
+                                материалами, преобразуя их по желанию заказчика. Ювелиры могут изготовить для вас
+                                стильные
+                                аксессуары и настоящие семейные реликвии, выполняя работы на высочайшем уровне даже при
+                                сложнейшем
+                                дизайне изделий.</p>
+                            <a href="#" class="services__content-link">
+                                <p> узнать <br> подробнее</p>
+                                <img src="images/svg/swiperArrow.svg" alt="">
+                            </a>
+                        </div>
                     </div>
+                    <img src="images/custom.png" alt="Изготовление изделий на заказ" class="services__content-img">
                 </div>
 
                 <div class="services__content" data-target="repair">
-                    <img src="images/custom.png" alt="Изготовление изделий на заказ" class="services__content-img">
-                    <div class="services__content-text">
-                        <h6 class="services__content-heading">Изготовление изделий на заказ</h6>
-                        <p class="services__content-description">Мастерская ведет производство ювелирных украшений на
-                            заказ
-                            по
-                            индивидуальным и типовым проектам.
-                            Основой для разработки модели может стать эскиз, фото и даже словесное описание — дизайнер
-                            учтет
-                            всю
-                            предоставленную информацию и постарается идеально трансформировать задумку в 3D-модель.
-                            Многолетний
-                            опыт и любовь к своему делу позволяют мастерам эффективно работать с редкими и драгоценными
-                            материалами, преобразуя их по желанию заказчика. Ювелиры могут изготовить для вас стильные
-                            аксессуары и настоящие семейные реликвии, выполняя работы на высочайшем уровне даже при
-                            сложнейшем
-                            дизайне изделий.</p>
-                        <a href="#" class="services__content-link">
-                            узнать подробнее
-                            <img src="images/svg/swiperArrow.svg" alt="">
-                        </a>
+                    <div class="services__content-text-wrapper">
+                        <div class="services__content-text">
+                            <h6 class="services__content-heading">Изготовление изделий на заказ</h6>
+                            <p class="services__content-description">Мастерская ведет производство ювелирных украшений
+                                на
+                                заказ
+                                по
+                                индивидуальным и типовым проектам.
+                                Основой для разработки модели может стать эскиз, фото и даже словесное описание —
+                                дизайнер
+                                учтет
+                                всю
+                                предоставленную информацию и постарается идеально трансформировать задумку в 3D-модель.
+                                Многолетний
+                                опыт и любовь к своему делу позволяют мастерам эффективно работать с редкими и
+                                драгоценными
+                                материалами, преобразуя их по желанию заказчика. Ювелиры могут изготовить для вас
+                                стильные
+                                аксессуары и настоящие семейные реликвии, выполняя работы на высочайшем уровне даже при
+                                сложнейшем
+                                дизайне изделий.</p>
+                            <a href="#" class="services__content-link">
+                                <p> узнать <br> подробнее</p>
+                                <img src="images/svg/swiperArrow.svg" alt="">
+                            </a>
+                        </div>
                     </div>
+                    <img src="images/custom.png" alt="Изготовление изделий на заказ" class="services__content-img">
                 </div>
 
                 <div class="services__content" data-target="welding">
-                    <img src="images/custom.png" alt="Изготовление изделий на заказ" class="services__content-img">
-                    <div class="services__content-text">
-                        <h6 class="services__content-heading">Изготовление изделий на заказ</h6>
-                        <p class="services__content-description">Мастерская ведет производство ювелирных украшений на
-                            заказ
-                            по
-                            индивидуальным и типовым проектам.
-                            Основой для разработки модели может стать эскиз, фото и даже словесное описание — дизайнер
-                            учтет
-                            всю
-                            предоставленную информацию и постарается идеально трансформировать задумку в 3D-модель.
-                            Многолетний
-                            опыт и любовь к своему делу позволяют мастерам эффективно работать с редкими и драгоценными
-                            материалами, преобразуя их по желанию заказчика. Ювелиры могут изготовить для вас стильные
-                            аксессуары и настоящие семейные реликвии, выполняя работы на высочайшем уровне даже при
-                            сложнейшем
-                            дизайне изделий.</p>
-                        <a href="#" class="services__content-link">
-                            узнать подробнее
-                            <img src="images/svg/swiperArrow.svg" alt="">
-                        </a>
+                    <div class="services__content-text-wrapper">
+                        <div class="services__content-text">
+                            <h6 class="services__content-heading">Изготовление изделий на заказ</h6>
+                            <p class="services__content-description">Мастерская ведет производство ювелирных украшений
+                                на
+                                заказ
+                                по
+                                индивидуальным и типовым проектам.
+                                Основой для разработки модели может стать эскиз, фото и даже словесное описание —
+                                дизайнер
+                                учтет
+                                всю
+                                предоставленную информацию и постарается идеально трансформировать задумку в 3D-модель.
+                                Многолетний
+                                опыт и любовь к своему делу позволяют мастерам эффективно работать с редкими и
+                                драгоценными
+                                материалами, преобразуя их по желанию заказчика. Ювелиры могут изготовить для вас
+                                стильные
+                                аксессуары и настоящие семейные реликвии, выполняя работы на высочайшем уровне даже при
+                                сложнейшем
+                                дизайне изделий.</p>
+                            <a href="#" class="services__content-link">
+                                <p> узнать <br> подробнее</p>
+                                <img src="images/svg/swiperArrow.svg" alt="">
+                            </a>
+                        </div>
                     </div>
+                    <img src="images/custom.png" alt="Изготовление изделий на заказ" class="services__content-img">
                 </div>
 
                 <div class="services__content" data-target="cutting">
-                    <img src="images/custom.png" alt="Изготовление изделий на заказ" class="services__content-img">
-                    <div class="services__content-text">
-                        <h6 class="services__content-heading">Изготовление изделий на заказ</h6>
-                        <p class="services__content-description">Мастерская ведет производство ювелирных украшений на
-                            заказ
-                            по
-                            индивидуальным и типовым проектам.
-                            Основой для разработки модели может стать эскиз, фото и даже словесное описание — дизайнер
-                            учтет
-                            всю
-                            предоставленную информацию и постарается идеально трансформировать задумку в 3D-модель.
-                            Многолетний
-                            опыт и любовь к своему делу позволяют мастерам эффективно работать с редкими и драгоценными
-                            материалами, преобразуя их по желанию заказчика. Ювелиры могут изготовить для вас стильные
-                            аксессуары и настоящие семейные реликвии, выполняя работы на высочайшем уровне даже при
-                            сложнейшем
-                            дизайне изделий.</p>
-                        <a href="#" class="services__content-link">
-                            узнать подробнее
-                            <img src="images/svg/swiperArrow.svg" alt="">
-                        </a>
+                    <div class="services__content-text-wrapper">
+                        <div class="services__content-text">
+                            <h6 class="services__content-heading">Изготовление изделий на заказ</h6>
+                            <p class="services__content-description">Мастерская ведет производство ювелирных украшений
+                                на
+                                заказ
+                                по
+                                индивидуальным и типовым проектам.
+                                Основой для разработки модели может стать эскиз, фото и даже словесное описание —
+                                дизайнер
+                                учтет
+                                всю
+                                предоставленную информацию и постарается идеально трансформировать задумку в 3D-модель.
+                                Многолетний
+                                опыт и любовь к своему делу позволяют мастерам эффективно работать с редкими и
+                                драгоценными
+                                материалами, преобразуя их по желанию заказчика. Ювелиры могут изготовить для вас
+                                стильные
+                                аксессуары и настоящие семейные реликвии, выполняя работы на высочайшем уровне даже при
+                                сложнейшем
+                                дизайне изделий.</p>
+                            <a href="#" class="services__content-link">
+                                <p> узнать <br> подробнее</p>
+                                <img src="images/svg/swiperArrow.svg" alt="">
+                            </a>
+                        </div>
                     </div>
+                    <img src="images/custom.png" alt="Изготовление изделий на заказ" class="services__content-img">
                 </div>
 
                 <div class="services__content" data-target="evaluation">
-                    <img src="images/custom.png" alt="Изготовление изделий на заказ" class="services__content-img">
-                    <div class="services__content-text">
-                        <h6 class="services__content-heading">Изготовление изделий на заказ</h6>
-                        <p class="services__content-description">Мастерская ведет производство ювелирных украшений на
-                            заказ
-                            по
-                            индивидуальным и типовым проектам.
-                            Основой для разработки модели может стать эскиз, фото и даже словесное описание — дизайнер
-                            учтет
-                            всю
-                            предоставленную информацию и постарается идеально трансформировать задумку в 3D-модель.
-                            Многолетний
-                            опыт и любовь к своему делу позволяют мастерам эффективно работать с редкими и драгоценными
-                            материалами, преобразуя их по желанию заказчика. Ювелиры могут изготовить для вас стильные
-                            аксессуары и настоящие семейные реликвии, выполняя работы на высочайшем уровне даже при
-                            сложнейшем
-                            дизайне изделий.</p>
-                        <a href="#" class="services__content-link">
-                            узнать подробнее
-                            <img src="images/svg/swiperArrow.svg" alt="">
-                        </a>
+                    <div class="services__content-text-wrapper">
+                        <div class="services__content-text">
+                            <h6 class="services__content-heading">Изготовление изделий на заказ</h6>
+                            <p class="services__content-description">Мастерская ведет производство ювелирных украшений
+                                на
+                                заказ
+                                по
+                                индивидуальным и типовым проектам.
+                                Основой для разработки модели может стать эскиз, фото и даже словесное описание —
+                                дизайнер
+                                учтет
+                                всю
+                                предоставленную информацию и постарается идеально трансформировать задумку в 3D-модель.
+                                Многолетний
+                                опыт и любовь к своему делу позволяют мастерам эффективно работать с редкими и
+                                драгоценными
+                                материалами, преобразуя их по желанию заказчика. Ювелиры могут изготовить для вас
+                                стильные
+                                аксессуары и настоящие семейные реликвии, выполняя работы на высочайшем уровне даже при
+                                сложнейшем
+                                дизайне изделий.</p>
+                            <a href="#" class="services__content-link">
+                                <p> узнать <br> подробнее</p>
+                                <img src="images/svg/swiperArrow.svg" alt="">
+                            </a>
+                        </div>
                     </div>
+                    <img src="images/custom.png" alt="Изготовление изделий на заказ" class="services__content-img">
                 </div>
 
                 <div class="services__content" data-target="design">
-                    <img src="images/custom.png" alt="Изготовление изделий на заказ" class="services__content-img">
-                    <div class="services__content-text">
-                        <h6 class="services__content-heading">Изготовление изделий на заказ</h6>
-                        <p class="services__content-description">Мастерская ведет производство ювелирных украшений на
-                            заказ
-                            по
-                            индивидуальным и типовым проектам.
-                            Основой для разработки модели может стать эскиз, фото и даже словесное описание — дизайнер
-                            учтет
-                            всю
-                            предоставленную информацию и постарается идеально трансформировать задумку в 3D-модель.
-                            Многолетний
-                            опыт и любовь к своему делу позволяют мастерам эффективно работать с редкими и драгоценными
-                            материалами, преобразуя их по желанию заказчика. Ювелиры могут изготовить для вас стильные
-                            аксессуары и настоящие семейные реликвии, выполняя работы на высочайшем уровне даже при
-                            сложнейшем
-                            дизайне изделий.</p>
-                        <a href="#" class="services__content-link">
-                            узнать подробнее
-                            <img src="images/svg/swiperArrow.svg" alt="">
-                        </a>
+                    <div class="services__content-text-wrapper">
+                        <div class="services__content-text">
+                            <h6 class="services__content-heading">Изготовление изделий на заказ</h6>
+                            <p class="services__content-description">Мастерская ведет производство ювелирных украшений
+                                на
+                                заказ
+                                по
+                                индивидуальным и типовым проектам.
+                                Основой для разработки модели может стать эскиз, фото и даже словесное описание —
+                                дизайнер
+                                учтет
+                                всю
+                                предоставленную информацию и постарается идеально трансформировать задумку в 3D-модель.
+                                Многолетний
+                                опыт и любовь к своему делу позволяют мастерам эффективно работать с редкими и
+                                драгоценными
+                                материалами, преобразуя их по желанию заказчика. Ювелиры могут изготовить для вас
+                                стильные
+                                аксессуары и настоящие семейные реликвии, выполняя работы на высочайшем уровне даже при
+                                сложнейшем
+                                дизайне изделий.</p>
+                            <a href="#" class="services__content-link">
+                                <p> узнать <br> подробнее</p>
+                                <img src="images/svg/swiperArrow.svg" alt="">
+                            </a>
+                        </div>
                     </div>
+                    <img src="images/custom.png" alt="Изготовление изделий на заказ" class="services__content-img">
                 </div>
 
                 <div class="services__content" data-target="galvanic">
-                    <img src="images/custom.png" alt="Изготовление изделий на заказ" class="services__content-img">
-                    <div class="services__content-text">
-                        <h6 class="services__content-heading">Изготовление изделий на заказ</h6>
-                        <p class="services__content-description">Мастерская ведет производство ювелирных украшений на
-                            заказ
-                            по
-                            индивидуальным и типовым проектам.
-                            Основой для разработки модели может стать эскиз, фото и даже словесное описание — дизайнер
-                            учтет
-                            всю
-                            предоставленную информацию и постарается идеально трансформировать задумку в 3D-модель.
-                            Многолетний
-                            опыт и любовь к своему делу позволяют мастерам эффективно работать с редкими и драгоценными
-                            материалами, преобразуя их по желанию заказчика. Ювелиры могут изготовить для вас стильные
-                            аксессуары и настоящие семейные реликвии, выполняя работы на высочайшем уровне даже при
-                            сложнейшем
-                            дизайне изделий.</p>
-                        <a href="#" class="services__content-link">
-                            узнать подробнее
-                            <img src="images/svg/swiperArrow.svg" alt="">
-                        </a>
+                    <div class="services__content-text-wrapper">
+                        <div class="services__content-text">
+                            <h6 class="services__content-heading">Изготовление изделий на заказ</h6>
+                            <p class="services__content-description">Мастерская ведет производство ювелирных украшений
+                                на
+                                заказ
+                                по
+                                индивидуальным и типовым проектам.
+                                Основой для разработки модели может стать эскиз, фото и даже словесное описание —
+                                дизайнер
+                                учтет
+                                всю
+                                предоставленную информацию и постарается идеально трансформировать задумку в 3D-модель.
+                                Многолетний
+                                опыт и любовь к своему делу позволяют мастерам эффективно работать с редкими и
+                                драгоценными
+                                материалами, преобразуя их по желанию заказчика. Ювелиры могут изготовить для вас
+                                стильные
+                                аксессуары и настоящие семейные реликвии, выполняя работы на высочайшем уровне даже при
+                                сложнейшем
+                                дизайне изделий.</p>
+                            <a href="#" class="services__content-link">
+                                <p> узнать <br> подробнее</p>
+                                <img src="images/svg/swiperArrow.svg" alt="">
+                            </a>
+                        </div>
                     </div>
+                    <img src="images/custom.png" alt="Изготовление изделий на заказ" class="services__content-img">
                 </div>
             </div>
         </section>
@@ -517,6 +562,7 @@
                     <div class="swiper-container swiper__video">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide swiper__video-slide">
+                                <img src="images/swiperVideo1.png" alt="" class="swiper__video-img">
                                 <div class="swiper__video-text">
                                     <button class="swiper__video-btn">
                                         <img src="images/svg/swiperVideoBtn.svg" alt="Включить видео">
@@ -525,6 +571,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide swiper__video-slide">
+                                <img src="images/swiperVideo2.png" alt="" class="swiper__video-img">
                                 <div class="swiper__video-text">
                                     <button class="swiper__video-btn">
                                         <img src="images/svg/swiperVideoBtn.svg" alt="Включить видео">
@@ -533,6 +580,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide swiper__video-slide">
+                                <img src="images/swiperVideo3.png" alt="" class="swiper__video-img">
                                 <div class="swiper__video-text">
                                     <button class="swiper__video-btn">
                                         <img src="images/svg/swiperVideoBtn.svg" alt="Включить видео">
@@ -541,6 +589,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide swiper__video-slide">
+                                <img src="images/swiperVideo1.png" alt="" class="swiper__video-img">
                                 <div class="swiper__video-text">
                                     <button class="swiper__video-btn">
                                         <img src="images/svg/swiperVideoBtn.svg" alt="Включить видео">
@@ -549,6 +598,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide swiper__video-slide">
+                                <img src="images/swiperVideo2.png" alt="" class="swiper__video-img">
                                 <div class="swiper__video-text">
                                     <button class="swiper__video-btn">
                                         <img src="images/svg/swiperVideoBtn.svg" alt="Включить видео">
@@ -573,16 +623,19 @@
 
             <div class="swiper-wrapper">
                 <div class="swiper-slide swiper__examples-slide">
+                    <img src="images/examples1.png" alt="" class="swiper__examples-img">
                     <h6 class="swiper__examples-name">помолвочное кольцо</h6>
                     <span class="swiper__examples-detail">585 проба</span>
                     <div class="swiper__examples-pagination">01</div>
                 </div>
                 <div class="swiper-slide swiper__examples-slide">
+                    <img src="images/examples1.png" alt="" class="swiper__examples-img">
                     <h6 class="swiper__examples-name">помолвочное кольцо</h6>
                     <span class="swiper__examples-detail">585 проба</span>
                     <div class="swiper__examples-pagination">02</div>
                 </div>
                 <div class="swiper-slide swiper__examples-slide">
+                    <img src="images/examples1.png" alt="" class="swiper__examples-img">
                     <h6 class="swiper__examples-name">помолвочное кольцо</h6>
                     <span class="swiper__examples-detail">585 проба</span>
                     <div class="swiper__examples-pagination">03</div>

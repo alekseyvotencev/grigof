@@ -21,8 +21,8 @@ const swiperExclusive = new Swiper('.swiper__exclusive', {
     spaceBetween: 50,
     centeredSlides: true,
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper__exclusive-next',
+        prevEl: '.swiper__exclusive-prev',
     },
 
 });
