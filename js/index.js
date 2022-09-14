@@ -85,6 +85,12 @@ const swiperReviews = new Swiper('.swiper__reviews', {
     }
 });
 
+const swiperStones = new Swiper('.swiper__stones', {
+    direction: 'horizontal',
+    slidesPerView: 1,
+    loop: true,
+});
+
 document.querySelectorAll('.services__tabs-btn').forEach(function (tabsBtn) {
     tabsBtn.addEventListener('click', function (e) {
         const path = e.currentTarget.dataset.path;
