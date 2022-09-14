@@ -89,6 +89,10 @@ const swiperStones = new Swiper('.swiper__stones', {
     direction: 'horizontal',
     slidesPerView: 1,
     loop: true,
+    navigation: {
+        nextEl: '.swiper__stones-next',
+        prevEl: '.swiper__stones-prev',
+    },
 });
 
 document.querySelectorAll('.services__tabs-btn').forEach(function (tabsBtn) {

@@ -1391,120 +1391,170 @@ input[type=number] {
 }
 
 .stones {
-  padding-top: 6.2rem;
+  padding-top: 12.5rem;
 }
 .stones .container {
   width: 164rem;
+  position: relative;
 }
-.stones__top {
-  margin-bottom: 6rem;
+.stones .request__btn {
+  position: absolute;
+  left: 0;
+  top: 50%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  width: 25.3rem;
+  height: 10rem;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  transform: translateY(-50%);
+  background: url(../images/svg/requestBtn.svg) center/contain no-repeat;
 }
-.stones__top-heading {
+.stones .request__btn span:first-child {
+  transform: translate(1.5rem, -1rem);
+}
+.stones .request__btn span:last-child {
+  transform: translate(-1.5rem, 1rem);
+}
+.stones__heading {
+  position: absolute;
+  top: 0;
+  left: 0;
   font-size: 4rem;
   line-height: 4.8rem;
   text-transform: uppercase;
 }
-.stones__top-right {
+.stones__btn-container {
+  margin-bottom: 13.2rem;
   display: flex;
   align-items: center;
 }
-.stones__top-right span {
+.stones__btn-container span {
   margin-right: 2rem;
   font-family: "FuturaPT";
   font-weight: 300;
   font-size: 1.9rem;
   line-height: 2.2rem;
 }
-.stones__top-btn {
+.stones-btn {
   width: 5.6rem;
   height: 5.6rem;
 }
-.stones__top-btn img {
+.stones-btn img {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.stones .swiper__stones-slide {
+
+.swiper__stones-btns {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.swiper__stones-next, .swiper__stones-prev {
+  display: inline-block;
+  z-index: 99;
+}
+.swiper__stones-next img, .swiper__stones-prev img {
+  width: 4.1rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.swiper__stones-next:hover, .swiper__stones-prev:hover {
+  cursor: pointer;
+}
+.swiper__stones-prev {
+  margin-right: 2rem;
+  transform: scaleX(-1);
+}
+.swiper__stones-slide {
   display: flex;
   align-items: flex-end;
   justify-content: center;
 }
-.stones .swiper__stones-left {
+.swiper__stones-left {
+  margin-right: 11.1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 38.7rem;
-  margin-right: 7.8rem;
 }
-.stones .swiper__stones-left img {
+.swiper__stones-left img {
   width: 9.5rem;
   height: 10rem;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.stones .swiper__stones-center {
-  margin-right: 9.3rem;
-  width: 71rem;
+.swiper__stones-center {
+  margin-right: 12.7rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.stones .swiper__stones-center img {
-  width: 61.1rem;
-  height: 63.9rem;
+.swiper__stones-center img {
+  margin-bottom: 7.8rem;
+  width: 64.4rem;
+  height: 58.7rem;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.stones .swiper__stones-name {
+.swiper__stones-name {
   font-size: 7rem;
   line-height: 11.1rem;
   text-transform: uppercase;
 }
-.stones .swiper__stones-right-images {
+.swiper__stones-right {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+}
+.swiper__stones-right-images {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.stones .swiper__stones-right-images img {
+.swiper__stones-right-images img {
   display: inline-block;
   width: 9.5rem;
   height: 10rem;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.stones .swiper__stones-right-images img:not(:last-child) {
+.swiper__stones-right-images img:not(:last-child) {
   margin-right: 5.1rem;
 }
-.stones .swiper__stones-price {
-  margin-bottom: 12rem;
+.swiper__stones-price {
   font-size: 4rem;
   line-height: 4.8rem;
   text-transform: uppercase;
 }
-.stones .swiper__stones-price span {
+.swiper__stones-price span {
   font-family: "FuturaPT";
   font-size: 1.5rem;
   line-height: 3.5rem;
   vertical-align: top;
 }
-.stones .swiper__stones-list {
+.swiper__stones-list {
   margin-top: auto;
   margin-bottom: 7.8rem;
+  position: relative;
 }
-.stones .swiper__stones-list-item:not(:last-child) {
+.swiper__stones-list-item:not(:last-child) {
   margin-bottom: 3.3rem;
 }
-.stones .swiper__stones-property {
+.swiper__stones-property {
   margin-bottom: 0.8rem;
+  font-family: "FuturaPT";
   font-size: 1.9rem;
   line-height: 2.2rem;
   text-transform: capitalize;
   color: rgba(255, 255, 255, 0.5);
 }
-.stones .swiper__stones-value {
+.swiper__stones-value {
   font-family: "FuturaPT";
   font-size: 1.5rem;
   line-height: 2.2rem;
