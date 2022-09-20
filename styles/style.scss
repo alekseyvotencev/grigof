@@ -80,6 +80,7 @@
             }
 
             &-link {
+                font-family: 'FuturaPT';
                 font-size: 1.9rem;
                 line-height: 2.6rem;
             }
@@ -1773,6 +1774,7 @@
 }
 
 .repair {
+    margin-top: 3.8rem;
     margin-bottom: 26.5rem;
     padding-left: 14rem;
     display: flex;
@@ -1953,16 +1955,71 @@
         line-height: 2.6rem;
     }
 
-    &__list {
-        columns: 2;
-        counter-reset: cntr;
-        list-style: none;
+    &__list-container {
+        display: flex;
+    }
 
-        &-item {}
+    &__list {
+        width: 44rem;
+
+        &:first-child {
+            margin-right: 2.3rem;
+        }
+
+        &-item {
+            font-family: 'FuturaPT';
+            font-size: 1.9rem;
+            line-height: 2.6rem;
+            list-style: inside;
+        }
     }
 }
 
 .repair-stages {
     padding-top: 20rem;
     padding-bottom: 29.5rem;
+
+    .container {
+        width: 164rem;
+    }
+
+    &__heading {
+        margin-bottom: 7.5rem;
+        font-size: 7rem;
+        line-height: 8.3rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+
+        &-item {
+            width: 36.8rem;
+            display: flex;
+            flex-direction: column;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        &-number {
+            font-size: 7rem;
+            line-height: 12.3rem;
+            text-transform: uppercase;
+        }
+
+        &-title {
+            margin-bottom: 3.2rem;
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+        }
+
+        &-description {
+            font-family: 'FuturaPT';
+            font-size: 1,9rem;
+            line-height: 2.6rem;
+        }
+    }
 }
