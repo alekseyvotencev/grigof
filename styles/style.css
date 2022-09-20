@@ -1881,4 +1881,249 @@ input[type=number] {
   font-family: "FuturaPT";
   font-size: 1, 9rem;
   line-height: 2.6rem;
+}
+
+.prices-hero {
+  margin-top: 11.7rem;
+}
+.prices-hero .container {
+  position: relative;
+  width: 164rem;
+  display: flex;
+  flex-direction: column;
+}
+.prices-hero__heading {
+  margin-bottom: 3.5rem;
+  width: 50.4rem;
+  font-size: 7rem;
+  line-height: 8.3rem;
+  text-transform: uppercase;
+}
+.prices-hero__description {
+  margin-bottom: 2.9rem;
+  width: 50.4rem;
+  font-family: "FuturaPT";
+  font-size: 1.9rem;
+  line-height: 2.6rem;
+}
+.prices-hero__btn {
+  margin-bottom: 10.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26.5rem;
+  height: 13.8rem;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  background: url(../images/svg/requestBtn.svg) center/contain no-repeat;
+}
+.prices-hero__btn span:first-child {
+  margin-bottom: 0.5rem;
+  transform: translate(1.5rem, -0.5rem);
+}
+.prices-hero__btn span:last-child {
+  transform: translate(-4rem, 1rem);
+}
+.prices-hero__subheading {
+  margin-bottom: 2.1rem;
+  width: 29.3rem;
+  font-size: 4rem;
+  line-height: 5.6rem;
+  text-transform: uppercase;
+}
+.prices-hero__notice {
+  font-family: "FuturaPT";
+  font-size: 1.9rem;
+  line-height: 2.6rem;
+}
+.prices-hero__img1 {
+  position: absolute;
+  right: 9.3rem;
+  bottom: -2.7rem;
+  width: 83.8rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.prices-hero__img2 {
+  position: absolute;
+  left: 40.7rem;
+  bottom: -5.6rem;
+  width: 25.3rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.prices-hero__img3 {
+  position: absolute;
+  right: -7.5rem;
+  bottom: -9rem;
+  width: 27.2rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.pricelist {
+  margin-top: 3.5rem;
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+}
+.pricelist .container {
+  width: 164rem;
+}
+.pricelist__heading {
+  margin-bottom: 4.8rem;
+  font-size: 7rem;
+  line-height: 9rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.pricelist__tab {
+  margin-bottom: 8.5rem;
+  padding-top: 4.7rem;
+  padding-bottom: 4.7rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.pricelist__tab-list {
+  margin: 0 auto;
+  width: 153.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pricelist__tab-btn {
+  width: 14.8rem;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  text-align: center;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+.pricelist__tab-btn--active {
+  color: #FFF;
+}
+.pricelist .pricelist__content {
+  display: none;
+}
+.pricelist .pricelist__content--active {
+  display: block;
+}
+.pricelist .pricelist__list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 4.8rem;
+  padding-bottom: 4.8rem;
+  border-top: 1px solid #FFF;
+}
+.pricelist .pricelist__list-item:last-child {
+  border-bottom: 1px solid #FFF;
+}
+.pricelist .pricelist__list-number {
+  font-size: 4rem;
+  line-height: 1;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+.pricelist .pricelist__list-title {
+  font-size: 4rem;
+  line-height: 5.6rem;
+  text-transform: uppercase;
+}
+.pricelist .pricelist__list-price {
+  font-size: 4rem;
+  line-height: 1;
+}
+.pricelist .pricelist__list-price span:first-child {
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.pricelist .pricelist__list-price span:last-child {
+  font-size: 2rem;
+  line-height: 3.5rem;
+  vertical-align: top;
+}
+
+.dependence .container {
+  width: 164rem;
+}
+.dependence__heading {
+  width: 73rem;
+  font-size: 7rem;
+  line-height: 9rem;
+  text-transform: uppercase;
+}
+.dependence__top {
+  margin-bottom: 6.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dependence__top-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25.3rem;
+  height: 10rem;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  background: url(../images/svg/requestBtn.svg) center/contain no-repeat;
+}
+.dependence__top-btn span:first-child {
+  margin-bottom: 0.5rem;
+  transform: translate(3rem, -1rem);
+}
+.dependence__top-btn span:last-child {
+  transform: translate(-2.5rem, 1rem);
+}
+.dependence__bottom {
+  display: flex;
+}
+.dependence__bottom-heading {
+  margin-right: 3.8rem;
+  display: inline-block;
+  font-size: 7rem;
+  line-height: 9rem;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  transform: scale(-1);
+  text-transform: uppercase;
+}
+.dependence__bottom-img {
+  margin-right: 5.5rem;
+  width: 67.1rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.dependence__bottom-list {
+  align-self: center;
+}
+.dependence__bottom-list-item:not(:last-child) {
+  margin-bottom: 7rem;
+}
+.dependence__bottom-list-title {
+  margin-bottom: 2rem;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.dependence__bottom-list-description {
+  font-family: "FuturaPT";
+  font-size: 1.9rem;
+  line-height: 2.6rem;
+  color: rgba(255, 255, 255, 0.5);
 }/*# sourceMappingURL=style.css.map */

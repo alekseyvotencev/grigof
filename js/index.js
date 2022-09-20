@@ -134,3 +134,23 @@ document.querySelectorAll('.stages__tabs-btn').forEach(function (tabsBtn) {
         })
     });
 });
+
+document.querySelectorAll('.pricelist__tab-btn').forEach(function (tabsBtn) {
+    tabsBtn.addEventListener('click', function (e) {
+        const path = e.currentTarget.dataset.path;
+
+        document.querySelectorAll('.pricelist__tab-btn').forEach(function (btn) {
+            btn.classList.remove('pricelist__tab-btn--active')
+        });
+
+        e.currentTarget.classList.add('pricelist__tab-btn--active');
+
+        document.querySelectorAll('.pricelist__content').forEach(function (tab) {
+            tab.classList.remove('pricelist__content--active')
+        });
+
+        document.querySelectorAll(`[data-target="${path}"]`).forEach(function (tab) {
+            tab.classList.add('pricelist__content--active');
+        })
+    });
+});
