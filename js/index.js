@@ -95,6 +95,22 @@ const swiperStones = new Swiper('.swiper__stones', {
     },
 });
 
+const swiperStock = new Swiper('.swiper__stock', {
+    direction: 'vertocal',
+    slidesPerView: 'auto',
+    pagination: {
+        el: '.swiper__stock-pagination',
+        clickable: true,
+    }
+});
+
+const swiperCarousel = new Swiper('.swiper__carousel', {
+    direction: 'vertocal',
+    slidesPerView: 'auto',
+    spaceBetween: 50,
+    loop: true,
+});
+
 document.querySelectorAll('.services__tabs-btn').forEach(function (tabsBtn) {
     tabsBtn.addEventListener('click', function (e) {
         const path = e.currentTarget.dataset.path;

@@ -157,6 +157,7 @@ input[type=number] {
 }
 .header {
   padding-top: 1.4rem;
+  padding-bottom: 5.2rem;
 }
 .header .container {
   width: 164rem;
@@ -2126,4 +2127,251 @@ input[type=number] {
   font-size: 1.9rem;
   line-height: 2.6rem;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.stock .container {
+  width: 164rem;
+  display: flex;
+}
+.stock .swiper__stock {
+  position: relative;
+  margin: 5.5rem 9.6rem 0 0;
+  width: 75.5rem;
+  height: 77rem;
+}
+.stock .swiper__stock-pagination {
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.stock .swiper__stock .swiper-pagination-bullet {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+  opacity: 0.3;
+}
+.stock .swiper__stock .swiper-pagination-bullet:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+.stock .swiper__stock .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+.stock .swiper__stock .swiper-wrapper {
+  flex-direction: column;
+}
+.stock .swiper__stock-slide {
+  padding-bottom: 3.1rem;
+  height: 77rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.stock .swiper__stock-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.stock .swiper__stock-price {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.stock .swiper__stock-img {
+  width: 54rem;
+  height: 50.6rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.stock .swiper__stock-name {
+  font-size: 4rem;
+  line-height: 4.8rem;
+  text-transform: uppercase;
+}
+.stock .swiper__stock-vertical {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 14.7rem;
+  border-right: 1px solid #FFFFFF;
+  transform: translateY(3rem);
+  z-index: 99;
+}
+.stock .swiper__stock-horizontal {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 8.4rem;
+  border-top: 1px solid #FFFFFF;
+  transform: translateX(3rem);
+  z-index: 99;
+  overflow: visible;
+}
+.stock .swiper__carousel {
+  margin: 0;
+  width: 37rem;
+  height: 84.5rem;
+}
+.stock .swiper__carousel .swiper-wrapper {
+  margin-top: 30rem;
+  flex-direction: column;
+}
+.stock .swiper__carousel:last-child {
+  margin-left: auto;
+}
+.stock .swiper__carousel:last-child .swiper-wrapper {
+  margin-top: 11.7rem;
+}
+.stock .swiper__carousel-slide {
+  padding: 2.4rem 3rem 3.5rem 3rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 43.5rem;
+  background-color: #222;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+}
+.stock .swiper__carousel-link {
+  position: absolute;
+  top: 4.35rem;
+  right: 4rem;
+  cursor: pointer;
+}
+.stock .swiper__carousel-link img {
+  width: 3.8rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.stock .swiper__carousel-img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.stock .swiper__carousel-name, .stock .swiper__carousel-price {
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.stock .swiper__carousel-price {
+  margin-top: auto;
+}
+
+.catalog {
+  padding-top: 30rem;
+}
+.catalog__heading {
+  margin-bottom: 5.5rem;
+  font-size: 7rem;
+  line-height: 9rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.catalog__filters {
+  margin-bottom: 7.5rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.catalog__filters-list {
+  margin: 0 auto;
+  display: flex;
+}
+.catalog__filters-item {
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  text-align: center;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+}
+.catalog__filters-item:not(:last-child) {
+  margin-right: 8rem;
+}
+.catalog .container {
+  width: 164rem;
+}
+.catalog__products-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.catalog__products-item {
+  flex: 0 1 37rem;
+  margin-bottom: 9rem;
+}
+.catalog__products-name {
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  width: 27.5rem;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.catalog__products-card {
+  padding: 2.7rem 3.3rem;
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  background-color: #0F0F0F;
+}
+.catalog__products-btn {
+  position: absolute;
+  top: -2.5rem;
+  right: 2.2rem;
+  width: 5.6rem;
+  height: 5.6rem;
+  cursor: pointer;
+}
+.catalog__products-btn img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.catalog__products-img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  max-width: 100%;
+  align-self: center;
+}
+.catalog__products-bottom {
+  display: flex;
+  width: 100%;
+  height: 43.6rem;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.catalog__products-price {
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.catalog__products-link img {
+  width: 4.213rem;
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=style.css.map */
