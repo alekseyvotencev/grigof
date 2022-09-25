@@ -2458,4 +2458,384 @@ input[type=number] {
   width: 4.213rem;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.gemstones-hero {
+  padding-top: 9.5rem;
+  background: url(../images/svg/gemstones-heroBG.svg) top 6rem left 11rem/160rem no-repeat;
+}
+.gemstones-hero .container {
+  width: 164rem;
+  position: relative;
+}
+.gemstones-hero-text {
+  font-size: 7rem;
+  line-height: 8.5rem;
+  text-transform: uppercase;
+}
+.gemstones-hero__subheading {
+  color: rgba(255, 255, 255, 0.5);
+}
+.gemstones-hero__subheading:first-child {
+  margin-left: 11rem;
+}
+.gemstones-hero__subheading:last-child {
+  margin-left: 36rem;
+}
+.gemstones-hero__btn {
+  margin-bottom: 24.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26.5rem;
+  height: 14rem;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  background: url(../images/svg/requestBtn.svg) center/contain no-repeat;
+}
+.gemstones-hero__btn span:first-child {
+  transform: translate(1.5rem, -1rem);
+}
+.gemstones-hero__btn span:last-child {
+  transform: translate(-1.5rem, 1rem);
+}
+.gemstones-hero__description-container {
+  position: relative;
+}
+.gemstones-hero__description-line {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  width: 4.6rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+.gemstones-hero__description {
+  margin-left: 8rem;
+  width: 60rem;
+  font-family: "FuturaPT";
+  font-size: 1.9rem;
+  line-height: 2.2rem;
+}
+.gemstones-hero__big-img {
+  position: absolute;
+  top: 3rem;
+  right: 23rem;
+  width: 71.3rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transform: scale(-1, 1);
+}
+.gemstones-hero__small-img-container {
+  position: absolute;
+  bottom: -3.5rem;
+  right: 0;
+  height: 26rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18.5rem;
+  background: #0F0F0F;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 146px;
+}
+.gemstones-hero__small-img {
+  width: 12.3rem;
+  height: 12.3rem;
+}
+.gemstones-hero__arrow-img {
+  width: 16.5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  top: 50%;
+  right: 11.6rem;
+  transform: translateY(-50%);
+}
+.gemstones-hero__sign-img {
+  position: absolute;
+  top: 0;
+  right: 13rem;
+  width: 15.7rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.gemstones-catalog {
+  padding-top: 21.7rem;
+}
+.gemstones-catalog__heading {
+  margin-bottom: 5.5rem;
+  font-size: 7rem;
+  line-height: 9rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.gemstones-catalog__filters {
+  margin-bottom: 7.5rem;
+  padding-top: 5.8rem;
+  padding-bottom: 5.8rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.gemstones-catalog__filters .choices[data-type*=select-one] .choices__inner {
+  padding: 0;
+}
+.gemstones-catalog__filters .choices__list--single {
+  padding: 0;
+}
+.gemstones-catalog__filters .choices__list--single .choices__item {
+  padding-right: 3rem;
+}
+.gemstones-catalog__filters .choices[data-type*=select-one]::before {
+  margin-right: 0.2rem;
+  content: "";
+  position: absolute;
+  top: 0.45rem;
+  right: 0;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  transform: rotate(225deg);
+  z-index: 1;
+}
+.gemstones-catalog__filters .choices[data-type*=select-one]::after {
+  display: none;
+}
+.gemstones-catalog__filters .choices__placeholder {
+  opacity: 1;
+}
+.gemstones-catalog__filters .choices__list--dropdown .choices__item--selectable.is-highlighted::after,
+.gemstones-catalog__filters .choices__list[aria-expanded] .choices__item--selectable.is-highlighted::after {
+  display: none;
+}
+.gemstones-catalog__filters .choices__list--dropdown .choices__item--selectable.is-highlighted, .gemstones-catalog__filters .choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
+  background-color: inherit;
+  color: #000;
+}
+.gemstones-catalog__filters .choices__list--dropdown .choices__item,
+.gemstones-catalog__filters .choices__list[aria-expanded] .choices__item {
+  padding: 2.5rem 3rem;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(8, 8, 8, 0.4);
+}
+.gemstones-catalog__filters .choices__inner {
+  padding: 0;
+  min-height: auto;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  text-align: center;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+}
+.gemstones-catalog__filters .choices[data-type*=select-one] .choices__input {
+  display: none;
+}
+.gemstones-catalog__filters .choices__list--dropdown .choices__list,
+.gemstones-catalog__filters .choices__list[aria-expanded] .choices__list {
+  max-height: none;
+}
+.gemstones-catalog__filters .choices__list--dropdown,
+.gemstones-catalog__filters .choices__list[aria-expanded] {
+  min-width: 43.2rem;
+  border-radius: 0;
+  background-color: #D9D9D9;
+}
+.gemstones-catalog__filters .container {
+  width: 164rem;
+  display: flex;
+}
+.gemstones-catalog__filters-list {
+  margin-right: 16rem;
+  display: flex;
+  align-items: center;
+}
+.gemstones-catalog__filters-item:not(:last-child) {
+  margin-right: 16rem;
+}
+.gemstones-catalog__filters-slider {
+  position: relative;
+  display: inline-block;
+  display: inline-flex;
+}
+.gemstones-catalog__filters .catalog__values-container {
+  width: 17rem;
+  position: relative;
+}
+.gemstones-catalog__filters .catalog__values-container .catalog__values-track {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.gemstones-catalog__filters input[type=range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  outline: none;
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  pointer-events: none;
+}
+.gemstones-catalog__filters input[type=range]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+}
+.gemstones-catalog__filters input[type=range]::-moz-range-track {
+  -moz-appearance: none;
+}
+.gemstones-catalog__filters input[type=range]::-ms-track {
+  appearance: none;
+}
+.gemstones-catalog__filters input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 1.3rem;
+  width: 1.3rem;
+  background-color: #FFF;
+  cursor: pointer;
+  pointer-events: auto;
+  border-radius: 50%;
+}
+.gemstones-catalog__filters input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 1.3rem;
+  width: 1.3rem;
+  background-color: #FFF;
+  cursor: pointer;
+  pointer-events: auto;
+  border-radius: 50%;
+}
+.gemstones-catalog__filters input[type=range]::-ms-thumb {
+  -webkit-appearance: none;
+  height: 1.3rem;
+  width: 1.3rem;
+  background-color: #FFF;
+  cursor: pointer;
+  pointer-events: auto;
+  border-radius: 50%;
+}
+.gemstones-catalog__filters-values {
+  margin-right: 4.8rem;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.gemstones-catalog__products-list {
+  margin: 0 auto;
+  width: 164rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.gemstones-catalog__products-item {
+  margin-bottom: 9rem;
+  width: 37.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.gemstones-catalog__products-card {
+  margin-bottom: 4rem;
+  padding: 2rem;
+  position: relative;
+  width: 100%;
+  height: 43.6rem;
+  display: flex;
+  background-color: #0F0F0F;
+  align-items: flex-end;
+}
+.gemstones-catalog__products-img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.gemstones-catalog__products-img[src="images/gemstones-catalog1.png"] {
+  top: 0;
+  width: 40rem;
+  height: 40rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.gemstones-catalog__products-img[src="images/gemstones-catalog2.png"] {
+  top: 7rem;
+  width: 25.3rem;
+  height: 25.3rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.gemstones-catalog__products-img[src="images/gemstones-catalog3.png"] {
+  top: 8.6rem;
+  width: 21.3rem;
+  height: 22.3rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.gemstones-catalog__products-img[src="images/gemstones-catalog4.png"] {
+  top: 9.3rem;
+  width: 18.9rem;
+  height: 20.8rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.gemstones-catalog__products-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gemstones-catalog__products-btn {
+  width: 5.6rem;
+  height: 5.6rem;
+  cursor: pointer;
+}
+.gemstones-catalog__products-btn img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.gemstones-catalog__products-link {
+  width: 4.213rem;
+  cursor: pointer;
+}
+.gemstones-catalog__products-link img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.gemstones-catalog__products-price {
+  font-size: 4rem;
+  line-height: 1;
+  text-align: center;
+}
+.gemstones-catalog__products-price span {
+  font-family: "FuturaPT";
+  font-size: 2rem;
+  line-height: 1.75;
+  vertical-align: text-top;
+}
+.gemstones-catalog__products-name {
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  text-align: center;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */

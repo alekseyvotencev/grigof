@@ -171,8 +171,6 @@ document.querySelectorAll('.pricelist__tab-btn').forEach(function (tabsBtn) {
     });
 });
 
-
-
 // price slider
 
 window.onload = function () {
@@ -205,3 +203,8 @@ function fillColor() {
     percent2 = (sliderTwo.value / sliderMaxValue) * 100;
     sliderTrack.style.background = `linear-gradient(to right, #838383 ${percent1}% , #FFFFFF ${percent1}% , #FFFFFF ${percent2}%, #838383 ${percent2}%)`;
 }
+
+const element = document.querySelectorAll('.gemstones-catalog__filters-select');
+element.forEach((item) => {
+    new Choices(item)
+})
