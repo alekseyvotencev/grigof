@@ -6,3 +6,6 @@
 
 # https://alekseyvotencev.github.io/grigof/pricelist
 
+# https://alekseyvotencev.github.io/grigof/stock
+
+# https://alekseyvotencev.github.io/grigof/gemstones
