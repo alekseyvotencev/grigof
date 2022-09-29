@@ -15,17 +15,13 @@ const swiperHero = new Swiper('.swiper__hero', {
 });
 
 
-const swiperExclusive = new Swiper('.swiper__exclusive', {
+const swiperCategories = new Swiper('.swiper__categories', {
     direction: 'horizontal',
-    loop: true,
-    slidesPerView: 3.25,
-    spaceBetween: 50,
+    loop: false,
+    slidesPerView: 3,
+    spaceBetween: 150,
     centeredSlides: true,
-    navigation: {
-        nextEl: '.swiper__exclusive-next',
-        prevEl: '.swiper__exclusive-prev',
-    },
-
+    initialSlide: 1,
 });
 
 const swiperPrice = new Swiper('.swiper__price-container', {
@@ -35,11 +31,10 @@ const swiperPrice = new Swiper('.swiper__price-container', {
     spaceBetween: 50,
 });
 
-
-
 const swiperExamples = new Swiper('.swiper__examples', {
     direction: 'horizontal',
     loop: true,
+    effect: 'fade',
     slidesPerView: 1,
     autoplay: {
         delay: 3000,
@@ -106,9 +101,16 @@ const swiperStock = new Swiper('.swiper__stock', {
 });
 
 const swiperCarousel = new Swiper('.swiper__carousel', {
-    direction: 'vertocal',
-    slidesPerView: 'auto',
+    direction: 'horizontal',
+    slidesPerView: '3',
     spaceBetween: 50,
+    loop: true,
+});
+
+const swiperB2B = new Swiper('.swiper__b2b', {
+    direction: 'horizontal',
+    slidesPerView: '3',
+    spaceBetween: 20,
     loop: true,
 });
 

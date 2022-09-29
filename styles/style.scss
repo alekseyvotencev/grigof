@@ -360,198 +360,115 @@
     }
 }
 
-.exclusive {
-    padding-top: 11rem;
-    background: url(../images/exclusiveBG.png) top/contain no-repeat;
-    position: relative;
-
-    &__woman-img {
-        width: auto;
-        position: absolute;
-        left: 50rem;
-        bottom: 28rem;
-        z-index: 2;
-    }
-
-    &__man-img {
-        width: auto;
-        position: absolute;
-        right: 38rem;
-        bottom: 28rem;
-        z-index: 2;
-    }
-
-    &__container {
-        margin: 0 auto;
-        margin-bottom: 8rem;
-        width: 150rem;
-        display: flex;
-        align-items: center;
-    }
-
-    &__description {
-        margin-right: 6rem;
-        font-family: 'FuturaPT';
-        width: 28.5rem;
-        font-size: 1.9rem;
-        line-height: 2.2rem;
-        color: rgba(8, 8, 8, 0.5);
-    }
+.categories {
+    padding-bottom: 16.2rem;
 
     &__heading {
-        width: 68.8rem;
+        margin-bottom: 9rem;
         font-size: 7rem;
-        line-height: 9rem;
+        line-height: 8.5rem;
         text-transform: uppercase;
-        color: #080808;
+        text-align: center;
     }
 
-    &__btn {
-        margin-left: auto;
-    }
-
-    .swiper__exclusive {
-        margin-bottom: 23.7rem;
-        width: 100%;
-
-        .swiper-wrapper {
-            margin-left: -15%;
-        }
-
-        &-slide {
-            padding-left: 4.2rem;
-            padding-right: 4.1rem;
-            padding-bottom: 3.5rem;
-            width: 57.5rem;
-            height: 36rem;
-            display: flex;
-            position: relative;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: flex-end;
-            background-color: #1B1B1B;
-            border: 1px solid #FFFFFF;
-
-            .swiper-jewelry {
-                height: 26.5rem;
-                object-fit: contain;
-                align-self: center;
-                max-width: 100%;
-                position: absolute;
-                top: 2rem;
-            }
-
-            &[aria-label='1 / 4'] {
-                .swiper-jewelry {
-                    top: 4rem;
-                }
-            }
-
-            &[aria-label='2 / 4'] {
-                .swiper-jewelry {
-                    top: 0;
-                }
-            }
-
-        }
+    .swiper__categories {
+        margin-left: 19rem;
 
         .swiper-slide-active {
 
+            .swiper__categories-card::before {
+                content: '';
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 90%;
+                height: 80%;
+                background-color: rgba(255, 255, 255, 0.35);
+                filter: blur(80px);
+                z-index: -1;
+            }
 
-            .swiper__exclusive-link {
-                opacity: 1;
+            margin-top: 12rem;
+        }
+
+        &-slide {
+            position: relative;
+            width: 43rem !important;
+            transition: margin .2s ease-in-out;
+
+            &:last-child {
+                margin-right: 14rem;
             }
         }
 
-        &-link {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 22rem;
-            height: 8.5rem;
+        &-notice {
             position: absolute;
-            top: 9.2rem;
-            right: 4.1rem;
+        }
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-card {
+            margin-bottom: 1.8rem;
+            position: relative;
+            width: 100%;
+            height: 56.6rem;
+            background-color: #090909;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        &-img {
+            object-fit: contain;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            &[src="images/swiperCategories1.png"] {
+                width: 26.7rem;
+            }
+
+            &[src="images/swiperCategories2.png"] {
+                width: 27.5rem;
+            }
+
+            &[src="images/swiperCategories3.png"] {
+                width: 24.5rem;
+            }
+        }
+
+        &-name {
+            margin-bottom: .8rem;
+            font-size: 4rem;
+            line-height: 5.6rem;
+            text-transform: uppercase;
+        }
+
+        &-link {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
             font-family: 'FuturaPT';
             font-size: 1.5rem;
             line-height: 2.2rem;
             letter-spacing: 0.16em;
             text-transform: uppercase;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(30px);
-            z-index: 2;
-            background-image: url(../images/svg/swiperExclusiveBtn.svg);
-            background-position: center;
-            background-repeat: no-repeat;
-            opacity: 0;
-            transition: opacity .3s ease-in;
-        }
 
-        &-bottom {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-
-            &-link {
-                img {
-                    width: 4.213rem;
-                    object-fit: contain;
-                }
+            span:last-of-type {
+                margin-left: 5rem;
             }
-        }
 
-        &-heading {
-            font-family: 'FuturaPT';
-            font-size: 1.5rem;
-            line-height: 2.2rem;
-            letter-spacing: 0.16rem;
-            text-transform: uppercase;
-        }
-
-        &-pagination {
-            margin-bottom: 1.9rem;
-            font-family: 'FuturaPT';
-            font-size: 1.9rem;
-            line-height: 2.6rem;
-            color: rgba(255, 255, 255, 0.3);
-        }
-
-        &-buttons {
-            padding: 5.4rem 14rem 13.1rem;
-            display: flex;
-            justify-content: space-between;
-            background: linear-gradient(180deg, #000000 0%, rgba(8, 8, 8, 0) 93.89%);
-        }
-
-        &-scroll {
-            font-family: 'FuturaPT';
-            font-size: 1.5rem;
-            line-height: 2.2rem;
-            letter-spacing: 0.2rem;
-            text-transform: uppercase;
-        }
-
-        &-prev,
-        &-next {
             img {
                 width: 4.213rem;
                 object-fit: contain;
             }
-
-            &:hover {
-                cursor: pointer;
-            }
-        }
-
-        &-prev {
-            transform: rotateY(180deg);
         }
     }
-
 }
-
-
 
 .services {
     padding-top: 3.8rem;
@@ -3204,4 +3121,272 @@
 
 
     }
+}
+
+.b2b-hero {
+    padding-top: 4.5rem;
+    padding-bottom: 10.3rem;
+
+    .container {
+        display: flex;
+        width: 164rem;
+    }
+
+    &__left {
+        width: 59rem;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__exclusive {
+        margin-bottom: 23.8rem;
+        font-family: 'FuturaPT';
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+    }
+
+    &__heading {
+        font-size: 7rem;
+        line-height: 8.3rem;
+        text-transform: uppercase;
+    }
+
+    &__subheading {
+        font-size: 4rem;
+        line-height: 5.6rem;
+        text-transform: uppercase;
+    }
+
+    .swiper__b2b {
+        width: 103rem;
+
+        .swiper-wrapper {
+            flex-direction: row-reverse;
+            align-items: center;
+        }
+
+        &-slide {
+            width: 20rem !important;
+            height: 23.7rem !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #222222;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(50px);
+
+            img {
+                width: 85%;
+                object-fit: contain;
+            }
+        }
+
+        .swiper-slide {
+            &-active {
+                width: 50.5rem !important;
+                height: 50.5rem !important;
+                background-color: transparent;
+                border: none;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.b2b-catalog {
+    padding-top: 18.5rem;
+    padding-bottom: 20rem;
+    background-color: #FFF;
+
+    .container {
+        width: 164rem;
+    }
+
+    &__heading {
+        margin-bottom: 4.5rem;
+        font-size: 7rem;
+        line-height: 9rem;
+        text-transform: uppercase;
+        text-align: center;
+        color: #000;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    &__item {
+        margin-bottom: 8rem;
+        width: 79rem;
+
+        &:nth-last-child(-n+2) {
+            margin-bottom: 0;
+        }
+
+        &-img {
+            margin-bottom: 5rem;
+            width: 100%;
+            height: 53.5rem;
+            object-fit: contain;
+        }
+
+        &-name {
+            margin-bottom: 2rem;
+            font-size: 4rem;
+            line-height: 5.6rem;
+            text-align: center;
+            color: #000;
+            text-transform: uppercase;
+        }
+
+        &-details {
+            font-family: 'FuturaPT';
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+            text-align: center;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: #080808;
+        }
+
+    }
+}
+
+.b2bspecial-card {
+    padding-top: 11rem;
+
+    .container {
+        width: 164rem;
+        display: flex;
+    }
+
+    &__tabs {
+        margin-right: 4.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &-item {
+            width: 15.6rem;
+            height: 15.6rem;
+            object-fit: contain;
+        }
+    }
+
+    &__tabs-content {
+        width: 71rem;
+        height: 77rem;
+        object-fit: contain;
+    }
+
+    &__right {
+        margin-left: auto;
+        display: flex;
+        width: 56.6rem;
+        flex-direction: column;
+    }
+
+    &__name {
+        margin-bottom: 1rem;
+        font-size: 4rem;
+        line-height: 5.6rem;
+        text-transform: uppercase;
+    }
+
+    &__details {
+        margin-bottom: 16rem;
+        font-family: 'FuturaPT';
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    &__description-heading {
+        margin-bottom: 5rem;
+        font-family: 'FuturaPT';
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    &__description {
+        margin-bottom: 16rem;
+        font-family: 'FuturaPT';
+        font-size: 1.9rem;
+        line-height: 2.6rem;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-between;
+
+        &-share {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        &-list {
+            display: flex;
+            width: 20rem;
+            align-items: center;
+            justify-content: space-between;
+
+            &-item {
+                a:hover {
+                    svg {
+                        path {
+                            fill-opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25.3rem;
+        height: 10rem;
+        font-family: "FuturaPT";
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        background: url(../images/svg/requestBtn.svg) center/contain no-repeat;
+
+        span:first-child {
+            transform: translate(1.5rem, -1rem);
+        }
+
+        span:last-child {
+            transform: translate(-1.5rem, 1rem);
+        }
+    }
+
+    &__social-text {
+        font-family: 'FuturaPT';
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+
 }
