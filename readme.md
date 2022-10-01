@@ -8,7 +8,7 @@
 
 # https://alekseyvotencev.github.io/grigof/stock
 
-# https://alekseyvotencev.github.io/grigof/gemstones
+# https://alekseyvotencev.github.io/grigof/gemstones done
 
 # https://alekseyvotencev.github.io/grigof/b2bgeneral
 
