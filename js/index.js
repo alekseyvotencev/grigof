@@ -1,4 +1,4 @@
-
+// swipers
 const swiperHero = new Swiper('.swiper__hero', {
     direction: 'horizontal',
     loop: true,
@@ -13,7 +13,6 @@ const swiperHero = new Swiper('.swiper__hero', {
         prevEl: '.swiper__hero-prev',
     },
 });
-
 
 const swiperCategories = new Swiper('.swiper__categories', {
     direction: 'horizontal',
@@ -114,6 +113,8 @@ const swiperB2B = new Swiper('.swiper__b2b', {
     loop: true,
 });
 
+// tabs
+
 document.querySelectorAll('.services__tabs-btn').forEach(function (tabsBtn) {
     tabsBtn.addEventListener('click', function (e) {
         const path = e.currentTarget.dataset.path;
@@ -174,40 +175,71 @@ document.querySelectorAll('.pricelist__tab-btn').forEach(function (tabsBtn) {
     });
 });
 
-// price slider
-
-window.onload = function () {
-    slideOne();
-    slideTwo();
-}
-let sliderOne = document.getElementById("slider-1");
-let sliderTwo = document.getElementById("slider-2");
-let displayValOne = document.getElementById("range1");
-let displayValTwo = document.getElementById("range2");
-let minGap = 0;
-let sliderTrack = document.querySelector(".catalog__values-track");
-let sliderMaxValue = document.getElementById("slider-1").max;
-function slideOne() {
-    if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
-        sliderOne.value = parseInt(sliderTwo.value) - minGap;
-    }
-    displayValOne.textContent = sliderOne.value;
-    fillColor();
-}
-function slideTwo() {
-    if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
-        sliderTwo.value = parseInt(sliderOne.value) + minGap;
-    }
-    displayValTwo.textContent = sliderTwo.value;
-    fillColor();
-}
-function fillColor() {
-    percent1 = (sliderOne.value / sliderMaxValue) * 100;
-    percent2 = (sliderTwo.value / sliderMaxValue) * 100;
-    sliderTrack.style.background = `linear-gradient(to right, #838383 ${percent1}% , #FFFFFF ${percent1}% , #FFFFFF ${percent2}%, #838383 ${percent2}%)`;
-}
+// select
 
 const element = document.querySelectorAll('.gemstones-catalog__filters-select');
 element.forEach((item) => {
-    new Choices(item)
+    new Choices(item, {
+        shouldSort: false,
+    })
 })
+
+// inputmask
+
+const phoneField = document.querySelectorAll("[type=\"tel\"");
+
+const template = new Inputmask("+7 (999) 999-99-99");
+phoneField.forEach(field => {
+    template.mask(field);
+})
+
+// validation
+
+const validation = new JustValidate('.feedback__form');
+validation
+    .addField('#name', [
+        {
+            rule: 'required',
+            errorMessage: 'Введите имя'
+        },
+        {
+            rule: 'customRegexp',
+            value: '^((?=.*[А-Я])||(?=.*[а-я]).{2,30})$',
+            errorMessage: 'Недопустимый формат'
+        },
+    ])
+    .addField('#message', [
+        {
+            rule: 'required',
+            errorMessage: 'Введите сообщение'
+        }
+    ])
+    .addField('#phone', [
+        {
+            rule: 'required',
+            errorMessage: 'Введите номер телефона'
+        }
+    ])
+    .addField('#phone', [
+        {
+            validator: (value) => {
+                let phone;
+                phoneField.forEach(field => {
+                    phone = field.inputmask.unmaskedvalue();
+                })
+                console.log(phone)
+                return Number(phone) && phone.length === 10
+            },
+            errorMessage: 'Введите номер телефона'
+        }
+    ])
+    .addField('#email', [
+        {
+            rule: 'required',
+            errorMessage: 'Введите e-mail'
+        }
+    ])
+    .onSuccess((event) => {
+        console.log("Отправка запроса");
+        event.preventDefault();
+    });

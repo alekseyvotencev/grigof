@@ -1,6 +1,6 @@
 # https://alekseyvotencev.github.io/grigof/
 
-# https://alekseyvotencev.github.io/grigof/stones
+# https://alekseyvotencev.github.io/grigof/stone
 
 # https://alekseyvotencev.github.io/grigof/repair
 

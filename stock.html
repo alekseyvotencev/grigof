@@ -19,19 +19,21 @@
                 <nav class="header__left-nav">
                     <ul class="header__left-nav-list">
                         <li class="header__left-nav-item">
-                            <a href="#" class="header__left-nav-link">Портфолио</a>
+                            <a href="/portfolio.html" class="header__left-nav-link">Портфолио</a>
                         </li>
                         <li class="header__left-nav-item">
-                            <a href="#" class="header__left-nav-link">Цены</a>
+                            <a href="/pricelist.html"
+                                class="header__left-nav-link">Цены</a>
                         </li>
                         <li class="header__left-nav-item">
-                            <a href="#" class="header__left-nav-link">В наличии</a>
+                            <a href="/stock.html" class="header__left-nav-link header__left-nav-link--active">В
+                                наличии</a>
                         </li>
                         <li class="header__left-nav-item">
-                            <a href="#" class="header__left-nav-link">Драгоценные камни</a>
+                            <a href="/gemstones.html" class="header__left-nav-link">Драгоценные камни</a>
                         </li>
                         <li class="header__left-nav-item">
-                            <a href="#" class="header__left-nav-link">B2B</a>
+                            <a href="/b2bgeneral.html" class="header__left-nav-link">B2B</a>
                         </li>
                     </ul>
                 </nav>
@@ -40,26 +42,24 @@
             <div class="header__right">
                 <div class="header__right-top">
                     <a href="tel:+74996479997" class="header__right-phone">+7 499 647 99 97</a>
-                    <button class="header__right-search">
-                        <img src="images/svg/searchBtn.svg" alt="Кнопка поиска">
-                    </button>
                 </div>
                 <nav class="header__right-nav">
                     <ul class="header__right-nav-list">
                         <li class="header__right-nav-item">
-                            <a href="#" class="header__right-nav-link">Купить сертификат</a>
+                            <a href="/certificate.html" class="header__right-nav-link">Купить сертификат</a>
                         </li>
                         <li class="header__right-nav-item">
-                            <a href="#" class="header__right-nav-link">Ремонт</a>
+                            <a href="/repair.html" class="header__right-nav-link ">Ремонт</a>
                         </li>
                         <li class="header__right-nav-item">
-                            <a href="#" class="header__right-nav-link">Отзывы</a>
+                            <a href="/feedback.html" class="header__right-nav-link">Отзывы</a>
                         </li>
                         <li class="header__right-nav-item">
-                            <a href="#" class="header__right-nav-link">О бренде</a>
+                            <a href="/about.html" class="header__right-nav-link">О
+                                бренде</a>
                         </li>
                         <li class="header__right-nav-item">
-                            <a href="#" class="header__right-nav-link">Контакты</a>
+                            <a href="/contacts.html" class="header__right-nav-link">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -425,19 +425,26 @@
                 <div class="feedback__right">
 
                     <form action="#" class="feedback__form">
-                        <div class="feedback__input-container">
-                            <input type="text" class="feedback__input" placeholder="ваше имя">
-                            <input type="tel" class="feedback__input" placeholder="Телефон">
-                            <input type="email" class="feedback__input" placeholder="e-mail">
+                        <div class="feedback__input-general-container">
+                            <div class="feedback__input-container">
+                                <input type="text" class="feedback__input" placeholder="ваше имя" id="name">
+                            </div>
+                            <div class="feedback__input-container">
+                                <input type="tel" class="feedback__input" placeholder="Телефон" id="phone">
+                            </div>
+                            <div class="feedback__input-container">
+                                <input type="email" class="feedback__input" placeholder="e-mail" id="email">
+                            </div>
                         </div>
-                        <input type="text" class="feedback__input-big" placeholder="Сообщение">
+                        <div class="feedback__input-big-container">
+                            <input type="text" class="feedback__input-big" placeholder="Сообщение" id="message">
+                        </div>
                         <button class="feedback__form-btn">отправить</button>
                     </form>
                 </div>
             </div>
         </section>
     </main>
-
 
     <footer class="footer">
         <div class="footer__top">
@@ -446,38 +453,38 @@
                 <nav class="footer__nav">
                     <ul class="footer__nav-list">
                         <li class="footer__nav-item">
-                            <a href="#" class="footer__nav-link">Портфолио</a>
+                            <a href="/portfolio.html" class="footer__nav-link">Портфолио</a>
                         </li>
                         <li class="footer__nav-item">
-                            <a href="#" class="footer__nav-link">Цены</a>
+                            <a href="/pricelist.html" class="footer__nav-link">Цены</a>
                         </li>
                         <li class="footer__nav-item">
-                            <a href="#" class="footer__nav-link">В наличии</a>
+                            <a href="/stock.html" class="footer__nav-link">В наличии</a>
                         </li>
                         <li class="footer__nav-item">
-                            <a href="#" class="footer__nav-link">О бренде</a>
-                        </li>
-                    </ul>
-                    <ul class="footer__nav-list">
-                        <li class="footer__nav-item">
-                            <a href="#" class="footer__nav-link">Драгоценные камни</a>
-                        </li>
-                        <li class="footer__nav-item">
-                            <a href="#" class="footer__nav-link">Купить сертификат</a>
-                        </li>
-                        <li class="footer__nav-item">
-                            <a href="#" class="footer__nav-link">Отзывы</a>
+                            <a href="/about.html" class="footer__nav-link">О бренде</a>
                         </li>
                     </ul>
                     <ul class="footer__nav-list">
                         <li class="footer__nav-item">
-                            <a href="#" class="footer__nav-link">Ремонт</a>
+                            <a href="/gemstones.html" class="footer__nav-link">Драгоценные камни</a>
                         </li>
                         <li class="footer__nav-item">
-                            <a href="#" class="footer__nav-link">B2B</a>
+                            <a href="/certificate.html" class="footer__nav-link">Купить сертификат</a>
                         </li>
                         <li class="footer__nav-item">
-                            <a href="#" class="footer__nav-link">Контакты</a>
+                            <a href="/feedback.html" class="footer__nav-link">Отзывы</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a href="/repair.html" class="footer__nav-link">Ремонт</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/b2bgeneral.html" class="footer__nav-link">B2B</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/contacts.html" class="footer__nav-link">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -513,6 +520,9 @@
     </footer>
     <script defer src="js/choices.min.js"></script>
     <script defer src="js/swiper-bundle.min.js"></script>
+    <script defer src="js/inputmask.min.js"></script>
+    <script defer src="js/just-validate.production.min.js"></script>
+    <script defer src="js/priceSlider.js"></script>
     <script defer src="js/index.js"></script>
 </body>
 

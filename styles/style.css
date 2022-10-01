@@ -180,9 +180,18 @@ input[type=number] {
   margin-right: 4rem;
 }
 .header__left-nav-link {
+  position: relative;
   font-family: "FuturaPT";
   font-size: 1.9rem;
   line-height: 2.6rem;
+}
+.header__left-nav-link--active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -0.9rem;
+  background-color: #FFFFFF;
 }
 .header__logo {
   width: 19.4rem;
@@ -197,7 +206,6 @@ input[type=number] {
   align-items: center;
 }
 .header__right-phone {
-  margin-right: 7rem;
   font-family: "FuturaPT";
   font-size: 1.9rem;
   line-height: 2.6rem;
@@ -1222,14 +1230,26 @@ input[type=number] {
   text-transform: uppercase;
   background: url(../images/svg/feedbackBtn.svg) center/contain no-repeat;
 }
-.feedback__input-container {
+.feedback__input-general-container {
   margin-bottom: 5.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
+.feedback__input-container {
+  flex: 1 1 auto;
+  position: relative;
+}
+.feedback__input-container:not(:last-child) {
+  margin-right: 5rem;
+}
+.feedback__input-big-container {
+  margin-bottom: 4.6rem;
+  position: relative;
+}
 .feedback__input, .feedback__input-big {
+  width: 100%;
   padding-top: 3.1rem;
   padding-bottom: 1.8rem;
   position: relative;
@@ -1270,9 +1290,6 @@ input[type=number] {
   text-transform: uppercase;
   transition: transform 0.2s ease-in;
 }
-.feedback__input:not(:last-child), .feedback__input-big:not(:last-child) {
-  margin-right: 5rem;
-}
 .feedback__input:focus-visible, .feedback__input-big:focus-visible {
   outline: none;
 }
@@ -1285,15 +1302,13 @@ input[type=number] {
 .feedback__input:focus-visible::placeholder, .feedback__input-big:focus-visible::placeholder {
   transform: translateY(-3.1rem);
 }
-.feedback__input {
-  flex: 1 1 auto;
-}
-.feedback__input-big {
-  margin-bottom: 4.6rem;
-  width: 100%;
-}
-.feedback__input-big:not(:last-child) {
-  margin-right: 0;
+.feedback .just-validate-error-label {
+  position: absolute;
+  top: -2rem;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  color: #D11616;
 }
 
 .footer__logo {
@@ -2367,7 +2382,8 @@ input[type=number] {
   border-radius: 50%;
 }
 .catalog__filters-values {
-  margin-right: 4.8rem;
+  margin-right: 5rem;
+  width: 20rem;
   font-family: "FuturaPT";
   font-size: 1.5rem;
   line-height: 2.2rem;
@@ -2484,6 +2500,7 @@ input[type=number] {
   letter-spacing: 0.16em;
   text-transform: uppercase;
   background: url(../images/svg/requestBtn.svg) center/contain no-repeat;
+  cursor: pointer;
 }
 .gemstones-hero__btn span:first-child {
   transform: translate(1.5rem, -1rem);
@@ -2571,6 +2588,7 @@ input[type=number] {
 }
 .gemstones-catalog__filters .choices[data-type*=select-one] .choices__inner {
   padding: 0;
+  vertical-align: middle;
 }
 .gemstones-catalog__filters .choices__list--single {
   padding: 0;
@@ -2582,14 +2600,20 @@ input[type=number] {
   margin-right: 0.2rem;
   content: "";
   position: absolute;
-  top: 0.45rem;
+  top: 50%;
   right: 0;
   width: 0.9rem;
   height: 0.9rem;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
-  transform: rotate(225deg);
+  transform: rotate(-135deg) translate(50%, 50%);
   z-index: 1;
+}
+.gemstones-catalog__filters .choices.is-open .choices__list--single .choices__item {
+  color: rgb(255, 255, 255);
+}
+.gemstones-catalog__filters .choices.is-open::before {
+  border-color: #FFF;
 }
 .gemstones-catalog__filters .choices[data-type*=select-one]::after {
   display: none;
@@ -2622,6 +2646,7 @@ input[type=number] {
   font-family: "FuturaPT";
   font-size: 1.5rem;
   line-height: 2.2rem;
+  color: rgba(255, 255, 255, 0.4);
   text-align: center;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -2635,8 +2660,12 @@ input[type=number] {
 .gemstones-catalog__filters .choices__list[aria-expanded] .choices__list {
   max-height: none;
 }
+.gemstones-catalog__filters .is-selected {
+  display: none;
+}
 .gemstones-catalog__filters .choices__list--dropdown,
 .gemstones-catalog__filters .choices__list[aria-expanded] {
+  margin-top: 5.7rem;
   min-width: 43.2rem;
   border-radius: 0;
   background-color: #D9D9D9;
@@ -2644,9 +2673,10 @@ input[type=number] {
 .gemstones-catalog__filters .container {
   width: 164rem;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .gemstones-catalog__filters-list {
-  margin-right: 16rem;
   display: flex;
   align-items: center;
 }
@@ -2658,11 +2688,20 @@ input[type=number] {
   display: inline-block;
   display: inline-flex;
 }
-.gemstones-catalog__filters .catalog__values-container {
+.gemstones-catalog__filters-values {
+  width: 21rem;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.gemstones-catalog__filters .gemstones-catalog__values-container {
+  margin-left: 18rem;
   width: 17rem;
   position: relative;
 }
-.gemstones-catalog__filters .catalog__values-container .catalog__values-track {
+.gemstones-catalog__filters .gemstones-catalog__values-container .catalog__values-track {
   width: 100%;
   height: 1px;
   position: absolute;
@@ -2717,14 +2756,6 @@ input[type=number] {
   cursor: pointer;
   pointer-events: auto;
   border-radius: 50%;
-}
-.gemstones-catalog__filters-values {
-  margin-right: 4.8rem;
-  font-family: "FuturaPT";
-  font-size: 1.5rem;
-  line-height: 2.2rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
 }
 .gemstones-catalog__products-list {
   margin: 0 auto;
@@ -2795,6 +2826,7 @@ input[type=number] {
   width: 5.6rem;
   height: 5.6rem;
   cursor: pointer;
+  z-index: 2;
 }
 .gemstones-catalog__products-btn img {
   width: 100%;
@@ -2809,6 +2841,14 @@ input[type=number] {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+.gemstones-catalog__products-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .gemstones-catalog__products-price {
   font-size: 4rem;
@@ -2828,6 +2868,22 @@ input[type=number] {
   text-align: center;
   letter-spacing: 0.16em;
   text-transform: uppercase;
+}
+.gemstones-catalog__btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gemstones-catalog__btn-showmore {
+  width: 22rem;
+  height: 8.5rem;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  text-align: center;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  background: url(../images/svg/gemstonesCatalogShowMore.svg) center/contain no-repeat;
 }
 
 .b2b-hero {
