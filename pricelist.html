@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles/choices.min.css">
     <link rel="stylesheet" href="styles/style.css">
-    <title>Цены</title>
+    <title>Цены мастерской</title>
 </head>
 
 <body>
@@ -19,11 +19,11 @@
                 <nav class="header__left-nav">
                     <ul class="header__left-nav-list">
                         <li class="header__left-nav-item">
-                            <a href="/portfolio.html"
-                                class="header__left-nav-link">Портфолио</a>
+                            <a href="/portfolio.html" class="header__left-nav-link">Портфолио</a>
                         </li>
                         <li class="header__left-nav-item">
-                            <a href="/pricelist.html" class="header__left-nav-link header__left-nav-link--active">Цены</a>
+                            <a href="/pricelist.html"
+                                class="header__left-nav-link header__left-nav-link--active">Цены</a>
                         </li>
                         <li class="header__left-nav-item">
                             <a href="/stock.html" class="header__left-nav-link">В наличии</a>
@@ -69,14 +69,14 @@
 
         <section class="prices-hero">
             <div class="container">
-                <h2 class="prices-hero__heading">цены мастерской </h2>
+                <h2 class="prices-hero__heading">цены мастерской</h2>
                 <p class="prices-hero__description">Актуальные цены на услуги ювелирной мастерской “GRIGOF” Иготавление
                     и ремонт украшений.</p>
-                <button class="prices-hero__btn">
+                <a href="#prices" class="prices-hero__btn">
                     <span>ПОСМОТРЕТЬ</span>
                     <span>цены</span>
-                </button>
-                <p class="prices-hero__subheading">Изготавление украшений</p>
+                </a>
+                <p class="prices-hero__subheading">Изготовление украшений</p>
                 <p class="prices-hero__notice">Индивидуально под ваш заказ</p>
                 <img src="images/prices-hero1.png" alt="" class="prices-hero__img1">
                 <img src="images/prices-hero2.png" alt="" class="prices-hero__img2">
@@ -85,12 +85,12 @@
         </section>
 
         <section class="pricelist">
-            <h2 class="pricelist__heading">СТОИМОСТЬ УСЛУГ</h2>
+            <h2 id="prices" class="pricelist__heading">СТОИМОСТЬ УСЛУГ</h2>
             <div class="pricelist__tab">
                 <ul class="pricelist__tab-list">
-                    <li class="pricelist__tab-btn" data-path="pricelist-creating">ИЗГОТОВЛЕНИЕ УКРАШЕНИЙ</li>
-                    <li class="pricelist__tab-btn pricelist__tab-btn--active" data-path="pricelist-repair">РЕМОНТ
-                        УКРАШЕНИЙ</li>
+                    <li class="pricelist__tab-btn pricelist__tab-btn--active" data-path="pricelist-creating">
+                        ИЗГОТОВЛЕНИЕ УКРАШЕНИЙ</li>
+                    <li class="pricelist__tab-btn" data-path="pricelist-repair">РЕМОНТ УКРАШЕНИЙ</li>
                     <li class="pricelist__tab-btn" data-path="pricelist-engraving">НАНЕСЕНИЕ ГРАВИРОВОК</li>
                     <li class="pricelist__tab-btn" data-path="pricelist-laser">ЛАЗЕРНАЯ ПАЙКА</li>
                     <li class="pricelist__tab-btn" data-path="pricelist-evaluation">ЮВЕЛИРНАЯ ОЦЕНКА</li>
@@ -134,239 +134,7 @@
                         <p class="pricelist__list-price"><span>от</span> 25 000 <span>&#8381;</span></p>
                     </li>
                 </ul>
-
-                <ul class="pricelist__content pricelist__list" data-target="pricelist-repair">
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(01)</span>
-                        <p class="pricelist__list-title">Ремонт серег</p>
-                        <p class="pricelist__list-price"><span>от</span> 20 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(02)</span>
-                        <p class="pricelist__list-title">Ремонт колец</p>
-                        <p class="pricelist__list-price"><span>от</span> 10 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(03)</span>
-                        <p class="pricelist__list-title">Ремонт цепочек</p>
-                        <p class="pricelist__list-price"><span>от</span> 25 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(04)</span>
-                        <p class="pricelist__list-title">Ремонт серег</p>
-                        <p class="pricelist__list-price"><span>от</span> 20 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(05)</span>
-                        <p class="pricelist__list-title">Ремонт колец</p>
-                        <p class="pricelist__list-price"><span>от</span> 10 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(06)</span>
-                        <p class="pricelist__list-title">Ремонт цепочек</p>
-                        <p class="pricelist__list-price"><span>от</span> 25 000 <span>&#8381;</span></p>
-                    </li>
-                </ul>
-
-                <ul class="pricelist__content pricelist__list" data-target="pricelist-engraving">
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(01)</span>
-                        <p class="pricelist__list-title">Ремонт серег</p>
-                        <p class="pricelist__list-price"><span>от</span> 20 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(02)</span>
-                        <p class="pricelist__list-title">Ремонт колец</p>
-                        <p class="pricelist__list-price"><span>от</span> 10 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(03)</span>
-                        <p class="pricelist__list-title">Ремонт цепочек</p>
-                        <p class="pricelist__list-price"><span>от</span> 25 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(04)</span>
-                        <p class="pricelist__list-title">Ремонт серег</p>
-                        <p class="pricelist__list-price"><span>от</span> 20 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(05)</span>
-                        <p class="pricelist__list-title">Ремонт колец</p>
-                        <p class="pricelist__list-price"><span>от</span> 10 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(06)</span>
-                        <p class="pricelist__list-title">Ремонт цепочек</p>
-                        <p class="pricelist__list-price"><span>от</span> 25 000 <span>&#8381;</span></p>
-                    </li>
-                </ul>
-
-                <ul class="pricelist__content pricelist__list" data-target="pricelist-laser">
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(01)</span>
-                        <p class="pricelist__list-title">Ремонт серег</p>
-                        <p class="pricelist__list-price"><span>от</span> 20 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(02)</span>
-                        <p class="pricelist__list-title">Ремонт колец</p>
-                        <p class="pricelist__list-price"><span>от</span> 10 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(03)</span>
-                        <p class="pricelist__list-title">Ремонт цепочек</p>
-                        <p class="pricelist__list-price"><span>от</span> 25 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(04)</span>
-                        <p class="pricelist__list-title">Ремонт серег</p>
-                        <p class="pricelist__list-price"><span>от</span> 20 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(05)</span>
-                        <p class="pricelist__list-title">Ремонт колец</p>
-                        <p class="pricelist__list-price"><span>от</span> 10 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(06)</span>
-                        <p class="pricelist__list-title">Ремонт цепочек</p>
-                        <p class="pricelist__list-price"><span>от</span> 25 000 <span>&#8381;</span></p>
-                    </li>
-                </ul>
-
-                <ul class="pricelist__content pricelist__list" data-target="pricelist-evaluation">
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(01)</span>
-                        <p class="pricelist__list-title">Ремонт серег</p>
-                        <p class="pricelist__list-price"><span>от</span> 20 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(02)</span>
-                        <p class="pricelist__list-title">Ремонт колец</p>
-                        <p class="pricelist__list-price"><span>от</span> 10 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(03)</span>
-                        <p class="pricelist__list-title">Ремонт цепочек</p>
-                        <p class="pricelist__list-price"><span>от</span> 25 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(04)</span>
-                        <p class="pricelist__list-title">Ремонт серег</p>
-                        <p class="pricelist__list-price"><span>от</span> 20 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(05)</span>
-                        <p class="pricelist__list-title">Ремонт колец</p>
-                        <p class="pricelist__list-price"><span>от</span> 10 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(06)</span>
-                        <p class="pricelist__list-title">Ремонт цепочек</p>
-                        <p class="pricelist__list-price"><span>от</span> 25 000 <span>&#8381;</span></p>
-                    </li>
-                </ul>
-
-                <ul class="pricelist__content pricelist__list" data-target="pricelist-cutting">
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(01)</span>
-                        <p class="pricelist__list-title">Ремонт серег</p>
-                        <p class="pricelist__list-price"><span>от</span> 20 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(02)</span>
-                        <p class="pricelist__list-title">Ремонт колец</p>
-                        <p class="pricelist__list-price"><span>от</span> 10 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(03)</span>
-                        <p class="pricelist__list-title">Ремонт цепочек</p>
-                        <p class="pricelist__list-price"><span>от</span> 25 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(04)</span>
-                        <p class="pricelist__list-title">Ремонт серег</p>
-                        <p class="pricelist__list-price"><span>от</span> 20 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(05)</span>
-                        <p class="pricelist__list-title">Ремонт колец</p>
-                        <p class="pricelist__list-price"><span>от</span> 10 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(06)</span>
-                        <p class="pricelist__list-title">Ремонт цепочек</p>
-                        <p class="pricelist__list-price"><span>от</span> 25 000 <span>&#8381;</span></p>
-                    </li>
-                </ul>
-
-                <ul class="pricelist__content pricelist__list" data-target="pricelist-golding">
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(01)</span>
-                        <p class="pricelist__list-title">Ремонт серег</p>
-                        <p class="pricelist__list-price"><span>от</span> 20 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(02)</span>
-                        <p class="pricelist__list-title">Ремонт колец</p>
-                        <p class="pricelist__list-price"><span>от</span> 10 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(03)</span>
-                        <p class="pricelist__list-title">Ремонт цепочек</p>
-                        <p class="pricelist__list-price"><span>от</span> 25 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(04)</span>
-                        <p class="pricelist__list-title">Ремонт серег</p>
-                        <p class="pricelist__list-price"><span>от</span> 20 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(05)</span>
-                        <p class="pricelist__list-title">Ремонт колец</p>
-                        <p class="pricelist__list-price"><span>от</span> 10 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(06)</span>
-                        <p class="pricelist__list-title">Ремонт цепочек</p>
-                        <p class="pricelist__list-price"><span>от</span> 25 000 <span>&#8381;</span></p>
-                    </li>
-                </ul>
-
-                <ul class="pricelist__content pricelist__list" data-target="pricelist-design">
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(01)</span>
-                        <p class="pricelist__list-title">Ремонт серег</p>
-                        <p class="pricelist__list-price"><span>от</span> 20 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(02)</span>
-                        <p class="pricelist__list-title">Ремонт колец</p>
-                        <p class="pricelist__list-price"><span>от</span> 10 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(03)</span>
-                        <p class="pricelist__list-title">Ремонт цепочек</p>
-                        <p class="pricelist__list-price"><span>от</span> 25 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(04)</span>
-                        <p class="pricelist__list-title">Ремонт серег</p>
-                        <p class="pricelist__list-price"><span>от</span> 20 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(05)</span>
-                        <p class="pricelist__list-title">Ремонт колец</p>
-                        <p class="pricelist__list-price"><span>от</span> 10 000 <span>&#8381;</span></p>
-                    </li>
-                    <li class="pricelist__list-item">
-                        <span class="pricelist__list-number">(06)</span>
-                        <p class="pricelist__list-title">Ремонт цепочек</p>
-                        <p class="pricelist__list-price"><span>от</span> 25 000 <span>&#8381;</span></p>
-                    </li>
-                </ul>
             </div>
-
         </section>
 
         <section class="dependence">
@@ -527,6 +295,8 @@
             <p class="footer__bottom-copyright">Все права защищены 2017-2022 GRIGOF JEWELLERY Studio</p>
         </div>
     </footer>
+    <script defer src="js/swiper-bundle.min.js"></script>
+    <script defer src="js/choices.min.js"></script>
     <script defer src="js/inputmask.min.js"></script>
     <script defer src="js/just-validate.production.min.js"></script>
     <script defer src="js/index.js"></script>

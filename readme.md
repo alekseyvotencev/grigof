@@ -1,15 +1,15 @@
 # https://alekseyvotencev.github.io/grigof/
 
-# https://alekseyvotencev.github.io/grigof/stone
+# https://alekseyvotencev.github.io/grigof/stone.html
 
-# https://alekseyvotencev.github.io/grigof/repair
+- [x] https://alekseyvotencev.github.io/grigof/repair.html
 
-# https://alekseyvotencev.github.io/grigof/pricelist
+- [x] https://alekseyvotencev.github.io/grigof/pricelist.html
 
-# https://alekseyvotencev.github.io/grigof/stock
+- [x] https://alekseyvotencev.github.io/grigof/stock.html
 
-# https://alekseyvotencev.github.io/grigof/gemstones done
+- [x] https://alekseyvotencev.github.io/grigof/gemstones.html
 
-# https://alekseyvotencev.github.io/grigof/b2bgeneral
+# https://alekseyvotencev.github.io/grigof/b2bgeneral.html
 
-# https://alekseyvotencev.github.io/grigof/b2bspecial
+# https://alekseyvotencev.github.io/grigof/b2bspecial.html

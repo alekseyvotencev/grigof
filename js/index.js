@@ -91,7 +91,7 @@ const swiperStones = new Swiper('.swiper__stones', {
 });
 
 const swiperStock = new Swiper('.swiper__stock', {
-    direction: 'vertocal',
+    direction: 'vertical',
     slidesPerView: 'auto',
     pagination: {
         el: '.swiper__stock-pagination',
@@ -100,8 +100,8 @@ const swiperStock = new Swiper('.swiper__stock', {
 });
 
 const swiperCarousel = new Swiper('.swiper__carousel', {
-    direction: 'horizontal',
-    slidesPerView: '3',
+    direction: 'vertical',
+    slidesPerView: 'auto',
     spaceBetween: 50,
     loop: true,
 });
@@ -175,6 +175,26 @@ document.querySelectorAll('.pricelist__tab-btn').forEach(function (tabsBtn) {
     });
 });
 
+document.querySelectorAll('.catalog__filters-tab-item').forEach(function (tabsBtn) {
+    tabsBtn.addEventListener('click', function (e) {
+        const path = e.currentTarget.dataset.path;
+
+        document.querySelectorAll('.catalog__filters-tab-item').forEach(function (btn) {
+            btn.classList.remove('catalog__filters-tab-item--active')
+        });
+
+        e.currentTarget.classList.add('catalog__filters-tab-item--active');
+
+        document.querySelectorAll('.catalog__products').forEach(function (tab) {
+            tab.classList.remove('catalog__products--active')
+        });
+
+        document.querySelectorAll(`[data-target="${path}"]`).forEach(function (tab) {
+            tab.classList.add('catalog__products--active');
+        })
+    });
+});
+
 // select
 
 const element = document.querySelectorAll('.gemstones-catalog__filters-select');
@@ -227,7 +247,6 @@ validation
                 phoneField.forEach(field => {
                     phone = field.inputmask.unmaskedvalue();
                 })
-                console.log(phone)
                 return Number(phone) && phone.length === 10
             },
             errorMessage: 'Введите номер телефона'

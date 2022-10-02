@@ -218,6 +218,7 @@ input[type=number] {
   margin-right: 4rem;
 }
 .header__right-nav-link {
+  position: relative;
   font-family: "FuturaPT";
   font-size: 1.9rem;
   line-height: 2.6rem;
@@ -1993,6 +1994,11 @@ input[type=number] {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.4);
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 .pricelist__tab-btn--active {
   color: #FFF;
@@ -2120,7 +2126,24 @@ input[type=number] {
 
 .stock .container {
   width: 164rem;
+  position: relative;
   display: flex;
+}
+.stock .container .vertical {
+  position: absolute;
+  left: 75.5rem;
+  bottom: 0;
+  height: 14.7rem;
+  width: 1px;
+  background-color: #FFFFFF;
+}
+.stock .container .horizontal {
+  position: absolute;
+  left: 69.2rem;
+  bottom: 2rem;
+  width: 8.4rem;
+  height: 1px;
+  background-color: #FFF;
 }
 .stock .swiper__stock {
   position: relative;
@@ -2132,6 +2155,8 @@ input[type=number] {
   display: flex;
   flex-direction: column;
   top: 50%;
+  left: 0;
+  width: 0.6rem;
   transform: translateY(-50%);
 }
 .stock .swiper__stock .swiper-pagination-bullet {
@@ -2191,25 +2216,6 @@ input[type=number] {
   line-height: 4.8rem;
   text-transform: uppercase;
 }
-.stock .swiper__stock-vertical {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 14.7rem;
-  border-right: 1px solid #FFFFFF;
-  transform: translateY(3rem);
-  z-index: 99;
-}
-.stock .swiper__stock-horizontal {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 8.4rem;
-  border-top: 1px solid #FFFFFF;
-  transform: translateX(3rem);
-  z-index: 99;
-  overflow: visible;
-}
 .stock .swiper__carousel {
   margin: 0;
   width: 37rem;
@@ -2226,16 +2232,13 @@ input[type=number] {
   margin-top: 11.7rem;
 }
 .stock .swiper__carousel-slide {
-  padding: 2.4rem 3rem 3.5rem 3rem;
+  padding: 4.35rem 4rem 3.5rem 4rem;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
   height: 43.5rem;
   background-color: #222;
-  -webkit-backdrop-filter: blur(50px);
-          backdrop-filter: blur(50px);
 }
 .stock .swiper__carousel-slide img[src="images/swiper-carousel.png"] {
   width: 31rem;
@@ -2250,15 +2253,22 @@ input[type=number] {
   width: 29rem;
 }
 .stock .swiper__carousel-link {
-  position: absolute;
-  top: 4.35rem;
-  right: 4rem;
+  align-self: flex-end;
   cursor: pointer;
+  z-index: 2;
 }
 .stock .swiper__carousel-link img {
   width: 3.8rem;
   -o-object-fit: contain;
      object-fit: contain;
+}
+.stock .swiper__carousel-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .stock .swiper__carousel-img {
   position: absolute;
@@ -2274,12 +2284,16 @@ input[type=number] {
   letter-spacing: 0.16em;
   text-transform: uppercase;
 }
+.stock .swiper__carousel-name {
+  margin-top: auto;
+}
 .stock .swiper__carousel-price {
   margin-top: 0.7rem;
 }
 
 .catalog {
   padding-top: 30rem;
+  padding-bottom: 10rem;
 }
 .catalog__heading {
   margin-bottom: 5.5rem;
@@ -2300,11 +2314,11 @@ input[type=number] {
   align-items: center;
   justify-content: center;
 }
-.catalog__filters-list {
+.catalog__filters-tab-list {
   margin-right: 8rem;
   display: inline-flex;
 }
-.catalog__filters-item {
+.catalog__filters-tab-item {
   font-family: "FuturaPT";
   font-size: 1.5rem;
   line-height: 2.2rem;
@@ -2312,9 +2326,13 @@ input[type=number] {
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
 }
-.catalog__filters-item:not(:last-child) {
+.catalog__filters-tab-item:not(:last-child) {
   margin-right: 8rem;
+}
+.catalog__filters-tab-item--active {
+  color: #FFF;
 }
 .catalog__filters-slider {
   position: relative;
@@ -2390,6 +2408,15 @@ input[type=number] {
   letter-spacing: 0.16em;
   text-transform: uppercase;
 }
+.catalog .container {
+  width: 164rem;
+}
+.catalog__products {
+  display: none;
+}
+.catalog__products--active {
+  display: block;
+}
 .catalog__products-list {
   display: flex;
   justify-content: space-between;
@@ -2411,9 +2438,11 @@ input[type=number] {
 .catalog__products-card {
   padding: 2.7rem 3.3rem;
   display: flex;
+  height: 43.6rem;
   position: relative;
-  justify-content: flex-end;
+  align-items: flex-end;
   background-color: #0F0F0F;
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 .catalog__products-btn {
   position: absolute;
@@ -2421,7 +2450,11 @@ input[type=number] {
   right: 2.2rem;
   width: 5.6rem;
   height: 5.6rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   cursor: pointer;
+  z-index: 2;
 }
 .catalog__products-btn img {
   width: 100%;
@@ -2430,27 +2463,30 @@ input[type=number] {
 }
 .catalog__products-img {
   position: absolute;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   width: auto;
   max-width: 100%;
   align-self: center;
 }
 .catalog__products-img[src="images/catalog1.png"] {
-  width: 90%;
+  width: 27rem;
+}
+.catalog__products-img[src="images/catalog2.png"] {
+  width: 27rem;
 }
 .catalog__products-img[src="images/catalog3.png"] {
-  width: 70%;
+  width: 21rem;
 }
 .catalog__products-img[src="images/catalog4.png"] {
-  width: 70%;
+  width: 21rem;
 }
 .catalog__products-bottom {
   display: flex;
   width: 100%;
-  height: 43.6rem;
+  align-items: center;
   justify-content: space-between;
-  align-items: flex-end;
 }
 .catalog__products-price {
   font-family: "FuturaPT";
@@ -2463,6 +2499,30 @@ input[type=number] {
   width: 4.213rem;
   -o-object-fit: contain;
      object-fit: contain;
+}
+.catalog__products-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.catalog__products__btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.catalog__products__btn-showmore {
+  width: 22rem;
+  height: 8.5rem;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  text-align: center;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  background: url(../images/svg/gemstonesCatalogShowMore.svg) center/contain no-repeat;
 }
 
 .gemstones-hero {
