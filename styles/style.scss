@@ -1480,7 +1480,7 @@
         text-transform: uppercase;
     }
 
-    &__btn-container {
+    &__top-link {
         margin-bottom: 13.2rem;
         display: flex;
         align-items: center;
@@ -1491,6 +1491,14 @@
             font-weight: 300;
             font-size: 1.9rem;
             line-height: 2.2rem;
+        }
+
+        img {
+            width: 5.6rem;
+            height: 5.6rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            object-fit: contain;
         }
     }
 
@@ -1559,12 +1567,38 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: relative;
+
+        .background {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 71rem;
+            height: 60rem;
+            border-radius: 50%;
+            background: rgba(11, 156, 79, 0.3);
+            opacity: 0.5;
+            filter: blur(12rem);
+            transform: translate(-50%, -60%);
+        }
 
         img {
+            width: 100%;
             margin-bottom: 7.8rem;
             width: 64.4rem;
             height: 58.7rem;
+            position: relative;
             object-fit: contain;
+
+            &[src="images/emeraldStone.png"] {
+                width: 61rem;
+                height: 63rem;
+            }
+
+            &[src="http://127.0.0.1:5500/images/emeraldStone.png"] {
+                width: 61rem;
+                height: 63rem;
+            }
         }
     }
 
@@ -1622,6 +1656,15 @@
         }
     }
 
+    &2-price {
+        margin-bottom: 13.3rem;
+    }
+
+    &2-list {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
     &-property {
         margin-bottom: .8rem;
         font-family: 'FuturaPT';
@@ -1672,6 +1715,16 @@
         text-transform: uppercase;
     }
 
+    &__right-border {
+        position: absolute;
+        top: 1rem;
+        right: -1rem;
+        width: 82rem;
+        height: 43.9rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        z-index: 1;
+    }
+
     &__right {
         padding: 7.6rem;
         position: relative;
@@ -1681,18 +1734,7 @@
         width: 82rem;
         text-align: right;
         background-color: #222;
-        z-index: 1;
-
-        &::after {
-            content: '';
-            position: absolute;
-            top: 1rem;
-            right: -1rem;
-            width: 100%;
-            height: 100%;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            z-index: -1;
-        }
+        z-index: 2;
 
         &-heading {
             margin-bottom: 2.5rem;

@@ -195,6 +195,42 @@ document.querySelectorAll('.catalog__filters-tab-item').forEach(function (tabsBt
     });
 });
 
+document.querySelectorAll('.b2bspecial-card__tabs-item').forEach(function (tabsBtn) {
+    tabsBtn.addEventListener('click', function (e) {
+        const src = e.currentTarget.src;
+        const srcContent = document.querySelector('.b2bspecial-card__tabs-content').src;
+        e.currentTarget.src = srcContent;
+        document.querySelector('.b2bspecial-card__tabs-content').src = src;
+    })
+})
+
+document.querySelectorAll('.swiper__stones-small-img1').forEach(function (tabsImg) {
+    tabsImg.addEventListener('click', function (e) {
+        const src = e.currentTarget.src;
+        const srcContent = document.querySelector('.swiper__stones-center-img1').src;
+        e.currentTarget.src = srcContent;
+        document.querySelector('.swiper__stones-center-img1').src = src;
+    })
+})
+
+document.querySelectorAll('.swiper__stones-small-img2').forEach(function (tabsImg) {
+    tabsImg.addEventListener('click', function (e) {
+        const src = e.currentTarget.src;
+        const srcContent = document.querySelector('.swiper__stones-center-img2').src;
+        e.currentTarget.src = srcContent;
+        document.querySelector('.swiper__stones-center-img2').src = src;
+    })
+})
+
+document.querySelectorAll('.swiper__stones-small-img3').forEach(function (tabsImg) {
+    tabsImg.addEventListener('click', function (e) {
+        const src = e.currentTarget.src;
+        const srcContent = document.querySelector('.swiper__stones-center-img3').src;
+        e.currentTarget.src = srcContent;
+        document.querySelector('.swiper__stones-center-img3').src = src;
+    })
+})
+
 // select
 
 const element = document.querySelectorAll('.gemstones-catalog__filters-select');

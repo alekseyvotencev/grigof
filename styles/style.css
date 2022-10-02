@@ -1421,17 +1421,26 @@ input[type=number] {
   line-height: 4.8rem;
   text-transform: uppercase;
 }
-.stones__btn-container {
+.stones__top-link {
   margin-bottom: 13.2rem;
   display: flex;
   align-items: center;
 }
-.stones__btn-container span {
+.stones__top-link span {
   margin-right: 2rem;
   font-family: "FuturaPT";
   font-weight: 300;
   font-size: 1.9rem;
   line-height: 2.2rem;
+}
+.stones__top-link img {
+  width: 5.6rem;
+  height: 5.6rem;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .stones-btn {
   width: 5.6rem;
@@ -1487,13 +1496,36 @@ input[type=number] {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+}
+.swiper__stones-center .background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 71rem;
+  height: 60rem;
+  border-radius: 50%;
+  background: rgba(11, 156, 79, 0.3);
+  opacity: 0.5;
+  filter: blur(12rem);
+  transform: translate(-50%, -60%);
 }
 .swiper__stones-center img {
+  width: 100%;
   margin-bottom: 7.8rem;
   width: 64.4rem;
   height: 58.7rem;
+  position: relative;
   -o-object-fit: contain;
      object-fit: contain;
+}
+.swiper__stones-center img[src="images/emeraldStone.png"] {
+  width: 61rem;
+  height: 63rem;
+}
+.swiper__stones-center img[src="http://127.0.0.1:5500/images/emeraldStone.png"] {
+  width: 61rem;
+  height: 63rem;
 }
 .swiper__stones-name {
   font-size: 7rem;
@@ -1538,6 +1570,13 @@ input[type=number] {
 }
 .swiper__stones-list-item:not(:last-child) {
   margin-bottom: 3.3rem;
+}
+.swiper__stones2-price {
+  margin-bottom: 13.3rem;
+}
+.swiper__stones2-list {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .swiper__stones-property {
   margin-bottom: 0.8rem;
@@ -1584,6 +1623,15 @@ input[type=number] {
   line-height: 9rem;
   text-transform: uppercase;
 }
+.warranty__right-border {
+  position: absolute;
+  top: 1rem;
+  right: -1rem;
+  width: 82rem;
+  height: 43.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 1;
+}
 .warranty__right {
   padding: 7.6rem;
   position: relative;
@@ -1593,17 +1641,7 @@ input[type=number] {
   width: 82rem;
   text-align: right;
   background-color: #222;
-  z-index: 1;
-}
-.warranty__right::after {
-  content: "";
-  position: absolute;
-  top: 1rem;
-  right: -1rem;
-  width: 100%;
-  height: 100%;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  z-index: -1;
+  z-index: 2;
 }
 .warranty__right-heading {
   margin-bottom: 2.5rem;
