@@ -15,3 +15,16 @@
 B2B - https://alekseyvotencev.github.io/grigof/b2bgeneral.html
 
 - [x] Карточка B2B - https://alekseyvotencev.github.io/grigof/b2bspecial.html
+
+Портфолио - https://alekseyvotencev.github.io/grigof/portfolio.html
+
+Карточка товара - https://alekseyvotencev.github.io/grigof/productcard.html
+
+Отзывы - https://alekseyvotencev.github.io/grigof/feedback.html
+
+Контакты - https://alekseyvotencev.github.io/grigof/contacts.html
+
+Подарочный сертификат - https://alekseyvotencev.github.io/grigof/certificate.html
+
+О бренде - https://alekseyvotencev.github.io/grigof/about.html
+

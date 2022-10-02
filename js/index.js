@@ -155,6 +155,8 @@ document.querySelectorAll('.stages__tabs-btn').forEach(function (tabsBtn) {
     });
 });
 
+// pricelist
+
 document.querySelectorAll('.pricelist__tab-btn').forEach(function (tabsBtn) {
     tabsBtn.addEventListener('click', function (e) {
         const path = e.currentTarget.dataset.path;
@@ -174,6 +176,8 @@ document.querySelectorAll('.pricelist__tab-btn').forEach(function (tabsBtn) {
         })
     });
 });
+
+// catalog filters
 
 document.querySelectorAll('.catalog__filters-tab-item').forEach(function (tabsBtn) {
     tabsBtn.addEventListener('click', function (e) {
@@ -195,6 +199,30 @@ document.querySelectorAll('.catalog__filters-tab-item').forEach(function (tabsBt
     });
 });
 
+// feedback list 
+
+document.querySelectorAll('.feedback-reviews__type-item').forEach(function (tabsBtn) {
+    tabsBtn.addEventListener('click', function (e) {
+        const path = e.currentTarget.dataset.path;
+
+        document.querySelectorAll('.feedback-reviews__type-item').forEach(function (btn) {
+            btn.classList.remove('feedback-reviews__type-item--active')
+        });
+
+        e.currentTarget.classList.add('feedback-reviews__type-item--active');
+
+        document.querySelectorAll('.feedback-reviews__list').forEach(function (tab) {
+            tab.classList.remove('feedback-reviews__list--active')
+        });
+
+        document.querySelectorAll(`[data-target="${path}"]`).forEach(function (tab) {
+            tab.classList.add('feedback-reviews__list--active');
+        })
+    });
+});
+
+// b2b card
+
 document.querySelectorAll('.b2bspecial-card__tabs-item').forEach(function (tabsBtn) {
     tabsBtn.addEventListener('click', function (e) {
         const src = e.currentTarget.src;
@@ -203,6 +231,8 @@ document.querySelectorAll('.b2bspecial-card__tabs-item').forEach(function (tabsB
         document.querySelector('.b2bspecial-card__tabs-content').src = src;
     })
 })
+
+// swiper stones
 
 document.querySelectorAll('.swiper__stones-small-img1').forEach(function (tabsImg) {
     tabsImg.addEventListener('click', function (e) {

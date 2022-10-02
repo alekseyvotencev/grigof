@@ -3566,6 +3566,238 @@
         text-transform: uppercase;
         color: rgba(255, 255, 255, 0.5);
     }
+}
 
+.feedback-hero {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
 
+    .container {
+        width: 164rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left {
+        width: 95rem;
+        position: relative;
+    }
+
+    &__logo {
+        margin-bottom: 10rem;
+        width: 34.4rem;
+        height: 19.2rem;
+        object-fit: contain;
+    }
+
+    &__heading {
+        margin-bottom: 19rem;
+        font-size: 7rem;
+        line-height: 8.3rem;
+        text-transform: uppercase;
+    }
+
+    &__list {
+        display: flex;
+
+        &-item {
+
+            &:not(:last-child) {
+                margin-right: 18rem;
+            }
+        }
+    }
+
+    &__item-heading {
+        margin-bottom: 1.5rem;
+        font-size: 4rem;
+        line-height: 5.6rem;
+        text-transform: uppercase;
+    }
+
+    &__item-description {
+        width: 17rem;
+        font-family: 'FuturaPT';
+        font-size: 1.9rem;
+        line-height: 2.6rem;
+    }
+
+    &__btn {
+        position: absolute;
+        top: 21rem;
+        right: -7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 26.5rem;
+        height: 14rem;
+        font-family: "FuturaPT";
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        background: url(../images/svg/requestBtn.svg) center/contain no-repeat;
+        cursor: pointer;
+
+        span:first-child {
+            transform: translate(1.5rem, -1rem);
+        }
+
+        span:last-child {
+            transform: translate(-1.5rem, 1rem);
+        }
+    }
+
+    &__right {
+        width: 49rem;
+
+        &-heading {
+            font-size: 4rem;
+            line-height: 5.6rem;
+            text-transform: uppercase;
+        }
+
+        &-description {
+            font-family: 'FuturaPT';
+            font-size: 1.9rem;
+            line-height: 2.6rem;
+        }
+    }
+}
+
+.feedback-reviews {
+    padding-top: 20rem;
+    padding-bottom: 21rem;
+
+    &__heading {
+        margin-bottom: 5.5rem;
+        font-size: 7rem;
+        line-height: 8.3rem;
+        text-transform: uppercase;
+        text-align: center;
+
+        span {
+            font-family: 'FuturaPT';
+            font-size: 1.9rem;
+            line-height: 2.2rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.4);
+            vertical-align: top;
+        }
+    }
+
+    &__type-container {
+        margin-bottom: 8.3rem;
+        padding-top: 5.8rem;
+        padding-bottom: 5.8rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    &__type {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-item {
+            font-family: 'FuturaPT';
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.4);
+            cursor: pointer;
+
+            &--active {
+                color: #FFF;
+            }
+
+            &:not(:last-child) {
+                margin-right: 8rem;
+            }
+        }
+    }
+
+    .container {
+        width: 164rem;
+    }
+
+    &__list {
+        display: none;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &--active {
+            display: flex;
+        }
+
+        &-item {
+            margin-bottom: 13.4rem;
+            display: flex;
+            flex: 0 1 73rem;
+
+            &:nth-last-child(-n+2) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__item-img {
+        margin-right: 4rem;
+        width: 35rem;
+        height: 62.6rem;
+        object-fit: contain;
+    }
+
+    &__item-text {
+        width: 34rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item-review {
+        margin-top: 4.3rem;
+        font-family: 'FuturaPT';
+        font-size: 1.9rem;
+        line-height: 2.2rem;
+    }
+
+    &__item-link {
+        margin-top: 4.6rem;
+
+        span {
+            margin-right: 3rem;
+            font-family: 'FuturaPT';
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
+
+        img {
+            width: 4.213rem;
+            display: inline-block;
+            object-fit: contain;
+        }
+    }
+
+    &__item-type {
+        margin-top: auto;
+        margin-bottom: 1rem;
+        font-family: 'FuturaPT';
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    &__item-details {
+        font-family: 'FuturaPT';
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+    }
 }

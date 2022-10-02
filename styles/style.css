@@ -3207,4 +3207,204 @@ input[type=number] {
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.feedback-hero {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+.feedback-hero .container {
+  width: 164rem;
+  display: flex;
+  justify-content: space-between;
+}
+.feedback-hero__left {
+  width: 95rem;
+  position: relative;
+}
+.feedback-hero__logo {
+  margin-bottom: 10rem;
+  width: 34.4rem;
+  height: 19.2rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.feedback-hero__heading {
+  margin-bottom: 19rem;
+  font-size: 7rem;
+  line-height: 8.3rem;
+  text-transform: uppercase;
+}
+.feedback-hero__list {
+  display: flex;
+}
+.feedback-hero__list-item:not(:last-child) {
+  margin-right: 18rem;
+}
+.feedback-hero__item-heading {
+  margin-bottom: 1.5rem;
+  font-size: 4rem;
+  line-height: 5.6rem;
+  text-transform: uppercase;
+}
+.feedback-hero__item-description {
+  width: 17rem;
+  font-family: "FuturaPT";
+  font-size: 1.9rem;
+  line-height: 2.6rem;
+}
+.feedback-hero__btn {
+  position: absolute;
+  top: 21rem;
+  right: -7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26.5rem;
+  height: 14rem;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  background: url(../images/svg/requestBtn.svg) center/contain no-repeat;
+  cursor: pointer;
+}
+.feedback-hero__btn span:first-child {
+  transform: translate(1.5rem, -1rem);
+}
+.feedback-hero__btn span:last-child {
+  transform: translate(-1.5rem, 1rem);
+}
+.feedback-hero__right {
+  width: 49rem;
+}
+.feedback-hero__right-heading {
+  font-size: 4rem;
+  line-height: 5.6rem;
+  text-transform: uppercase;
+}
+.feedback-hero__right-description {
+  font-family: "FuturaPT";
+  font-size: 1.9rem;
+  line-height: 2.6rem;
+}
+
+.feedback-reviews {
+  padding-top: 20rem;
+  padding-bottom: 21rem;
+}
+.feedback-reviews__heading {
+  margin-bottom: 5.5rem;
+  font-size: 7rem;
+  line-height: 8.3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.feedback-reviews__heading span {
+  font-family: "FuturaPT";
+  font-size: 1.9rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  vertical-align: top;
+}
+.feedback-reviews__type-container {
+  margin-bottom: 8.3rem;
+  padding-top: 5.8rem;
+  padding-bottom: 5.8rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.feedback-reviews__type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feedback-reviews__type-item {
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+.feedback-reviews__type-item--active {
+  color: #FFF;
+}
+.feedback-reviews__type-item:not(:last-child) {
+  margin-right: 8rem;
+}
+.feedback-reviews .container {
+  width: 164rem;
+}
+.feedback-reviews__list {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.feedback-reviews__list--active {
+  display: flex;
+}
+.feedback-reviews__list-item {
+  margin-bottom: 13.4rem;
+  display: flex;
+  flex: 0 1 73rem;
+}
+.feedback-reviews__list-item:nth-last-child(-n+2) {
+  margin-bottom: 0;
+}
+.feedback-reviews__item-img {
+  margin-right: 4rem;
+  width: 35rem;
+  height: 62.6rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.feedback-reviews__item-text {
+  width: 34rem;
+  display: flex;
+  flex-direction: column;
+}
+.feedback-reviews__item-review {
+  margin-top: 4.3rem;
+  font-family: "FuturaPT";
+  font-size: 1.9rem;
+  line-height: 2.2rem;
+}
+.feedback-reviews__item-link {
+  margin-top: 4.6rem;
+}
+.feedback-reviews__item-link span {
+  margin-right: 3rem;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.feedback-reviews__item-link img {
+  width: 4.213rem;
+  display: inline-block;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.feedback-reviews__item-type {
+  margin-top: auto;
+  margin-bottom: 1rem;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+.feedback-reviews__item-details {
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */
