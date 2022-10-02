@@ -1,15 +1,15 @@
-      https://alekseyvotencev.github.io/grigof/
+Главная - https://alekseyvotencev.github.io/grigof/
 
-      https://alekseyvotencev.github.io/grigof/stone.html
+Драгоценные камни (детальная) - https://alekseyvotencev.github.io/grigof/stone.html
 
-- [x] https://alekseyvotencev.github.io/grigof/repair.html
+- [x] Ремонт - https://alekseyvotencev.github.io/grigof/repair.html
 
-- [x] https://alekseyvotencev.github.io/grigof/pricelist.html
+- [x] Цены - https://alekseyvotencev.github.io/grigof/pricelist.html
 
-- [x] https://alekseyvotencev.github.io/grigof/stock.html
+- [x] В наличии - https://alekseyvotencev.github.io/grigof/stock.html
 
-- [x] https://alekseyvotencev.github.io/grigof/gemstones.html
+- [x] Драгоценные камни - https://alekseyvotencev.github.io/grigof/gemstones.html
 
-      https://alekseyvotencev.github.io/grigof/b2bgeneral.html
+B2B - https://alekseyvotencev.github.io/grigof/b2bgeneral.html
 
-      https://alekseyvotencev.github.io/grigof/b2bspecial.html
+Карточка B2B - https://alekseyvotencev.github.io/grigof/b2bspecial.html
