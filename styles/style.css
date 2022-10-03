@@ -3212,6 +3212,17 @@ input[type=number] {
 .feedback-hero {
   padding-top: 5rem;
   padding-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+.feedback-hero__imgBG {
+  position: absolute;
+  width: 81rem;
+  height: 46.5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  right: -5rem;
+  bottom: -4.3rem;
 }
 .feedback-hero .container {
   width: 164rem;
@@ -3407,4 +3418,752 @@ input[type=number] {
   line-height: 2.2rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
+}
+
+.portfolio-hero {
+  position: relative;
+  padding-top: 2.5rem;
+  padding-bottom: 9.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.portfolio-hero__imgBG-container {
+  position: absolute;
+  left: -1rem;
+  bottom: 0;
+  width: 100%;
+  height: 101rem;
+  background: linear-gradient(180.06deg, rgba(0, 0, 0, 0.29) 27.25%, rgba(0, 0, 0, 0) 99.95%);
+  z-index: -1;
+}
+.portfolio-hero__imgBG {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 103rem;
+  height: 100%;
+}
+.portfolio-hero .container {
+  width: 164rem;
+  display: flex;
+  justify-content: space-between;
+}
+.portfolio-hero__left-img {
+  align-self: flex-end;
+  width: 25.7rem;
+  height: 25.7rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.portfolio-hero__right {
+  width: 85rem;
+}
+.portfolio-hero__heading {
+  margin-bottom: 4.8rem;
+  font-size: 4rem;
+  line-height: 4.7rem;
+  text-transform: uppercase;
+}
+.portfolio-hero__list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-hero__list-item {
+  flex: 0 1 33%;
+  min-height: 31rem;
+}
+.portfolio-hero__list-item:nth-child(2), .portfolio-hero__list-item:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio-hero__list-item .background {
+  position: absolute;
+  left: 50%;
+  top: 3.9rem;
+  width: 17.3rem;
+  height: 17.3rem;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.portfolio-hero__list-item .blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: rgba(214, 214, 214, 0.05);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+}
+.portfolio-hero__list-item:nth-child(1) .background {
+  background: linear-gradient(209.31deg, rgba(31, 126, 218, 0.3) 14.34%, rgba(31, 126, 218, 0.108) 74.78%);
+}
+.portfolio-hero__list-item:nth-child(3) .background {
+  background: linear-gradient(209.31deg, rgba(255, 255, 255, 0.3) 14.34%, rgba(255, 255, 255, 0.108) 74.78%);
+}
+.portfolio-hero__list-item:nth-child(5) .background {
+  background: linear-gradient(209.31deg, rgba(255, 255, 255, 0.3) 14.34%, rgba(255, 255, 255, 0.108) 74.78%);
+}
+.portfolio-hero__list-item:nth-child(6) .background {
+  background: linear-gradient(209.31deg, rgba(28, 170, 85, 0.3) 14.34%, rgba(28, 170, 85, 0.108) 74.78%);
+}
+.portfolio-hero__item-card {
+  padding: 2.5rem 3.8rem;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(214, 214, 214, 0.05);
+  border: 1px solid #838383;
+}
+.portfolio-hero__item-link {
+  display: inline-block;
+  align-self: flex-end;
+  width: 3rem;
+  z-index: 4;
+}
+.portfolio-hero__item-link img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.portfolio-hero__item-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.portfolio-hero__item-img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: 3;
+}
+.portfolio-hero__item-img[src="images/portfolioList1.png"] {
+  top: 1.2rem;
+  width: 21rem;
+  height: 22.2rem;
+}
+.portfolio-hero__item-img[src="images/portfolioList3.png"] {
+  top: 1.7rem;
+  width: 23.7rem;
+  height: 22rem;
+}
+.portfolio-hero__item-img[src="images/portfolioList5.png"] {
+  top: 1.3rem;
+  width: 18.1rem;
+  height: 23.7rem;
+}
+.portfolio-hero__item-img[src="images/portfolioList6.png"] {
+  top: 2.7rem;
+  width: 18.2rem;
+  height: 19.6rem;
+}
+.portfolio-hero__item-name {
+  margin-top: auto;
+  margin-bottom: 0.5rem;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  text-align: center;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  z-index: 3;
+}
+.portfolio-hero__item-price {
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  z-index: 3;
+}
+.portfolio-hero__item-svg {
+  margin-bottom: 3.15rem;
+  width: 12.66rem;
+  height: 13.35rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.portfolio-hero__item-count {
+  margin-bottom: 1.2rem;
+  font-size: 4rem;
+  line-height: 2.2rem;
+}
+.portfolio-hero__item-description {
+  width: 15rem;
+  font-family: "FuturaPT";
+  font-weight: 300;
+  font-size: 1.9rem;
+  text-align: center;
+  line-height: 2.5rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.portfolio-catalog {
+  padding-top: 18rem;
+  padding-bottom: 10rem;
+}
+.portfolio-catalog__heading {
+  margin-bottom: 5.5rem;
+  font-size: 7rem;
+  line-height: 9rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.portfolio-catalog__filters {
+  margin-bottom: 7.5rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.portfolio-catalog__filters-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio-catalog__filters-tab-list {
+  margin-right: 8rem;
+  display: inline-flex;
+}
+.portfolio-catalog__filters-tab-item {
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  text-align: center;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+.portfolio-catalog__filters-tab-item:not(:last-child) {
+  margin-right: 8rem;
+}
+.portfolio-catalog__filters-tab-item--active {
+  color: #FFF;
+}
+.portfolio-catalog__filters-slider {
+  position: relative;
+  display: inline-block;
+  display: inline-flex;
+}
+.portfolio-catalog__filters .catalog__values-container {
+  width: 17rem;
+  position: relative;
+}
+.portfolio-catalog__filters .catalog__values-container .catalog__values-track {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.portfolio-catalog__filters input[type=range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  outline: none;
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  pointer-events: none;
+}
+.portfolio-catalog__filters input[type=range]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+}
+.portfolio-catalog__filters input[type=range]::-moz-range-track {
+  -moz-appearance: none;
+}
+.portfolio-catalog__filters input[type=range]::-ms-track {
+  appearance: none;
+}
+.portfolio-catalog__filters input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 1.3rem;
+  width: 1.3rem;
+  background-color: #FFF;
+  cursor: pointer;
+  pointer-events: auto;
+  border-radius: 50%;
+}
+.portfolio-catalog__filters input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 1.3rem;
+  width: 1.3rem;
+  background-color: #FFF;
+  cursor: pointer;
+  pointer-events: auto;
+  border-radius: 50%;
+}
+.portfolio-catalog__filters input[type=range]::-ms-thumb {
+  -webkit-appearance: none;
+  height: 1.3rem;
+  width: 1.3rem;
+  background-color: #FFF;
+  cursor: pointer;
+  pointer-events: auto;
+  border-radius: 50%;
+}
+.portfolio-catalog__filters-values {
+  margin-right: 5rem;
+  width: 20rem;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.portfolio-catalog .container {
+  width: 164rem;
+}
+.portfolio-catalog__products {
+  display: none;
+}
+.portfolio-catalog__products--active {
+  display: block;
+}
+.portfolio-catalog__products-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.portfolio-catalog__products-item {
+  flex: 0 1 37rem;
+  margin-bottom: 9rem;
+}
+.portfolio-catalog__products-card {
+  margin-bottom: 5.2rem;
+  padding: 2.7rem 3.3rem;
+  display: flex;
+  height: 43.6rem;
+  position: relative;
+  align-items: flex-end;
+  background-color: #0F0F0F;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.portfolio-catalog__products-btn {
+  position: absolute;
+  top: -2.5rem;
+  right: 2.2rem;
+  width: 5.6rem;
+  height: 5.6rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  cursor: pointer;
+  z-index: 2;
+}
+.portfolio-catalog__products-btn img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.portfolio-catalog__products-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  max-width: 100%;
+  align-self: center;
+}
+.portfolio-catalog__products-img[src="images/catalog1.png"] {
+  width: 27rem;
+}
+.portfolio-catalog__products-img[src="images/catalog2.png"] {
+  width: 27rem;
+}
+.portfolio-catalog__products-img[src="images/catalog3.png"] {
+  width: 21rem;
+}
+.portfolio-catalog__products-img[src="images/catalog4.png"] {
+  width: 21rem;
+}
+.portfolio-catalog__products-bottom {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.portfolio-catalog__products-price {
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.portfolio-catalog__products-link img {
+  width: 4.213rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.portfolio-catalog__products-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.portfolio-catalog__products-description {
+  margin: 0 auto;
+  width: 29.1rem;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  text-align: center;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.portfolio-catalog__products__btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio-catalog__products__btn-showmore {
+  width: 22rem;
+  height: 8.5rem;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  text-align: center;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  background: url(../images/svg/gemstonesCatalogShowMore.svg) center/contain no-repeat;
+}
+
+.portfolio-making {
+  padding-top: 10rem;
+}
+.portfolio-making .container {
+  position: relative;
+  width: 164rem;
+}
+.portfolio-making__subheading {
+  margin-bottom: 1.3rem;
+  font-family: "FuturaPT";
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.portfolio-making__heading {
+  margin: 0 auto;
+  margin-bottom: 48.5rem;
+  width: 78rem;
+  font-size: 7rem;
+  line-height: 9rem;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.portfolio-making__img {
+  position: absolute;
+  left: 0;
+  top: -53rem;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: -1;
+}
+.portfolio-making__text {
+  display: flex;
+  width: 100%;
+}
+.portfolio-making__text-left, .portfolio-making__text-center, .portfolio-making__text-right {
+  display: inline-block;
+  font-family: "FuturaPT";
+  font-size: 1.9rem;
+  line-height: 2.5rem;
+}
+.portfolio-making__text-left {
+  font-family: inherit;
+  margin-right: 12.3rem;
+  width: 29.5rem;
+  text-transform: uppercase;
+}
+.portfolio-making__text-center {
+  width: 57rem;
+}
+.portfolio-making__text-right {
+  margin-left: auto;
+  width: 58rem;
+  align-self: flex-end;
+}
+
+.about-hero {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+.about-hero__imgBG {
+  position: absolute;
+  width: 81rem;
+  height: 46.5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  right: -5rem;
+  bottom: -4.3rem;
+}
+.about-hero .container {
+  width: 164rem;
+  display: flex;
+  justify-content: space-between;
+}
+.about-hero__left {
+  width: 95rem;
+  position: relative;
+}
+.about-hero__logo {
+  margin-bottom: 10rem;
+  width: 34.4rem;
+  height: 19.2rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.about-hero__heading {
+  margin-bottom: 19rem;
+  font-size: 7rem;
+  line-height: 8.3rem;
+  text-transform: uppercase;
+}
+.about-hero__list {
+  display: flex;
+}
+.about-hero__list-item:not(:last-child) {
+  margin-right: 18rem;
+}
+.about-hero__item-heading {
+  margin-bottom: 1.5rem;
+  font-size: 4rem;
+  line-height: 5.6rem;
+  text-transform: uppercase;
+}
+.about-hero__item-description {
+  width: 17rem;
+  font-family: "FuturaPT";
+  font-size: 1.9rem;
+  line-height: 2.6rem;
+}
+.about-hero__btn {
+  position: absolute;
+  top: 21rem;
+  right: -7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26.5rem;
+  height: 14rem;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  background: url(../images/svg/requestBtn.svg) center/contain no-repeat;
+  cursor: pointer;
+}
+.about-hero__btn span:first-child {
+  transform: translate(1.5rem, -1rem);
+}
+.about-hero__btn span:last-child {
+  transform: translate(-1.5rem, 1rem);
+}
+.about-hero__right {
+  width: 49rem;
+}
+.about-hero__right-heading {
+  font-size: 4rem;
+  line-height: 5.6rem;
+  text-transform: uppercase;
+}
+.about-hero__right-description {
+  font-family: "FuturaPT";
+  font-size: 1.9rem;
+  line-height: 2.6rem;
+}
+
+.about-history {
+  padding-top: 28rem;
+}
+.about-history .container {
+  width: 164rem;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.about-history__heading {
+  margin-bottom: 4.5rem;
+  width: 40rem;
+  font-size: 7rem;
+  line-height: 8.3rem;
+  text-transform: uppercase;
+}
+.about-history__name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 4rem;
+  line-height: 4.6rem;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+.about-history__left {
+  display: flex;
+  position: relative;
+}
+.about-history__left-img {
+  margin-right: 5rem;
+  width: 44rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.about-history__left-text {
+  display: flex;
+  flex-direction: column;
+}
+.about-history__left-description {
+  width: 58rem;
+  font-family: "FuturaPT";
+  font-size: 1.9rem;
+  line-height: 2.6rem;
+}
+.about-history__left-link {
+  margin-top: auto;
+  display: inline-block;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.about-history__left-link span {
+  margin-right: 1.7rem;
+}
+.about-history__left-link img {
+  display: inline-block;
+  width: 4.213rem;
+}
+.about-history__left .circle {
+  position: absolute;
+  left: 39.3rem;
+  bottom: -3.3rem;
+  width: 32.5rem;
+  height: 32.5rem;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: -1;
+}
+.about-history__right {
+  display: flex;
+  flex-direction: column;
+  width: 49rem;
+}
+.about-history__right-list {
+  margin-bottom: 7rem;
+  display: flex;
+  justify-content: space-between;
+}
+.about-history__right-item {
+  flex: 0 1 22.5rem;
+  height: 25.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #161616;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.about-history__right-item-img {
+  width: 19rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.about-history__right-item-img[src="images/ring.png"] {
+  width: 10.5rem;
+}
+.about-history__right-text {
+  margin-bottom: 6.6rem;
+  font-family: "FuturaPT";
+  font-size: 1.9rem;
+  line-height: 2.6rem;
+}
+.about-history__right-img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.about-team {
+  padding-top: 24rem;
+}
+.about-team .container {
+  width: 164rem;
+}
+.about-team__heading {
+  margin-bottom: 7.7rem;
+  font-size: 7rem;
+  line-height: 9rem;
+  text-transform: uppercase;
+}
+.about-team__images {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-team__images-1, .about-team__images-3 {
+  width: 46.8rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.about-team__images-2 {
+  width: 62.9rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.about-team__text {
+  margin-top: -5rem;
+  text-align: center;
+}
+.about-team__name {
+  margin-bottom: 6.2rem;
+  font-size: 7rem;
+  line-height: 9rem;
+  text-transform: uppercase;
+}
+.about-team__description {
+  margin-bottom: 8.5rem;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.about-team__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22rem;
+  height: 8.5rem;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  text-align: center;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  background: url(../images/svg/gemstonesCatalogShowMore.svg) center/contain no-repeat;
 }/*# sourceMappingURL=style.css.map */

@@ -199,6 +199,28 @@ document.querySelectorAll('.catalog__filters-tab-item').forEach(function (tabsBt
     });
 });
 
+// portfolio filters
+
+document.querySelectorAll('.portfolio-catalog__filters-tab-item').forEach(function (tabsBtn) {
+    tabsBtn.addEventListener('click', function (e) {
+        const path = e.currentTarget.dataset.path;
+
+        document.querySelectorAll('.portfolio-catalog__filters-tab-item').forEach(function (btn) {
+            btn.classList.remove('portfolio-catalog__filters-tab-item--active')
+        });
+
+        e.currentTarget.classList.add('portfolio-catalog__filters-tab-item--active');
+
+        document.querySelectorAll('.portfolio-catalog__products').forEach(function (tab) {
+            tab.classList.remove('portfolio-catalog__products--active')
+        });
+
+        document.querySelectorAll(`[data-target="${path}"]`).forEach(function (tab) {
+            tab.classList.add('portfolio-catalog__products--active');
+        })
+    });
+});
+
 // feedback list 
 
 document.querySelectorAll('.feedback-reviews__type-item').forEach(function (tabsBtn) {

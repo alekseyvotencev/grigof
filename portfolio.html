@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles/choices.min.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Портфолио</title>
 </head>
 
@@ -34,7 +37,7 @@
                     </ul>
                 </nav>
             </div>
-            <img src="images/headerLogo.png" alt="Логотип фирмы" class="header__logo">
+            <img src="images/svg/logo.svg" alt="Логотип фирмы" class="header__logo">
             <div class="header__right">
                 <div class="header__right-top">
                     <a href="tel:+74996479997" class="header__right-phone">+7 499 647 99 97</a>
@@ -62,9 +65,364 @@
             </div>
         </div>
     </header>
-    <main>
-        <section class="feedback">
 
+    <main>
+        <section class="portfolio-hero">
+            <div class="portfolio-hero__imgBG-container">
+                <img src="images/portfolio-heroBG.png" alt="" class="portfolio-hero__imgBG">
+            </div>
+            <div class="container">
+                <img src="images/svg/portfolioHeroImg.svg" alt="" class="portfolio-hero__left-img">
+                <div class="portfolio-hero__right">
+                    <h2 class="portfolio-hero__heading">популярное</h2>
+                    <ul class="portfolio-hero__list">
+                        <li class="portfolio-hero__list-item">
+                            <div class="portfolio-hero__item-card">
+                                <a href="/productcard.html" class="portfolio-hero__item-link">
+                                    <img src="images/svg/swiperArrow.svg" alt="">
+                                </a>
+                                <div class="background"></div>
+                                <div class="blur"></div>
+                                <img src="images/portfolioList1.png" alt="" class="portfolio-hero__item-img">
+                                <p class="portfolio-hero__item-name">кольцо из золота</p>
+                                <p class="portfolio-hero__item-price">575 000 <span>&#8381;</span></p>
+                            </div>
+                        </li>
+                        <li class="portfolio-hero__list-item">
+                            <img src="images/svg/portfolioList2.svg" alt="" class="portfolio-hero__item-svg">
+                            <p class="portfolio-hero__item-count">1000 +</p>
+                            <p class="portfolio-hero__item-description">изготовлено изделий</p>
+                        </li>
+                        <li class="portfolio-hero__list-item">
+                            <div class="portfolio-hero__item-card">
+                                <a href="/productcard.html" class="portfolio-hero__item-link">
+                                    <img src="images/svg/swiperArrow.svg" alt="">
+                                </a>
+                                <div class="background"></div>
+                                <div class="blur"></div>
+                                <img src="images/portfolioList3.png" alt="" class="portfolio-hero__item-img">
+                                <p class="portfolio-hero__item-name">обручальные кольца</p>
+                                <p class="portfolio-hero__item-price">575 000 <span>&#8381;</span></p>
+                            </div>
+                        </li>
+                        <li class="portfolio-hero__list-item">
+                            <img src="images/svg/portfolioList4.svg" alt="" class="portfolio-hero__item-svg">
+                            <p class="portfolio-hero__item-count">15 +</p>
+                            <p class="portfolio-hero__item-description">лет безупречной репутации</p>
+                        </li>
+                        <li class="portfolio-hero__list-item">
+                            <div class="portfolio-hero__item-card">
+                                <a href="/productcard.html" class="portfolio-hero__item-link">
+                                    <img src="images/svg/swiperArrow.svg" alt="">
+                                </a>
+                                <div class="background"></div>
+                                <div class="blur"></div>
+                                <img src="images/portfolioList5.png" alt="" class="portfolio-hero__item-img">
+                                <p class="portfolio-hero__item-name">кольцо с жемчугом</p>
+                                <p class="portfolio-hero__item-price">575 000 <span>&#8381;</span></p>
+                            </div>
+                        </li>
+                        <li class="portfolio-hero__list-item">
+                            <div class="portfolio-hero__item-card">
+                                <a href="/productcard.html" class="portfolio-hero__item-link">
+                                    <img src="images/svg/swiperArrow.svg" alt="">
+                                </a>
+                                <div class="background"></div>
+                                <div class="blur"></div>
+                                <img src="images/portfolioList6.png" alt="" class="portfolio-hero__item-img">
+                                <p class="portfolio-hero__item-name">кольцо с жемчугом</p>
+                                <p class="portfolio-hero__item-price">575 000 <span>&#8381;</span></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-catalog">
+
+            <h2 class="portfolio-catalog__heading">изделия в наличии</h2>
+            <div class="portfolio-catalog__filters">
+                <div class="portfolio-catalog__filters-container">
+                    <ul class="portfolio-catalog__filters-tab-list">
+                        <li class="portfolio-catalog__filters-tab-item portfolio-catalog__filters-tab-item--active"
+                            data-path="bracelets">
+                            Браслеты</li>
+                        <li class="portfolio-catalog__filters-tab-item" data-path="rings">КОльца</li>
+                        <li class="portfolio-catalog__filters-tab-item" data-path="wedding-rings">свадебные кольца</li>
+                        <li class="portfolio-catalog__filters-tab-item" data-path="pendant">подвески</li>
+                        <li class="portfolio-catalog__filters-tab-item" data-path="earrings">серьги</li>
+                        <li class="portfolio-catalog__filters-tab-item" data-path="chains">цепи</li>
+                    </ul>
+                    <div class="portfolio-catalog__filters-slider">
+                        <div class="portfolio-catalog__filters-values">
+                            <span class="price">Цена</span>
+                            <span id="range1">
+                                0
+                            </span>
+                            <span> &dash; </span>
+                            <span id="range2">
+                                100
+                            </span>
+                        </div>
+                        <div class="catalog__values-container">
+                            <div class="catalog__values-track"></div>
+                            <input type="range" min="0" max="180000" value="17000" id="slider-1" oninput="slideOne()">
+                            <input type="range" min="0" max="180000" value="160000" id="slider-2" oninput="slideTwo()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="portfolio-catalog__products portfolio-catalog__products--active" data-target="bracelets">
+                    <ul class="portfolio-catalog__products-list">
+                        <li class="portfolio-catalog__products-item">
+                            <div class="portfolio-catalog__products-card">
+                                <a href="#" class="portfolio-catalog__products-btn">
+                                    <img src="images/svg/triangleBtn.svg" alt="">
+                                </a>
+                                <img src="images/catalog1.png" alt="" class="portfolio-catalog__products-img">
+                                <div class="portfolio-catalog__products-bottom">
+                                    <p class="portfolio-catalog__products-price">575 000 <span>&#8381;</span></p>
+                                    <a href="/stone.html" class="portfolio-catalog__products-link">
+                                        <img src="images/svg/swiperArrow.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="portfolio-catalog__products-description">Обручальные кольца из белого Золота 585
+                                пробы, бриллианты</p>
+                        </li>
+
+                        <li class="portfolio-catalog__products-item">
+                            <div class="portfolio-catalog__products-card">
+                                <a href="#" class="portfolio-catalog__products-btn">
+                                    <img src="images/svg/triangleBtn.svg" alt="">
+                                </a>
+                                <img src="images/catalog2.png" alt="" class="portfolio-catalog__products-img">
+                                <div class="portfolio-catalog__products-bottom">
+                                    <p class="portfolio-catalog__products-price">575 000 <span>&#8381;</span></p>
+                                    <a href="/stone.html" class="portfolio-catalog__products-link">
+                                        <img src="images/svg/swiperArrow.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="portfolio-catalog__products-description">Серьги трансформеры из белого золота 585
+                                пробы
+                                и желтого 750 пробы</p>
+                        </li>
+
+                        <li class="portfolio-catalog__products-item">
+                            <div class="portfolio-catalog__products-card">
+                                <a href="#" class="portfolio-catalog__products-btn">
+                                    <img src="images/svg/triangleBtn.svg" alt="">
+                                </a>
+                                <img src="images/catalog3.png" alt="" class="portfolio-catalog__products-img">
+                                <div class="portfolio-catalog__products-bottom">
+                                    <p class="portfolio-catalog__products-price">575 000 <span>&#8381;</span></p>
+                                    <a href="/stone.html" class="portfolio-catalog__products-link">
+                                        <img src="images/svg/swiperArrow.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="portfolio-catalog__products-description">Кольцо из белого золота 585 пробы,
+                                центральный камень — топаз, бриллианты</p>
+                        </li>
+
+                        <li class="portfolio-catalog__products-item">
+                            <div class="portfolio-catalog__products-card">
+                                <a href="#" class="portfolio-catalog__products-btn">
+                                    <img src="images/svg/triangleBtn.svg" alt="">
+                                </a>
+                                <img src="images/catalog4.png" alt="" class="portfolio-catalog__products-img">
+                                <div class="portfolio-catalog__products-bottom">
+                                    <p class="portfolio-catalog__products-price">575 000 <span>&#8381;</span></p>
+                                    <a href="/stone.html" class="portfolio-catalog__products-link">
+                                        <img src="images/svg/swiperArrow.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="portfolio-catalog__products-description">Подвеска из желтого золота 585 пробы с
+                                рубином, сапфиром, изумрудом</p>
+                        </li>
+
+                        <li class="portfolio-catalog__products-item">
+                            <div class="portfolio-catalog__products-card">
+                                <a href="#" class="portfolio-catalog__products-btn">
+                                    <img src="images/svg/triangleBtn.svg" alt="">
+                                </a>
+                                <img src="images/catalog3.png" alt="" class="portfolio-catalog__products-img">
+                                <div class="portfolio-catalog__products-bottom">
+                                    <p class="portfolio-catalog__products-price">575 000 <span>&#8381;</span></p>
+                                    <a href="/stone.html" class="portfolio-catalog__products-link">
+                                        <img src="images/svg/swiperArrow.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="portfolio-catalog__products-description">Обручальные кольца из белого Золота 585
+                                пробы, бриллианты</p>
+                        </li>
+
+                        <li class="portfolio-catalog__products-item">
+                            <div class="portfolio-catalog__products-card">
+                                <a href="#" class="portfolio-catalog__products-btn">
+                                    <img src="images/svg/triangleBtn.svg" alt="">
+                                </a>
+                                <img src="images/catalog4.png" alt="" class="portfolio-catalog__products-img">
+                                <div class="portfolio-catalog__products-bottom">
+                                    <p class="portfolio-catalog__products-price">575 000 <span>&#8381;</span></p>
+                                    <a href="/stone.html" class="portfolio-catalog__products-link">
+                                        <img src="images/svg/swiperArrow.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="portfolio-catalog__products-description">Серьги трансформеры из белого золота 585
+                                пробы
+                                и желтого 750 пробы</p>
+                        </li>
+
+                        <li class="portfolio-catalog__products-item">
+                            <div class="portfolio-catalog__products-card">
+                                <a href="#" class="portfolio-catalog__products-btn">
+                                    <img src="images/svg/triangleBtn.svg" alt="">
+                                </a>
+                                <img src="images/catalog1.png" alt="" class="portfolio-catalog__products-img">
+                                <div class="portfolio-catalog__products-bottom">
+                                    <p class="portfolio-catalog__products-price">575 000 <span>&#8381;</span></p>
+                                    <a href="/stone.html" class="portfolio-catalog__products-link">
+                                        <img src="images/svg/swiperArrow.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="portfolio-catalog__products-description">Кольцо из белого золота 585 пробы,
+                                центральный камень — топаз, бриллианты</p>
+                        </li>
+
+                        <li class="portfolio-catalog__products-item">
+                            <div class="portfolio-catalog__products-card">
+                                <a href="#" class="portfolio-catalog__products-btn">
+                                    <img src="images/svg/triangleBtn.svg" alt="">
+                                </a>
+                                <img src="images/catalog2.png" alt="" class="portfolio-catalog__products-img">
+                                <div class="portfolio-catalog__products-bottom">
+                                    <p class="portfolio-catalog__products-price">575 000 <span>&#8381;</span></p>
+                                    <a href="/stone.html" class="portfolio-catalog__products-link">
+                                        <img src="images/svg/swiperArrow.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="portfolio-catalog__products-description">Подвеска из желтого золота 585 пробы с
+                                рубином, сапфиром, изумрудом</p>
+                        </li>
+
+                        <li class="portfolio-catalog__products-item">
+                            <div class="portfolio-catalog__products-card">
+                                <a href="#" class="portfolio-catalog__products-btn">
+                                    <img src="images/svg/triangleBtn.svg" alt="">
+                                </a>
+                                <img src="images/catalog1.png" alt="" class="portfolio-catalog__products-img">
+                                <div class="portfolio-catalog__products-bottom">
+                                    <p class="portfolio-catalog__products-price">575 000 <span>&#8381;</span></p>
+                                    <a href="/stone.html" class="portfolio-catalog__products-link">
+                                        <img src="images/svg/swiperArrow.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="portfolio-catalog__products-description">Обручальные кольца из белого Золота 585
+                                пробы, бриллианты</p>
+                        </li>
+
+                        <li class="portfolio-catalog__products-item">
+                            <div class="portfolio-catalog__products-card">
+                                <a href="#" class="portfolio-catalog__products-btn">
+                                    <img src="images/svg/triangleBtn.svg" alt="">
+                                </a>
+                                <img src="images/catalog2.png" alt="" class="portfolio-catalog__products-img">
+                                <div class="portfolio-catalog__products-bottom">
+                                    <p class="portfolio-catalog__products-price">575 000 <span>&#8381;</span></p>
+                                    <a href="/stone.html" class="portfolio-catalog__products-link">
+                                        <img src="images/svg/swiperArrow.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="portfolio-catalog__products-description">Серьги трансформеры из белого золота 585
+                                пробы
+                                и желтого 750 пробы</p>
+                        </li>
+
+                        <li class="portfolio-catalog__products-item">
+                            <div class="portfolio-catalog__products-card">
+                                <a href="#" class="portfolio-catalog__products-btn">
+                                    <img src="images/svg/triangleBtn.svg" alt="">
+                                </a>
+                                <img src="images/catalog3.png" alt="" class="portfolio-catalog__products-img">
+                                <div class="portfolio-catalog__products-bottom">
+                                    <p class="portfolio-catalog__products-price">575 000 <span>&#8381;</span></p>
+                                    <a href="/stone.html" class="portfolio-catalog__products-link">
+                                        <img src="images/svg/swiperArrow.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="portfolio-catalog__products-description">Кольцо из белого золота 585 пробы,
+                                центральный камень — топаз, бриллианты</p>
+                        </li>
+
+                        <li class="portfolio-catalog__products-item">
+                            <div class="portfolio-catalog__products-card">
+                                <a href="#" class="portfolio-catalog__products-btn">
+                                    <img src="images/svg/triangleBtn.svg" alt="">
+                                </a>
+                                <img src="images/catalog4.png" alt="" class="portfolio-catalog__products-img">
+                                <div class="portfolio-catalog__products-bottom">
+                                    <p class="portfolio-catalog__products-price">575 000 <span>&#8381;</span></p>
+                                    <a href="/stone.html" class="portfolio-catalog__products-link">
+                                        <img src="images/svg/swiperArrow.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="portfolio-catalog__products-description">Подвеска из желтого золота 585 пробы с
+                                рубином, сапфиром, изумрудом</p>
+                        </li>
+                    </ul>
+
+                    <div class="portfolio-catalog__products__btn-container">
+                        <button class="portfolio-catalog__products__btn-showmore">
+                            показать еще
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-making">
+            <p class="portfolio-making__subheading">GRIGOF JEWELLERY</p>
+            <h2 class="portfolio-making__heading">изготовление ювелирных украшений</h2>
+            <div class="container">
+                <img src="images/portfolio-making.png" alt="" class="portfolio-making__img">
+                <div class="portfolio-making__text">
+                    <p class="portfolio-making__text-left">высочайшее качество, индивидуальный и творческий подход к
+                        каждому заказу</p>
+                    <p class="portfolio-making__text-center">Если вам не хочется сливаться с толпой, вашу оригинальность
+                        подчеркнут ювелирные изделия,
+                        выполненные
+                        по индивидуальному заказу. Всё зависит только от вашего желания: вы можете выбрать понравившуюся
+                        модель в нашем каталоге или придумать её самостоятельно, принести в качестве образца фотографию
+                        или
+                        рисунок. Ювелирные изделия на заказ, подчеркнут вашу индивидуальность, т.к. такой вещи вы не
+                        встретите в магазине.</p>
+                    <p class="portfolio-making__text-right">Если вам не хочется сливаться с толпой, вашу оригинальность
+                        подчеркнут ювелирные изделия,
+                        выполненные
+                        по индивидуальному заказу. Всё зависит только от вашего желания: вы можете выбрать понравившуюся
+                        модель в нашем каталоге или придумать её самостоятельно, принести в качестве образца фотографию
+                        или
+                        рисунок. Ювелирные изделия на заказ, подчеркнут вашу индивидуальность, т.к. такой вещи вы не
+                        встретите в магазине.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="feedback">
             <div class="container">
                 <img src="images/feedback1.png" alt="" class="feedback__left-img">
                 <img src="images/svg/feedbackNotice.svg" alt="" class="feedback__notice">
@@ -103,11 +461,12 @@
                 </div>
             </div>
         </section>
+
     </main>
     <footer class="footer">
         <div class="footer__top">
             <div class="container">
-                <img src="images/headerLogo.png" alt="Логотип" class="footer__logo">
+                <img src="images/svg/logo.svg" alt="Логотип" class="footer__logo">
                 <nav class="footer__nav">
                     <ul class="footer__nav-list">
                         <li class="footer__nav-item">
