@@ -16,7 +16,7 @@ B2B - https://alekseyvotencev.github.io/grigof/b2bgeneral.html
 
 - [x] Карточка B2B - https://alekseyvotencev.github.io/grigof/b2bspecial.html
 
-- [x] Портфолио - https://alekseyvotencev.github.io/grigof/portfolio.html (градиент с девушкой в hero-блоке)
+- [x] Портфолио - https://alekseyvotencev.github.io/grigof/portfolio.html
 
 Карточка товара - https://alekseyvotencev.github.io/grigof/productcard.html
 
