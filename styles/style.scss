@@ -136,7 +136,7 @@
         top: -4rem;
         left: 50%;
         transform: translateX(-50%);
-        transition: transform .3s ease-in;
+        transition: transform .45s ease-in;
     }
 
     .swiper__hero-pagination {
@@ -190,6 +190,7 @@
         padding-top: 10rem;
         width: 100%;
         min-height: 61.5rem;
+        overflow: visible;
 
         &-number {
             position: absolute;
@@ -218,6 +219,10 @@
 
             &-active {
                 transform: scale(1);
+
+                .hero__video {
+                    opacity: 1;
+                }
 
                 .swiper__hero-number {
                     top: auto;
@@ -264,23 +269,37 @@
         &-price,
         &-link {
             position: absolute;
-
-            display: flex;
+            display: inline-flex;
             align-items: center;
             justify-content: center;
             width: 22rem;
             height: 8.5rem;
-            font-family: 'FuturaPT';
+            font-family: "FuturaPT";
             font-size: 1.5rem;
             line-height: 2.2rem;
             letter-spacing: 0.16em;
             text-transform: uppercase;
-            border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(30px);
-            background: url(../images/svg/heroEllipse.svg) center/contain no-repeat;
-            opacity: 0;
             transition: opacity .2s ease-in;
+            opacity: 0;
+            z-index: 1;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(15px);
+                border-bottom: 1px solid #797979;
+                border-top: 1px solid #ADADAD;
+                background-image: linear-gradient(45deg, #79797900, #ADADAD), linear-gradient(45deg, #79797900, #ADADAD);
+                background-size: 100% 1px;
+                background-repeat: no-repeat;
+                z-index: -1;
+            }
         }
 
         &-price {
@@ -317,12 +336,15 @@
 
     &__video {
         position: absolute;
-        bottom: 8rem;
-        right: 15rem;
+        bottom: -7rem;
+        right: -50rem;
         width: 27.5rem;
         height: 15.3rem;
+        opacity: 0;
         background: url(../images/svg/heroVideoBG.svg) center/contain no-repeat;
+        transition: opacity .4s ease-in-out;
         z-index: 3;
+
 
         &-content {
             transform: translate(-1rem, 1rem);
@@ -340,6 +362,7 @@
             &:hover {
                 cursor: pointer;
             }
+
         }
 
         &-img {
@@ -1804,7 +1827,6 @@
 }
 
 .repair {
-    margin-bottom: 26.5rem;
     padding-left: 14rem;
     display: flex;
     align-items: center;
@@ -1886,8 +1908,70 @@
     }
 }
 
+.repair-pricelist {
+    padding-top: 20rem;
+
+    &__heading {
+        margin-bottom: 4.8rem;
+        font-size: 7rem;
+        line-height: 9rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__list {
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 4.8rem;
+            padding-bottom: 4.8rem;
+            border-top: 1px solid #FFF;
+
+            &:last-child {
+                border-bottom: 1px solid #FFF;
+            }
+        }
+
+        &-number {
+            font-size: 4rem;
+            line-height: 1;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        &-title {
+            font-size: 4rem;
+            line-height: 5.6rem;
+            text-transform: uppercase;
+        }
+
+        &-price {
+            font-size: 4rem;
+            line-height: 1;
+
+            span {
+                &:first-child {
+                    font-family: 'FuturaPT';
+                    font-size: 1.5rem;
+                    line-height: 2.2rem;
+                    letter-spacing: 0.16em;
+                    text-transform: uppercase;
+                }
+
+                &:last-child {
+                    font-size: 2rem;
+                    line-height: 3.5rem;
+                    vertical-align: top;
+                }
+            }
+        }
+    }
+}
+
 .advantages {
-    padding-top: 14.5rem;
+    padding-top: 20rem;
     padding-bottom: 20rem;
 
     &__list {

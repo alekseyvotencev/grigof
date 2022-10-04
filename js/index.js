@@ -1,8 +1,13 @@
 // swipers
+
+// main hero slider
+
 const swiperHero = new Swiper('.swiper__hero', {
     direction: 'horizontal',
     loop: true,
+    speed: 500,
     slidesPerView: 3,
+    initialSlide: 1,
     centeredSlides: true,
     allowTouchMove: false,
     pagination: {
@@ -14,6 +19,8 @@ const swiperHero = new Swiper('.swiper__hero', {
     },
 });
 
+// 
+
 const swiperCategories = new Swiper('.swiper__categories', {
     direction: 'horizontal',
     loop: false,
@@ -23,12 +30,16 @@ const swiperCategories = new Swiper('.swiper__categories', {
     initialSlide: 1,
 });
 
+// 
+
 const swiperPrice = new Swiper('.swiper__price-container', {
     direction: 'horizontal',
     loop: true,
     slidesPerView: "auto",
     spaceBetween: 50,
 });
+
+// 
 
 const swiperExamples = new Swiper('.swiper__examples', {
     direction: 'horizontal',
@@ -41,6 +52,8 @@ const swiperExamples = new Swiper('.swiper__examples', {
     speed: 800,
     allowTouchMove: false,
 });
+
+// 
 
 const swiperVideo = new Swiper('.swiper__video', {
     direction: 'horizontal',
@@ -56,12 +69,16 @@ const swiperVideo = new Swiper('.swiper__video', {
     },
 });
 
+// 
+
 const swiperScreenshots = new Swiper('.swiper__screenshots', {
     direction: 'horizontal',
     loop: true,
     slidesPerView: 3,
     spaceBetween: 50,
 });
+
+// 
 
 const swiperReviews = new Swiper('.swiper__reviews', {
     direction: 'vertical',
@@ -80,6 +97,8 @@ const swiperReviews = new Swiper('.swiper__reviews', {
     }
 });
 
+// 
+
 const swiperStones = new Swiper('.swiper__stones', {
     direction: 'horizontal',
     slidesPerView: 1,
@@ -90,6 +109,8 @@ const swiperStones = new Swiper('.swiper__stones', {
     },
 });
 
+// 
+
 const swiperStock = new Swiper('.swiper__stock', {
     direction: 'vertical',
     slidesPerView: 'auto',
@@ -99,12 +120,16 @@ const swiperStock = new Swiper('.swiper__stock', {
     }
 });
 
+// 
+
 const swiperCarousel = new Swiper('.swiper__carousel', {
     direction: 'vertical',
     slidesPerView: 'auto',
     spaceBetween: 50,
     loop: true,
 });
+
+// 
 
 const swiperB2B = new Swiper('.swiper__b2b', {
     direction: 'horizontal',
