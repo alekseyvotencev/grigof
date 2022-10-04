@@ -487,7 +487,45 @@ input[type=number] {
   text-align: center;
 }
 .categories .swiper__categories {
-  margin-left: 19rem;
+  width: 159rem;
+}
+.categories .swiper__categories-control {
+  position: absolute;
+  left: 50%;
+  top: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 43rem;
+  transform: translateX(-50%);
+}
+.categories .swiper__categories-pagination {
+  position: relative;
+}
+.categories .swiper__categories-pagination .swiper-pagination-bullet {
+  width: 0.6rem;
+  height: 0.6rem;
+  border: 1px solid #FFFFFF;
+  background: transparent;
+  opacity: 0.3;
+}
+.categories .swiper__categories-pagination .swiper-pagination-bullet:not(:last-child) {
+  margin-right: 1.2rem;
+}
+.categories .swiper__categories-pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+.categories .swiper__categories-prev {
+  transform: scale(-1);
+}
+.categories .swiper__categories-prev, .categories .swiper__categories-next {
+  cursor: pointer;
+  z-index: 2;
+}
+.categories .swiper__categories-prev img, .categories .swiper__categories-next img {
+  width: 4.213rem;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .categories .swiper__categories .swiper-slide-active {
   margin-top: 12rem;
@@ -512,8 +550,25 @@ input[type=number] {
 .categories .swiper__categories-slide:last-child {
   margin-right: 14rem;
 }
-.categories .swiper__categories-notice {
+.categories .swiper__categories-number, .categories .swiper__categories-notice {
   position: absolute;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+}
+.categories .swiper__categories-number {
+  top: 14rem;
+  left: -4.5rem;
+}
+.categories .swiper__categories-notice {
+  top: 21.5rem;
+  left: -5.8rem;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  transform: scale(-1, -1);
 }
 .categories .swiper__categories-item {
   display: flex;
@@ -539,11 +594,11 @@ input[type=number] {
 .categories .swiper__categories-img[src="images/swiperCategories1.png"] {
   width: 26.7rem;
 }
-.categories .swiper__categories-img[src="images/swiperCategories2.png"] {
-  width: 27.5rem;
+.categories .swiper__categories-img[src="images/hero2.png"] {
+  width: 33rem;
 }
 .categories .swiper__categories-img[src="images/swiperCategories3.png"] {
-  width: 24.5rem;
+  width: 42.2rem;
 }
 .categories .swiper__categories-name {
   margin-bottom: 0.8rem;
