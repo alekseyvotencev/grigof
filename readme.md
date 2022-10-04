@@ -22,7 +22,7 @@ B2B - https://alekseyvotencev.github.io/grigof/b2bgeneral.html
 
 - [x] Отзывы - https://alekseyvotencev.github.io/grigof/feedback.html
 
-Контакты - https://alekseyvotencev.github.io/grigof/contacts.html
+- [x] Контакты - https://alekseyvotencev.github.io/grigof/contacts.html
 
 Подарочный сертификат - https://alekseyvotencev.github.io/grigof/certificate.html
 

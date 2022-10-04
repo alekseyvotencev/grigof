@@ -4682,3 +4682,166 @@
         background: url(../images/svg/gemstonesCatalogShowMore.svg) center/contain no-repeat;
     }
 }
+
+.contacts-hero {
+    padding-top: 7rem;
+    padding-bottom: 37.7rem;
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+    &__imgBG {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        object-fit: contain;
+        z-index: -2;
+    }
+
+    .container {
+        width: 164rem;
+    }
+
+    &__heading {
+        margin-bottom: 4.5rem;
+        width: 41.7rem;
+        font-size: 7rem;
+        line-height: 8.3rem;
+        text-transform: uppercase;
+    }
+
+    &__left {
+        &-description {
+            width: 33rem;
+            font-family: 'FuturaPT';
+            font-size: 1.9rem;
+            line-height: 2.5rem;
+        }
+    }
+
+    &__right {
+        padding-top: 26.5rem;
+        padding-left: 8.2rem;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 78.6rem;
+        height: 91rem;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(35px);
+            z-index: -2;
+        }
+
+
+        &-list {
+            margin-bottom: 7.8rem;
+            display: flex;
+            flex-wrap: wrap;
+
+            &-item {
+                width: 28.4rem;
+                margin-right: 6.2rem;
+
+                &:nth-child(-n+2) {
+                    margin-bottom: 9.2rem;
+                }
+
+                p:first-child {
+                    margin-bottom: 2rem;
+                    font-family: 'FuturaPT';
+                    font-size: 1.5rem;
+                    line-height: 2.2rem;
+                    letter-spacing: 0.16em;
+                    text-transform: uppercase;
+                    color: rgba(255, 255, 255, 0.5);
+                }
+
+                p:last-child {
+                    font-family: 'FuturaPT';
+                    font-size: 1.9rem;
+                    line-height: 2.2rem;
+                }
+
+                a {
+                    font-family: 'FuturaPT';
+                    font-size: 1.9rem;
+                    line-height: 2.2rem;
+                }
+
+            }
+        }
+
+        &-btn {
+            margin-right: 8.345rem;
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 25.3rem;
+            height: 10rem;
+            font-family: "FuturaPT";
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(15px);
+                transform: rotate(15deg);
+                border-bottom: 1px solid #797979;
+                border-top: 1px solid #ADADAD;
+                background-image: linear-gradient(45deg, #79797900, #ADADAD), linear-gradient(45deg, #79797900, #ADADAD);
+                background-size: 100% 1px;
+                background-repeat: no-repeat;
+                z-index: -1;
+            }
+
+            span:first-of-type {
+                transform: translate(1.5rem, -1rem);
+            }
+
+            span:last-of-type {
+                transform: translate(-1.5rem, 1rem);
+            }
+        }
+
+        &-link {
+            display: inline-block;
+            font-family: 'FuturaPT';
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+
+            span {
+                margin-right: 1.7rem;
+            }
+
+            img {
+                display: inline-block;
+                width: 4.213rem;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+.contacts-footer {
+    padding-top: 12.5rem;
+}
