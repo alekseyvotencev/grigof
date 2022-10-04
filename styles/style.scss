@@ -398,6 +398,10 @@
 .categories {
     padding-bottom: 16.2rem;
 
+    .container {
+        width: 164rem;
+    }
+
     &__heading {
         margin-bottom: 9rem;
         font-size: 7rem;
@@ -407,21 +411,17 @@
     }
 
     .swiper__categories {
-        width: 159rem;
-
-        // .swiper-wrapper{
-        //     margin-right: -16rem;
-        // }
 
         &-control {
             position: absolute;
+            width: 43rem;
             left: 50%;
             top: 8rem;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width: 43rem;
             transform: translateX(-50%);
+            z-index: 2;
         }
 
         &-pagination {
@@ -433,6 +433,7 @@
                 border: 1px solid #FFFFFF;
                 background: transparent;
                 opacity: .3;
+                cursor: pointer;
 
                 &:not(:last-child) {
                     margin-right: 1.2rem;
@@ -451,7 +452,6 @@
         &-prev,
         &-next {
             cursor: pointer;
-            z-index: 2;
 
             img {
                 width: 4.213rem;
@@ -459,7 +459,19 @@
             }
         }
 
+        .swiper-slide-prev {
+            padding-left: 5rem;
+            padding-right: 9.17rem;
+        }
+
+        .swiper-slide-next {
+            padding-right: 0;
+            padding-left: 11.67rem;
+        }
+
         .swiper-slide-active {
+            padding-left: 5.83rem;
+            padding-right: 5.83rem;
 
             .swiper__categories-card::before {
                 content: '';
@@ -490,8 +502,7 @@
         }
 
         &-slide {
-            position: relative;
-            width: 43rem !important;
+            padding-left: 5rem;
             transition: margin .2s ease-in-out;
 
             &:last-child {
@@ -512,17 +523,20 @@
 
         &-number {
             top: 14rem;
-            left: -4.5rem;
+            left: -4.9rem;
         }
 
         &-notice {
+            margin: 0;
             top: 21.5rem;
-            left: -5.8rem;
+            left: -4.7rem;
             writing-mode: vertical-lr;
             transform: scale(-1, -1);
         }
 
         &-item {
+            width: 43rem;
+            position: relative;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -722,6 +736,7 @@
     }
 
     &__content {
+        margin-bottom: 6.5rem;
         display: flex;
         justify-content: space-between;
     }
@@ -740,7 +755,89 @@
         vertical-align: middle;
     }
 
+    .swiper__price {
+        margin: 0;
+        width: calc(100vw - 12.8rem - 3.9rem - 9.2rem);
+        display: inline-block;
+
+        &-slide {
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+            width: 44.5rem;
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            align-items: flex-start;
+
+            &:last-child {
+                padding-right: 0;
+            }
+
+            &:nth-child(odd) {
+                .price__jewelry-img {
+                    height: 39rem;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+
+            &:nth-child(even) {
+                .price__jewelry-img {
+                    height: 24rem;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
+    }
+
+    .swiper__price-control {
+        margin-left: 26rem;
+        margin-right: 14rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .swiper__price-pagination {
+        display: inline-flex;
+        position: relative;
+
+        .swiper-pagination-bullet {
+            width: .6rem;
+            height: .6rem;
+            background-color: transparent;
+            border: 1px solid #FFF;
+            opacity: .3;
+            cursor: pointer;
+
+            &-active {
+                opacity: 1;
+            }
+
+            &:not(:last-child) {
+                margin-right: 1.2rem;
+            }
+        }
+    }
+
+    .swiper__price-prev {
+        transform: scale(-1);
+    }
+
+    .swiper__price-prev,
+    .swiper__price-next {
+        display: inline-block;
+        cursor: pointer;
+
+        img {
+            width: 4.213rem;
+            object-fit: contain;
+        }
+    }
+
     &__jewelry-order {
+        display: inline-block;
         margin-bottom: 3.4rem;
         font-family: 'FuturaPT';
         font-size: 1.5rem;
@@ -751,39 +848,27 @@
     }
 
     &__jewelry-img {
-        margin-bottom: 2rem;
+        width: 42rem;
+        margin-bottom: 2.1rem;
         object-fit: contain;
+        border: 1px solid rgba(255, 255, 255, 0.5);
     }
 
     &__jewelry-name {
-        margin-bottom: 2.8rem;
+        display: inline-block;
+        margin-bottom: 1rem;
         font-size: 4rem;
-        line-height: 5.6rem;
-        letter-spacing: 0.02em;
+        line-height: 4.6rem;
         text-transform: uppercase;
     }
 
     &__jewelry-number {
+        display: inline-block;
         font-family: 'FuturaPT';
         font-size: 1.5rem;
         line-height: 2.2rem;
         letter-spacing: 0.16em;
         text-transform: uppercase;
-    }
-
-    .swiper__price-container {
-        margin: 0;
-        width: calc(100vw - 12.8rem - 3.9rem - 9.2rem);
-        display: inline-block;
-
-
-        .swiper-slide {
-            width: 42rem;
-            display: flex;
-            position: relative;
-            flex-direction: column;
-            align-items: flex-start;
-        }
     }
 }
 
@@ -910,28 +995,23 @@
         z-index: 2;
     }
 
-    .swiper__examples {
-        &-slide {
-            position: relative;
-            padding-top: 27.5rem;
-            padding-left: 13.9rem;
-            padding-bottom: 19rem;
-            min-height: 104.5rem;
-            display: flex;
-            flex-direction: column;
+    &__background {
+        display: none;
+        z-index: -1;
+
+        &--active {
+            display: block;
         }
 
         &-img {
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
             object-fit: contain;
         }
 
         &-name,
         &-detail {
-            margin-bottom: .4rem;
+            position: absolute;
+            left: 14rem;
             font-family: 'FuturaPT';
             font-size: 1.5rem;
             line-height: 2.2rem;
@@ -939,27 +1019,28 @@
             text-transform: uppercase;
         }
 
+        &-name {
+            top: 27.5rem;
+        }
+
         &-detail {
-            margin-bottom: 0;
+            top: 30rem;
         }
 
         &-pagination {
-            margin-top: auto;
-            display: inline-block;
-            position: relative;
-            bottom: auto;
-            left: auto;
-            width: auto;
+            position: absolute;
+            bottom: 15rem;
+            left: 14rem;
             font-size: 4rem;
             line-height: 4.4rem;
-            text-align: left;
             letter-spacing: 0.16em;
             text-transform: uppercase;
         }
     }
 
+
     &__video {
-        padding: 5.6rem 5.9rem;
+        padding: 5.6rem 6rem;
         position: absolute;
         bottom: 20rem;
         right: -15rem;
@@ -986,23 +1067,44 @@
             z-index: 2;
 
             &-slide {
-                padding: 1.5rem;
+                padding-left: 1.35rem;
+                padding-right: 1.35rem;
                 display: flex;
-                width: 22.3rem;
-                min-height: 28rem;
+                position: relative;
+                width: 24.3rem;
+                height: 28rem;
                 align-items: flex-end;
                 justify-content: flex-start;
+
+                &:first-child {
+                    padding-left: 0;
+                    padding-right: 2.7rem;
+                }
+
+                &:last-child {
+                    padding-left: 2.7rem;
+                    padding-right: 0;
+                }
+            }
+
+            &-card {
+                width: 100%;
             }
 
             &-img {
                 position: absolute;
                 top: 0;
                 left: 0;
-                width: 100%;
+                width: 22.3rem;
+                height: 100%;
                 object-fit: contain;
+                z-index: -1;
+                border: 1px solid rgba(255, 255, 255, 0.5);
             }
 
             &-text {
+                padding-left: 1.5rem;
+                padding-bottom: 1.5rem;
                 display: flex;
                 align-items: center;
                 z-index: 2;
@@ -1014,6 +1116,16 @@
                 img {
                     width: auto;
                     max-width: 100%;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 22.3rem;
+                    height: 100%;
+                    z-index: 2;
                 }
             }
 
@@ -1252,15 +1364,24 @@
         .swiper__screenshots {
             width: 100%;
 
+            .swiper-slide-active {
+                padding-right: 3.4rem;
+            }
+
             &-slide {
+                padding-left: 1.7rem;
+                padding-right: 1.7rem;
+
                 img {
                     margin-bottom: 2.7rem;
-                    width: 100%;
+                    width: 38rem;
+                    height: 66.6rem;
                     object-fit: contain;
                 }
             }
 
             &-text {
+                width: 38rem;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -1363,17 +1484,36 @@
         width: 95.8rem;
 
         &-btn {
-            display: flex;
+            position: relative;
+            display: inline-flex;
             align-items: center;
             justify-content: center;
-            width: 26.6rem;
-            min-height: 13.8rem;
-            font-family: 'FuturaPT';
+            width: 25.3rem;
+            height: 9.8rem;
+            font-family: "FuturaPT";
             font-size: 1.5rem;
             line-height: 2.2rem;
             letter-spacing: 0.16em;
             text-transform: uppercase;
-            background: url(../images/svg/feedbackBtn.svg) center/contain no-repeat;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(15px);
+                transform: rotate(10deg);
+                border-bottom: 1px solid #797979;
+                border-top: 1px solid #ADADAD;
+                background-image: linear-gradient(45deg, #79797900, #ADADAD), linear-gradient(45deg, #79797900, #ADADAD);
+                background-size: 100% 1px;
+                background-repeat: no-repeat;
+                z-index: -1;
+            }
         }
     }
 

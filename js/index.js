@@ -25,11 +25,10 @@ const swiperCategories = new Swiper('.swiper__categories', {
     direction: 'horizontal',
     loop: true,
     slidesPerView: 3,
-    spaceBetween: 150,
     speed: 400,
     centeredSlides: true,
-    initialSlide: 2,
     pagination: {
+        clickable: true,
         el: '.swiper__categories-pagination',
     },
     navigation: {
@@ -38,36 +37,28 @@ const swiperCategories = new Swiper('.swiper__categories', {
     },
 });
 
-// 
+// main price slider
 
-const swiperPrice = new Swiper('.swiper__price-container', {
+const swiperPrice = new Swiper('.swiper__price', {
     direction: 'horizontal',
     loop: true,
-    slidesPerView: "auto",
-    spaceBetween: 50,
-});
-
-// 
-
-const swiperExamples = new Swiper('.swiper__examples', {
-    direction: 'horizontal',
-    loop: true,
-    effect: 'fade',
-    slidesPerView: 1,
-    autoplay: {
-        delay: 3000,
+    slidesPerView: 'auto',
+    pagination: {
+        clickable: true,
+        el: '.swiper__price-pagination',
     },
-    speed: 800,
-    allowTouchMove: false,
+    navigation: {
+        nextEl: '.swiper__price-next',
+        prevEl: '.swiper__price-prev',
+    },
 });
 
-// 
+// main video slider
 
 const swiperVideo = new Swiper('.swiper__video', {
     direction: 'horizontal',
     loop: false,
-    slidesPerView: 'auto',
-    spaceBetween: 40,
+    slidesPerView: 3,
     navigation: {
         nextEl: '.swiper__video-next',
         prevEl: '.swiper__video-prev',
@@ -77,16 +68,15 @@ const swiperVideo = new Swiper('.swiper__video', {
     },
 });
 
-// 
+// main reviews screenshots slider
 
 const swiperScreenshots = new Swiper('.swiper__screenshots', {
     direction: 'horizontal',
     loop: true,
     slidesPerView: 3,
-    spaceBetween: 50,
 });
 
-// 
+// main reviews text slider
 
 const swiperReviews = new Swiper('.swiper__reviews', {
     direction: 'vertical',
@@ -206,6 +196,20 @@ document.querySelectorAll('.pricelist__tab-btn').forEach(function (tabsBtn) {
 
         document.querySelectorAll(`[data-target="${path}"]`).forEach(function (tab) {
             tab.classList.add('pricelist__content--active');
+        })
+    });
+});
+
+document.querySelectorAll('.swiper__video-btn').forEach(function (tabsBtn) {
+    tabsBtn.addEventListener('click', function (e) {
+        const path = e.currentTarget.dataset.path;
+
+        document.querySelectorAll('.examples__background').forEach(function (tab) {
+            tab.classList.remove('examples__background--active')
+        });
+
+        document.querySelectorAll(`[data-target="${path}"]`).forEach(function (tab) {
+            tab.classList.add('examples__background--active');
         })
     });
 });

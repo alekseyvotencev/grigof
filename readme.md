@@ -1,4 +1,4 @@
-Главная - https://alekseyvotencev.github.io/grigof/
+- [x] Главная - https://alekseyvotencev.github.io/grigof/
 
 - [x] Драгоценные камни (детальная) - https://alekseyvotencev.github.io/grigof/stone.html
 
