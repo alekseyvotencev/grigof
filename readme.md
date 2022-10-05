@@ -26,5 +26,5 @@ B2B - https://alekseyvotencev.github.io/grigof/b2bgeneral.html кнопки
 
 Подарочный сертификат - https://alekseyvotencev.github.io/grigof/certificate.html кнопки
 
-- [x] О бренде - https://alekseyvotencev.github.io/grigof/about.html кнопки
+- [x] О бренде - https://alekseyvotencev.github.io/grigof/about.html
 

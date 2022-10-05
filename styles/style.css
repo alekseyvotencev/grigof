@@ -4809,4 +4809,298 @@ input[type=number] {
 
 .contacts-footer {
   padding-top: 12.5rem;
+}
+
+.certificate-hero {
+  padding-bottom: 1rem;
+  position: relative;
+  padding-top: 38rem;
+}
+.certificate-hero .container {
+  width: 164rem;
+}
+.certificate-hero__imgBG {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 31.6rem;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transform: translateX(-50%);
+}
+.certificate-hero__img1, .certificate-hero__img2 {
+  position: absolute;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.certificate-hero__img1 {
+  left: 61.5rem;
+  top: 3rem;
+  width: 37rem;
+  height: 36.6rem;
+}
+.certificate-hero__img2 {
+  right: 62.2rem;
+  bottom: 7rem;
+  width: 42.2rem;
+  height: 45.4rem;
+}
+.certificate-hero__heading {
+  margin-bottom: 18rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 7rem;
+  line-height: 12rem;
+  text-transform: uppercase;
+}
+.certificate-hero__heading span:first-child {
+  letter-spacing: 0.145em;
+}
+.certificate-hero__heading span:last-child {
+  letter-spacing: 0.14em;
+}
+.certificate-hero__content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.certificate-hero__list {
+  display: flex;
+  align-items: flex-start;
+}
+.certificate-hero__list-item {
+  display: flex;
+  flex-direction: column;
+}
+.certificate-hero__list-item p:first-child {
+  margin-bottom: 2rem;
+  display: inline-block;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.certificate-hero__list-item p:last-child {
+  width: 28.6rem;
+  display: inline-block;
+  font-family: "FuturaPT";
+  font-size: 1.9rem;
+  line-height: 2.2rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.certificate-hero__list-item:not(:last-child) {
+  margin-right: 6.2rem;
+}
+.certificate-hero__right-description {
+  margin-bottom: 3.3rem;
+  width: 38.2rem;
+  font-family: "FuturaPT";
+  font-size: 1.9rem;
+  line-height: 2.6rem;
+}
+.certificate-hero__right-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 25.3rem;
+  height: 10rem;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.certificate-hero__right-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  transform: rotate(10deg);
+  border-bottom: 1px solid #797979;
+  border-top: 1px solid #ADADAD;
+  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD), linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD);
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.certificate-hero__right-btn span:first-of-type {
+  transform: translate(1.5rem, -1rem);
+}
+.certificate-hero__right-btn span:last-of-type {
+  transform: translate(-1.5rem, 1rem);
+}
+
+.certificate-rules {
+  padding-top: 17.5rem;
+}
+.certificate-rules .container {
+  width: 164rem;
+}
+.certificate-rules__heading {
+  margin-bottom: 12rem;
+  width: 94rem;
+  font-size: 7rem;
+  line-height: 8.5rem;
+  text-transform: uppercase;
+}
+.certificate-rules__content {
+  display: flex;
+  align-items: flex-start;
+}
+.certificate-rules__img1 {
+  margin-right: 5rem;
+  width: 62.8rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.certificate-rules__center {
+  width: 38.8rem;
+}
+.certificate-rules__description {
+  margin-bottom: 6rem;
+  font-family: "FuturaPT";
+  font-size: 1.9rem;
+  line-height: 2.6rem;
+}
+.certificate-rules__btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 25.3rem;
+  height: 10rem;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.certificate-rules__btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  transform: rotate(10deg);
+  border-bottom: 1px solid #797979;
+  border-top: 1px solid #ADADAD;
+  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD), linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD);
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.certificate-rules__btn span:first-of-type {
+  transform: translate(1.5rem, -1rem);
+}
+.certificate-rules__btn span:last-of-type {
+  transform: translate(-1.5rem, 1rem);
+}
+.certificate-rules__right {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.certificate-rules__img2 {
+  margin-bottom: 6rem;
+  width: 46.4rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.certificate-rules__link {
+  display: inline-block;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.certificate-rules__link span {
+  margin-right: 1.7rem;
+}
+.certificate-rules__link img {
+  display: inline-block;
+  width: 4.213rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.certificate-qa {
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+}
+.certificate-qa__heading {
+  margin-bottom: 7.5rem;
+  font-size: 7rem;
+  line-height: 8.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.certificate-qa__list-item {
+  padding-top: 5.2rem;
+  padding-bottom: 5.4rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.certificate-qa .certificate-qa__list-item.acc_section.acc_active .certificate-qa__item-btn {
+  transform: rotate(-45deg);
+}
+.certificate-qa__item-head {
+  display: flex;
+  align-items: center;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+.certificate-qa__item-number {
+  margin-left: 4rem;
+  margin-right: 8.5rem;
+  font-size: 7rem;
+  line-height: 8.5rem;
+  text-transform: uppercase;
+}
+.certificate-qa__item-text {
+  font-size: 4rem;
+  line-height: 4.6rem;
+  text-transform: uppercase;
+}
+.certificate-qa__item-btn {
+  margin-left: auto;
+  width: 4.7rem;
+  height: 4.7rem;
+  cursor: pointer;
+  transition: transform 0.25s ease-in-out;
+}
+.certificate-qa__item-btn img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.certificate-qa__item-content {
+  margin-left: 15rem;
+  padding-top: 3.6rem;
+  font-family: "FuturaPT";
+  font-size: 1.9rem;
+  line-height: 2.6rem;
+  color: rgba(255, 255, 255, 0.5);
 }/*# sourceMappingURL=style.css.map */
