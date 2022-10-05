@@ -137,15 +137,6 @@ const swiperCarousel = new Swiper('.swiper__carousel', {
     loop: true,
 });
 
-// 
-
-const swiperB2B = new Swiper('.swiper__b2b', {
-    direction: 'horizontal',
-    slidesPerView: '3',
-    spaceBetween: 20,
-    loop: true,
-});
-
 // tabs
 
 document.querySelectorAll('.services__tabs-btn').forEach(function (tabsBtn) {
@@ -397,5 +388,40 @@ validation
         console.log("Отправка запроса");
         event.preventDefault();
     });
+
+// smooth scroll
+
+
+document.querySelectorAll('a[href^="#"').forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        let href = this.getAttribute('href').substring(1);
+
+        const scrollTarget = document.getElementById(href);
+
+        // const topOffset = document.querySelector('.scrollto').offsetHeight;
+        const topOffset = 0; // если не нужен отступ сверху 
+        const elementPosition = scrollTarget.getBoundingClientRect().top;
+        const offsetPosition = elementPosition - topOffset;
+
+        window.scrollBy({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+    });
+});
+
+document.querySelector('.b2b-hero__btn').addEventListener('click', () => {
+    const scrollTarget = document.querySelector('.b2b-catalog__heading');
+    const topOffset = 0; // если не нужен отступ сверху 
+    const elementPosition = scrollTarget.getBoundingClientRect().top;
+    const offsetPosition = elementPosition - topOffset;
+
+    window.scrollBy({
+        top: offsetPosition,
+        behavior: 'smooth'
+    });
+})
 
 

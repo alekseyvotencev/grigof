@@ -12,7 +12,7 @@
 
 - [x] Драгоценные камни - https://alekseyvotencev.github.io/grigof/gemstones.html
  
-B2B - https://alekseyvotencev.github.io/grigof/b2bgeneral.html кнопки
+- [x] B2B - https://alekseyvotencev.github.io/grigof/b2bgeneral.html
 
 - [x] Карточка B2B - https://alekseyvotencev.github.io/grigof/b2bspecial.html
 
