@@ -82,6 +82,7 @@ const swiperReviews = new Swiper('.swiper__reviews', {
     direction: 'vertical',
     slidesPerView: 1,
     loop: true,
+    spaceBetween: 50,
     thumbs: {
         swiper: swiperScreenshots,
     },
@@ -94,6 +95,15 @@ const swiperReviews = new Swiper('.swiper__reviews', {
         clickable: true,
     }
 });
+
+const reviewsElems = document.querySelectorAll('.swiper__reviews-item');
+reviewsElems.forEach(element => {
+    if (element.innerText.length > 142) {
+        let review = element.innerText.substring(0, 142);
+        review += "&#8230;";
+        element.innerHTML = review;
+    }
+})
 
 // 
 
@@ -388,11 +398,4 @@ validation
         event.preventDefault();
     });
 
-// q&a
 
-jQuery(document).ready(function ($) {
-    $("#my-accordion").accordionjs({
-        activeIndex: false,
-        slideSpeed: 250,
-    });
-});

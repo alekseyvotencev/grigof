@@ -1273,7 +1273,9 @@
         width: 58rem;
 
         &-btn {
-            position: relative;
+            position: absolute;
+            left: 25rem;
+            top: 47rem;
             display: inline-flex;
             align-items: center;
             justify-content: center;
@@ -1295,7 +1297,7 @@
                 border-radius: 50%;
                 background: rgba(255, 255, 255, 0.1);
                 backdrop-filter: blur(15px);
-                transform: rotate(15deg);
+                transform: rotate(10deg);
                 border-bottom: 1px solid #797979;
                 border-top: 1px solid #ADADAD;
                 background-image: linear-gradient(45deg, #79797900, #ADADAD), linear-gradient(45deg, #79797900, #ADADAD);
@@ -1323,8 +1325,8 @@
 
     .swiper__reviews-pagintaion {
         position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+        left: 14rem;
+        top: 33.4rem;
         display: flex;
         flex-direction: column;
 
@@ -1347,8 +1349,9 @@
 
     .swiper__reviews {
         margin-right: 3.3rem;
+        margin-bottom: 5.7rem;
         width: 43.7rem;
-        max-height: 35rem;
+        max-height: 7.8rem;
 
         &-slide {
             height: 100%;
