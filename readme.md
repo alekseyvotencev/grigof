@@ -11,20 +11,20 @@
 - [x] В наличии - https://alekseyvotencev.github.io/grigof/stock.html
 
 - [x] Драгоценные камни - https://alekseyvotencev.github.io/grigof/gemstones.html
-
-B2B - https://alekseyvotencev.github.io/grigof/b2bgeneral.html
+ 
+B2B - https://alekseyvotencev.github.io/grigof/b2bgeneral.html кнопки
 
 - [x] Карточка B2B - https://alekseyvotencev.github.io/grigof/b2bspecial.html
 
 - [x] Портфолио - https://alekseyvotencev.github.io/grigof/portfolio.html
 
-Карточка товара - https://alekseyvotencev.github.io/grigof/productcard.html
+Карточка товара - https://alekseyvotencev.github.io/grigof/productcard.html кнопки
 
 - [x] Отзывы - https://alekseyvotencev.github.io/grigof/feedback.html
 
 - [x] Контакты - https://alekseyvotencev.github.io/grigof/contacts.html
 
-Подарочный сертификат - https://alekseyvotencev.github.io/grigof/certificate.html
+Подарочный сертификат - https://alekseyvotencev.github.io/grigof/certificate.html кнопки
 
-- [x] О бренде - https://alekseyvotencev.github.io/grigof/about.html
+- [x] О бренде - https://alekseyvotencev.github.io/grigof/about.html кнопки
 

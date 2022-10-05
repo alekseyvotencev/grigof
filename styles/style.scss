@@ -1270,17 +1270,44 @@
         width: 58rem;
 
         &-btn {
-            display: flex;
+            position: relative;
+            display: inline-flex;
             align-items: center;
             justify-content: center;
-            width: 26.6rem;
-            min-height: 13.8rem;
-            font-family: 'FuturaPT';
+            width: 25.3rem;
+            height: 10rem;
+            font-family: "FuturaPT";
             font-size: 1.5rem;
             line-height: 2.2rem;
             letter-spacing: 0.16em;
             text-transform: uppercase;
-            background: url(../images/svg/feedbackBtn.svg) center/contain no-repeat;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(15px);
+                transform: rotate(15deg);
+                border-bottom: 1px solid #797979;
+                border-top: 1px solid #ADADAD;
+                background-image: linear-gradient(45deg, #79797900, #ADADAD), linear-gradient(45deg, #79797900, #ADADAD);
+                background-size: 100% 1px;
+                background-repeat: no-repeat;
+                z-index: -1;
+            }
+
+            span:first-of-type {
+                transform: translate(3.5rem, -1.5rem);
+            }
+
+            span:last-of-type {
+                transform: translate(-3.5rem, 1rem);
+            }
         }
     }
 
@@ -1693,24 +1720,41 @@
         position: absolute;
         left: 0;
         top: 50%;
-        display: flex;
+        display: inline-flex;
         align-items: center;
         justify-content: center;
         width: 25.3rem;
         height: 10rem;
-        font-family: 'FuturaPT';
+        font-family: "FuturaPT";
         font-size: 1.5rem;
         line-height: 2.2rem;
         letter-spacing: 0.16em;
         text-transform: uppercase;
-        transform: translateY(-50%);
-        background: url(../images/svg/requestBtn.svg) center/contain no-repeat;
 
-        span:first-child {
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            transform: rotate(10deg);
+            border-bottom: 1px solid #797979;
+            border-top: 1px solid #ADADAD;
+            background-image: linear-gradient(45deg, #79797900, #ADADAD), linear-gradient(45deg, #79797900, #ADADAD);
+            background-size: 100% 1px;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+
+        span:first-of-type {
             transform: translate(1.5rem, -1rem);
         }
 
-        span:last-child {
+        span:last-of-type {
             transform: translate(-1.5rem, 1rem);
         }
     }
@@ -2086,25 +2130,43 @@
 
     &__btn {
         margin-right: 14rem;
-        display: flex;
+        position: relative;
+        display: inline-flex;
         align-items: center;
         justify-content: center;
         width: 25.3rem;
         height: 10rem;
-        font-family: 'FuturaPT';
+        font-family: "FuturaPT";
         font-size: 1.5rem;
         line-height: 2.2rem;
         letter-spacing: 0.16em;
         text-transform: uppercase;
-        background: url(../images/svg/requestBtn.svg) center/contain no-repeat;
 
-        span:first-child {
-            margin-bottom: .5rem;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            transform: rotate(10deg);
+            border-bottom: 1px solid #797979;
+            border-top: 1px solid #ADADAD;
+            background-image: linear-gradient(45deg, #79797900, #ADADAD), linear-gradient(45deg, #79797900, #ADADAD);
+            background-size: 100% 1px;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+
+        span:first-of-type {
             transform: translate(3rem, -1rem);
         }
 
-        span:last-child {
-            transform: translate(-2.5rem, 1rem);
+        span:last-of-type {
+            transform: translate(-2rem, 1rem);
         }
     }
 
@@ -2386,17 +2448,36 @@
 
     &__btn {
         margin-bottom: 10.8rem;
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 26.5rem;
-        height: 13.8rem;
+        width: 25.3rem;
+        height: 10rem;
         font-family: "FuturaPT";
         font-size: 1.5rem;
         line-height: 2.2rem;
         letter-spacing: 0.16em;
         text-transform: uppercase;
-        background: url(../images/svg/requestBtn.svg) center/contain no-repeat;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            transform: rotate(10deg);
+            border-bottom: 1px solid #797979;
+            border-top: 1px solid #ADADAD;
+            background-image: linear-gradient(45deg, #79797900, #ADADAD), linear-gradient(45deg, #79797900, #ADADAD);
+            background-size: 100% 1px;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
 
         span:first-child {
             margin-bottom: .5rem;
@@ -2580,6 +2661,7 @@
         justify-content: space-between;
 
         &-btn {
+            position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -2590,7 +2672,25 @@
             line-height: 2.2rem;
             letter-spacing: 0.16em;
             text-transform: uppercase;
-            background: url(../images/svg/requestBtn.svg) center/contain no-repeat;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(15px);
+                transform: rotate(10deg);
+                border-bottom: 1px solid #797979;
+                border-top: 1px solid #ADADAD;
+                background-image: linear-gradient(45deg, #79797900, #ADADAD), linear-gradient(45deg, #79797900, #ADADAD);
+                background-size: 100% 1px;
+                background-repeat: no-repeat;
+                z-index: -1;
+            }
 
             span:first-child {
                 margin-bottom: .5rem;
@@ -3104,6 +3204,7 @@
         }
 
         &__btn-showmore {
+            position: relative;
             width: 22rem;
             height: 8.5rem;
             font-family: 'FuturaPT';
@@ -3112,7 +3213,24 @@
             text-align: center;
             letter-spacing: 0.16em;
             text-transform: uppercase;
-            background: url(../images/svg/gemstonesCatalogShowMore.svg) center/contain no-repeat;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(15px);
+                border-bottom: 1px solid #797979;
+                border-top: 1px solid #ADADAD;
+                background-image: linear-gradient(45deg, #79797900, #ADADAD), linear-gradient(45deg, #79797900, #ADADAD);
+                background-size: 100% 1px;
+                background-repeat: no-repeat;
+                z-index: -1;
+            }
         }
     }
 }
@@ -3148,18 +3266,37 @@
 
     &__btn {
         margin-bottom: 24.5rem;
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 26.5rem;
-        height: 14rem;
+        width: 25.3rem;
+        height: 10rem;
         font-family: "FuturaPT";
         font-size: 1.5rem;
         line-height: 2.2rem;
         letter-spacing: 0.16em;
         text-transform: uppercase;
-        background: url(../images/svg/requestBtn.svg) center/contain no-repeat;
         cursor: pointer;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            transform: rotate(10deg);
+            border-bottom: 1px solid #797979;
+            border-top: 1px solid #ADADAD;
+            background-image: linear-gradient(45deg, #79797900, #ADADAD), linear-gradient(45deg, #79797900, #ADADAD);
+            background-size: 100% 1px;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
 
         span:first-child {
             transform: translate(1.5rem, -1rem);
@@ -3594,6 +3731,7 @@
     }
 
     &__btn-showmore {
+        position: relative;
         width: 22rem;
         height: 8.5rem;
         font-family: 'FuturaPT';
@@ -3602,8 +3740,24 @@
         text-align: center;
         letter-spacing: 0.16em;
         text-transform: uppercase;
-        background: url(../images/svg/gemstonesCatalogShowMore.svg) center/contain no-repeat;
 
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid #797979;
+            border-top: 1px solid #ADADAD;
+            background-image: linear-gradient(45deg, #79797900, #ADADAD), linear-gradient(45deg, #79797900, #ADADAD);
+            background-size: 100% 1px;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
     }
 }
 
@@ -3842,6 +3996,7 @@
     }
 
     &__btn {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -3852,7 +4007,25 @@
         line-height: 2.2rem;
         letter-spacing: 0.16em;
         text-transform: uppercase;
-        background: url(../images/svg/requestBtn.svg) center/contain no-repeat;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            transform: rotate(10deg);
+            border-bottom: 1px solid #797979;
+            border-top: 1px solid #ADADAD;
+            background-image: linear-gradient(45deg, #79797900, #ADADAD), linear-gradient(45deg, #79797900, #ADADAD);
+            background-size: 100% 1px;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
 
         span:first-child {
             transform: translate(1.5rem, -1rem);
@@ -3945,15 +4118,33 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 26.5rem;
-        height: 14rem;
+        width: 25.3rem;
+        height: 10rem;
         font-family: "FuturaPT";
         font-size: 1.5rem;
         line-height: 2.2rem;
         letter-spacing: 0.16em;
         text-transform: uppercase;
-        background: url(../images/svg/requestBtn.svg) center/contain no-repeat;
         cursor: pointer;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            transform: rotate(10deg);
+            border-bottom: 1px solid #797979;
+            border-top: 1px solid #ADADAD;
+            background-image: linear-gradient(45deg, #79797900, #ADADAD), linear-gradient(45deg, #79797900, #ADADAD);
+            background-size: 100% 1px;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
 
         span:first-child {
             transform: translate(1.5rem, -1rem);
@@ -4600,6 +4791,7 @@
         }
 
         &__btn-showmore {
+            position: relative;
             width: 22rem;
             height: 8.5rem;
             font-family: 'FuturaPT';
@@ -4608,7 +4800,24 @@
             text-align: center;
             letter-spacing: 0.16em;
             text-transform: uppercase;
-            background: url(../images/svg/gemstonesCatalogShowMore.svg) center/contain no-repeat;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(15px);
+                border-bottom: 1px solid #797979;
+                border-top: 1px solid #ADADAD;
+                background-image: linear-gradient(45deg, #79797900, #ADADAD), linear-gradient(45deg, #79797900, #ADADAD);
+                background-size: 100% 1px;
+                background-repeat: no-repeat;
+                z-index: -1;
+            }
         }
     }
 }
@@ -4757,15 +4966,33 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 26.5rem;
-        height: 14rem;
+        width: 25.3rem;
+        height: 10rem;
         font-family: "FuturaPT";
         font-size: 1.5rem;
         line-height: 2.2rem;
         letter-spacing: 0.16em;
         text-transform: uppercase;
-        background: url(../images/svg/requestBtn.svg) center/contain no-repeat;
         cursor: pointer;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            transform: rotate(10deg);
+            border-bottom: 1px solid #797979;
+            border-top: 1px solid #ADADAD;
+            background-image: linear-gradient(45deg, #79797900, #ADADAD), linear-gradient(45deg, #79797900, #ADADAD);
+            background-size: 100% 1px;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
 
         span:first-child {
             transform: translate(1.5rem, -1rem);
@@ -4973,6 +5200,7 @@
     }
 
     &__link {
+        position: relative;
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -4984,7 +5212,24 @@
         text-align: center;
         letter-spacing: 0.16em;
         text-transform: uppercase;
-        background: url(../images/svg/gemstonesCatalogShowMore.svg) center/contain no-repeat;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid #797979;
+            border-top: 1px solid #ADADAD;
+            background-image: linear-gradient(45deg, #79797900, #ADADAD), linear-gradient(45deg, #79797900, #ADADAD);
+            background-size: 100% 1px;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
     }
 }
 
@@ -5108,7 +5353,7 @@
                 border-radius: 50%;
                 background: rgba(255, 255, 255, 0.1);
                 backdrop-filter: blur(15px);
-                transform: rotate(15deg);
+                transform: rotate(10deg);
                 border-bottom: 1px solid #797979;
                 border-top: 1px solid #ADADAD;
                 background-image: linear-gradient(45deg, #79797900, #ADADAD), linear-gradient(45deg, #79797900, #ADADAD);
