@@ -195,9 +195,11 @@ input[type=number] {
 }
 .header__logo {
   width: 19.4rem;
+}
+.header__logo img {
+  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  max-width: 100%;
 }
 .header__right-top {
   margin-bottom: 2.5rem;
@@ -1541,6 +1543,9 @@ input[type=number] {
 .footer__logo {
   margin-right: 16rem;
   width: 19.4rem;
+}
+.footer__logo img {
+  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }

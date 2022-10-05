@@ -58,8 +58,11 @@
 
     &__logo {
         width: 19.4rem;
-        object-fit: contain;
-        max-width: 100%;
+
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
     }
 
     &__right {
@@ -1618,7 +1621,11 @@
     &__logo {
         margin-right: 16rem;
         width: 19.4rem;
-        object-fit: contain;
+
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
     }
 
     &__top {
