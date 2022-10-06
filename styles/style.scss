@@ -2872,7 +2872,7 @@
         height: 84.5rem;
 
         .swiper-wrapper {
-            margin-top: 30rem;
+            margin-top: 27rem;
             flex-direction: column;
         }
 
@@ -2885,13 +2885,17 @@
         }
 
         &-slide {
+            padding-top: 5rem;
+            height: 48.5rem;
+        }
+
+        &-card {
             padding: 4.35rem 4rem 3.5rem 4rem;
             position: relative;
             display: flex;
             flex-direction: column;
             align-items: center;
-            // justify-content: flex-end;
-            height: 43.5rem;
+            height: 100%;
             background-color: #222;
 
             img[src="images/swiper-carousel.png"] {
@@ -5761,4 +5765,364 @@
         line-height: 2.6rem;
         color: rgba(255, 255, 255, 0.5);
     }
+}
+
+.similar-products {
+    padding-bottom: 21.1rem;
+
+    .container {
+        width: 164rem;
+    }
+
+    &__heading {
+        margin-bottom: 8.5rem;
+        font-size: 7rem;
+        line-height: 9rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &-item {
+            flex: 0 1 37.2rem;
+        }
+    }
+
+
+    &__item-name {
+        margin: 0 auto;
+        margin-bottom: 3rem;
+        width: 27.4rem;
+        font-size: 4rem;
+        line-height: 4.8rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__item-card {
+        padding: 2.8rem 3rem 2.8rem 3.5rem;
+        position: relative;
+        width: 100%;
+        height: 43.6rem;
+        display: flex;
+        align-items: flex-end;
+        background-color: #1B1B1B;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    &__item-bottom {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__item-price {
+        display: inline-block;
+        font-family: 'FuturaPT';
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+
+        span {}
+    }
+
+    &__item-video-link {
+        position: absolute;
+        right: 2.5rem;
+        top: -2.5rem;
+        width: 5.6rem;
+        height: 5.6rem;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        z-index: 3;
+
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__item-img {
+        position: absolute;
+        top: 7rem;
+        left: 50%;
+        transform: translateX(-50%);
+        object-fit: contain;
+
+        &[src="images/catalog1.png"] {
+            width: 25rem;
+        }
+
+        &[src="images/catalog2.png"] {
+            width: 25rem;
+        }
+
+        &[src="images/catalog3.png"] {
+            width: 21rem;
+        }
+
+        &[src="images/catalog4.png"] {
+            top: 5rem;
+            width: 23rem;
+        }
+    }
+
+    &__item-bottom-link {
+        width: 4.213rem;
+
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+        }
+
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+.productcard-hero {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+
+    .container {
+        width: 164rem;
+    }
+
+    .swiper__productcard {
+        position: relative;
+
+        &-slide {
+            width: 100%;
+            display: flex;
+        }
+
+        &-control {
+            position: absolute;
+            right: 0;
+            top: 49rem;
+            display: flex;
+            align-items: center;
+        }
+
+        &-prev {
+            transform: scale(-1);
+            margin-right: 2rem;
+        }
+
+        &-prev,
+        &-next {
+            display: inline-block;
+            cursor: pointer;
+            z-index: 3;
+
+            img {
+                width: 4.213rem;
+                object-fit: contain;
+            }
+        }
+
+        &-left {
+            margin-top: 9rem;
+            margin-right: 8.3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &-price {
+            margin-bottom: 3.7rem;
+            font-size: 4rem;
+            line-height: 4.8rem;
+            text-transform: uppercase;
+
+            span {
+                font-family: 'FuturaPT';
+                font-size: 1.5rem;
+                line-height: 3.5rem;
+                letter-spacing: 0.16em;
+                text-transform: uppercase;
+                vertical-align: top;
+            }
+        }
+
+        &-description {
+            width: 33rem;
+            font-size: 1.9rem;
+            line-height: 2.5rem;
+            margin-bottom: 4.6rem;
+        }
+
+        &-btn {
+            margin-bottom: 15.5rem;
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 25.3rem;
+            height: 10rem;
+            font-family: "FuturaPT";
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            z-index: 2;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(15px);
+                transform: rotate(10deg);
+                border-bottom: 1px solid #797979;
+                border-top: 1px solid #ADADAD;
+                background-image: linear-gradient(45deg, #79797900, #ADADAD), linear-gradient(45deg, #79797900, #ADADAD);
+                background-size: 100% 1px;
+                background-repeat: no-repeat;
+                z-index: -1;
+            }
+
+            span:first-of-type {
+                transform: translate(1.5rem, -1rem);
+            }
+
+            span:last-of-type {
+                transform: translate(-1.5rem, 1rem);
+            }
+        }
+
+        &-images-small {
+            display: flex;
+        }
+
+        &-img-small {
+            width: 11.2rem;
+            object-fit: contain;
+
+            &:not(:last-child) {
+                margin-right: 3.5rem;
+            }
+        }
+
+        &-center {
+            width: 70rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        &-img-big {
+            width: 57rem;
+            object-fit: contain;
+        }
+
+        &-name {
+            margin-top: auto;
+            width: 100%;
+            font-size: 7rem;
+            line-height: 8.3rem;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        &-right {
+            margin-top: 9rem;
+            margin-left: auto;
+            display: flex;
+            flex-direction: column;
+            align-self: flex-start;
+            text-align: right;
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+
+            &-item {
+                p:first-child {
+                    margin-bottom: .8rem;
+                    font-family: 'FuturaPT';
+                    font-size: 1.9rem;
+                    line-height: 2.2rem;
+                    text-transform: capitalize;
+                    color: rgba(255, 255, 255, 0.5);
+                }
+
+                p:last-child {
+                    font-family: 'FuturaPT';
+                    font-size: 1.5rem;
+                    line-height: 2.2rem;
+                    letter-spacing: 0.16em;
+                    text-transform: uppercase;
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 3.3rem;
+                }
+            }
+        }
+    }
+
+    &__social {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        text-align: right;
+        z-index: 3;
+
+        &-text {
+            margin-bottom: 2.5rem;
+            font-family: 'FuturaPT';
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
+
+        &-list {
+            display: flex;
+            align-self: center;
+        }
+
+        &-item {
+            width: 5.4rem;
+            height: 5.4rem;
+
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+
+            a {
+                cursor: pointer;
+
+                img {
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+
 }

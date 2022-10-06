@@ -18,7 +18,7 @@
 
 - [x] Портфолио - https://alekseyvotencev.github.io/grigof/portfolio.html
 
-Карточка товара - https://alekseyvotencev.github.io/grigof/productcard.html кнопки
+- [x] Карточка товара - https://alekseyvotencev.github.io/grigof/productcard.html
 
 - [x] Отзывы - https://alekseyvotencev.github.io/grigof/feedback.html
 

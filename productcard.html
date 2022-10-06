@@ -1,12 +1,471 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles/choices.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Карточка товара</title>
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <div class="header__left">
+                <p class="header__left-schedule">Пн-Пт: 11:00 - 19:00 только по записи</p>
+                <nav class="header__left-nav">
+                    <ul class="header__left-nav-list">
+                        <li class="header__left-nav-item">
+                            <a href="/portfolio.html"
+                                class="header__left-nav-link header__left-nav-link--active">Портфолио</a>
+                        </li>
+                        <li class="header__left-nav-item">
+                            <a href="/pricelist.html" class="header__left-nav-link">Цены</a>
+                        </li>
+                        <li class="header__left-nav-item">
+                            <a href="/stock.html" class="header__left-nav-link">В наличии</a>
+                        </li>
+                        <li class="header__left-nav-item">
+                            <a href="/gemstones.html" class="header__left-nav-link">Драгоценные камни</a>
+                        </li>
+                        <li class="header__left-nav-item">
+                            <a href="/b2bgeneral.html" class="header__left-nav-link">B2B</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <a href="/index.html" class="header__logo"><img src="images/svg/logo.svg" alt="Логотип фирмы"
+                    class="header__logo"></a>
+            <div class="header__right">
+                <div class="header__right-top">
+                    <a href="tel:+74996479997" class="header__right-phone">+7 499 647 99 97</a>
+                </div>
+                <nav class="header__right-nav">
+                    <ul class="header__right-nav-list">
+                        <li class="header__right-nav-item">
+                            <a href="/certificate.html" class="header__right-nav-link">Купить сертификат</a>
+                        </li>
+                        <li class="header__right-nav-item">
+                            <a href="/repair.html" class="header__right-nav-link">Ремонт</a>
+                        </li>
+                        <li class="header__right-nav-item">
+                            <a href="/feedback.html" class="header__right-nav-link">Отзывы</a>
+                        </li>
+                        <li class="header__right-nav-item">
+                            <a href="/about.html" class="header__right-nav-link">О
+                                бренде</a>
+                        </li>
+                        <li class="header__right-nav-item">
+                            <a href="/contacts.html" class="header__right-nav-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="productcard-hero">
+            <div class="container">
+                <div class="swiper-container swiper__productcard">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper__productcard-slide">
+                            <div class="swiper__productcard-left">
+                                <p class="swiper__productcard-price">575 000 <span>&#8381;</span></p>
+                                <p class="swiper__productcard-description">Помолвочное кольцо с принцессой из белого
+                                    золота 585 пробы ручной работы от мастеров
+                                    «Grigof». В
+                                    данном изделии использовано белое золото 585 пробы. Возможно использовать другой
+                                    материал с другой
+                                    пробой и весом.</p>
+                                <button class="swiper__productcard-btn">
+                                    <span>оставить</span>
+                                    <span>заявку</span>
+                                </button>
+                                <div class="swiper__productcard-images-small">
+                                    <img src="images/productcard1.png" alt="" class="swiper__productcard-img-small">
+                                    <img src="images/productcard2.png" alt="" class="swiper__productcard-img-small">
+                                    <img src="images/productcard3.png" alt="" class="swiper__productcard-img-small">
+                                </div>
+                            </div>
+                            <div class="swiper__productcard-center">
+                                <img src="images/hero2.png" alt="" class="swiper__productcard-img-big">
+                                <p class="swiper__productcard-name">помолвочное кольцо</p>
+                            </div>
+                            <div class="swiper__productcard-right">
+                                <ul class="swiper__productcard-list">
+                                    <li class="swiper__productcard-list-item">
+                                        <p>материал</p>
+                                        <p>Золото 750 проба</p>
+                                    </li>
+                                    <li class="swiper__productcard-list-item">
+                                        <p>тип</p>
+                                        <p>Кольцо для помолвки</p>
+                                    </li>
+                                    <li class="swiper__productcard-list-item">
+                                        <p>вес</p>
+                                        <p>10-11 грамм</p>
+                                    </li>
+                                    <li class="swiper__productcard-list-item">
+                                        <p>вставки</p>
+                                        <p>бриллианты, центральный 0.91ct</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide swiper__productcard-slide">
+                            <div class="swiper__productcard-left">
+                                <p class="swiper__productcard-price">575 000 <span>&#8381;</span></p>
+                                <p class="swiper__productcard-description">Помолвочное кольцо с принцессой из белого
+                                    золота 585 пробы ручной работы от мастеров
+                                    «Grigof». В
+                                    данном изделии использовано белое золото 585 пробы. Возможно использовать другой
+                                    материал с другой
+                                    пробой и весом.</p>
+                                <button class="swiper__productcard-btn">
+                                    <span>оставить</span>
+                                    <span>заявку</span>
+                                </button>
+                                <div class="swiper__productcard-images-small">
+                                    <img src="images/productcard1.png" alt="" class="swiper__productcard-img-small">
+                                    <img src="images/productcard2.png" alt="" class="swiper__productcard-img-small">
+                                    <img src="images/productcard3.png" alt="" class="swiper__productcard-img-small">
+                                </div>
+                            </div>
+                            <div class="swiper__productcard-center">
+                                <img src="images/hero2.png" alt="" class="swiper__productcard-img-big">
+                                <p class="swiper__productcard-name">помолвочное кольцо</p>
+                            </div>
+                            <div class="swiper__productcard-right">
+                                <ul class="swiper__productcard-list">
+                                    <li class="swiper__productcard-list-item">
+                                        <p>материал</p>
+                                        <p>Золото 750 проба</p>
+                                    </li>
+                                    <li class="swiper__productcard-list-item">
+                                        <p>тип</p>
+                                        <p>Кольцо для помолвки</p>
+                                    </li>
+                                    <li class="swiper__productcard-list-item">
+                                        <p>вес</p>
+                                        <p>10-11 грамм</p>
+                                    </li>
+                                    <li class="swiper__productcard-list-item">
+                                        <p>вставки</p>
+                                        <p>бриллианты, центральный 0.91ct</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide swiper__productcard-slide">
+                            <div class="swiper__productcard-left">
+                                <p class="swiper__productcard-price">575 000 <span>&#8381;</span></p>
+                                <p class="swiper__productcard-description">Помолвочное кольцо с принцессой из белого
+                                    золота 585 пробы ручной работы от мастеров
+                                    «Grigof». В
+                                    данном изделии использовано белое золото 585 пробы. Возможно использовать другой
+                                    материал с другой
+                                    пробой и весом.</p>
+                                <button class="swiper__productcard-btn">
+                                    <span>оставить</span>
+                                    <span>заявку</span>
+                                </button>
+                                <div class="swiper__productcard-images-small">
+                                    <img src="images/productcard1.png" alt="" class="swiper__productcard-img-small">
+                                    <img src="images/productcard2.png" alt="" class="swiper__productcard-img-small">
+                                    <img src="images/productcard3.png" alt="" class="swiper__productcard-img-small">
+                                </div>
+                            </div>
+                            <div class="swiper__productcard-center">
+                                <img src="images/hero2.png" alt="" class="swiper__productcard-img-big">
+                                <p class="swiper__productcard-name">помолвочное кольцо</p>
+                            </div>
+                            <div class="swiper__productcard-right">
+                                <ul class="swiper__productcard-list">
+                                    <li class="swiper__productcard-list-item">
+                                        <p>материал</p>
+                                        <p>Золото 750 проба</p>
+                                    </li>
+                                    <li class="swiper__productcard-list-item">
+                                        <p>тип</p>
+                                        <p>Кольцо для помолвки</p>
+                                    </li>
+                                    <li class="swiper__productcard-list-item">
+                                        <p>вес</p>
+                                        <p>10-11 грамм</p>
+                                    </li>
+                                    <li class="swiper__productcard-list-item">
+                                        <p>вставки</p>
+                                        <p>бриллианты, центральный 0.91ct</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper__productcard-control">
+                        <div class="swiper__productcard-prev">
+                            <img src="images/svg/swiperArrow.svg" alt="">
+                        </div>
+                        <div class="swiper__productcard-next">
+                            <img src="images/svg/swiperArrow.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="productcard-hero__social">
+                        <p class="productcard-hero__social-text">сохраните, чтобы не потерять</p>
+                        <ul class="productcard-hero__social-list">
+                            <li class="productcard-hero__social-item">
+                                <a href="#">
+                                    <img src="images/svg/whatsapp.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="productcard-hero__social-item">
+                                <a href="#">
+                                    <img src="images/svg/telegram.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="productcard-hero__social-item">
+                                <a href="#">
+                                    <img src="images/svg/odnokl.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="productcard-hero__social-item">
+                                <a href="#">
+                                    <img src="images/svg/productCardvk.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="productcard-hero__social-item">
+                                <a href="#">
+                                    <img src="images/svg/productCardinsta.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="warranty">
+            <div class="container">
+                <div class="warranty__top">
+                    <p class="warranty__heading">гарантия, оплата и доставка</p>
+                    <div class="warranty__right">
+                        <p class="warranty__right-heading">бесплатная доставка</p>
+                        <p class="warranty__right-description">Доставка осуществляется курьером в руки по всей России и
+                            странам СНГ.</p>
+                        <p class="warranty__right-postscript">Также вы можете забрать готовое украшение из нашего
+                            офиса<br>
+                            с 10:00–18:00 пн-пт.</p>
+                    </div>
+                    <div class="warranty__right-border"></div>
+                </div>
+                <div class="warranty__bottom">
+                    <ul class="warranty__bottom-list">
+                        <li class="warranty__bottom-item">
+                            <p class="warranty__bottom-number">(01)</p>
+                            <p class="warranty__bottom-description">После предоплаты в 50 % приступаем к изготовлению
+                                (2–4 недели).</p>
+                        </li>
+                        <li class="warranty__bottom-item">
+                            <p class="warranty__bottom-number">(02)</p>
+                            <p class="warranty__bottom-description">Если готовое изделие вас не устраивает по
+                                каким-либо причинам, мы его дорабатываем или переделываем за свой счет.</p>
+                        </li>
+                    </ul>
+                </div>
+                <img src="images/warrantyImage.png" alt="" class="warranty__image">
+            </div>
+        </section>
+
+        <section class="advantages">
+            <ul class="advantages__list">
+                <li class="advantages__list-item">
+                    <div class="advantages__list-article">
+                        <div class="advantages__list-number">
+                            730
+                        </div>
+                        <p class="advantages__list-title">гарантия 730 дней</p>
+                        <p class="advantages__list-description">Гарантия действует на все изделия,
+                            в течение года обслуживание, диагностика чистка и полировка бесплатно</p>
+                    </div>
+                </li>
+                <li class="advantages__list-item">
+                    <div class="advantages__list-article">
+                        <div class="advantages__list-number">
+                            0-999
+                        </div>
+                        <p class="advantages__list-title">проверка пробы</p>
+                        <p class="advantages__list-description">Изделия проверяется в пробирной палате на соответствие
+                            заявленной пробе. Подтверждением является специальное клеймо с пробой.</p>
+                    </div>
+                </li>
+                <li class="advantages__list-item">
+                    <div class="advantages__list-article">
+                        <div class="advantages__list-number">
+                            A++
+                        </div>
+                        <p class="advantages__list-title">сертификация</p>
+                        <p class="advantages__list-description">Мы предоставляем сертификат на первую группу цветных
+                            камней по желанию клиента.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="similar-products">
+            <div class="container">
+                <p class="similar-products__heading">похожие товары</p>
+                <ul class="similar-products__list">
+                    <li class="similar-products__list-item">
+                        <p class="similar-products__item-name">обручальные кольца</p>
+                        <div class="similar-products__item-card">
+                            <a href="#" class="similar-products__item-video-link">
+                                <img src="images/svg/triangleBtn.svg" alt="">
+                            </a>
+                            <img src="images/catalog1.png" alt="" class="similar-products__item-img">
+                            <div class="similar-products__item-bottom">
+                                <p class="similar-products__item-price">575 000<span>&#8381;</span></p>
+                                <a href="#" class="similar-products__item-bottom-link">
+                                    <img src="images/svg/swiperArrow.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="similar-products__list-item">
+                        <p class="similar-products__item-name">серьги
+                            трансформеры</p>
+                        <div class="similar-products__item-card">
+                            <a href="#" class="similar-products__item-video-link">
+                                <img src="images/svg/triangleBtn.svg" alt="">
+                            </a>
+                            <img src="images/catalog2.png" alt="" class="similar-products__item-img">
+                            <div class="similar-products__item-bottom">
+                                <p class="similar-products__item-price">575 000<span>&#8381;</span></p>
+                                <a href="#" class="similar-products__item-bottom-link">
+                                    <img src="images/svg/swiperArrow.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="similar-products__list-item">
+                        <p class="similar-products__item-name">кольцо
+                            с топазом</p>
+                        <div class="similar-products__item-card">
+                            <a href="#" class="similar-products__item-video-link">
+                                <img src="images/svg/triangleBtn.svg" alt="">
+                            </a>
+                            <img src="images/catalog3.png" alt="" class="similar-products__item-img">
+                            <div class="similar-products__item-bottom">
+                                <p class="similar-products__item-price">575 000<span>&#8381;</span></p>
+                                <a href="#" class="similar-products__item-bottom-link">
+                                    <img src="images/svg/swiperArrow.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="similar-products__list-item">
+                        <p class="similar-products__item-name">подвеска
+                            древо жизни</p>
+                        <div class="similar-products__item-card">
+                            <a href="#" class="similar-products__item-video-link">
+                                <img src="images/svg/triangleBtn.svg" alt="">
+                            </a>
+                            <img src="images/catalog4.png" alt="" class="similar-products__item-img">
+                            <div class="similar-products__item-bottom">
+                                <p class="similar-products__item-price">575 000<span>&#8381;</span></p>
+                                <a href="#" class="similar-products__item-bottom-link">
+                                    <img src="images/svg/swiperArrow.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="container">
+                <a href="/index.html" class="footer__logo"><img src="images/svg/logo.svg" alt="Логотип"></a>
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a href="/portfolio.html" class="footer__nav-link">Портфолио</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/pricelist.html" class="footer__nav-link">Цены</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/stock.html" class="footer__nav-link">В наличии</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/about.html" class="footer__nav-link">О бренде</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a href="/gemstones.html" class="footer__nav-link">Драгоценные камни</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/certificate.html" class="footer__nav-link">Купить сертификат</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/feedback.html" class="footer__nav-link">Отзывы</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a href="/repair.html" class="footer__nav-link">Ремонт</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/b2bgeneral.html" class="footer__nav-link">B2B</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/contacts.html" class="footer__nav-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__info">
+                    <p class="footer__info-text"> г. Москва, метро "Автозаводская". БЦ "Омега Плаза".<br>
+                        Ленинская слобода 19. 2 этаж, офис 2034/2
+                    </p>
+                    <p class="footer__info-text">Пн-Пт: 11:00 - 19:00 только по записи</p>
+                    <a href="tel:+74996479997" class="footer__info-link">+7 499 647 99 97</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <ul class="footer__bottom-list">
+                <li class="footer__bottom-item">
+                    <a href="#" class="footer__bottom-link">
+                        <img src="images/svg/vk.svg" alt="">
+                    </a>
+                </li>
+                <li class="footer__bottom-item">
+                    <a href="#" class="footer__bottom-link">
+                        <img src="images/svg/insta.svg" alt="">
+                    </a>
+                </li>
+                <li class="footer__bottom-item">
+                    <a href="#" class="footer__bottom-link">
+                        <img src="images/svg/yt.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <p class="footer__bottom-copyright">Все права защищены 2017-2022 GRIGOF JEWELLERY Studio</p>
+        </div>
+    </footer>
+    <script defer src="js/choices.min.js"></script>
+    <script defer src="js/swiper-bundle.min.js"></script>
+    <script defer src="js/inputmask.min.js"></script>
+    <script defer src="js/just-validate.production.min.js"></script>
+    <script defer src="js/index.js"></script>
 </body>
+
 </html>

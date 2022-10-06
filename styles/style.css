@@ -2616,7 +2616,7 @@ input[type=number] {
   height: 84.5rem;
 }
 .stock .swiper__carousel .swiper-wrapper {
-  margin-top: 30rem;
+  margin-top: 27rem;
   flex-direction: column;
 }
 .stock .swiper__carousel:last-child {
@@ -2626,23 +2626,27 @@ input[type=number] {
   margin-top: 11.7rem;
 }
 .stock .swiper__carousel-slide {
+  padding-top: 5rem;
+  height: 48.5rem;
+}
+.stock .swiper__carousel-card {
   padding: 4.35rem 4rem 3.5rem 4rem;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 43.5rem;
+  height: 100%;
   background-color: #222;
 }
-.stock .swiper__carousel-slide img[src="images/swiper-carousel.png"] {
+.stock .swiper__carousel-card img[src="images/swiper-carousel.png"] {
   width: 31rem;
   top: 2.4rem;
 }
-.stock .swiper__carousel-slide img[src="images/hero1.png"] {
+.stock .swiper__carousel-card img[src="images/hero1.png"] {
   top: 5rem;
   width: 27rem;
 }
-.stock .swiper__carousel-slide img[src="images/earrings.png"] {
+.stock .swiper__carousel-card img[src="images/earrings.png"] {
   top: 2.5rem;
   width: 29rem;
 }
@@ -5126,4 +5130,314 @@ input[type=number] {
   font-size: 1.9rem;
   line-height: 2.6rem;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.similar-products {
+  padding-bottom: 21.1rem;
+}
+.similar-products .container {
+  width: 164rem;
+}
+.similar-products__heading {
+  margin-bottom: 8.5rem;
+  font-size: 7rem;
+  line-height: 9rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.similar-products__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.similar-products__list-item {
+  flex: 0 1 37.2rem;
+}
+.similar-products__item-name {
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  width: 27.4rem;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.similar-products__item-card {
+  padding: 2.8rem 3rem 2.8rem 3.5rem;
+  position: relative;
+  width: 100%;
+  height: 43.6rem;
+  display: flex;
+  align-items: flex-end;
+  background-color: #1B1B1B;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.similar-products__item-bottom {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.similar-products__item-price {
+  display: inline-block;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.similar-products__item-video-link {
+  position: absolute;
+  right: 2.5rem;
+  top: -2.5rem;
+  width: 5.6rem;
+  height: 5.6rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  z-index: 3;
+}
+.similar-products__item-video-link img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.similar-products__item-img {
+  position: absolute;
+  top: 7rem;
+  left: 50%;
+  transform: translateX(-50%);
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.similar-products__item-img[src="images/catalog1.png"] {
+  width: 25rem;
+}
+.similar-products__item-img[src="images/catalog2.png"] {
+  width: 25rem;
+}
+.similar-products__item-img[src="images/catalog3.png"] {
+  width: 21rem;
+}
+.similar-products__item-img[src="images/catalog4.png"] {
+  top: 5rem;
+  width: 23rem;
+}
+.similar-products__item-bottom-link {
+  width: 4.213rem;
+}
+.similar-products__item-bottom-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.similar-products__item-bottom-link img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.productcard-hero {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.productcard-hero .container {
+  width: 164rem;
+}
+.productcard-hero .swiper__productcard {
+  position: relative;
+}
+.productcard-hero .swiper__productcard-slide {
+  width: 100%;
+  display: flex;
+}
+.productcard-hero .swiper__productcard-control {
+  position: absolute;
+  right: 0;
+  top: 49rem;
+  display: flex;
+  align-items: center;
+}
+.productcard-hero .swiper__productcard-prev {
+  transform: scale(-1);
+  margin-right: 2rem;
+}
+.productcard-hero .swiper__productcard-prev, .productcard-hero .swiper__productcard-next {
+  display: inline-block;
+  cursor: pointer;
+  z-index: 3;
+}
+.productcard-hero .swiper__productcard-prev img, .productcard-hero .swiper__productcard-next img {
+  width: 4.213rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.productcard-hero .swiper__productcard-left {
+  margin-top: 9rem;
+  margin-right: 8.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.productcard-hero .swiper__productcard-price {
+  margin-bottom: 3.7rem;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  text-transform: uppercase;
+}
+.productcard-hero .swiper__productcard-price span {
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  vertical-align: top;
+}
+.productcard-hero .swiper__productcard-description {
+  width: 33rem;
+  font-size: 1.9rem;
+  line-height: 2.5rem;
+  margin-bottom: 4.6rem;
+}
+.productcard-hero .swiper__productcard-btn {
+  margin-bottom: 15.5rem;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 25.3rem;
+  height: 10rem;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.productcard-hero .swiper__productcard-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  transform: rotate(10deg);
+  border-bottom: 1px solid #797979;
+  border-top: 1px solid #ADADAD;
+  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD), linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD);
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.productcard-hero .swiper__productcard-btn span:first-of-type {
+  transform: translate(1.5rem, -1rem);
+}
+.productcard-hero .swiper__productcard-btn span:last-of-type {
+  transform: translate(-1.5rem, 1rem);
+}
+.productcard-hero .swiper__productcard-images-small {
+  display: flex;
+}
+.productcard-hero .swiper__productcard-img-small {
+  width: 11.2rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.productcard-hero .swiper__productcard-img-small:not(:last-child) {
+  margin-right: 3.5rem;
+}
+.productcard-hero .swiper__productcard-center {
+  width: 70rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.productcard-hero .swiper__productcard-img-big {
+  width: 57rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.productcard-hero .swiper__productcard-name {
+  margin-top: auto;
+  width: 100%;
+  font-size: 7rem;
+  line-height: 8.3rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.productcard-hero .swiper__productcard-right {
+  margin-top: 9rem;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  text-align: right;
+}
+.productcard-hero .swiper__productcard-list {
+  display: flex;
+  flex-direction: column;
+}
+.productcard-hero .swiper__productcard-list-item p:first-child {
+  margin-bottom: 0.8rem;
+  font-family: "FuturaPT";
+  font-size: 1.9rem;
+  line-height: 2.2rem;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.5);
+}
+.productcard-hero .swiper__productcard-list-item p:last-child {
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.productcard-hero .swiper__productcard-list-item:not(:last-child) {
+  margin-bottom: 3.3rem;
+}
+.productcard-hero__social {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-align: right;
+  z-index: 3;
+}
+.productcard-hero__social-text {
+  margin-bottom: 2.5rem;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.productcard-hero__social-list {
+  display: flex;
+  align-self: center;
+}
+.productcard-hero__social-item {
+  width: 5.4rem;
+  height: 5.4rem;
+}
+.productcard-hero__social-item:not(:last-child) {
+  margin-right: 2rem;
+}
+.productcard-hero__social-item a {
+  cursor: pointer;
+}
+.productcard-hero__social-item a img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=style.css.map */

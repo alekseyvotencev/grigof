@@ -117,7 +117,7 @@ const swiperStones = new Swiper('.swiper__stones', {
     },
 });
 
-// 
+// stock hero slider
 
 const swiperStock = new Swiper('.swiper__stock', {
     direction: 'vertical',
@@ -128,13 +128,26 @@ const swiperStock = new Swiper('.swiper__stock', {
     }
 });
 
-// 
+// stock hero slider
 
 const swiperCarousel = new Swiper('.swiper__carousel', {
     direction: 'vertical',
     slidesPerView: 'auto',
-    spaceBetween: 50,
     loop: true,
+});
+
+// product card slider
+
+const swiperProductCard = new Swiper('.swiper__productcard', {
+    direction: 'horizontal',
+    slidesPerView: 1,
+    speed: 500,
+    spaceBetween: 50,
+    loop: false,
+    navigation: {
+        nextEl: '.swiper__productcard-next',
+        prevEl: '.swiper__productcard-prev',
+    },
 });
 
 // tabs
@@ -321,6 +334,19 @@ document.querySelectorAll('.swiper__stones-small-img3').forEach(function (tabsIm
     })
 })
 
+// product card
+
+document.querySelectorAll('.swiper__productcard-img-small').forEach(function (tabImg) {
+    tabImg.addEventListener('click', function (e) {
+        const src = e.currentTarget.src;
+        console.log(src)
+        const srcContent = document.querySelector('.swiper__productcard-img-big').src;
+        console.log(srcContent)
+        e.currentTarget.src = srcContent;
+        document.querySelector('.swiper__productcard-img-big').src = src;
+    })
+})
+
 // select
 
 const element = document.querySelectorAll('.gemstones-catalog__filters-select');
@@ -339,58 +365,7 @@ phoneField.forEach(field => {
     template.mask(field);
 })
 
-// validation
-
-const validation = new JustValidate('.feedback__form');
-validation
-    .addField('#name', [
-        {
-            rule: 'required',
-            errorMessage: 'Введите имя'
-        },
-        {
-            rule: 'customRegexp',
-            value: '^((?=.*[А-Я])||(?=.*[а-я]).{2,30})$',
-            errorMessage: 'Недопустимый формат'
-        },
-    ])
-    .addField('#message', [
-        {
-            rule: 'required',
-            errorMessage: 'Введите сообщение'
-        }
-    ])
-    .addField('#phone', [
-        {
-            rule: 'required',
-            errorMessage: 'Введите номер телефона'
-        }
-    ])
-    .addField('#phone', [
-        {
-            validator: (value) => {
-                let phone;
-                phoneField.forEach(field => {
-                    phone = field.inputmask.unmaskedvalue();
-                })
-                return Number(phone) && phone.length === 10
-            },
-            errorMessage: 'Введите номер телефона'
-        }
-    ])
-    .addField('#email', [
-        {
-            rule: 'required',
-            errorMessage: 'Введите e-mail'
-        }
-    ])
-    .onSuccess((event) => {
-        console.log("Отправка запроса");
-        event.preventDefault();
-    });
-
 // smooth scroll
-
 
 document.querySelectorAll('a[href^="#"').forEach(link => {
     link.addEventListener('click', function (e) {
@@ -411,17 +386,5 @@ document.querySelectorAll('a[href^="#"').forEach(link => {
         });
     });
 });
-
-document.querySelector('.b2b-hero__btn').addEventListener('click', () => {
-    const scrollTarget = document.querySelector('.b2b-catalog__heading');
-    const topOffset = 0; // если не нужен отступ сверху 
-    const elementPosition = scrollTarget.getBoundingClientRect().top;
-    const offsetPosition = elementPosition - topOffset;
-
-    window.scrollBy({
-        top: offsetPosition,
-        behavior: 'smooth'
-    });
-})
 
 
