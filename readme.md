@@ -28,3 +28,6 @@
 
 - [x] О бренде - https://alekseyvotencev.github.io/grigof/about.html
 
+Форма Рассчитать стоимость
+
+Форма Заявка

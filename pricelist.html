@@ -141,7 +141,7 @@
             <div class="container">
                 <div class="dependence__top">
                     <p class="dependence__heading">от чего зависит итоговая стоимость</p>
-                    <button class="dependence__top-btn">
+                    <button class="dependence__top-btn calculate-price__btn">
                         <span>Рассчитать</span>
                         <span>стоимость</span>
                     </button>
@@ -295,11 +295,47 @@
             <p class="footer__bottom-copyright">Все права защищены 2017-2022 GRIGOF JEWELLERY Studio</p>
         </div>
     </footer>
+    <div class="modal calculate-price">
+        <div class="modal__content calculate-price__content">
+            <button class="modal__close-btn">
+                <img src="images/svg/modal-cross.svg" alt="">
+            </button>
+            <p class="modal__heading">ЗАПОЛНИТЕ ДАННЫЕ ДЛЯ РАССЧЕТА СТОИМОСТИ</p>
+            <p class="modal__message">мы свяжемся с вами в ближайшее время </p>
+            <form action="#" class="modal__form" id="calculate-price">
+                <div class="modal__form-top">
+                    <div class="modal__form-input-container">
+                        <input type="text" class="modal__form-input" placeholder="ваше имя" id="modal-name">
+                    </div>
+                    <div class="modal__form-input-container">
+                        <input type="email" class="modal__form-input" placeholder="e`mail" id="modal-email">
+                    </div>
+                </div>
+                <div class="modal__form-input-container">
+                    <input type="tel" class="modal__form-input" placeholder="Номер телефона" id="modal-tel">
+                </div>
+                <div class="modal__form-input-container">
+                    <input type="text" class="modal__form-input" placeholder="комментарий" id="modal-message">
+                </div>
+            </form>
+            <div class="modal__bottom">
+                <p class="modal__bottom-text">*Нажимая на кнопку, вы даете согласие на обработку персональных данных и
+                    соглашаетесь c политикой
+                    конфиденциальности</p>
+                <button form="calculate-price" type="submit" class="modal__bottom-btn">
+                    <span>оставить</span>
+                    <span>заявку</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
     <script defer src="js/swiper-bundle.min.js"></script>
     <script defer src="js/choices.min.js"></script>
     <script defer src="js/inputmask.min.js"></script>
     <script defer src="js/just-validate.production.min.js"></script>
     <script defer src="js/validate-feedback-form.js"></script>
+    <script defer src="js/modal-calculate.js"></script>
     <script defer src="js/index.js"></script>
 </body>
 

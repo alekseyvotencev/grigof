@@ -1,6 +1,197 @@
 @import '_fonts.scss';
 @import '_set.scss';
 
+.overflow {
+    overflow: hidden;
+}
+
+.modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba($color: #FFF, $alpha: .5);
+    z-index: 4;
+
+    &--active {
+        display: flex;
+    }
+
+    &__content {
+        padding: 14.5rem 9.5rem 4.5rem 9.5rem;
+        position: relative;
+        min-width: 123rem;
+        background-color: #FFF;
+    }
+
+    &__heading {
+        margin-bottom: 2rem;
+        font-size: 4rem;
+        line-height: 4.6rem;
+        text-transform: uppercase;
+        text-align: center;
+        color: #222222;
+    }
+
+    &__message {
+        margin-bottom: 5rem;
+        font-family: 'FuturaPT';
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        text-align: center;
+        color: #222222;
+    }
+
+    &__form {
+        margin-bottom: 8rem;
+
+        &-top {
+            margin-bottom: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .modal__form-input-container {
+                margin-bottom: 0;
+                flex: 0 1 45rem;
+            }
+        }
+
+        &-input-container {
+            margin-bottom: 5rem;
+            width: 100%;
+            position: relative;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &-input {
+            width: 100%;
+            padding-top: 3.1rem;
+            padding-bottom: 2.5rem;
+            position: relative;
+            font-family: "FuturaPT";
+            font-weight: 600;
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+            color: #222222;
+            letter-spacing: 0.16em;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #222222;
+
+            &::placeholder {
+                color: rgba(0, 0, 0, 0.5);
+                letter-spacing: 0.16em;
+                text-transform: uppercase;
+                transition: transform .2s ease-in-out;
+            }
+
+            &:focus-visible {
+                outline: none;
+
+                &::placeholder {
+                    transform: translateY(-3.1rem);
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-text {
+            width: 70rem;
+            font-family: 'FuturaPT';
+            font-size: 1.9rem;
+            line-height: 2.6rem;
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+        &-btn {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 25.3rem;
+            height: 10rem;
+            font-family: "FuturaPT";
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            z-index: 2;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background: #222222;
+                backdrop-filter: blur(15px);
+                transform: rotate(10deg);
+                border-bottom: 1px solid #797979;
+                border-top: 1px solid #ADADAD;
+                background-size: 100% 1px;
+                background-repeat: no-repeat;
+                z-index: -1;
+            }
+
+            span:first-of-type {
+                transform: translate(1.5rem, -1rem);
+            }
+
+            span:last-of-type {
+                transform: translate(-1.5rem, 1rem);
+            }
+        }
+    }
+
+    &__close-btn {
+        position: absolute;
+        top: 5rem;
+        right: 5rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        cursor: pointer;
+
+        img {
+            object-fit: contain;
+        }
+    }
+}
+
+.just-validate-error-field {
+    border-bottom: 1px solid #BF1717 !important;
+}
+
+.just-validate-error-label {
+    position: absolute;
+    bottom: -3rem;
+    font-family: 'FuturaPT';
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    color: #BF1717 !important;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+
+}
+
+
 .header {
     padding-top: 1.6rem;
     padding-bottom: 5.2rem;
@@ -1603,19 +1794,6 @@
                 transform: translateY(-3.1rem);
             }
         }
-    }
-
-    .just-validate-error-field {
-        // border: 1px solid #D11616;
-    }
-
-    .just-validate-error-label {
-        position: absolute;
-        top: -2rem;
-        font-family: 'FuturaPT';
-        font-size: 1.5rem;
-        line-height: 2.2rem;
-        color: #D11616;
     }
 }
 

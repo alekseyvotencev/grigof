@@ -1,7 +1,23 @@
+const modalApplication = document.querySelector('.application');
+
+document.querySelectorAll('.application__btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.body.classList.add('overflow');
+        modalApplication.classList.add('modal--active');
+    })
+})
+
+document.querySelector('.modal__close-btn').addEventListener('click', () => {
+    modalApplication.querySelector('.modal__form').reset();
+    document.body.classList.remove('overflow');
+    modalApplication.classList.remove('modal--active');
+})
+
 // validation
-const validation = new JustValidate('.feedback__form');
-validation
-    .addField('#name', [
+
+const validationModal = new JustValidate('.modal__form');
+validationModal
+    .addField('#modal-name', [
         {
             rule: 'required',
             errorMessage: 'Введите имя'
@@ -12,19 +28,19 @@ validation
             errorMessage: 'Недопустимый формат'
         },
     ])
-    .addField('#message', [
+    .addField('#modal-message', [
         {
             rule: 'required',
             errorMessage: 'Введите сообщение'
         }
     ])
-    .addField('#phone', [
+    .addField('#modal-tel', [
         {
             rule: 'required',
             errorMessage: 'Введите номер телефона'
         }
     ])
-    .addField('#phone', [
+    .addField('#modal-tel', [
         {
             validator: (value) => {
                 let phone;
@@ -36,7 +52,7 @@ validation
             errorMessage: 'Номер указан некорректно'
         }
     ])
-    .addField('#email', [
+    .addField('#modal-email', [
         {
             rule: 'required',
             errorMessage: 'Введите e-mail'
@@ -45,4 +61,5 @@ validation
     .onSuccess((event) => {
         console.log("Отправка запроса");
         event.preventDefault();
+        modalCalcuate.querySelector('.modal__form').reset();
     });

@@ -77,7 +77,7 @@
                         <div class="swiper-slide swiper__stones-slide">
                             <div class="swiper__stones-left">
 
-                                <button class="request__btn">
+                                <button class="request__btn application__btn">
                                     <span>оставить</span>
                                     <span>заявку</span>
                                 </button>
@@ -126,7 +126,7 @@
                         <div class="swiper-slide swiper__stones-slide">
                             <div class="swiper__stones-left">
 
-                                <button class="request__btn">
+                                <button class="request__btn application__btn">
                                     <span>оставить</span>
                                     <span>заявку</span>
                                 </button>
@@ -175,7 +175,7 @@
                         <div class="swiper-slide swiper__stones-slide">
                             <div class="swiper__stones-left">
 
-                                <button class="request__btn">
+                                <button class="request__btn application__btn">
                                     <span>оставить</span>
                                     <span>заявку</span>
                                 </button>
@@ -373,11 +373,46 @@
             <p class="footer__bottom-copyright">Все права защищены 2017-2022 GRIGOF JEWELLERY Studio</p>
         </div>
     </footer>
+    <div class="modal application">
+        <div class="modal__content application__content">
+            <button class="modal__close-btn">
+                <img src="images/svg/modal-cross.svg" alt="">
+            </button>
+            <p class="modal__heading">оставьте заявку на ювелирное изделие</p>
+            <p class="modal__message">мы свяжемся с вами в ближайшее время </p>
+            <form action="#" class="modal__form" id="application">
+                <div class="modal__form-top">
+                    <div class="modal__form-input-container">
+                        <input type="text" class="modal__form-input" placeholder="ваше имя" id="modal-name">
+                    </div>
+                    <div class="modal__form-input-container">
+                        <input type="email" class="modal__form-input" placeholder="e`mail" id="modal-email">
+                    </div>
+                </div>
+                <div class="modal__form-input-container">
+                    <input type="tel" class="modal__form-input" placeholder="Номер телефона" id="modal-tel">
+                </div>
+                <div class="modal__form-input-container">
+                    <input type="text" class="modal__form-input" placeholder="комментарий" id="modal-message">
+                </div>
+            </form>
+            <div class="modal__bottom">
+                <p class="modal__bottom-text">*Нажимая на кнопку, вы даете согласие на обработку персональных данных и
+                    соглашаетесь c политикой
+                    конфиденциальности</p>
+                <button form="application" type="submit" class="modal__bottom-btn">
+                    <span>оставить</span>
+                    <span>заявку</span>
+                </button>
+            </div>
+        </div>
+    </div>
     <script defer src="js/choices.min.js"></script>
     <script defer src="js/swiper-bundle.min.js"></script>
     <script defer src="js/inputmask.min.js"></script>
     <script defer src="js/just-validate.production.min.js"></script>
     <script defer src="js/validate-feedback-form.js"></script>
+    <script defer src="js/modal-application.js"></script>
     <script defer src="js/index.js"></script>
 </body>
 
