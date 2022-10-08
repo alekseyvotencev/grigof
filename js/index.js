@@ -17,6 +17,7 @@ const swiperHero = new Swiper('.swiper__hero', {
         nextEl: '.swiper__hero-next',
         prevEl: '.swiper__hero-prev',
     },
+
 });
 
 // main categories slider
@@ -105,7 +106,7 @@ reviewsElems.forEach(element => {
     }
 })
 
-// 
+// stones slider
 
 const swiperStones = new Swiper('.swiper__stones', {
     direction: 'horizontal',
@@ -145,8 +146,8 @@ const swiperProductCard = new Swiper('.swiper__productcard', {
     spaceBetween: 50,
     loop: false,
     navigation: {
-        nextEl: '.swiper__productcard-next',
-        prevEl: '.swiper__productcard-prev',
+        nextEl: '.productcard-hero__next',
+        prevEl: '.productcard-hero__prev',
     },
 });
 

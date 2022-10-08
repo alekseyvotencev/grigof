@@ -5429,49 +5429,24 @@ input[type=number] {
 }
 .productcard-hero .container {
   width: 164rem;
-}
-.productcard-hero .swiper__productcard {
+  display: flex;
   position: relative;
+  align-items: flex-start;
 }
-.productcard-hero .swiper__productcard-slide {
-  width: 100%;
-  display: flex;
-}
-.productcard-hero .swiper__productcard-control {
-  position: absolute;
-  right: 0;
-  top: 49rem;
-  display: flex;
-  align-items: center;
-}
-.productcard-hero .swiper__productcard-prev {
-  transform: scale(-1);
-  margin-right: 2rem;
-}
-.productcard-hero .swiper__productcard-prev, .productcard-hero .swiper__productcard-next {
-  display: inline-block;
-  cursor: pointer;
-  z-index: 3;
-}
-.productcard-hero .swiper__productcard-prev img, .productcard-hero .swiper__productcard-next img {
-  width: 4.213rem;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.productcard-hero .swiper__productcard-left {
+.productcard-hero__left {
   margin-top: 9rem;
   margin-right: 8.3rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.productcard-hero .swiper__productcard-price {
+.productcard-hero__price {
   margin-bottom: 3.7rem;
   font-size: 4rem;
   line-height: 4.8rem;
   text-transform: uppercase;
 }
-.productcard-hero .swiper__productcard-price span {
+.productcard-hero__price span {
   font-family: "FuturaPT";
   font-size: 1.5rem;
   line-height: 3.5rem;
@@ -5479,13 +5454,13 @@ input[type=number] {
   text-transform: uppercase;
   vertical-align: top;
 }
-.productcard-hero .swiper__productcard-description {
+.productcard-hero__description {
   width: 33rem;
   font-size: 1.9rem;
   line-height: 2.5rem;
   margin-bottom: 4.6rem;
 }
-.productcard-hero .swiper__productcard-btn {
+.productcard-hero__btn {
   margin-bottom: 15.5rem;
   position: relative;
   display: inline-flex;
@@ -5500,7 +5475,7 @@ input[type=number] {
   text-transform: uppercase;
   z-index: 2;
 }
-.productcard-hero .swiper__productcard-btn::after {
+.productcard-hero__btn::after {
   content: "";
   position: absolute;
   top: 0;
@@ -5519,22 +5494,31 @@ input[type=number] {
   background-repeat: no-repeat;
   z-index: -1;
 }
-.productcard-hero .swiper__productcard-btn span:first-of-type {
+.productcard-hero__btn span:first-of-type {
   transform: translate(1.5rem, -1rem);
 }
-.productcard-hero .swiper__productcard-btn span:last-of-type {
+.productcard-hero__btn span:last-of-type {
   transform: translate(-1.5rem, 1rem);
 }
-.productcard-hero .swiper__productcard-images-small {
+.productcard-hero__images-small {
   display: flex;
 }
-.productcard-hero .swiper__productcard-img-small {
+.productcard-hero__img-small {
   width: 11.2rem;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.productcard-hero .swiper__productcard-img-small:not(:last-child) {
+.productcard-hero__img-small:not(:last-child) {
   margin-right: 3.5rem;
+}
+.productcard-hero .swiper__productcard {
+  margin: 0;
+  width: 70rem;
+  position: relative;
+}
+.productcard-hero .swiper__productcard-slide {
+  width: 100%;
+  display: flex;
 }
 .productcard-hero .swiper__productcard-center {
   width: 70rem;
@@ -5544,19 +5528,19 @@ input[type=number] {
   justify-content: flex-start;
 }
 .productcard-hero .swiper__productcard-img-big {
+  margin-bottom: 8rem;
   width: 57rem;
   -o-object-fit: contain;
      object-fit: contain;
 }
 .productcard-hero .swiper__productcard-name {
-  margin-top: auto;
   width: 100%;
   font-size: 7rem;
   line-height: 8.3rem;
   text-align: center;
   text-transform: uppercase;
 }
-.productcard-hero .swiper__productcard-right {
+.productcard-hero__right {
   margin-top: 9rem;
   margin-left: auto;
   display: flex;
@@ -5564,11 +5548,11 @@ input[type=number] {
   align-self: flex-start;
   text-align: right;
 }
-.productcard-hero .swiper__productcard-list {
+.productcard-hero__list {
   display: flex;
   flex-direction: column;
 }
-.productcard-hero .swiper__productcard-list-item p:first-child {
+.productcard-hero__list-item p:first-child {
   margin-bottom: 0.8rem;
   font-family: "FuturaPT";
   font-size: 1.9rem;
@@ -5576,15 +5560,36 @@ input[type=number] {
   text-transform: capitalize;
   color: rgba(255, 255, 255, 0.5);
 }
-.productcard-hero .swiper__productcard-list-item p:last-child {
+.productcard-hero__list-item p:last-child {
   font-family: "FuturaPT";
   font-size: 1.5rem;
   line-height: 2.2rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
 }
-.productcard-hero .swiper__productcard-list-item:not(:last-child) {
+.productcard-hero__list-item:not(:last-child) {
   margin-bottom: 3.3rem;
+}
+.productcard-hero__control {
+  position: absolute;
+  right: 0;
+  top: 49rem;
+  display: flex;
+  align-items: center;
+}
+.productcard-hero__prev {
+  transform: scale(-1, 1);
+  margin-right: 2rem;
+}
+.productcard-hero__prev, .productcard-hero__next {
+  display: inline-block;
+  cursor: pointer;
+  z-index: 3;
+}
+.productcard-hero__prev img, .productcard-hero__next img {
+  width: 4.213rem;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .productcard-hero__social {
   display: flex;

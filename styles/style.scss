@@ -6078,126 +6078,106 @@
 
     .container {
         width: 164rem;
+        display: flex;
+        position: relative;
+        align-items: flex-start;
+    }
+
+    &__left {
+        margin-top: 9rem;
+        margin-right: 8.3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__price {
+        margin-bottom: 3.7rem;
+        font-size: 4rem;
+        line-height: 4.8rem;
+        text-transform: uppercase;
+
+        span {
+            font-family: 'FuturaPT';
+            font-size: 1.5rem;
+            line-height: 3.5rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            vertical-align: top;
+        }
+    }
+
+    &__description {
+        width: 33rem;
+        font-size: 1.9rem;
+        line-height: 2.5rem;
+        margin-bottom: 4.6rem;
+    }
+
+    &__btn {
+        margin-bottom: 15.5rem;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 25.3rem;
+        height: 10rem;
+        font-family: "FuturaPT";
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        z-index: 2;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            transform: rotate(10deg);
+            border-bottom: 1px solid #797979;
+            border-top: 1px solid #ADADAD;
+            background-image: linear-gradient(45deg, #79797900, #ADADAD), linear-gradient(45deg, #79797900, #ADADAD);
+            background-size: 100% 1px;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+
+        span:first-of-type {
+            transform: translate(1.5rem, -1rem);
+        }
+
+        span:last-of-type {
+            transform: translate(-1.5rem, 1rem);
+        }
+    }
+
+    &__images-small {
+        display: flex;
+    }
+
+    &__img-small {
+        width: 11.2rem;
+        object-fit: contain;
+
+        &:not(:last-child) {
+            margin-right: 3.5rem;
+        }
     }
 
     .swiper__productcard {
+        margin: 0;
+        width: 70rem;
         position: relative;
 
         &-slide {
             width: 100%;
             display: flex;
-        }
-
-        &-control {
-            position: absolute;
-            right: 0;
-            top: 49rem;
-            display: flex;
-            align-items: center;
-        }
-
-        &-prev {
-            transform: scale(-1);
-            margin-right: 2rem;
-        }
-
-        &-prev,
-        &-next {
-            display: inline-block;
-            cursor: pointer;
-            z-index: 3;
-
-            img {
-                width: 4.213rem;
-                object-fit: contain;
-            }
-        }
-
-        &-left {
-            margin-top: 9rem;
-            margin-right: 8.3rem;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        &-price {
-            margin-bottom: 3.7rem;
-            font-size: 4rem;
-            line-height: 4.8rem;
-            text-transform: uppercase;
-
-            span {
-                font-family: 'FuturaPT';
-                font-size: 1.5rem;
-                line-height: 3.5rem;
-                letter-spacing: 0.16em;
-                text-transform: uppercase;
-                vertical-align: top;
-            }
-        }
-
-        &-description {
-            width: 33rem;
-            font-size: 1.9rem;
-            line-height: 2.5rem;
-            margin-bottom: 4.6rem;
-        }
-
-        &-btn {
-            margin-bottom: 15.5rem;
-            position: relative;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 25.3rem;
-            height: 10rem;
-            font-family: "FuturaPT";
-            font-size: 1.5rem;
-            line-height: 2.2rem;
-            letter-spacing: 0.16em;
-            text-transform: uppercase;
-            z-index: 2;
-
-            &::after {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                border-radius: 50%;
-                background: rgba(255, 255, 255, 0.1);
-                backdrop-filter: blur(15px);
-                transform: rotate(10deg);
-                border-bottom: 1px solid #797979;
-                border-top: 1px solid #ADADAD;
-                background-image: linear-gradient(45deg, #79797900, #ADADAD), linear-gradient(45deg, #79797900, #ADADAD);
-                background-size: 100% 1px;
-                background-repeat: no-repeat;
-                z-index: -1;
-            }
-
-            span:first-of-type {
-                transform: translate(1.5rem, -1rem);
-            }
-
-            span:last-of-type {
-                transform: translate(-1.5rem, 1rem);
-            }
-        }
-
-        &-images-small {
-            display: flex;
-        }
-
-        &-img-small {
-            width: 11.2rem;
-            object-fit: contain;
-
-            &:not(:last-child) {
-                margin-right: 3.5rem;
-            }
         }
 
         &-center {
@@ -6209,54 +6189,79 @@
         }
 
         &-img-big {
+            margin-bottom: 8rem;
             width: 57rem;
             object-fit: contain;
         }
 
         &-name {
-            margin-top: auto;
             width: 100%;
             font-size: 7rem;
             line-height: 8.3rem;
             text-align: center;
             text-transform: uppercase;
         }
+    }
 
-        &-right {
-            margin-top: 9rem;
-            margin-left: auto;
-            display: flex;
-            flex-direction: column;
-            align-self: flex-start;
-            text-align: right;
-        }
+    &__right {
+        margin-top: 9rem;
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        text-align: right;
+    }
 
-        &-list {
-            display: flex;
-            flex-direction: column;
+    &__list {
+        display: flex;
+        flex-direction: column;
 
-            &-item {
-                p:first-child {
-                    margin-bottom: .8rem;
-                    font-family: 'FuturaPT';
-                    font-size: 1.9rem;
-                    line-height: 2.2rem;
-                    text-transform: capitalize;
-                    color: rgba(255, 255, 255, 0.5);
-                }
-
-                p:last-child {
-                    font-family: 'FuturaPT';
-                    font-size: 1.5rem;
-                    line-height: 2.2rem;
-                    letter-spacing: 0.16em;
-                    text-transform: uppercase;
-                }
-
-                &:not(:last-child) {
-                    margin-bottom: 3.3rem;
-                }
+        &-item {
+            p:first-child {
+                margin-bottom: .8rem;
+                font-family: 'FuturaPT';
+                font-size: 1.9rem;
+                line-height: 2.2rem;
+                text-transform: capitalize;
+                color: rgba(255, 255, 255, 0.5);
             }
+
+            p:last-child {
+                font-family: 'FuturaPT';
+                font-size: 1.5rem;
+                line-height: 2.2rem;
+                letter-spacing: 0.16em;
+                text-transform: uppercase;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 3.3rem;
+            }
+        }
+    }
+
+    &__control {
+        position: absolute;
+        right: 0;
+        top: 49rem;
+        display: flex;
+        align-items: center;
+    }
+
+    &__prev {
+        transform: scale(-1, 1);
+        margin-right: 2rem;
+    }
+
+    &__prev,
+    &__next {
+        display: inline-block;
+        cursor: pointer;
+        z-index: 3;
+
+        img {
+            width: 4.213rem;
+            object-fit: contain;
         }
     }
 
