@@ -17,6 +17,14 @@ const swiperHero = new Swiper('.swiper__hero', {
         nextEl: '.swiper__hero-next',
         prevEl: '.swiper__hero-prev',
     },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        769: {
+            slidesPerView: 3,
+        }
+    }
 
 });
 
@@ -36,6 +44,16 @@ const swiperCategories = new Swiper('.swiper__categories', {
         nextEl: '.swiper__categories-next',
         prevEl: '.swiper__categories-prev',
     },
+    breakpoints: {
+        320: {
+            slidesPerView: 'auto',
+            // spaceBetween: 50
+        },
+        769: {
+            slidesPerView: 3,
+            // spaceBetween: 50
+        }
+    }
 });
 
 // main price slider
