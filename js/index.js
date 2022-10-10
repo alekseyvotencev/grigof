@@ -47,11 +47,9 @@ const swiperCategories = new Swiper('.swiper__categories', {
     breakpoints: {
         320: {
             slidesPerView: 'auto',
-            // spaceBetween: 50
         },
         769: {
             slidesPerView: 3,
-            // spaceBetween: 50
         }
     }
 });
@@ -77,7 +75,6 @@ const swiperPrice = new Swiper('.swiper__price', {
 const swiperVideo = new Swiper('.swiper__video', {
     direction: 'horizontal',
     loop: false,
-    slidesPerView: 3,
     navigation: {
         nextEl: '.swiper__video-next',
         prevEl: '.swiper__video-prev',
@@ -85,6 +82,14 @@ const swiperVideo = new Swiper('.swiper__video', {
     pagination: {
         el: '.swiper__video-pagination',
     },
+    breakpoints: {
+        320: {
+            slidesPerView: 'auto',
+        },
+        769: {
+            slidesPerView: 3,
+        }
+    }
 });
 
 // main reviews screenshots slider
@@ -92,14 +97,21 @@ const swiperVideo = new Swiper('.swiper__video', {
 const swiperScreenshots = new Swiper('.swiper__screenshots', {
     direction: 'horizontal',
     loop: true,
-    slidesPerView: 3,
+    breakpoints: {
+        320: {
+            slidesPerView: 'auto',
+            spaceBetween: 50,
+        },
+        769: {
+            slidesPerView: 3,
+        }
+    }
 });
 
 // main reviews text slider
 
 const swiperReviews = new Swiper('.swiper__reviews', {
     direction: 'vertical',
-    slidesPerView: 1,
     loop: true,
     spaceBetween: 50,
     thumbs: {
@@ -110,8 +122,13 @@ const swiperReviews = new Swiper('.swiper__reviews', {
         prevEl: '.swiper__reviews-prev',
     },
     pagination: {
-        el: '.swiper__reviews-pagintaion',
+        el: '.swiper__reviews-pagination',
         clickable: true,
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 'auto',
+        },
     }
 });
 
