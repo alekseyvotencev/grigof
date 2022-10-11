@@ -413,10 +413,14 @@ body {
   font-family: "FuturaPT";
   font-size: 1.9rem;
   line-height: 2.6rem;
+  z-index: 2;
 }
 .header__right-nav-list {
   display: flex;
   align-items: center;
+}
+.header__right-nav-item {
+  z-index: 2;
 }
 .header__right-nav-item:not(:last-child) {
   margin-right: 4rem;
@@ -5818,13 +5822,70 @@ body {
   .hero .swiper__hero-pagination .swiper-pagination-bullet:not(:last-child) {
     margin-right: 2.4rem;
   }
+  .categories .container {
+    width: 100%;
+  }
   .categories__heading {
     margin-bottom: 7.2rem;
     font-size: 6rem;
     line-height: 8.2rem;
   }
-  .categories .swiper__categories-control {
+  .categories .swiper__categories-number {
+    left: -6.8rem;
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+  }
+  .categories .swiper__categories-notice {
+    left: -5.8rem;
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+  }
+  .categories .swiper__categories-name {
+    margin-bottom: 1.4rem;
+    font-size: 4.4rem;
+    line-height: 5.2rem;
+  }
+  .categories .swiper__categories-link {
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .categories .swiper__categories-link span:last-of-type {
+    margin-left: 4rem;
+  }
+  .categories .swiper__categories-link img {
+    width: 6rem;
+  }
+  .categories .swiper__categories-item {
     width: 47rem;
+  }
+  .categories .swiper__categories-control {
+    top: 13rem;
+    width: 47rem;
+  }
+  .categories .swiper__categories-slide {
+    padding-left: 6.8rem;
+    width: 58.8rem;
+  }
+  .categories .swiper__categories-slide:last-child {
+    margin-right: 0;
+  }
+  .categories .swiper__categories .swiper-slide-prev {
+    padding-left: 5.8rem;
+    padding-right: 6rem;
+  }
+  .categories .swiper__categories .swiper-slide-next {
+    padding-right: 5.6rem;
+    padding-left: 6.2rem;
+  }
+  .categories .swiper__categories .swiper-slide-active {
+    margin-top: 18rem;
+    padding-left: 6rem;
+    padding-right: 5rem;
+  }
+  .categories .swiper__categories .swiper-slide-active .swiper__categories-link {
+    opacity: 1;
   }
   .categories .swiper__categories-prev img, .categories .swiper__categories-next img {
     width: 8.2rem;
@@ -5835,12 +5896,6 @@ body {
   }
   .categories .swiper__categories .swiper-pagination-bullet:not(:last-child) {
     margin-right: 2.4rem;
-  }
-  .categories .swiper__categories .swiper-slide-active {
-    margin-top: 18rem;
-  }
-  .categories .swiper__categories-item {
-    width: 47rem;
   }
   .services {
     padding-bottom: 25rem;
@@ -5860,6 +5915,8 @@ body {
   }
   .services__tabs-btn {
     width: 48rem;
+    font-size: 2.2rem;
+    line-height: 3.2rem;
   }
   .services__tabs-btn:not(:last-child) {
     margin-bottom: 7rem;
@@ -5983,6 +6040,10 @@ body {
   }
   .stages__tabs {
     flex-direction: column;
+  }
+  .stages__tabs-btn {
+    font-size: 2.2rem;
+    line-height: 3.2rem;
   }
   .stages__tabs-btn:not(:last-child) {
     margin-right: 0;

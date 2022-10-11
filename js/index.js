@@ -33,7 +33,6 @@ const swiperHero = new Swiper('.swiper__hero', {
 const swiperCategories = new Swiper('.swiper__categories', {
     direction: 'horizontal',
     loop: true,
-    slidesPerView: 3,
     speed: 400,
     centeredSlides: true,
     pagination: {
