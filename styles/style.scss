@@ -4706,24 +4706,52 @@ body {
             }
 
             &:nth-child(1) {
+
+                .portfolio-hero__item-img {
+                    top: 1.2rem;
+                    width: 21rem;
+                    height: 22.2rem;
+                }
+
                 .background {
                     background: linear-gradient(209.31deg, rgba(31, 126, 218, 0.3) 14.34%, rgba(31, 126, 218, 0.108) 74.78%);
                 }
             }
 
             &:nth-child(3) {
+
+                .portfolio-hero__item-img {
+                    top: 1.7rem;
+                    width: 23.7rem;
+                    height: 22rem;
+                }
+
                 .background {
                     background: linear-gradient(209.31deg, rgba(255, 255, 255, 0.3) 14.34%, rgba(255, 255, 255, 0.108) 74.78%);
                 }
             }
 
             &:nth-child(5) {
+
+                .portfolio-hero__item-img {
+                    top: 1.3rem;
+                    width: 18.1rem;
+                    height: 23.7rem;
+                }
+
                 .background {
                     background: linear-gradient(209.31deg, rgba(255, 255, 255, 0.3) 14.34%, rgba(255, 255, 255, 0.108) 74.78%);
                 }
             }
 
             &:nth-child(6) {
+
+                .portfolio-hero__item-img {
+                    top: 2.7rem;
+                    width: 18.2rem;
+                    height: 19.6rem;
+                }
+
                 .background {
                     background: linear-gradient(209.31deg, rgba(28, 170, 85, 0.3) 14.34%, rgba(28, 170, 85, 0.108) 74.78%);
                 }
@@ -4767,33 +4795,11 @@ body {
     &__item-img {
         position: absolute;
         left: 50%;
+        top: 1.2rem;
+        width: 18.1rem;
         transform: translateX(-50%);
         object-fit: contain;
         z-index: 3;
-
-        &[src="images/portfolioList1.png"] {
-            top: 1.2rem;
-            width: 21rem;
-            height: 22.2rem;
-        }
-
-        &[src="images/portfolioList3.png"] {
-            top: 1.7rem;
-            width: 23.7rem;
-            height: 22rem;
-        }
-
-        &[src="images/portfolioList5.png"] {
-            top: 1.3rem;
-            width: 18.1rem;
-            height: 23.7rem;
-        }
-
-        &[src="images/portfolioList6.png"] {
-            top: 2.7rem;
-            width: 18.2rem;
-            height: 19.6rem;
-        }
     }
 
     &__item-name {
