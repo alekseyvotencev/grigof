@@ -144,11 +144,11 @@ reviewsElems.forEach(element => {
 
 const swiperStones = new Swiper('.swiper__stones', {
     direction: 'horizontal',
-    slidesPerView: 1,
+    slidesPerView: 'auto',
     loop: true,
     navigation: {
-        nextEl: '.swiper__stones-next',
-        prevEl: '.swiper__stones-prev',
+        nextEl: '.stones__right-next',
+        prevEl: '.stones__right-prev',
     },
 });
 
