@@ -145,6 +145,8 @@ reviewsElems.forEach(element => {
 const swiperStones = new Swiper('.swiper__stones', {
     direction: 'horizontal',
     slidesPerView: 'auto',
+    spaceBetween: 100,
+    speed: 500,
     loop: true,
     navigation: {
         nextEl: '.stones__right-next',
@@ -175,7 +177,6 @@ const swiperCarousel = new Swiper('.swiper__carousel', {
 
 const swiperProductCard = new Swiper('.swiper__productcard', {
     direction: 'horizontal',
-    slidesPerView: 1,
     speed: 500,
     spaceBetween: 50,
     loop: false,
@@ -183,6 +184,17 @@ const swiperProductCard = new Swiper('.swiper__productcard', {
         nextEl: '.productcard-hero__next',
         prevEl: '.productcard-hero__prev',
     },
+    breakpoints: {
+        320: {
+            slidesPerView: 'auto',
+            pagination: {
+                el: '.productcard-hero__pagination',
+            }
+        },
+        769: {
+            slidesPerView: 1,
+        }
+    }
 });
 
 // tabs
@@ -337,35 +349,6 @@ document.querySelectorAll('.b2bspecial-card__tabs-item').forEach(function (tabsB
         const srcContent = document.querySelector('.b2bspecial-card__tabs-content').src;
         e.currentTarget.src = srcContent;
         document.querySelector('.b2bspecial-card__tabs-content').src = src;
-    })
-})
-
-// swiper stones
-
-document.querySelectorAll('.swiper__stones-small-img1').forEach(function (tabsImg) {
-    tabsImg.addEventListener('click', function (e) {
-        const src = e.currentTarget.src;
-        const srcContent = document.querySelector('.swiper__stones-center-img1').src;
-        e.currentTarget.src = srcContent;
-        document.querySelector('.swiper__stones-center-img1').src = src;
-    })
-})
-
-document.querySelectorAll('.swiper__stones-small-img2').forEach(function (tabsImg) {
-    tabsImg.addEventListener('click', function (e) {
-        const src = e.currentTarget.src;
-        const srcContent = document.querySelector('.swiper__stones-center-img2').src;
-        e.currentTarget.src = srcContent;
-        document.querySelector('.swiper__stones-center-img2').src = src;
-    })
-})
-
-document.querySelectorAll('.swiper__stones-small-img3').forEach(function (tabsImg) {
-    tabsImg.addEventListener('click', function (e) {
-        const src = e.currentTarget.src;
-        const srcContent = document.querySelector('.swiper__stones-center-img3').src;
-        e.currentTarget.src = srcContent;
-        document.querySelector('.swiper__stones-center-img3').src = src;
     })
 })
 
