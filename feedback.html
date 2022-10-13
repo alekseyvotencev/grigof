@@ -14,6 +14,9 @@
 <body>
     <header class="header">
         <div class="container">
+            <button class="header__burger">
+                <img src="images/svg/header-burger.svg" alt="">
+            </button>
             <div class="header__left">
                 <p class="header__left-schedule">Пн-Пт: 11:00 - 19:00 только по записи</p>
                 <nav class="header__left-nav">
@@ -37,6 +40,9 @@
                 </nav>
             </div>
             <a href="/index.html" class="header__logo"><img src="images/svg/logo.svg" alt="Логотип фирмы"></a>
+            <a href="tel:74996479997" class="header__phone">
+                <img src="images/svg/header-phone.svg" alt="">
+            </a>
             <div class="header__right">
                 <div class="header__right-top">
                     <a href="tel:+74996479997" class="header__right-phone">+7 499 647 99 97</a>
@@ -50,8 +56,7 @@
                             <a href="/repair.html" class="header__right-nav-link">Ремонт</a>
                         </li>
                         <li class="header__right-nav-item">
-                            <a href="/feedback.html"
-                                class="header__right-nav-link header__left-nav-link--active">Отзывы</a>
+                            <a href="/feedback.html" class="header__right-nav-link">Отзывы</a>
                         </li>
                         <li class="header__right-nav-item">
                             <a href="/about.html" class="header__right-nav-link">О
@@ -68,25 +73,23 @@
 
     <main>
         <section class="feedback-hero">
-            <img src="images/feedback-heroBG.png" alt="" class="feedback-hero__imgBG">
             <div class="container">
+                <p class="feedback-hero__heading-mobile">история создания ювелирной мастерской GRIGOF JEWELRY</p>
                 <div class="feedback-hero__left">
-                    <img src="images/svg/logo.svg" alt="" class="feedback-hero__logo">
+                    <a href="/index.html" class="feedback-hero__logo">
+                        <img src="images/svg/logo.svg" alt="">
+                    </a>
                     <p class="feedback-hero__heading">отзывы о ювелирной мастерской</p>
                     <ul class="feedback-hero__list">
                         <li class="feedback-hero__list-item">
                             <p class="feedback-hero__item-heading">Качество</p>
-                            <p class="feedback-hero__item-description">Премиум качество любого изделия</p>
+                            <p class="feedback-hero__item-description">Прмиум качество любого изделия</p>
                         </li>
                         <li class="feedback-hero__list-item">
                             <p class="feedback-hero__item-heading">Эстетика</p>
-                            <p class="feedback-hero__item-description">Премиум качество любого изделия</p>
+                            <p class="feedback-hero__item-description">Прмиум качество любого изделия</p>
                         </li>
                     </ul>
-                    <a href="/stock.html" class="feedback-hero__btn">
-                        <span>перейти в </span>
-                        <span>каталог</span>
-                    </a>
                 </div>
                 <div class="feedback-hero__right">
                     <p class="feedback-hero__right-heading">Наша история</p>
@@ -94,25 +97,38 @@
                         Подольске Московской области, а в 2017 —
                         вторая ювелирная студия в Москве. </p>
                 </div>
-
+                <div class="feedback-hero__block">
+                    <a href="/stock.html" class="feedback-hero__btn">
+                        <span>перейти</span>
+                        <span>в каталог</span>
+                    </a>
+                    <img src="images/feedback-heroBG.png" alt="" class="feedback-hero__imgBG">
+                </div>
             </div>
         </section>
 
         <section class="feedback-reviews">
-            <p class="feedback-reviews__heading">все отзывы <span>145</span></p>
+            <div class="container">
+                <p class="feedback-reviews__heading">все отзывы <span>145</span></p>
+            </div>
             <div class="feedback-reviews__type-container">
-                <ul class="feedback-reviews__type">
-                    <li class="feedback-reviews__type-item" data-path="bracelets">браслеты</li>
-                    <li class="feedback-reviews__type-item feedback-reviews__type-item--active" data-path="rings">кольца
-                    </li>
-                    <li class="feedback-reviews__type-item" data-path="pendant">подвески</li>
-                    <li class="feedback-reviews__type-item" data-path="earrings">серьги</li>
-                    <li class="feedback-reviews__type-item" data-path="chains">цепи</li>
-                </ul>
+                <div class="container">
+                    <ul class="feedback-reviews__type">
+                        <li class="feedback-reviews__type-item" data-path="bracelets">браслеты</li>
+                        <li class="feedback-reviews__type-item feedback-reviews__type-item--active" data-path="rings">
+                            кольца
+                        </li>
+                        <li class="feedback-reviews__type-item" data-path="pendant">подвески</li>
+                        <li class="feedback-reviews__type-item" data-path="earrings">серьги</li>
+                        <li class="feedback-reviews__type-item" data-path="chains">цепи</li>
+                    </ul>
+                </div>
             </div>
             <div class="container">
                 <ul class="feedback-reviews__list feedback-reviews__list--active" data-target="rings">
                     <li class="feedback-reviews__list-item">
+                        <p class="feedback-reviews__item-type-mobile">Кольцо</p>
+                        <p class="feedback-reviews__item-details-mobile">“С бриллиантом”</p>
                         <img src="images/feedbackReviews1.png" alt="" class="feedback-reviews__item-img">
                         <div class="feedback-reviews__item-text">
                             <p class="feedback-reviews__item-review">Спасибо огромное за такую потрясающую работу! Это
@@ -202,6 +218,10 @@
                     </li>
 
                 </ul>
+                <button class="feedback-reviews__btn-mobile">
+                    <span>показать</span>
+                    <span>больше</span>
+                </button>
             </div>
         </section>
     </main>
