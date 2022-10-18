@@ -431,6 +431,14 @@ body {
   font-size: 1.9rem;
   line-height: 2.6rem;
 }
+.header__right-nav-link--active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -0.9rem;
+  background-color: #FFFFFF;
+}
 
 .hero {
   margin-bottom: 17.8rem;
@@ -2530,14 +2538,14 @@ body {
   text-transform: uppercase;
 }
 .prices-hero__description {
-  margin-bottom: 2.9rem;
+  margin-bottom: 5rem;
   width: 50.4rem;
   font-family: "FuturaPT";
   font-size: 1.9rem;
   line-height: 2.6rem;
 }
 .prices-hero__btn {
-  margin-bottom: 10.8rem;
+  margin-bottom: 10rem;
   position: relative;
   display: flex;
   align-items: center;
@@ -2576,9 +2584,16 @@ body {
 .prices-hero__btn span:last-child {
   transform: translate(-4rem, 1rem);
 }
+.prices-hero__bottom {
+  display: flex;
+  align-items: center;
+}
+.prices-hero__bottom-text {
+  margin-right: 14rem;
+  width: 29.3rem;
+}
 .prices-hero__subheading {
   margin-bottom: 2.1rem;
-  width: 29.3rem;
   font-size: 4rem;
   line-height: 5.6rem;
   text-transform: uppercase;
@@ -2597,9 +2612,6 @@ body {
      object-fit: contain;
 }
 .prices-hero__img2 {
-  position: absolute;
-  left: 40.7rem;
-  bottom: -5.6rem;
   width: 25.3rem;
   -o-object-fit: contain;
      object-fit: contain;
@@ -2634,9 +2646,8 @@ body {
 }
 .pricelist__tab-list {
   margin: 0 auto;
-  width: 153.3rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 .pricelist__tab-btn {
@@ -2658,13 +2669,16 @@ body {
 .pricelist__tab-btn--active {
   color: #FFF;
 }
-.pricelist .pricelist__content {
+.pricelist__tab-btn:not(:last-child) {
+  margin-right: 5rem;
+}
+.pricelist__content {
   display: none;
 }
-.pricelist .pricelist__content--active {
+.pricelist__content--active {
   display: block;
 }
-.pricelist .pricelist__list-item {
+.pricelist__list-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2672,52 +2686,52 @@ body {
   padding-bottom: 4.8rem;
   border-top: 1px solid #FFF;
 }
-.pricelist .pricelist__list-item:last-child {
+.pricelist__list-item:last-child {
   border-bottom: 1px solid #FFF;
 }
-.pricelist .pricelist__list-number {
+.pricelist__list-number {
   font-size: 4rem;
   line-height: 1;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.5);
 }
-.pricelist .pricelist__list-title {
+.pricelist__list-title {
   font-size: 4rem;
   line-height: 5.6rem;
   text-transform: uppercase;
 }
-.pricelist .pricelist__list-price {
+.pricelist__list-price {
   font-size: 4rem;
   line-height: 1;
 }
-.pricelist .pricelist__list-price span:first-child {
+.pricelist__list-price span:first-child {
   font-family: "FuturaPT";
   font-size: 1.5rem;
   line-height: 2.2rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
 }
-.pricelist .pricelist__list-price span:last-child {
+.pricelist__list-price span:last-child {
   font-size: 2rem;
   line-height: 3.5rem;
   vertical-align: top;
 }
 
+.dependence .container {
+  position: relative;
+}
 .dependence__heading {
+  margin-bottom: 6.5rem;
   width: 73rem;
   font-size: 7rem;
   line-height: 9rem;
   text-transform: uppercase;
 }
-.dependence__top {
-  margin-bottom: 6.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.dependence__top-btn {
-  position: relative;
+.dependence__btn {
+  position: absolute;
+  top: 3rem;
+  right: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2729,7 +2743,7 @@ body {
   letter-spacing: 0.16em;
   text-transform: uppercase;
 }
-.dependence__top-btn::after {
+.dependence__btn::after {
   content: "";
   position: absolute;
   top: 0;
@@ -2748,17 +2762,18 @@ body {
   background-repeat: no-repeat;
   z-index: -1;
 }
-.dependence__top-btn span:first-child {
+.dependence__btn span:first-child {
   margin-bottom: 0.5rem;
   transform: translate(3rem, -1rem);
 }
-.dependence__top-btn span:last-child {
+.dependence__btn span:last-child {
   transform: translate(-2.5rem, 1rem);
 }
 .dependence__bottom {
   display: flex;
 }
 .dependence__bottom-heading {
+  margin-left: 0;
   margin-right: 3.8rem;
   display: inline-block;
   font-size: 7rem;
@@ -5957,19 +5972,20 @@ body {
     line-height: 8.2rem;
   }
   .services__tabs {
-    margin-bottom: 9.2rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    margin-bottom: 10.8rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
   }
   .services__tabs-list {
     flex-direction: column;
   }
   .services__tabs-btn {
-    width: 48rem;
-    font-size: 2.2rem;
-    line-height: 3.2rem;
+    width: 58rem;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
   }
   .services__tabs-btn:not(:last-child) {
+    margin-right: 0;
     margin-bottom: 7rem;
   }
   .services__content {
@@ -6433,7 +6449,7 @@ body {
     font-size: 2.2rem;
     line-height: 3.2rem;
   }
-  .feedback__input-big {
+  .feedback__input-big-container {
     margin-bottom: 7rem;
   }
   .feedback__form-btn {
@@ -7147,5 +7163,190 @@ body {
   }
   .contacts-hero__right-btn span:last-of-type {
     transform: translate(-3rem, 2rem);
+  }
+  .prices-hero {
+    margin-top: 0;
+    padding-top: 12rem;
+  }
+  .prices-hero .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .prices-hero__heading {
+    margin-bottom: 6.4rem;
+    width: 100%;
+    font-size: 6rem;
+    line-height: 8.2rem;
+    align-self: center;
+    text-align: center;
+    order: 0;
+  }
+  .prices-hero__description {
+    width: 100%;
+    align-self: center;
+    text-align: center;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    order: 1;
+  }
+  .prices-hero__img1 {
+    margin-top: -5rem;
+    margin-bottom: 7rem;
+    right: auto;
+    bottom: auto;
+    width: 56.6rem;
+    position: relative;
+    align-self: center;
+    order: 2;
+  }
+  .prices-hero__bottom {
+    margin-bottom: 12.8rem;
+    order: 3;
+    flex-direction: row-reverse;
+  }
+  .prices-hero__bottom-text {
+    margin: 0;
+    width: 40.8rem;
+  }
+  .prices-hero__img2 {
+    margin-right: 6rem;
+    width: 18.6rem;
+  }
+  .prices-hero__subheading {
+    margin-bottom: 2rem;
+    font-size: 4.4rem;
+    line-height: 5.2rem;
+  }
+  .prices-hero__notice {
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+  }
+  .prices-hero__btn {
+    margin: 0;
+    width: 41rem;
+    height: 14.8rem;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+    letter-spacing: 0.1em;
+    order: 4;
+  }
+  .prices-hero__btn span:first-child {
+    transform: translate(1.5rem, -1rem);
+  }
+  .prices-hero__btn span:last-child {
+    transform: translate(-5rem, 2rem);
+  }
+  .prices-hero__img3 {
+    right: -2rem;
+    bottom: -4rem;
+    width: 23.4rem;
+  }
+  .pricelist {
+    margin-top: 0;
+    padding-top: 40rem;
+    padding-bottom: 24rem;
+  }
+  .pricelist__heading {
+    margin-bottom: 8rem;
+    font-size: 6rem;
+    line-height: 8.2rem;
+  }
+  .pricelist__tab {
+    margin-bottom: 10rem;
+    padding-top: 7rem;
+    padding-bottom: 10rem;
+  }
+  .pricelist__tab-list {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 48rem;
+  }
+  .pricelist__tab-btn {
+    width: 100%;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+  }
+  .pricelist__tab-btn:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 7rem;
+  }
+  .pricelist__list-item {
+    padding-top: 6.6rem;
+    padding-bottom: 6.6rem;
+    flex-wrap: wrap;
+  }
+  .pricelist__list-number {
+    margin-bottom: 2rem;
+    width: 100%;
+    font-size: 4.4rem;
+    line-height: 5.2rem;
+  }
+  .pricelist__list-title {
+    font-size: 4.4rem;
+    line-height: 5.2rem;
+  }
+  .pricelist__list-price {
+    font-size: 4.4rem;
+    line-height: 5.2rem;
+  }
+  .pricelist__list-price span:first-child {
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+  }
+  .pricelist__list-price span:last-child {
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+  }
+  .dependence__heading {
+    margin-bottom: 7.6rem;
+    width: 100%;
+    font-size: 6rem;
+    line-height: 8.2rem;
+  }
+  .dependence__bottom {
+    flex-wrap: wrap;
+  }
+  .dependence__bottom-heading {
+    margin-bottom: 9rem;
+    margin-left: -2rem;
+    margin-right: 2rem;
+    font-size: 6rem;
+    line-height: 8.2rem;
+  }
+  .dependence__bottom-img {
+    margin-right: 0;
+    margin-bottom: 9rem;
+    width: 58.4rem;
+  }
+  .dependence__bottom-list {
+    margin-bottom: 13.6rem;
+    width: 100%;
+    align-self: flex-start;
+  }
+  .dependence__bottom-list-item:not(:last-child) {
+    margin-bottom: 10rem;
+  }
+  .dependence__bottom-list-title {
+    margin-bottom: 2.4rem;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+  }
+  .dependence__bottom-list-description {
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+  }
+  .dependence__btn {
+    position: relative;
+    width: 41rem;
+    height: 14.8rem;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+    letter-spacing: 0.1em;
+  }
+  .dependence__btn span:first-child {
+    transform: translate(4.5rem, -1.5rem);
+  }
+  .dependence__btn span:last-child {
+    transform: translate(-3.5rem, 2rem);
   }
 }/*# sourceMappingURL=style.css.map */

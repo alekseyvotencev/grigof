@@ -6,7 +6,7 @@
 
 - [x] Ремонт - https://alekseyvotencev.github.io/grigof/repair.html
 
-- [x] Цены - https://alekseyvotencev.github.io/grigof/pricelist.html
+- [x] Цены - https://alekseyvotencev.github.io/grigof/pricelist.html + мобилка
 
 - [x] В наличии - https://alekseyvotencev.github.io/grigof/stock.html
 
@@ -22,7 +22,7 @@
 
 - [x] Отзывы - https://alekseyvotencev.github.io/grigof/feedback.html + мобилка
 
-- [x] Контакты - https://alekseyvotencev.github.io/grigof/contacts.html
+- [x] Контакты - https://alekseyvotencev.github.io/grigof/contacts.html + мобилка
 
 - [x] Подарочный сертификат - https://alekseyvotencev.github.io/grigof/certificate.html
 

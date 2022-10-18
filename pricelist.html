@@ -14,6 +14,9 @@
 <body>
     <header class="header">
         <div class="container">
+            <button class="header__burger">
+                <img src="images/svg/header-burger.svg" alt="">
+            </button>
             <div class="header__left">
                 <p class="header__left-schedule">Пн-Пт: 11:00 - 19:00 только по записи</p>
                 <nav class="header__left-nav">
@@ -22,8 +25,7 @@
                             <a href="/portfolio.html" class="header__left-nav-link">Портфолио</a>
                         </li>
                         <li class="header__left-nav-item">
-                            <a href="/pricelist.html"
-                                class="header__left-nav-link header__left-nav-link--active">Цены</a>
+                            <a href="/pricelist.html" class="header__left-nav-link header__left-nav-link--active">Цены</a>
                         </li>
                         <li class="header__left-nav-item">
                             <a href="/stock.html" class="header__left-nav-link">В наличии</a>
@@ -38,6 +40,9 @@
                 </nav>
             </div>
             <a href="/index.html" class="header__logo"><img src="images/svg/logo.svg" alt="Логотип фирмы"></a>
+            <a href="tel:74996479997" class="header__phone">
+                <img src="images/svg/header-phone.svg" alt="">
+            </a>
             <div class="header__right">
                 <div class="header__right-top">
                     <a href="tel:+74996479997" class="header__right-phone">+7 499 647 99 97</a>
@@ -76,10 +81,17 @@
                     <span>ПОСМОТРЕТЬ</span>
                     <span>цены</span>
                 </a>
-                <p class="prices-hero__subheading">Изготовление украшений</p>
-                <p class="prices-hero__notice">Индивидуально под ваш заказ</p>
+                <div class="prices-hero__bottom">
+                    <div class="prices-hero__bottom-text">
+                        <p class="prices-hero__subheading">Изготовление украшений</p>
+                        <p class="prices-hero__notice">Индивидуально под ваш заказ</p>
+                    </div>
+
+                    <img src="images/prices-hero2.png" alt="" class="prices-hero__img2">
+                </div>
+
                 <img src="images/prices-hero1.png" alt="" class="prices-hero__img1">
-                <img src="images/prices-hero2.png" alt="" class="prices-hero__img2">
+
                 <img src="images/prices-hero3.png" alt="" class="prices-hero__img3">
             </div>
         </section>
@@ -87,17 +99,19 @@
         <section class="pricelist">
             <p id="prices" class="pricelist__heading">СТОИМОСТЬ УСЛУГ</p>
             <div class="pricelist__tab">
-                <ul class="pricelist__tab-list">
-                    <li class="pricelist__tab-btn pricelist__tab-btn--active" data-path="pricelist-creating">
-                        ИЗГОТОВЛЕНИЕ УКРАШЕНИЙ</li>
-                    <li class="pricelist__tab-btn" data-path="pricelist-repair">РЕМОНТ УКРАШЕНИЙ</li>
-                    <li class="pricelist__tab-btn" data-path="pricelist-engraving">НАНЕСЕНИЕ ГРАВИРОВОК</li>
-                    <li class="pricelist__tab-btn" data-path="pricelist-laser">ЛАЗЕРНАЯ ПАЙКА</li>
-                    <li class="pricelist__tab-btn" data-path="pricelist-evaluation">ЮВЕЛИРНАЯ ОЦЕНКА</li>
-                    <li class="pricelist__tab-btn" data-path="pricelist-cutting">ОГРАНКА КАМНЕЙ</li>
-                    <li class="pricelist__tab-btn" data-path="pricelist-golding">ЗОЛОЧЕНИЕ ИЗДЕЛИЙ</li>
-                    <li class="pricelist__tab-btn" data-path="pricelist-design">Дизайн и 3d модели</li>
-                </ul>
+                <div class="container">
+                    <ul class="pricelist__tab-list">
+                        <li class="pricelist__tab-btn pricelist__tab-btn--active" data-path="pricelist-creating">
+                            ИЗГОТОВЛЕНИЕ УКРАШЕНИЙ</li>
+                        <li class="pricelist__tab-btn" data-path="pricelist-repair">РЕМОНТ УКРАШЕНИЙ</li>
+                        <li class="pricelist__tab-btn" data-path="pricelist-engraving">НАНЕСЕНИЕ ГРАВИРОВОК</li>
+                        <li class="pricelist__tab-btn" data-path="pricelist-laser">ЛАЗЕРНАЯ ПАЙКА</li>
+                        <li class="pricelist__tab-btn" data-path="pricelist-evaluation">ЮВЕЛИРНАЯ ОЦЕНКА</li>
+                        <li class="pricelist__tab-btn" data-path="pricelist-cutting">ОГРАНКА КАМНЕЙ</li>
+                        <li class="pricelist__tab-btn" data-path="pricelist-golding">ЗОЛОЧЕНИЕ ИЗДЕЛИЙ</li>
+                        <li class="pricelist__tab-btn" data-path="pricelist-design">Дизайн и 3d модели</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="container">
@@ -139,13 +153,7 @@
 
         <section class="dependence">
             <div class="container">
-                <div class="dependence__top">
-                    <p class="dependence__heading">от чего зависит итоговая стоимость</p>
-                    <button class="dependence__top-btn calculate-price__btn">
-                        <span>Рассчитать</span>
-                        <span>стоимость</span>
-                    </button>
-                </div>
+                <p class="dependence__heading">от чего зависит итоговая стоимость</p>
                 <div class="dependence__bottom">
                     <p class="dependence__bottom-heading">мастерская</p>
                     <img src="images/dependence.png" alt="" class="dependence__bottom-img">
@@ -176,7 +184,10 @@
                         </li>
                     </ul>
                 </div>
-
+                <button class="dependence__btn calculate-price__btn">
+                    <span>Рассчитать</span>
+                    <span>стоимость</span>
+                </button>
             </div>
 
 
@@ -185,13 +196,6 @@
         <section class="feedback">
 
             <div class="container">
-                <img src="images/feedback1.png" alt="" class="feedback__left-img">
-                <img src="images/svg/feedbackNotice.svg" alt="" class="feedback__notice">
-                <div class="feedback__right-img">
-                    <img src="images/feedback2.png" alt="">
-                    <p>авторские украшения на заказ</p>
-                </div>
-
                 <div class="feedback__left">
                     <p class="feedback__title">grigof jewels</p>
                     <p class="feedback__subtitle">обратная связь</p>
@@ -200,26 +204,44 @@
                         своему делу.</p>
                 </div>
 
-                <div class="feedback__right">
+                <div class="feedback__right-img">
+                    <img src="images/feedback2.png" alt="">
+                    <p>авторские украшения на заказ</p>
+                </div>
 
+                <div class="feedback__right">
                     <form action="#" class="feedback__form">
                         <div class="feedback__input-general-container">
                             <div class="feedback__input-container">
-                                <input type="text" class="feedback__input" placeholder="ваше имя" id="name">
+                                <input type="text" class="feedback__input" id="name" placeholder="ваше имя"
+                                    autocomplete="off">
+                                <label for="name" class="feedback__placeholder">ваше имя</label>
                             </div>
                             <div class="feedback__input-container">
-                                <input type="tel" class="feedback__input" placeholder="Телефон" id="phone">
+                                <input type="tel" class="feedback__input" id="phone" placeholder="Телефон"
+                                    autocomplete="off">
+                                <label for="phone" class="feedback__placeholder">Телефон</label>
                             </div>
                             <div class="feedback__input-container">
-                                <input type="email" class="feedback__input" placeholder="e-mail" id="email">
+                                <input type="email" class="feedback__input" id="email" placeholder="e-mail"
+                                    autocomplete="off">
+                                <label for="email" class="feedback__placeholder">e-mail</label>
                             </div>
                         </div>
                         <div class="feedback__input-big-container">
-                            <input type="text" class="feedback__input-big" placeholder="Сообщение" id="message">
+                            <input type="text" class="feedback__input-big" id="message" placeholder="Сообщение"
+                                autocomplete="off">
+                            <label for="message" class="feedback__placeholder">Сообщение</label>
                         </div>
                         <button class="feedback__form-btn">отправить</button>
                     </form>
                 </div>
+                <img src="images/svg/feedbackNotice.svg" alt="" class="feedback__notice">
+                <div class="feedback__notice-mobile">
+                    <div class="line"></div>
+                    <span>2022</span>
+                </div>
+                <img src="images/feedback1.png" alt="" class="feedback__left-img">
             </div>
         </section>
     </main>
