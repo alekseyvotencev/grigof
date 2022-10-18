@@ -1895,7 +1895,8 @@ body {
   margin-right: 5rem;
 }
 .footer__bottom-link img {
-  width: auto;
+  width: 5.3rem;
+  height: 5.3rem;
 }
 .footer__bottom-copyright {
   font-family: "FuturaPT";
@@ -5086,7 +5087,8 @@ body {
   transform: translate(-1.5rem, 1rem);
 }
 .contacts-hero__right-link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   font-family: "FuturaPT";
   font-size: 1.5rem;
   line-height: 2.2rem;
@@ -7049,5 +7051,101 @@ body {
   }
   .feedback-reviews__item-link {
     display: none;
+  }
+  .contacts-hero {
+    padding-top: 12rem;
+    padding-bottom: 25rem;
+  }
+  .contacts-hero__left {
+    margin-bottom: 1.4rem;
+  }
+  .contacts-hero__left-description {
+    width: 100%;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    text-align: center;
+  }
+  .contacts-hero__heading {
+    margin-bottom: 6rem;
+    width: 100%;
+    text-align: center;
+    font-size: 6rem;
+    line-height: 8.2rem;
+  }
+  .contacts-hero__imgBG {
+    margin-bottom: 9.2rem;
+    position: relative;
+    width: 75rem;
+    left: -4rem;
+    bottom: auto;
+  }
+  .contacts-hero__right {
+    padding: 0;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacts-hero__right::after {
+    display: none;
+  }
+  .contacts-hero__right-list {
+    margin-bottom: 8rem;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    order: 0;
+  }
+  .contacts-hero__right-list-item {
+    margin-right: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .contacts-hero__right-list-item p:first-child {
+    margin-bottom: 1.6rem;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+  }
+  .contacts-hero__right-list-item p:last-child,
+.contacts-hero__right-list-item a {
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+  }
+  .contacts-hero__right-list-item:nth-child(-n+2) {
+    margin-bottom: auto;
+  }
+  .contacts-hero__right-list-item:not(:last-child) {
+    margin-bottom: 8rem;
+  }
+  .contacts-hero__right-link {
+    margin-bottom: 7.2rem;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+    letter-spacing: 0.1em;
+    order: 1;
+  }
+  .contacts-hero__right-link span {
+    margin-right: 6.8rem;
+  }
+  .contacts-hero__right-link img {
+    width: 8.426rem;
+  }
+  .contacts-hero__right-btn {
+    margin-right: 0;
+    width: 41rem;
+    height: 14.8rem;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+    order: 2;
+  }
+  .contacts-hero__right-btn span:first-of-type {
+    transform: translate(2rem, -1.5rem);
+  }
+  .contacts-hero__right-btn span:last-of-type {
+    transform: translate(-3rem, 2rem);
   }
 }/*# sourceMappingURL=style.css.map */

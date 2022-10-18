@@ -1,4 +1,4 @@
-- [x] Главная - https://alekseyvotencev.github.io/grigof/
+- [x] Главная - https://alekseyvotencev.github.io/grigof/ + мобилка
 
 - [x] Драгоценные камни (детальная) - https://alekseyvotencev.github.io/grigof/stone.html
 
@@ -18,9 +18,9 @@
 
 - [x] Портфолио - https://alekseyvotencev.github.io/grigof/portfolio.html
 
-- [x] Карточка товара - https://alekseyvotencev.github.io/grigof/productcard.html
+- [x] Карточка товара - https://alekseyvotencev.github.io/grigof/productcard.html + мобилка
 
-- [x] Отзывы - https://alekseyvotencev.github.io/grigof/feedback.html
+- [x] Отзывы - https://alekseyvotencev.github.io/grigof/feedback.html + мобилка
 
 - [x] Контакты - https://alekseyvotencev.github.io/grigof/contacts.html
 
