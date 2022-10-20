@@ -14,6 +14,9 @@
 <body>
     <header class="header">
         <div class="container">
+            <button class="header__burger">
+                <img src="images/svg/header-burger.svg" alt="">
+            </button>
             <div class="header__left">
                 <p class="header__left-schedule">Пн-Пт: 11:00 - 19:00 только по записи</p>
                 <nav class="header__left-nav">
@@ -36,7 +39,10 @@
                     </ul>
                 </nav>
             </div>
-            <a href="/index.html" class="header__logo"><img src="images/svg/logo.svg" alt="Логотип фирмы" class="header__logo"></a>
+            <a href="/index.html" class="header__logo"><img src="images/svg/logo.svg" alt="Логотип фирмы"></a>
+            <a href="tel:74996479997" class="header__phone">
+                <img src="images/svg/header-phone.svg" alt="">
+            </a>
             <div class="header__right">
                 <div class="header__right-top">
                     <a href="tel:+74996479997" class="header__right-phone">+7 499 647 99 97</a>
@@ -50,10 +56,11 @@
                             <a href="/repair.html" class="header__right-nav-link">Ремонт</a>
                         </li>
                         <li class="header__right-nav-item">
-                            <a href="/feedback.html" class="header__right-nav-link">Отзывы</a>
+                            <a href="/feedback.html"
+                                class="header__right-nav-link header__right-nav-link--active">Отзывы</a>
                         </li>
                         <li class="header__right-nav-item">
-                            <a href="/about.html" class="header__right-nav-link header__left-nav-link--active">О
+                            <a href="/about.html" class="header__right-nav-link">О
                                 бренде</a>
                         </li>
                         <li class="header__right-nav-item">
@@ -67,7 +74,6 @@
     <main>
 
         <section class="about-hero">
-            <img src="images/feedback-heroBG.png" alt="" class="about-hero__imgBG">
             <div class="container">
                 <div class="about-hero__left">
                     <img src="images/svg/logo.svg" alt="" class="about-hero__logo">
@@ -82,10 +88,21 @@
                             <p class="about-hero__item-description">Премиум качество любого изделия</p>
                         </li>
                     </ul>
-                    <a href="/stock.html" class="about-hero__btn">
-                        <span>перейти в </span>
-                        <span>каталог</span>
-                    </a>
+                    <div class="about-hero__left-mobile">
+                        <img src="images/svg/logo.svg" alt="" class="about-hero__left-mobile__logo">
+                        <ul class="about-hero__left-mobile__list">
+                            <li class="about-hero__left-mobile__list-item">
+                                <p class="about-hero__left-mobile__list-item-heading">Качество</p>
+                                <p class="about-hero__left-mobile__list-item-description">Премиум качество любого
+                                    изделия</p>
+                            </li>
+                            <li class="about-hero__left-mobile__list-item">
+                                <p class="about-hero__left-mobile__list-item-heading">Эстетика</p>
+                                <p class="about-hero__left-mobile__list-item-description">Премиум качество любого
+                                    изделия</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="about-hero__right">
                     <p class="about-hero__right-heading">Наша история</p>
@@ -93,13 +110,18 @@
                         Подольске Московской области, а в 2017 —
                         вторая ювелирная студия в Москве. </p>
                 </div>
-
+                <a href="/stock.html" class="about-hero__btn">
+                    <span>перейти в </span>
+                    <span>каталог</span>
+                </a>
+                <img src="images/feedback-heroBG.png" alt="" class="about-hero__imgBG">
             </div>
         </section>
 
         <section class="about-history">
             <div class="container">
                 <div class="about-history__left">
+                    <p class="about-history__heading-mobile">История создания</p>
                     <img src="images/about-history-img1.png" alt="" class="about-history__left-img">
                     <div class="about-history__left-text">
                         <p class="about-history__heading">История создания</p>
@@ -138,6 +160,10 @@
                         еще один не менее благополучный проект.</p>
                     <img src="images/about-history-img2.png" alt="" class="about-history__right-img">
                 </div>
+                <a href="/portfolio.html" class="about-history__link">
+                    <span>портфолио</span>
+                    <img src="images/svg/swiperArrow.svg" alt="">
+                </a>
             </div>
         </section>
 
