@@ -197,6 +197,22 @@ const swiperProductCard = new Swiper('.swiper__productcard', {
     }
 });
 
+const swiperAbout = new Swiper('.swiper__about', {
+    direction: 'horizontal',
+    speed: 500,
+    loop: true,
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    initialSlide: 1,
+    pagination: {
+        el: '.swiper__about-pagination',
+    },
+    navigation: {
+        nextEl: '.swiper__about-next',
+        prevEl: '.swiper__about-prev',
+    },
+});
+
 // tabs
 
 document.querySelectorAll('.services__tabs-btn').forEach(function (tabsBtn) {
