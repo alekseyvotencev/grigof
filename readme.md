@@ -10,7 +10,7 @@
 
 - [x] В наличии - https://alekseyvotencev.github.io/grigof/stock.html
 
-- [x] Драгоценные камни - https://alekseyvotencev.github.io/grigof/gemstones.html
+- [x] Драгоценные камни - https://alekseyvotencev.github.io/grigof/gemstones.html + мобилка
  
 - [x] B2B - https://alekseyvotencev.github.io/grigof/b2bgeneral.html
 
@@ -26,7 +26,7 @@
 
 - [x] Подарочный сертификат - https://alekseyvotencev.github.io/grigof/certificate.html
 
-- [x] О бренде - https://alekseyvotencev.github.io/grigof/about.html
+- [x] О бренде - https://alekseyvotencev.github.io/grigof/about.html + мобилка
 
 - [x] Форма Рассчитать стоимость
 
