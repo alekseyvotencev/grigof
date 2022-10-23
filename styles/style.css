@@ -5270,6 +5270,12 @@ body {
 .certificate-hero__list-item:not(:last-child) {
   margin-right: 6.2rem;
 }
+.certificate-hero__right .line {
+  margin-bottom: 5rem;
+  width: 9rem;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
 .certificate-hero__right-description {
   margin-bottom: 3.3rem;
   width: 38.2rem;
@@ -5329,6 +5335,9 @@ body {
 .certificate-rules__content {
   display: flex;
   align-items: flex-start;
+}
+.certificate-rules__images-mobile {
+  display: none;
 }
 .certificate-rules__img1 {
   margin-right: 5rem;
@@ -5432,7 +5441,7 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-.certificate-qa .certificate-qa__list-item.acc_section.acc_active .certificate-qa__item-btn {
+.certificate-qa .certificate-qa__list-item.acc_section.acc_active .certificate-qa__item-btn img {
   transform: rotate(-45deg);
 }
 .certificate-qa__item-head {
@@ -5452,6 +5461,9 @@ body {
   line-height: 8.5rem;
   text-transform: uppercase;
 }
+.certificate-qa__item-number-mobile {
+  display: none;
+}
 .certificate-qa__item-text {
   font-size: 4rem;
   line-height: 4.6rem;
@@ -5459,18 +5471,18 @@ body {
 }
 .certificate-qa__item-btn {
   margin-left: auto;
-  width: 4.7rem;
-  height: 4.7rem;
   cursor: pointer;
-  transition: transform 0.25s ease-in-out;
 }
 .certificate-qa__item-btn img {
+  width: 4.7rem;
+  height: 4.7rem;
   -o-object-fit: contain;
      object-fit: contain;
+  transition: transform 0.25s ease-in-out;
 }
 .certificate-qa__item-content {
+  margin-top: 3.6rem;
   margin-left: 15rem;
-  padding-top: 3.6rem;
   font-family: "FuturaPT";
   font-size: 1.9rem;
   line-height: 2.6rem;
@@ -7967,5 +7979,216 @@ body {
   }
   .stones .swiper__stones-center img {
     width: 57rem;
+  }
+  .certificate-hero {
+    padding-top: 12rem;
+    padding-bottom: 0;
+  }
+  .certificate-hero__heading {
+    margin-bottom: 7.2rem;
+    flex-direction: column;
+    font-size: 6rem;
+    line-height: 8.2rem;
+    text-align: center;
+  }
+  .certificate-hero__heading span:first-child {
+    letter-spacing: normal;
+  }
+  .certificate-hero__heading span:last-child {
+    letter-spacing: normal;
+  }
+  .certificate-hero__imgBG {
+    margin-bottom: 10.4rem;
+    width: 39.4rem;
+    height: 85rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative;
+  }
+  .certificate-hero__img1 {
+    width: 43.2rem;
+    height: 42.6rem;
+    top: 37.6rem;
+    left: 0;
+  }
+  .certificate-hero__img2 {
+    width: 43.2rem;
+    height: 42.6rem;
+    top: 75rem;
+    right: 0;
+  }
+  .certificate-hero__content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .certificate-hero__content .line {
+    align-self: center;
+    width: 10rem;
+    height: 1px;
+  }
+  .certificate-hero__right {
+    margin-bottom: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .certificate-hero__right-description {
+    margin-bottom: 8rem;
+    width: 100%;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    text-align: center;
+  }
+  .certificate-hero__right-btn {
+    width: 41rem;
+    height: 14.8rem;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+    letter-spacing: 0.1em;
+  }
+  .certificate-hero__right-btn span:first-child {
+    transform: translate(2.5rem, -2rem);
+  }
+  .certificate-hero__right-btn span:last-child {
+    transform: translate(-2.5rem, 2rem);
+  }
+  .certificate-hero__list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .certificate-hero__list-item {
+    text-align: center;
+    align-items: center;
+  }
+  .certificate-hero__list-item p:first-child {
+    margin-bottom: 3.6rem;
+    width: 100%;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .certificate-hero__list-item p:last-child {
+    width: 100%;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    color: #FFF;
+  }
+  .certificate-hero__list-item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 8rem;
+  }
+  .certificate-rules {
+    padding-top: 24rem;
+  }
+  .certificate-rules__heading {
+    margin-bottom: 7.2rem;
+    width: 100%;
+    font-size: 6rem;
+    line-height: 8.2rem;
+  }
+  .certificate-rules__content {
+    flex-direction: column-reverse;
+  }
+  .certificate-rules__right {
+    margin-left: 0;
+  }
+  .certificate-rules__link {
+    margin-bottom: 9.4rem;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+    letter-spacing: 0.1em;
+  }
+  .certificate-rules__link span {
+    margin-right: 6.6rem;
+  }
+  .certificate-rules__link img {
+    width: 8.426rem;
+  }
+  .certificate-rules__images-mobile {
+    margin-bottom: 8.8rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .certificate-rules__img1-mobile {
+    width: 31.4rem;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .certificate-rules__img2-mobile {
+    width: 31.4rem;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .certificate-rules__description {
+    margin-bottom: 10rem;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+  }
+  .certificate-rules__btn {
+    width: 41rem;
+    height: 14.8rem;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+  }
+  .certificate-rules__btn span:first-child {
+    transform: translate(2.5rem, -2rem);
+  }
+  .certificate-rules__btn span:last-child {
+    transform: translate(-2.5rem, 2rem);
+  }
+  .certificate-rules__center {
+    width: 100%;
+  }
+  .certificate-rules__img1 {
+    display: none;
+  }
+  .certificate-rules__img2 {
+    display: none;
+  }
+  .certificate-qa {
+    padding-top: 24rem;
+    padding-bottom: 24rem;
+  }
+  .certificate-qa__heading {
+    margin-bottom: 8rem;
+    font-size: 6rem;
+    line-height: 8.2rem;
+  }
+  .certificate-qa__list-item {
+    padding-top: 6.6rem;
+    padding-bottom: 6.6rem;
+  }
+  .certificate-qa__item-number {
+    display: none;
+  }
+  .certificate-qa__item-center {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .certificate-qa__item-number-mobile {
+    margin-bottom: 2rem;
+    display: block;
+    font-size: 4.4rem;
+    line-height: 5.2rem;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .certificate-qa__item-text {
+    font-size: 4.4rem;
+    line-height: 5.2rem;
+  }
+  .certificate-qa__item-btn img {
+    width: 6rem;
+    height: 6rem;
+  }
+  .certificate-qa__item-content {
+    margin-top: 5.4rem;
+    margin-left: 0;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
   }
 }/*# sourceMappingURL=style.css.map */

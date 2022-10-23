@@ -14,6 +14,9 @@
 <body>
     <header class="header">
         <div class="container">
+            <button class="header__burger">
+                <img src="images/svg/header-burger.svg" alt="">
+            </button>
             <div class="header__left">
                 <p class="header__left-schedule">Пн-Пт: 11:00 - 19:00 только по записи</p>
                 <nav class="header__left-nav">
@@ -37,6 +40,9 @@
                 </nav>
             </div>
             <a href="/index.html" class="header__logo"><img src="images/svg/logo.svg" alt="Логотип фирмы"></a>
+            <a href="tel:74996479997" class="header__phone">
+                <img src="images/svg/header-phone.svg" alt="">
+            </a>
             <div class="header__right">
                 <div class="header__right-top">
                     <a href="tel:+74996479997" class="header__right-phone">+7 499 647 99 97</a>
@@ -44,14 +50,14 @@
                 <nav class="header__right-nav">
                     <ul class="header__right-nav-list">
                         <li class="header__right-nav-item">
-                            <a href="/certificate.html"
-                                class="header__right-nav-link header__left-nav-link--active">Купить сертификат</a>
+                            <a href="/certificate.html" class="header__right-nav-link">Купить сертификат</a>
                         </li>
                         <li class="header__right-nav-item">
                             <a href="/repair.html" class="header__right-nav-link">Ремонт</a>
                         </li>
                         <li class="header__right-nav-item">
-                            <a href="/feedback.html" class="header__right-nav-link">Отзывы</a>
+                            <a href="/feedback.html"
+                                class="header__right-nav-link header__right-nav-link--active">Отзывы</a>
                         </li>
                         <li class="header__right-nav-item">
                             <a href="/about.html" class="header__right-nav-link">О
@@ -65,18 +71,20 @@
             </div>
         </div>
     </header>
-
     <main>
         <section class="certificate-hero">
+
             <div class="container">
-                <img src="images/certificate-heroBG.png" alt="" class="certificate-hero__imgBG">
-                <img src="images/certificate-heroImg1.png" alt="" class="certificate-hero__img1">
-                <img src="images/certificate-heroImg2.png" alt="" class="certificate-hero__img2">
                 <p class="certificate-hero__heading">
                     <span>Подарочный</span>
                     <span>сертификат</span>
                 </p>
+                <img src="images/certificate-heroBG.png" alt="" class="certificate-hero__imgBG">
+                <img src="images/certificate-heroImg1.png" alt="" class="certificate-hero__img1">
+                <img src="images/certificate-heroImg2.png" alt="" class="certificate-hero__img2">
+
                 <div class="certificate-hero__content">
+
                     <ul class="certificate-hero__list">
                         <li class="certificate-hero__list-item">
                             <p>наш адрес</p>
@@ -91,6 +99,7 @@
                         </li>
                     </ul>
                     <div class="certificate-hero__right">
+                        <div class="line"></div>
                         <p class="certificate-hero__right-description">У нас вы можете преобрести не только украшения,
                             но и сертификаты , которые можете подарить своим близким</p>
                         <button class="certificate-hero__right-btn application__btn">
@@ -117,6 +126,12 @@
                             <span>сертификат</span>
                         </button>
                     </div>
+                    <div class="certificate-rules__images-mobile">
+                        <img src="images/certificate-rules__img1-mobile.png" alt=""
+                            class="certificate-rules__img1-mobile">
+                        <img src="images/certificate-rules__img2-mobile.png" alt=""
+                            class="certificate-rules__img2-mobile">
+                    </div>
                     <div class="certificate-rules__right">
                         <img src="images/certificate-rules__img2.png" alt="" class="certificate-rules__img2">
                         <a href="/contacts.html" class="certificate-rules__link">
@@ -135,7 +150,11 @@
                     <li class="certificate-qa__list-item">
                         <div class="certificate-qa__item-head">
                             <p class="certificate-qa__item-number">1</p>
-                            <p class="certificate-qa__item-text">На какую сумму я могу подарить сертификат?</p>
+                            <div class="certificate-qa__item-center">
+                                <p class="certificate-qa__item-number-mobile">(01)</p>
+                                <p class="certificate-qa__item-text">На какую сумму я могу подарить сертификат?</p>
+                            </div>
+
                             <button class="certificate-qa__item-btn">
                                 <img src="images/svg/accordionCross.svg" alt="">
                             </button>
@@ -147,7 +166,11 @@
                     <li class="certificate-qa__list-item">
                         <div class="certificate-qa__item-head">
                             <p class="certificate-qa__item-number">2</p>
-                            <p class="certificate-qa__item-text">на что можно потратить номинал сертификата?</p>
+                            <div class="certificate-qa__item-center">
+                                <p class="certificate-qa__item-number-mobile">(02)</p>
+                                <p class="certificate-qa__item-text">на что можно потратить номинал сертификата?</p>
+                            </div>
+
                             <button class="certificate-qa__item-btn">
                                 <img src="images/svg/accordionCross.svg" alt="">
                             </button>
@@ -159,7 +182,10 @@
                     <li class="certificate-qa__list-item">
                         <div class="certificate-qa__item-head">
                             <p class="certificate-qa__item-number">3</p>
-                            <p class="certificate-qa__item-text">КАКОЙ СРОК ДЕЙСТВИЯ СЕРТИФИКАТА?</p>
+                            <div class="certificate-qa__item-center">
+                                <p class="certificate-qa__item-number-mobile">(03)</p>
+                                <p class="certificate-qa__item-text">КАКОЙ СРОК ДЕЙСТВИЯ СЕРТИФИКАТА?</p>
+                            </div>
                             <button class="certificate-qa__item-btn">
                                 <img src="images/svg/accordionCross.svg" alt="">
                             </button>
@@ -171,7 +197,12 @@
                     <li class="certificate-qa__list-item">
                         <div class="certificate-qa__item-head">
                             <p class="certificate-qa__item-number">4</p>
-                            <p class="certificate-qa__item-text">Можно ли потратить лишь часть суммы сертификата?</p>
+                            <div class="certificate-qa__item-center">
+                                <p class="certificate-qa__item-number-mobile">(04)</p>
+                                <p class="certificate-qa__item-text">Можно ли потратить лишь часть суммы сертификата?
+                                </p>
+                            </div>
+
                             <button class="certificate-qa__item-btn">
                                 <img src="images/svg/accordionCross.svg" alt="">
                             </button>
@@ -303,15 +334,7 @@
             </div>
         </section>
         <section class="feedback">
-
             <div class="container">
-                <img src="images/feedback1.png" alt="" class="feedback__left-img">
-                <img src="images/svg/feedbackNotice.svg" alt="" class="feedback__notice">
-                <div class="feedback__right-img">
-                    <img src="images/feedback2.png" alt="">
-                    <p>авторские украшения на заказ</p>
-                </div>
-
                 <div class="feedback__left">
                     <p class="feedback__title">grigof jewels</p>
                     <p class="feedback__subtitle">обратная связь</p>
@@ -320,26 +343,44 @@
                         своему делу.</p>
                 </div>
 
-                <div class="feedback__right">
+                <div class="feedback__right-img">
+                    <img src="images/feedback2.png" alt="">
+                    <p>авторские украшения на заказ</p>
+                </div>
 
+                <div class="feedback__right">
                     <form action="#" class="feedback__form">
                         <div class="feedback__input-general-container">
                             <div class="feedback__input-container">
-                                <input type="text" class="feedback__input" placeholder="ваше имя" id="name">
+                                <input type="text" class="feedback__input" id="name" placeholder="ваше имя"
+                                    autocomplete="off">
+                                <label for="name" class="feedback__placeholder">ваше имя</label>
                             </div>
                             <div class="feedback__input-container">
-                                <input type="tel" class="feedback__input" placeholder="Телефон" id="phone">
+                                <input type="tel" class="feedback__input" id="phone" placeholder="Телефон"
+                                    autocomplete="off">
+                                <label for="phone" class="feedback__placeholder">Телефон</label>
                             </div>
                             <div class="feedback__input-container">
-                                <input type="email" class="feedback__input" placeholder="e-mail" id="email">
+                                <input type="email" class="feedback__input" id="email" placeholder="e-mail"
+                                    autocomplete="off">
+                                <label for="email" class="feedback__placeholder">e-mail</label>
                             </div>
                         </div>
                         <div class="feedback__input-big-container">
-                            <input type="text" class="feedback__input-big" placeholder="Сообщение" id="message">
+                            <input type="text" class="feedback__input-big" id="message" placeholder="Сообщение"
+                                autocomplete="off">
+                            <label for="message" class="feedback__placeholder">Сообщение</label>
                         </div>
                         <button class="feedback__form-btn">отправить</button>
                     </form>
                 </div>
+                <img src="images/svg/feedbackNotice.svg" alt="" class="feedback__notice">
+                <div class="feedback__notice-mobile">
+                    <div class="line"></div>
+                    <span>2022</span>
+                </div>
+                <img src="images/feedback1.png" alt="" class="feedback__left-img">
             </div>
         </section>
     </main>
