@@ -149,8 +149,11 @@ const swiperStones = new Swiper('.swiper__stones', {
     speed: 500,
     loop: true,
     navigation: {
-        nextEl: '.stones__right-next',
-        prevEl: '.stones__right-prev',
+        nextEl: '.swiper__stones-next',
+        prevEl: '.swiper__stones-prev',
+    },
+    pagination: {
+        el: '.swiper__stones-pagination',
     },
 });
 

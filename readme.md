@@ -1,8 +1,8 @@
 - [x] Главная - https://alekseyvotencev.github.io/grigof/ + мобилка
 
-- [x] Драгоценные камни (детальная) - https://alekseyvotencev.github.io/grigof/stone.html
+- [x] Драгоценные камни (детальная) - https://alekseyvotencev.github.io/grigof/stone.html + мобилка
 
-- [x] Драгоценные камни (детальная, меньшее кол-во фото) - https://alekseyvotencev.github.io/grigof/stone2.html
+- [x] Драгоценные камни (детальная, меньшее кол-во фото) - https://alekseyvotencev.github.io/grigof/stone2.html + мобилка
 
 - [x] Ремонт - https://alekseyvotencev.github.io/grigof/repair.html
 
