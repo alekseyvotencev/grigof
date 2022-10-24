@@ -1,3 +1,29 @@
+// header dropdown menu 
+
+const headerDropdownMenu = document.querySelector('.header__dropdown-menu');
+const headerBtn = document.querySelector('.header__right-btn');
+
+headerBtn.addEventListener('click', function () {
+    headerBtn.classList.toggle('header__right-nav-link--active');
+    headerDropdownMenu.classList.toggle('header__dropdown-menu--active');
+    document.addEventListener('click', function (event) {
+        if (event.target != headerBtn && event.target != headerDropdownMenu && !headerDropdownMenu.contains(event.target)) {
+            headerDropdownMenu.classList.remove('header__dropdown-menu--active');
+            headerBtn.classList.remove('header__right-nav-link--active');
+        }
+    })
+})
+
+// mobile menu
+
+const burger = document.querySelector('.header__burger');
+const mobileMenu = document.querySelector('.header__mobile-menu');
+
+burger.addEventListener('click', function (event) {
+    event.currentTarget.classList.toggle('header__burger--active');
+    mobileMenu.classList.toggle('header__mobile-menu--active');
+})
+
 // swipers
 
 // main hero slider
@@ -7,7 +33,6 @@ const swiperHero = new Swiper('.swiper__hero', {
     loop: true,
     speed: 500,
     slidesPerView: 3,
-    initialSlide: 1,
     centeredSlides: true,
     allowTouchMove: false,
     pagination: {
@@ -58,6 +83,7 @@ const swiperCategories = new Swiper('.swiper__categories', {
 const swiperPrice = new Swiper('.swiper__price', {
     direction: 'horizontal',
     loop: true,
+    speed: 500,
     slidesPerView: 'auto',
     pagination: {
         clickable: true,

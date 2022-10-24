@@ -14,15 +14,19 @@
 <body>
     <header class="header">
         <div class="container">
-            <button class="header__burger">
-                <img src="images/svg/header-burger.svg" alt="">
-            </button>
+            <svg width="36" height="20" viewBox="0 0 36 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="header__burger">
+                <line y1="0.5" x2="36" y2="0.5" stroke="white" />
+                <line y1="9.5" x2="19" y2="9.5" stroke="white" />
+                <line y1="19.5" x2="36" y2="19.5" stroke="white" />
+            </svg>
             <div class="header__left">
                 <p class="header__left-schedule">Пн-Пт: 11:00 - 19:00 только по записи</p>
                 <nav class="header__left-nav">
                     <ul class="header__left-nav-list">
                         <li class="header__left-nav-item">
-                            <a href="/portfolio.html" class="header__left-nav-link header__left-nav-link--active">Портфолио</a>
+                            <a href="/portfolio.html"
+                                class="header__left-nav-link header__left-nav-link--active">Портфолио</a>
                         </li>
                         <li class="header__left-nav-item">
                             <a href="/pricelist.html" class="header__left-nav-link">Цены</a>
@@ -53,7 +57,7 @@
                             <a href="/certificate.html" class="header__right-nav-link">Купить сертификат</a>
                         </li>
                         <li class="header__right-nav-item">
-                            <a href="/repair.html" class="header__right-nav-link">Ремонт</a>
+                            <btn class="header__right-nav-link header__right-btn">Ремонт</btn>
                         </li>
                         <li class="header__right-nav-item">
                             <a href="/feedback.html" class="header__right-nav-link">Отзывы</a>
@@ -64,6 +68,98 @@
                         </li>
                         <li class="header__right-nav-item">
                             <a href="/contacts.html" class="header__right-nav-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="header__dropdown-menu">
+            <nav class="header__dropdown-menu__nav">
+                <ul class="header__dropdown-menu__nav-list">
+                    <li class="header__dropdown-menu__nav-list-item">
+                        <a href="#">Ремонт золотых изделий</a>
+                    </li>
+                    <li class="header__dropdown-menu__nav-list-item">
+                        <a href="#">Ремонт изделий из жемчуга</a>
+                    </li>
+                    <li class="header__dropdown-menu__nav-list-item">
+                        <a href="#">Ремонт изделий из платины</a>
+                    </li>
+                    <li class="header__dropdown-menu__nav-list-item">
+                        <a href="#">Ремонт изделий из серебра</a>
+                    </li>
+                    <li class="header__dropdown-menu__nav-list-item">
+                        <a href="#">Ремонт изделий с камнями</a>
+                    </li>
+                    <li class="header__dropdown-menu__nav-list-item">
+                        <a href="#">Ремонт золотых часов</a>
+                    </li>
+                    <li class="header__dropdown-menu__nav-list-item">
+                        <a href="#">Ремонт изделий из серебра</a>
+                    </li>
+                    <li class="header__dropdown-menu__nav-list-item">
+                        <a href="#">Ремонт золотых часов</a>
+                    </li>
+                    <li class="header__dropdown-menu__nav-list-item">
+                        <a href="#">Ремонт цепочек</a>
+                    </li>
+                    <li class="header__dropdown-menu__nav-list-item">
+                        <a href="#">Ремонт ручных браслетов</a>
+                    </li>
+                    <li class="header__dropdown-menu__nav-list-item">
+                        <a href="#">Ремонт колец</a>
+                    </li>
+                    <li class="header__dropdown-menu__nav-list-item">
+                        <a href="#">Ремонт сережек</a>
+                    </li>
+                    <li class="header__dropdown-menu__nav-list-item">
+                        <a href="#">Ремонт изделий с камнями</a>
+                    </li>
+                    <li class="header__dropdown-menu__nav-list-item">
+                        <a href="#">Вставка камней</a>
+                    </li>
+                    <li class="header__dropdown-menu__nav-list-item">
+                        <a href="#">Ремонт золотых часов</a>
+                    </li>
+                    <li class="header__dropdown-menu__nav-list-item">
+                        <a href="#">Ремонт золотых часов</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__mobile-menu">
+            <div class="container">
+                <nav>
+                    <ul class="header__mobile-menu__list">
+                        <li class="header__mobile-menu__list-item">
+                            <a href="/portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="header__mobile-menu__list-item">
+                            <a href="/pricelist.html">Цены</a>
+                        </li>
+                        <li class="header__mobile-menu__list-item">
+                            <a href="/stock.html">В наличии</a>
+                        </li>
+                        <li class="header__mobile-menu__list-item">
+                            <a href="/gemstones.html">Драгоценные камни</a>
+                        </li>
+                        <li class="header__mobile-menu__list-item">
+                            <a href="/b2bgeneral.html">B2B</a>
+                        </li>
+                        <li class="header__mobile-menu__list-item">
+                            <a href="/certificate.html">Купить сертификат</a>
+                        </li>
+                        <li class="header__mobile-menu__list-item">
+                            <a href="#">Ремонт</a>
+                        </li>
+                        <li class="header__mobile-menu__list-item">
+                            <a href="/feedback.html">Отзывы</a>
+                        </li>
+                        <li class="header__mobile-menu__list-item">
+                            <a href="/about.html">О бренде</a>
+                        </li>
+                        <li class="header__mobile-menu__list-item">
+                            <a href="/contacts.html">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -285,77 +381,74 @@
         <section class="similar-products">
             <div class="container">
                 <p class="similar-products__heading">похожие товары</p>
+
                 <ul class="similar-products__list">
                     <li class="similar-products__list-item">
-                        <p class="similar-products__item-name">обручальные кольца</p>
-                        <div class="similar-products__item-card">
-                            <a href="#" class="similar-products__item-video-link">
+                        <div class="similar-products__list-card">
+                            <a href="#" class="similar-products__list-btn">
                                 <img src="images/svg/triangleBtn.svg" alt="">
                             </a>
-                            <img src="images/catalog1.png" alt="" class="similar-products__item-img">
-                            <div class="similar-products__item-bottom">
-                                <p class="similar-products__item-price">575 000<span>&#8381;</span></p>
-                                <a href="#" class="similar-products__item-bottom-link">
+                            <img src="images/catalog1.png" alt="" class="similar-products__list-img">
+                            <div class="similar-products__list-bottom">
+                                <p class="similar-products__list-price">575 000 <span>&#8381;</span></p>
+                                <a href="/stone.html" class="similar-products__list-link">
                                     <img src="images/svg/swiperArrow.svg" alt="">
                                 </a>
                             </div>
                         </div>
-                        <p class="similar-products__item-description">Обручальные кольца из белого Золота 585 пробы,
-                            бриллианты</p>
+                        <p class="similar-products__list-description">Обручальные кольца из белого Золота 585
+                            пробы, бриллианты</p>
                     </li>
+
                     <li class="similar-products__list-item">
-                        <p class="similar-products__item-name">серьги
-                            трансформеры</p>
-                        <div class="similar-products__item-card">
-                            <a href="#" class="similar-products__item-video-link">
+                        <div class="similar-products__list-card">
+                            <a href="#" class="similar-products__list-btn">
                                 <img src="images/svg/triangleBtn.svg" alt="">
                             </a>
-                            <img src="images/catalog2.png" alt="" class="similar-products__item-img">
-                            <div class="similar-products__item-bottom">
-                                <p class="similar-products__item-price">575 000<span>&#8381;</span></p>
-                                <a href="#" class="similar-products__item-bottom-link">
+                            <img src="images/catalog2.png" alt="" class="similar-products__list-img">
+                            <div class="similar-products__list-bottom">
+                                <p class="similar-products__list-price">575 000 <span>&#8381;</span></p>
+                                <a href="/stone.html" class="similar-products__list-link">
                                     <img src="images/svg/swiperArrow.svg" alt="">
                                 </a>
                             </div>
                         </div>
-                        <p class="similar-products__item-description">Обручальные кольца из белого Золота 585 пробы,
-                            бриллианты</p>
+                        <p class="similar-products__list-description">Обручальные кольца из белого Золота 585
+                            пробы, бриллианты</p>
                     </li>
+
                     <li class="similar-products__list-item">
-                        <p class="similar-products__item-name">кольцо
-                            с топазом</p>
-                        <div class="similar-products__item-card">
-                            <a href="#" class="similar-products__item-video-link">
+                        <div class="similar-products__list-card">
+                            <a href="#" class="similar-products__list-btn">
                                 <img src="images/svg/triangleBtn.svg" alt="">
                             </a>
-                            <img src="images/catalog3.png" alt="" class="similar-products__item-img">
-                            <div class="similar-products__item-bottom">
-                                <p class="similar-products__item-price">575 000<span>&#8381;</span></p>
-                                <a href="#" class="similar-products__item-bottom-link">
+                            <img src="images/catalog3.png" alt="" class="similar-products__list-img">
+                            <div class="similar-products__list-bottom">
+                                <p class="similar-products__list-price">575 000 <span>&#8381;</span></p>
+                                <a href="/stone.html" class="similar-products__list-link">
                                     <img src="images/svg/swiperArrow.svg" alt="">
                                 </a>
                             </div>
                         </div>
-                        <p class="similar-products__item-description">Обручальные кольца из белого Золота 585 пробы,
-                            бриллианты</p>
+                        <p class="similar-products__list-description">Обручальные кольца из белого Золота 585
+                            пробы, бриллианты</p>
                     </li>
+
                     <li class="similar-products__list-item">
-                        <p class="similar-products__item-name">подвеска
-                            древо жизни</p>
-                        <div class="similar-products__item-card">
-                            <a href="#" class="similar-products__item-video-link">
+                        <div class="similar-products__list-card">
+                            <a href="#" class="similar-products__list-btn">
                                 <img src="images/svg/triangleBtn.svg" alt="">
                             </a>
-                            <img src="images/catalog4.png" alt="" class="similar-products__item-img">
-                            <div class="similar-products__item-bottom">
-                                <p class="similar-products__item-price">575 000<span>&#8381;</span></p>
-                                <a href="#" class="similar-products__item-bottom-link">
+                            <img src="images/catalog4.png" alt="" class="similar-products__list-img">
+                            <div class="similar-products__list-bottom">
+                                <p class="similar-products__list-price">575 000 <span>&#8381;</span></p>
+                                <a href="/stone.html" class="similar-products__list-link">
                                     <img src="images/svg/swiperArrow.svg" alt="">
                                 </a>
                             </div>
                         </div>
-                        <p class="similar-products__item-description">Обручальные кольца из белого Золота 585 пробы,
-                            бриллианты</p>
+                        <p class="similar-products__list-description">Обручальные кольца из белого Золота 585
+                            пробы, бриллианты</p>
                     </li>
                 </ul>
             </div>
