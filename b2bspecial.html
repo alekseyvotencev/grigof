@@ -272,15 +272,7 @@
 
         </section>
         <section class="feedback">
-
             <div class="container">
-                <img src="images/feedback1.png" alt="" class="feedback__left-img">
-                <img src="images/svg/feedbackNotice.svg" alt="" class="feedback__notice">
-                <div class="feedback__right-img">
-                    <img src="images/feedback2.png" alt="">
-                    <p>авторские украшения на заказ</p>
-                </div>
-
                 <div class="feedback__left">
                     <p class="feedback__title">grigof jewels</p>
                     <p class="feedback__subtitle">обратная связь</p>
@@ -289,26 +281,44 @@
                         своему делу.</p>
                 </div>
 
-                <div class="feedback__right">
+                <div class="feedback__right-img">
+                    <img src="images/feedback2.png" alt="">
+                    <p>авторские украшения на заказ</p>
+                </div>
 
+                <div class="feedback__right">
                     <form action="#" class="feedback__form">
                         <div class="feedback__input-general-container">
                             <div class="feedback__input-container">
-                                <input type="text" class="feedback__input" placeholder="ваше имя" id="name">
+                                <input type="text" class="feedback__input" id="name" placeholder="ваше имя"
+                                    autocomplete="off">
+                                <label for="name" class="feedback__placeholder">ваше имя</label>
                             </div>
                             <div class="feedback__input-container">
-                                <input type="tel" class="feedback__input" placeholder="Телефон" id="phone">
+                                <input type="tel" class="feedback__input" id="phone" placeholder="Телефон"
+                                    autocomplete="off">
+                                <label for="phone" class="feedback__placeholder">Телефон</label>
                             </div>
                             <div class="feedback__input-container">
-                                <input type="email" class="feedback__input" placeholder="e-mail" id="email">
+                                <input type="email" class="feedback__input" id="email" placeholder="e-mail"
+                                    autocomplete="off">
+                                <label for="email" class="feedback__placeholder">e-mail</label>
                             </div>
                         </div>
                         <div class="feedback__input-big-container">
-                            <input type="text" class="feedback__input-big" placeholder="Сообщение" id="message">
+                            <input type="text" class="feedback__input-big" id="message" placeholder="Сообщение"
+                                autocomplete="off">
+                            <label for="message" class="feedback__placeholder">Сообщение</label>
                         </div>
                         <button class="feedback__form-btn">отправить</button>
                     </form>
                 </div>
+                <img src="images/svg/feedbackNotice.svg" alt="" class="feedback__notice">
+                <div class="feedback__notice-mobile">
+                    <div class="line"></div>
+                    <span>2022</span>
+                </div>
+                <img src="images/feedback1.png" alt="" class="feedback__left-img">
             </div>
         </section>
     </main>

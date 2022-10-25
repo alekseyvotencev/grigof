@@ -2269,7 +2269,8 @@ body {
             align-items: center;
 
             img {
-                width: 9.5rem;
+                max-width: 9.5rem;
+                max-height: 9.5rem;
                 object-fit: contain;
 
                 &:not(:last-child) {
@@ -2278,8 +2279,6 @@ body {
             }
         }
     }
-
-
 
     &__right {
         margin-left: auto;
@@ -2340,7 +2339,8 @@ body {
 
             img {
                 display: inline-block;
-                width: 9.5rem;
+                max-width: 9.5rem;
+                max-height: 9.5rem;
                 object-fit: contain;
             }
         }
@@ -2399,8 +2399,16 @@ body {
         align-items: center;
         position: relative;
 
-        img {
-            width: 64.4rem;
+        &-img {
+            max-width: 64.4rem;
+            max-height: 59rem;
+            position: relative;
+            object-fit: contain;
+        }
+
+        &-img2 {
+            max-width: 64.4rem;
+            max-height: 59rem;
             position: relative;
             object-fit: contain;
         }
@@ -3766,7 +3774,8 @@ body {
         position: absolute;
         top: 3rem;
         right: 23rem;
-        width: 71.3rem;
+        max-width: 71.3rem;
+        max-height: 64.5rem;
         object-fit: contain;
         transform: scale(-1, 1);
     }
@@ -3786,7 +3795,8 @@ body {
     }
 
     &__small-img {
-        width: 12.3rem;
+        max-width: 12.3rem;
+        max-height: 12.3rem;
         object-fit: contain;
     }
 
@@ -3940,7 +3950,6 @@ body {
         .container {
             display: flex;
             align-items: center;
-            justify-content: space-between;
         }
 
         &-list {
@@ -3954,7 +3963,16 @@ body {
             }
         }
 
+        &-reset {
+            img {
+                width: 1.3rem;
+                width: 1.3rem;
+            }
+        }
+
         &-slider {
+            margin-left: auto;
+            margin-right: 8.4rem;
             position: relative;
             display: inline-block;
             display: inline-flex;
@@ -3970,7 +3988,7 @@ body {
         }
 
         .gemstones-catalog__values-container {
-            margin-left: 18rem;
+            margin-left: 8.4rem;
             width: 17rem;
             position: relative;
 
@@ -4073,11 +4091,12 @@ body {
 
         &-img {
             position: absolute;
-            width: 30rem;
-            height: 30rem;
-            object-fit: contain;
             top: 50%;
             left: 50%;
+            max-width: 25.3rem;
+            max-height: 25.3rem;
+            object-fit: contain;
+
             transform: translate(-50%, -50%);
         }
 
@@ -4234,16 +4253,10 @@ body {
                 position: absolute;
                 top: 50%;
                 left: 50%;
+                max-width: 15.6rem;
+                max-height: 17.6rem;
                 transform: translate(-50%, -50%);
                 object-fit: contain;
-
-                &[src="images/portfolioList3.png"] {
-                    width: 16.8rem;
-                }
-
-                &[src="images/ring.png"] {
-                    width: 8rem;
-                }
             }
 
             &:not(:last-child) {
@@ -4276,7 +4289,6 @@ body {
 
 .b2b-catalog {
     padding-top: 20rem;
-    padding-bottom: 20rem;
 
     &__heading {
         margin-bottom: 4.5rem;
@@ -8943,7 +8955,8 @@ body {
             left: -10rem;
             top: auto;
             right: auto;
-            width: 60rem;
+            max-width: 60rem;
+            max-height: 54rem;
             order: 1;
         }
 
@@ -8989,7 +9002,8 @@ body {
         }
 
         &__small-img {
-            width: 11.2rem;
+            max-width: 11.2rem;
+            max-height: 11.2rem;
         }
 
         &__btn {
@@ -9082,6 +9096,7 @@ body {
         &__products-card {
             margin-bottom: 3.6rem;
             padding: 4rem;
+            height: 65.4rem;
         }
 
         &__products-btn {
@@ -9098,8 +9113,8 @@ body {
         }
 
         &__products-img {
-            width: 43.4rem;
-            height: 43.4rem;
+            max-width: 43.4rem;
+            max-height: 43.4rem;
         }
 
         &__products-text {
@@ -9209,7 +9224,8 @@ body {
                 order: 0;
 
                 img {
-                    width: 15rem;
+                    max-width: 15rem;
+                    max-height: 15rem;
 
                     &:not(:last-child) {
                         margin-right: 0;
@@ -9303,8 +9319,14 @@ body {
             width: 100%;
 
             &-center {
-                img {
-                    width: 57rem;
+                &-img {
+                    max-width: 57rem;
+                    max-height: 60rem;
+                }
+
+                &-img2 {
+                    max-width: 57rem;
+                    max-height: 60rem;
                 }
             }
         }

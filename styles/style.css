@@ -2112,7 +2112,8 @@ body {
   align-items: center;
 }
 .stones__left-images img {
-  width: 9.5rem;
+  max-width: 9.5rem;
+  max-height: 9.5rem;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -2170,7 +2171,8 @@ body {
 }
 .stones__right-images img {
   display: inline-block;
-  width: 9.5rem;
+  max-width: 9.5rem;
+  max-height: 9.5rem;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -2220,8 +2222,16 @@ body {
   align-items: center;
   position: relative;
 }
-.swiper__stones-center img {
-  width: 64.4rem;
+.swiper__stones-center-img {
+  max-width: 64.4rem;
+  max-height: 59rem;
+  position: relative;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.swiper__stones-center-img2 {
+  max-width: 64.4rem;
+  max-height: 59rem;
   position: relative;
   -o-object-fit: contain;
      object-fit: contain;
@@ -3404,7 +3414,8 @@ body {
   position: absolute;
   top: 3rem;
   right: 23rem;
-  width: 71.3rem;
+  max-width: 71.3rem;
+  max-height: 64.5rem;
   -o-object-fit: contain;
      object-fit: contain;
   transform: scale(-1, 1);
@@ -3423,7 +3434,8 @@ body {
   border-radius: 146px;
 }
 .gemstones-hero__small-img {
-  width: 12.3rem;
+  max-width: 12.3rem;
+  max-height: 12.3rem;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -3555,7 +3567,6 @@ body {
 .gemstones-catalog__filters .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .gemstones-catalog__filters-list {
   display: flex;
@@ -3564,7 +3575,13 @@ body {
 .gemstones-catalog__filters-item:not(:last-child) {
   margin-right: 16rem;
 }
+.gemstones-catalog__filters-reset img {
+  width: 1.3rem;
+  width: 1.3rem;
+}
 .gemstones-catalog__filters-slider {
+  margin-left: auto;
+  margin-right: 8.4rem;
   position: relative;
   display: inline-block;
   display: inline-flex;
@@ -3578,7 +3595,7 @@ body {
   text-transform: uppercase;
 }
 .gemstones-catalog__filters .gemstones-catalog__values-container {
-  margin-left: 18rem;
+  margin-left: 8.4rem;
   width: 17rem;
   position: relative;
 }
@@ -3667,12 +3684,12 @@ body {
 }
 .gemstones-catalog__products-img {
   position: absolute;
-  width: 30rem;
-  height: 30rem;
-  -o-object-fit: contain;
-     object-fit: contain;
   top: 50%;
   left: 50%;
+  max-width: 25.3rem;
+  max-height: 25.3rem;
+  -o-object-fit: contain;
+     object-fit: contain;
   transform: translate(-50%, -50%);
 }
 .gemstones-catalog__products-bottom {
@@ -3813,15 +3830,11 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  max-width: 15.6rem;
+  max-height: 17.6rem;
   transform: translate(-50%, -50%);
   -o-object-fit: contain;
      object-fit: contain;
-}
-.b2b-hero__list-item img[src="images/portfolioList3.png"] {
-  width: 16.8rem;
-}
-.b2b-hero__list-item img[src="images/ring.png"] {
-  width: 8rem;
 }
 .b2b-hero__list-item:not(:last-child) {
   margin-right: 2rem;
@@ -3849,7 +3862,6 @@ body {
 
 .b2b-catalog {
   padding-top: 20rem;
-  padding-bottom: 20rem;
 }
 .b2b-catalog__heading {
   margin-bottom: 4.5rem;
@@ -7727,7 +7739,8 @@ body {
     left: -10rem;
     top: auto;
     right: auto;
-    width: 60rem;
+    max-width: 60rem;
+    max-height: 54rem;
     order: 1;
   }
   .gemstones-hero__arrow-img {
@@ -7766,7 +7779,8 @@ body {
     height: 23.8rem;
   }
   .gemstones-hero__small-img {
-    width: 11.2rem;
+    max-width: 11.2rem;
+    max-height: 11.2rem;
   }
   .gemstones-hero__btn {
     margin-bottom: 0;
@@ -7846,6 +7860,7 @@ body {
   .gemstones-catalog__products-card {
     margin-bottom: 3.6rem;
     padding: 4rem;
+    height: 65.4rem;
   }
   .gemstones-catalog__products-btn img {
     width: 6.6rem;
@@ -7855,8 +7870,8 @@ body {
     width: 8.2rem;
   }
   .gemstones-catalog__products-img {
-    width: 43.4rem;
-    height: 43.4rem;
+    max-width: 43.4rem;
+    max-height: 43.4rem;
   }
   .gemstones-catalog__products-text {
     width: 57rem;
@@ -7945,7 +7960,8 @@ body {
     order: 0;
   }
   .stones__right-images img {
-    width: 15rem;
+    max-width: 15rem;
+    max-height: 15rem;
   }
   .stones__right-images img:not(:last-child) {
     margin-right: 0;
@@ -8019,8 +8035,13 @@ body {
     margin-bottom: 4rem;
     width: 100%;
   }
-  .stones .swiper__stones-center img {
-    width: 57rem;
+  .stones .swiper__stones-center-img {
+    max-width: 57rem;
+    max-height: 60rem;
+  }
+  .stones .swiper__stones-center-img2 {
+    max-width: 57rem;
+    max-height: 60rem;
   }
   .certificate-hero {
     padding-top: 12rem;
