@@ -171,9 +171,9 @@
         <section class="portfolio-hero">
             <div class="portfolio-hero__imgBG-container">
                 <img src="images/portfolio-heroBG.png" alt="" class="portfolio-hero__imgBG">
+                <img src="images/svg/portfolioHeroImg.svg" alt="" class="portfolio-hero__left-img">
             </div>
             <div class="container">
-                <img src="images/svg/portfolioHeroImg.svg" alt="" class="portfolio-hero__left-img">
                 <div class="portfolio-hero__right">
                     <p class="portfolio-hero__heading">популярное</p>
                     <ul class="portfolio-hero__list">
@@ -183,7 +183,6 @@
                                     <img src="images/svg/swiperArrow.svg" alt="">
                                 </a>
                                 <div class="background"></div>
-                                <div class="blur"></div>
                                 <img src="images/portfolioList1.png" alt="" class="portfolio-hero__item-img">
                                 <p class="portfolio-hero__item-name">кольцо из золота</p>
                                 <p class="portfolio-hero__item-price">575 000 <span>&#8381;</span></p>
@@ -200,7 +199,6 @@
                                     <img src="images/svg/swiperArrow.svg" alt="">
                                 </a>
                                 <div class="background"></div>
-                                <div class="blur"></div>
                                 <img src="images/portfolioList3.png" alt="" class="portfolio-hero__item-img">
                                 <p class="portfolio-hero__item-name">обручальные кольца</p>
                                 <p class="portfolio-hero__item-price">575 000 <span>&#8381;</span></p>
@@ -217,7 +215,6 @@
                                     <img src="images/svg/swiperArrow.svg" alt="">
                                 </a>
                                 <div class="background"></div>
-                                <div class="blur"></div>
                                 <img src="images/portfolioList5.png" alt="" class="portfolio-hero__item-img">
                                 <p class="portfolio-hero__item-name">кольцо с жемчугом</p>
                                 <p class="portfolio-hero__item-price">575 000 <span>&#8381;</span></p>
@@ -229,7 +226,6 @@
                                     <img src="images/svg/swiperArrow.svg" alt="">
                                 </a>
                                 <div class="background"></div>
-                                <div class="blur"></div>
                                 <img src="images/portfolioList6.png" alt="" class="portfolio-hero__item-img">
                                 <p class="portfolio-hero__item-name">кольцо с жемчугом</p>
                                 <p class="portfolio-hero__item-price">575 000 <span>&#8381;</span></p>
@@ -244,37 +240,42 @@
 
             <p class="portfolio-catalog__heading">все изделия</p>
             <div class="portfolio-catalog__filters">
-                <div class="portfolio-catalog__filters-container">
-                    <ul class="portfolio-catalog__filters-tab-list">
-                        <li class="portfolio-catalog__filters-tab-item portfolio-catalog__filters-tab-item--active"
-                            data-path="bracelets">
-                            Браслеты</li>
-                        <li class="portfolio-catalog__filters-tab-item" data-path="rings">КОльца</li>
-                        <li class="portfolio-catalog__filters-tab-item" data-path="wedding-rings">свадебные кольца</li>
-                        <li class="portfolio-catalog__filters-tab-item" data-path="pendant">подвески</li>
-                        <li class="portfolio-catalog__filters-tab-item" data-path="earrings">серьги</li>
-                        <li class="portfolio-catalog__filters-tab-item" data-path="chains">цепи</li>
-                    </ul>
-                    <div class="portfolio-catalog__filters-slider">
-                        <div class="portfolio-catalog__filters-values">
-                            <span class="price">Цена</span>
-                            <span id="range1">
-                                0
-                            </span>
-                            <span> &dash; </span>
-                            <span id="range2">
-                                100
-                            </span>
+                <div class="container">
+                    <div class="portfolio-catalog__filters-container">
+                        <ul class="portfolio-catalog__filters-tab-list">
+                            <li class="portfolio-catalog__filters-tab-item portfolio-catalog__filters-tab-item--active"
+                                data-path="bracelets">
+                                Браслеты</li>
+                            <li class="portfolio-catalog__filters-tab-item" data-path="rings">КОльца</li>
+                            <li class="portfolio-catalog__filters-tab-item" data-path="wedding-rings">свадебные кольца
+                            </li>
+                            <li class="portfolio-catalog__filters-tab-item" data-path="pendant">подвески</li>
+                            <li class="portfolio-catalog__filters-tab-item" data-path="earrings">серьги</li>
+                            <li class="portfolio-catalog__filters-tab-item" data-path="chains">цепи</li>
+                        </ul>
+                        <div class="portfolio-catalog__filters-slider">
+                            <div class="portfolio-catalog__filters-values">
+                                <span class="price">Цена</span>
+                                <span id="range1">
+                                    0
+                                </span>
+                                <span> &dash; </span>
+                                <span id="range2">
+                                    100
+                                </span>
+                            </div>
+                            <div class="catalog__values-container">
+                                <div class="catalog__values-track"></div>
+                                <input type="range" min="0" max="180000" value="17000" id="slider-1"
+                                    oninput="slideOne()">
+                                <input type="range" min="0" max="180000" value="160000" id="slider-2"
+                                    oninput="slideTwo()">
+                            </div>
                         </div>
-                        <div class="catalog__values-container">
-                            <div class="catalog__values-track"></div>
-                            <input type="range" min="0" max="180000" value="17000" id="slider-1" oninput="slideOne()">
-                            <input type="range" min="0" max="180000" value="160000" id="slider-2" oninput="slideTwo()">
-                        </div>
+                        <button class="portfolio-catalog__filters-reset">
+                            <img src="images/svg/resetFilters.svg" alt="">
+                        </button>
                     </div>
-                    <button class="portfolio-catalog__filters-reset">
-                        <img src="images/svg/resetFilters.svg" alt="">
-                    </button>
                 </div>
             </div>
             <div class="container">
@@ -490,7 +491,7 @@
 
                     <div class="portfolio-catalog__products__btn-container">
                         <button class="portfolio-catalog__products__btn-showmore">
-                            показать еще
+                            <span>показать</span> <span>еще</span>
                         </button>
                     </div>
                 </div>
@@ -498,9 +499,9 @@
         </section>
 
         <section class="portfolio-making">
-            <p class="portfolio-making__subheading">GRIGOF JEWELLERY</p>
-            <p class="portfolio-making__heading">изготовление ювелирных украшений</p>
             <div class="container">
+                <p class="portfolio-making__subheading">GRIGOF JEWELLERY</p>
+                <p class="portfolio-making__heading">изготовление ювелирных украшений</p>
                 <img src="images/portfolio-making.png" alt="" class="portfolio-making__img">
                 <div class="portfolio-making__text">
                     <p class="portfolio-making__text-left">высочайшее качество, индивидуальный и творческий подход к
