@@ -191,7 +191,11 @@ const swiperStock = new Swiper('.swiper__stock', {
     pagination: {
         el: '.swiper__stock-pagination',
         clickable: true,
-    }
+    },
+    navigation: {
+        nextEl: '.swiper__stock-next',
+        prevEl: '.swiper__stock-prev',
+    },
 });
 
 // stock hero slider
@@ -200,6 +204,21 @@ const swiperCarousel = new Swiper('.swiper__carousel', {
     direction: 'vertical',
     slidesPerView: 'auto',
     loop: true,
+    navigation: {
+        nextEl: '.swiper__carousel-next',
+        prevEl: '.swiper__carousel-prev',
+    },
+    pagination: {
+        el: '.swiper__carousel-pagination',
+    },
+    breakpoints: {
+        320: {
+            direction: 'horizontal',
+        },
+        769: {
+            direction: 'vertical',
+        }
+    }
 });
 
 // product card slider

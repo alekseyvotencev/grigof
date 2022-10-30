@@ -4,19 +4,19 @@
 
 - [x] Драгоценные камни (детальная, меньшее кол-во фото) - https://alekseyvotencev.github.io/grigof/stone2.html + мобилка
 
-- [x] Ремонт - https://alekseyvotencev.github.io/grigof/repair.html
+- [x] Ремонт - https://alekseyvotencev.github.io/grigof/repair.html + мобилка
 
 - [x] Цены - https://alekseyvotencev.github.io/grigof/pricelist.html + мобилка
 
-- [x] В наличии - https://alekseyvotencev.github.io/grigof/stock.html
+- [x] В наличии - https://alekseyvotencev.github.io/grigof/stock.html + мобилка
 
 - [x] Драгоценные камни - https://alekseyvotencev.github.io/grigof/gemstones.html + мобилка
  
-- [x] B2B - https://alekseyvotencev.github.io/grigof/b2bgeneral.html
+- [x] B2B - https://alekseyvotencev.github.io/grigof/b2bgeneral.html + мобилка
 
 - [x] Карточка B2B - https://alekseyvotencev.github.io/grigof/b2bspecial.html 
 
-- [x] Портфолио - https://alekseyvotencev.github.io/grigof/portfolio.html
+- [x] Портфолио - https://alekseyvotencev.github.io/grigof/portfolio.html + мобилка
 
 - [x] Карточка товара - https://alekseyvotencev.github.io/grigof/productcard.html + мобилка
 

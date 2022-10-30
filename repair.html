@@ -56,7 +56,8 @@
                             <a href="/certificate.html" class="header__right-nav-link">Купить сертификат</a>
                         </li>
                         <li class="header__right-nav-item">
-                            <btn class="header__right-nav-link header__right-btn">Ремонт</btn>
+                            <btn class="header__right-nav-link header__right-nav-link--active header__right-btn">Ремонт
+                            </btn>
                         </li>
                         <li class="header__right-nav-item">
                             <a href="/feedback.html" class="header__right-nav-link">Отзывы</a>
@@ -167,21 +168,22 @@
     </header>
     <main>
         <section class="repair">
-            <div class="repair__left">
-                <p class="repair__heading">ремонт ювелирных изделий</p>
-                <p class="repair__subheading">из серебра</p>
-                <p class="repair__description">Нет в мире человека, который хотя бы единожды не огорчился, увидев
-                    поврежденное серебряное украшение.
-                </p>
-                <div class="repair__actions">
-                    <button class="repair__btn calculate-price__btn">
-                        <span>рассчитать</span>
-                        <span>стоимость</span>
-                    </button>
-                    <a href="/about.html" class="repair__link">
-                        о нас
-                        <img src="images/svg/swiperArrow.svg" alt="">
-                    </a>
+            <div class="container">
+                <div class="repair__left">
+                    <p class="repair__heading">ремонт ювелирных изделий из серебра</p>
+                    <p class="repair__description">Нет в мире человека, который хотя бы единожды не огорчился, увидев
+                        поврежденное серебряное украшение.
+                    </p>
+                    <div class="repair__actions">
+                        <button class="repair__btn calculate-price__btn">
+                            <span>рассчитать</span>
+                            <span>стоимость</span>
+                        </button>
+                        <a href="/about.html" class="repair__link">
+                            о нас
+                            <img src="images/svg/swiperArrow.svg" alt="">
+                        </a>
+                    </div>
                 </div>
             </div>
             <img src="images/repairImage.png" alt="" class="repair__image">
@@ -280,8 +282,22 @@
                             <li class="description__list-item">чистка, полировка.</li>
                         </ul>
                     </div>
-
                 </div>
+                <ul class="description__list-mobile">
+                    <li class="description__list-mobile__item">Ремонт конструкций — пайка или лазерная сварка сломанных
+                        колец, серег, цепочек, браслетов, кулонов, шармов, брошей, колье;</li>
+                    <li class="description__list-mobile__item">шлифовка, удаление царапин;</li>
+                    <li class="description__list-mobile__item">устранение деформаций; </li>
+                    <li class="description__list-mobile__item">закрепка выпавших вставок;</li>
+                    <li class="description__list-mobile__item">замена камней;</li>
+                    <li class="description__list-mobile__item">уменьшение/увеличение размеров колец, цепочек;</li>
+                    <li class="description__list-mobile__item">видоизменение изделий (переделка серьги в кулон, цепочки
+                        — в браслет и пр.);</li>
+                    <li class="description__list-mobile__item">ремонт и замена замочков;</li>
+                    <li class="description__list-mobile__item">восстановление эмалевой росписи, чеканки, скани, прочего
+                        декора; </li>
+                    <li class="description__list-mobile__item">чистка, полировка.</li>
+                </ul>
             </div>
         </section>
 
@@ -444,15 +460,7 @@
         </section>
 
         <section class="feedback">
-
             <div class="container">
-                <img src="images/feedback1.png" alt="" class="feedback__left-img">
-                <img src="images/svg/feedbackNotice.svg" alt="" class="feedback__notice">
-                <div class="feedback__right-img">
-                    <img src="images/feedback2.png" alt="">
-                    <p>авторские украшения на заказ</p>
-                </div>
-
                 <div class="feedback__left">
                     <p class="feedback__title">grigof jewels</p>
                     <p class="feedback__subtitle">обратная связь</p>
@@ -461,26 +469,44 @@
                         своему делу.</p>
                 </div>
 
-                <div class="feedback__right">
+                <div class="feedback__right-img">
+                    <img src="images/feedback2.png" alt="">
+                    <p>авторские украшения на заказ</p>
+                </div>
 
+                <div class="feedback__right">
                     <form action="#" class="feedback__form">
                         <div class="feedback__input-general-container">
                             <div class="feedback__input-container">
-                                <input type="text" class="feedback__input" placeholder="ваше имя" id="name">
+                                <input type="text" class="feedback__input" id="name" placeholder="ваше имя"
+                                    autocomplete="off">
+                                <label for="name" class="feedback__placeholder">ваше имя</label>
                             </div>
                             <div class="feedback__input-container">
-                                <input type="tel" class="feedback__input" placeholder="Телефон" id="phone">
+                                <input type="tel" class="feedback__input" id="phone" placeholder="Телефон"
+                                    autocomplete="off">
+                                <label for="phone" class="feedback__placeholder">Телефон</label>
                             </div>
                             <div class="feedback__input-container">
-                                <input type="email" class="feedback__input" placeholder="e-mail" id="email">
+                                <input type="email" class="feedback__input" id="email" placeholder="e-mail"
+                                    autocomplete="off">
+                                <label for="email" class="feedback__placeholder">e-mail</label>
                             </div>
                         </div>
                         <div class="feedback__input-big-container">
-                            <input type="text" class="feedback__input-big" placeholder="Сообщение" id="message">
+                            <input type="text" class="feedback__input-big" id="message" placeholder="Сообщение"
+                                autocomplete="off">
+                            <label for="message" class="feedback__placeholder">Сообщение</label>
                         </div>
                         <button class="feedback__form-btn">отправить</button>
                     </form>
                 </div>
+                <img src="images/svg/feedbackNotice.svg" alt="" class="feedback__notice">
+                <div class="feedback__notice-mobile">
+                    <div class="line"></div>
+                    <span>2022</span>
+                </div>
+                <img src="images/feedback1.png" alt="" class="feedback__left-img">
             </div>
         </section>
     </main>

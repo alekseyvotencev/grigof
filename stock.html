@@ -31,7 +31,8 @@
                             <a href="/pricelist.html" class="header__left-nav-link">Цены</a>
                         </li>
                         <li class="header__left-nav-item">
-                            <a href="/stock.html" class="header__left-nav-link">В наличии</a>
+                            <a href="/stock.html" class="header__left-nav-link header__left-nav-link--active">В
+                                наличии</a>
                         </li>
                         <li class="header__left-nav-item">
                             <a href="/gemstones.html" class="header__left-nav-link">Драгоценные камни</a>
@@ -172,7 +173,6 @@
                 <div class="vertical"></div>
                 <div class="horizontal"></div>
                 <div class="swiper-container swiper__stock">
-                    <div class="swiper-pagination swiper__stock-pagination"></div>
                     <div class="swiper-wrapper">
                         <a href="/stone.html" class="swiper-slide swiper__stock-slide">
                             <p class="swiper__stock-text">в наличии</p>
@@ -241,7 +241,15 @@
                         </div>
                     </div>
                 </div>
-
+                <div class="swiper__stock-control">
+                    <div class="swiper__stock-prev">
+                        <img src="images/svg/swiperArrow.svg" alt="">
+                    </div>
+                    <div class="swiper-pagination swiper__stock-pagination"></div>
+                    <div class="swiper__stock-next">
+                        <img src="images/svg/swiperArrow.svg" alt="">
+                    </div>
+                </div>
                 <div class="swiper-container swiper__carousel">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide swiper__carousel-slide">
@@ -280,39 +288,43 @@
         </section>
 
         <section class="catalog">
-
             <p class="catalog__heading">изделия в наличии</p>
             <div class="catalog__filters">
-                <div class="catalog__filters-container">
-                    <ul class="catalog__filters-tab-list">
-                        <li class="catalog__filters-tab-item catalog__filters-tab-item--active" data-path="bracelets">
-                            Браслеты</li>
-                        <li class="catalog__filters-tab-item" data-path="rings">КОльца</li>
-                        <li class="catalog__filters-tab-item" data-path="wedding-rings">свадебные кольца</li>
-                        <li class="catalog__filters-tab-item" data-path="pendant">подвески</li>
-                        <li class="catalog__filters-tab-item" data-path="earrings">серьги</li>
-                        <li class="catalog__filters-tab-item" data-path="chains">цепи</li>
-                    </ul>
-                    <div class="catalog__filters-slider">
-                        <div class="catalog__filters-values">
-                            <span class="price">Цена</span>
-                            <span id="range1">
-                                0
-                            </span>
-                            <span> &dash; </span>
-                            <span id="range2">
-                                100
-                            </span>
+                <div class="container">
+                    <div class="catalog__filters-container">
+                        <ul class="catalog__filters-tab-list">
+                            <li class="catalog__filters-tab-item catalog__filters-tab-item--active"
+                                data-path="bracelets">
+                                Браслеты</li>
+                            <li class="catalog__filters-tab-item" data-path="rings">КОльца</li>
+                            <li class="catalog__filters-tab-item" data-path="wedding-rings">свадебные кольца</li>
+                            <li class="catalog__filters-tab-item" data-path="pendant">подвески</li>
+                            <li class="catalog__filters-tab-item" data-path="earrings">серьги</li>
+                            <li class="catalog__filters-tab-item" data-path="chains">цепи</li>
+                        </ul>
+                        <div class="catalog__filters-slider">
+                            <div class="catalog__filters-values">
+                                <span class="price">Цена</span>
+                                <span id="range1">
+                                    0
+                                </span>
+                                <span> &dash; </span>
+                                <span id="range2">
+                                    100
+                                </span>
+                            </div>
+                            <div class="catalog__values-container">
+                                <div class="catalog__values-track"></div>
+                                <input type="range" min="0" max="180000" value="17000" id="slider-1"
+                                    oninput="slideOne()">
+                                <input type="range" min="0" max="180000" value="160000" id="slider-2"
+                                    oninput="slideTwo()">
+                            </div>
                         </div>
-                        <div class="catalog__values-container">
-                            <div class="catalog__values-track"></div>
-                            <input type="range" min="0" max="180000" value="17000" id="slider-1" oninput="slideOne()">
-                            <input type="range" min="0" max="180000" value="160000" id="slider-2" oninput="slideTwo()">
-                        </div>
+                        <button class="catalog__filters-reset">
+                            <img src="images/svg/resetFilters.svg" alt="">
+                        </button>
                     </div>
-                    <button class="catalog__filters-reset">
-                        <img src="images/svg/resetFilters.svg" alt="">
-                    </button>
                 </div>
             </div>
             <div class="container">
@@ -514,7 +526,8 @@
 
                     <div class="catalog__products__btn-container">
                         <button class="catalog__products__btn-showmore">
-                            показать еще
+                            <span>показать</span>
+                            <span>еще</span>
                         </button>
                     </div>
                 </div>
