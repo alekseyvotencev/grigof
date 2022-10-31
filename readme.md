@@ -14,7 +14,7 @@
  
 - [x] B2B - https://alekseyvotencev.github.io/grigof/b2bgeneral.html + мобилка
 
-- [x] Карточка B2B - https://alekseyvotencev.github.io/grigof/b2bspecial.html 
+- [x] Карточка B2B - https://alekseyvotencev.github.io/grigof/b2bspecial.html + мобилка
 
 - [x] Портфолио - https://alekseyvotencev.github.io/grigof/portfolio.html + мобилка
 

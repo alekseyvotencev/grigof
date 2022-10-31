@@ -4363,6 +4363,7 @@ body {
 
     .container {
         display: flex;
+        position: relative;
     }
 
     &__tabs {
@@ -4391,6 +4392,10 @@ body {
         flex-direction: column;
     }
 
+    &__right-mobile {
+        display: none;
+    }
+
     &__name {
         margin-bottom: 1rem;
         font-size: 4rem;
@@ -4410,12 +4415,25 @@ body {
 
     &__description-heading {
         margin-bottom: 5rem;
+        padding-left: 1.1rem;
         font-family: 'FuturaPT';
+        position: relative;
         font-size: 1.5rem;
         line-height: 2.2rem;
         letter-spacing: 0.16em;
         text-transform: uppercase;
-        color: rgba(255, 255, 255, 0.5);
+        color: #FFF;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 1px;
+            height: 1.5rem;
+            background-color: #FFF;
+            transform: translateY(-50%);
+        }
     }
 
     &__description {
@@ -4426,6 +4444,10 @@ body {
     }
 
     &__social {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 56.6rem;
         display: flex;
         justify-content: space-between;
 
@@ -4437,17 +4459,30 @@ body {
 
         &-list {
             display: flex;
-            width: 20rem;
             align-items: center;
             justify-content: space-between;
 
             &-item {
-                a:hover {
+                &:not(:last-child) {
+                    margin-right: 2.5rem;
+                }
+                a {
                     svg {
-                        path {
-                            fill-opacity: 1;
-                        }
+                        width: 2.2rem;
+                        height: 2.2rem;
+                        object-fit: contain;
                     }
+
+                    &:hover {
+                        svg {
+                            path {
+                                fill-opacity: 1;
+                            }
+                        }
+
+
+                    }
+
                 }
             }
         }
@@ -6592,6 +6627,12 @@ body {
 
     .container {
         padding: 0;
+        width: 67rem;
+    }
+
+    .modal__content {
+        padding: 10rem 4rem 5rem 4rem;
+        min-width: auto;
         width: 67rem;
     }
 
@@ -10602,6 +10643,153 @@ body {
                 font-size: 2.8rem;
                 line-height: 3.6rem;
                 letter-spacing: 0.1em;
+            }
+        }
+    }
+
+    .b2bspecial-card {
+        padding-top: 11rem;
+
+        .container {
+            flex-direction: column;
+        }
+
+        &__right {
+            margin-left: 0;
+            margin-bottom: 9rem;
+            width: 100%;
+            order: 0;
+        }
+
+        &__name {
+            margin-bottom: 1.2rem;
+            font-size: 6rem;
+            line-height: 8.2rem;
+        }
+
+        &__details {
+            margin-bottom: 0;
+            font-size: 2.8rem;
+            line-height: 3.6rem;
+            letter-spacing: 0.1em;
+        }
+
+        &__description-heading {
+            display: none;
+        }
+
+        &__description {
+            display: none;
+        }
+
+        &__tabs-content {
+            margin-bottom: 4rem;
+            width: 100%;
+            height: 66.6rem;
+            object-fit: cover;
+            order: 1;
+        }
+
+        &__tabs-item {
+            width: 13.8rem;
+            height: 13.8rem;
+        }
+
+        &__tabs {
+            margin-right: 0;
+            margin-bottom: 9rem;
+            width: 100%;
+            flex-direction: row;
+            order: 2;
+        }
+
+        &__right-mobile {
+            margin-bottom: 7rem;
+            display: block;
+            order: 3;
+            width: 100%;
+        }
+
+        &__description-heading-mobile {
+            margin-bottom: 2.2rem;
+            padding-left: 2.2rem;
+            position: relative;
+            font-family: 'FuturaPT';
+            font-size: 2.8rem;
+            line-height: 3.6rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                width: 1px;
+                height: 2.8rem;
+                background-color: #FFF;
+                transform: translateY(-50%);
+            }
+        }
+
+        &__description-mobile {
+            font-family: 'FuturaPT';
+            font-size: 3.2rem;
+            line-height: 4.4rem;
+        }
+
+        &__social {
+            position: relative;
+            flex-direction: column;
+            justify-content: flex-start;
+            order: 4;
+
+            &-share {
+                justify-content: flex-start;
+            }
+
+            &-text {
+                margin-bottom: 4.4rem;
+                font-size: 2.8rem;
+                line-height: 3.6rem;
+                letter-spacing: 0.1em;
+            }
+
+            &-list {
+                width: auto;
+                justify-content: flex-start;
+
+                &-item {
+                    &:not(:last-child) {
+                        margin-right: 7rem;
+                    }
+
+                    a {
+                        svg {
+                            width: 6rem;
+                            height: 6rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__btn {
+            margin-bottom: 10rem;
+            width: 41rem;
+            height: 14.8rem;
+            font-size: 2.8rem;
+            line-height: 3.6rem;
+            letter-spacing: 0.1em;
+
+            span {
+                &:first-child {
+                    transform: translate(2rem, -1.5rem);
+                }
+
+                &:last-child {
+                    transform: translate(-1.5rem, 1.75rem);
+                }
             }
         }
     }
