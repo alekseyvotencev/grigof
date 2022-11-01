@@ -31,8 +31,7 @@
                             <a href="/pricelist.html" class="header__left-nav-link">Цены</a>
                         </li>
                         <li class="header__left-nav-item">
-                            <a href="/stock.html" class="header__left-nav-link header__left-nav-link--active">В
-                                наличии</a>
+                            <a href="/stock.html" class="header__left-nav-link">В наличии</a>
                         </li>
                         <li class="header__left-nav-item">
                             <a href="/gemstones.html" class="header__left-nav-link">Драгоценные камни</a>
@@ -132,41 +131,101 @@
                 <nav>
                     <ul class="header__mobile-menu__list">
                         <li class="header__mobile-menu__list-item">
-                            <a href="/portfolio.html">Портфолио</a>
+                            <a href="/portfolio.html" class="header__mobile-menu__list-item-link">Портфолио</a>
                         </li>
                         <li class="header__mobile-menu__list-item">
-                            <a href="/pricelist.html">Цены</a>
+                            <a href="/pricelist.html" class="header__mobile-menu__list-item-link">Цены</a>
                         </li>
                         <li class="header__mobile-menu__list-item">
-                            <a href="/stock.html">В наличии</a>
+                            <a href="/stock.html" class="header__mobile-menu__list-item-link">В наличии</a>
                         </li>
                         <li class="header__mobile-menu__list-item">
-                            <a href="/gemstones.html">Драгоценные камни</a>
+                            <a href="/gemstones.html" class="header__mobile-menu__list-item-link">Драгоценные камни</a>
                         </li>
                         <li class="header__mobile-menu__list-item">
-                            <a href="/b2bgeneral.html">B2B</a>
+                            <a href="/b2bgeneral.html" class="header__mobile-menu__list-item-link">B2B</a>
                         </li>
                         <li class="header__mobile-menu__list-item">
-                            <a href="/certificate.html">Купить сертификат</a>
+                            <a href="/certificate.html" class="header__mobile-menu__list-item-link">Купить сертификат</a>
                         </li>
                         <li class="header__mobile-menu__list-item">
-                            <a href="#">Ремонт</a>
+                            <ul id="header__mobile-menu__accordion" class="header__mobile-menu__accordion">
+                                <li class="header__mobile-menu__accordion-item">
+                                    <div class="header__mobile-menu__accordion-item-head">
+                                        <p>Ремонт</p>
+                                        <button>
+                                            <img src="images/svg/accordion-arrow.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="header__mobile-menu__accordion-item-content">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Ремонт золотых изделий</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ремонт изделий из жемчуга</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ремонт изделий из платины</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ремонт изделий из серебра</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ремонт изделий с камнями</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ремонт золотых изделий</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ремонт изделий из жемчуга</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ремонт изделий из платины</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ремонт изделий из серебра</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ремонт изделий с камнями</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ремонт изделий с камнями</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ремонт золотых изделий</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ремонт изделий из жемчуга</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ремонт изделий из платины</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ремонт изделий из серебра</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ремонт изделий с камнями</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
                         </li>
                         <li class="header__mobile-menu__list-item">
-                            <a href="/feedback.html">Отзывы</a>
+                            <a href="/feedback.html" class="header__mobile-menu__list-item-link">Отзывы</a>
                         </li>
                         <li class="header__mobile-menu__list-item">
-                            <a href="/about.html">О бренде</a>
+                            <a href="/about.html" class="header__mobile-menu__list-item-link">О бренде</a>
                         </li>
                         <li class="header__mobile-menu__list-item">
-                            <a href="/contacts.html">Контакты</a>
+                            <a href="/contacts.html" class="header__mobile-menu__list-item-link">Контакты</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-
     <main>
         <section class="stock">
             <div class="container">
@@ -288,19 +347,31 @@
         </section>
 
         <section class="catalog">
-            <p class="catalog__heading">изделия в наличии</p>
+            <div class="container">
+                <p class="catalog__heading">изделия в наличии</p>
+                <button class="catalog__filters-open">
+                    <span>открыть</span>
+                    <span>фильры</span>
+                </button>
+            </div>
             <div class="catalog__filters">
                 <div class="container">
                     <div class="catalog__filters-container">
+                        <div class="catalog__filters-top">
+                            <p class="catalog__filters-top__heading">Фильтры</p>
+                            <button class="catalog__filters-top__close-btn">
+                                <img src="images/svg/filters-close.svg" alt="">
+                            </button>
+                        </div>
                         <ul class="catalog__filters-tab-list">
-                            <li class="catalog__filters-tab-item catalog__filters-tab-item--active"
-                                data-path="bracelets">
+                            <li class="catalog__filters-tab-item">Все</li>
+                            <li class="catalog__filters-tab-item catalog__filters-tab-item--active">
                                 Браслеты</li>
-                            <li class="catalog__filters-tab-item" data-path="rings">КОльца</li>
-                            <li class="catalog__filters-tab-item" data-path="wedding-rings">свадебные кольца</li>
-                            <li class="catalog__filters-tab-item" data-path="pendant">подвески</li>
-                            <li class="catalog__filters-tab-item" data-path="earrings">серьги</li>
-                            <li class="catalog__filters-tab-item" data-path="chains">цепи</li>
+                            <li class="catalog__filters-tab-item">КОльца</li>
+                            <li class="catalog__filters-tab-item">свадебные кольца</li>
+                            <li class="catalog__filters-tab-item">подвески</li>
+                            <li class="catalog__filters-tab-item">серьги</li>
+                            <li class="catalog__filters-tab-item">цепи</li>
                         </ul>
                         <div class="catalog__filters-slider">
                             <div class="catalog__filters-values">
@@ -323,6 +394,13 @@
                         </div>
                         <button class="catalog__filters-reset">
                             <img src="images/svg/resetFilters.svg" alt="">
+                        </button>
+                        <button class="catalog__filters-reset-mobile">
+                            Сбросить все
+                        </button>
+                        <button class="catalog__filters-apply">
+                            <span>показать все</span>
+                            <span>N товаров</span>
                         </button>
                     </div>
                 </div>

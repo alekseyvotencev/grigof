@@ -24,6 +24,14 @@ burger.addEventListener('click', function (event) {
     mobileMenu.classList.toggle('header__mobile-menu--active');
 })
 
+// mobile menu accordion
+jQuery(document).ready(function ($) {
+    $("#header__mobile-menu__accordion").accordionjs({
+        activeIndex: false,
+        slideSpeed: 350,
+    });
+});
+
 // swipers
 
 // main hero slider
@@ -341,6 +349,25 @@ document.querySelectorAll('.swiper__video-btn').forEach(function (tabsBtn) {
 
 // catalog filters
 
+// open filters
+const catalogFiltersOpenBtn = document.querySelector('.catalog__filters-open');
+const catalogFilters = document.querySelector('.catalog__filters')
+catalogFiltersOpenBtn?.addEventListener('click', function () {
+    catalogFilters.classList.add('catalog__filters--active')
+})
+
+// close filters
+const catalogFiltersCloseBtn = document.querySelector('.catalog__filters-top__close-btn');
+catalogFiltersCloseBtn?.addEventListener('click', function () {
+    catalogFilters.classList.remove('catalog__filters--active')
+})
+
+// close filters after applying
+const catalogFiltersApplyBtn = document.querySelector('.catalog__filters-apply');
+catalogFiltersApplyBtn?.addEventListener('click', function () {
+    catalogFilters.classList.remove('catalog__filters--active')
+})
+
 document.querySelectorAll('.catalog__filters-tab-item').forEach(function (tabsBtn) {
     tabsBtn.addEventListener('click', function (e) {
         const path = e.currentTarget.dataset.path;
@@ -362,6 +389,25 @@ document.querySelectorAll('.catalog__filters-tab-item').forEach(function (tabsBt
 });
 
 // portfolio filters
+
+// open filters
+const portfolioFilters = document.querySelector('.portfolio-catalog__filters');
+const portfolioFiltersOpenBtn = document.querySelector('.portfolio-catalog__filters-open');
+portfolioFiltersOpenBtn?.addEventListener('click', function () {
+    portfolioFilters.classList.add('portfolio-catalog__filters--active')
+})
+
+// close filters
+const portfolioFiltersCloseBtn = document.querySelector('.portfolio-catalog__filters-open');
+portfolioFiltersCloseBtn?.addEventListener('click', function () {
+    portfolioFilters.classList.remove('portfolio-catalog__filters--active')
+})
+
+// close filters after applying
+const portfolioFiltersApplyBtn = document.querySelector('.portfolio-catalog__filters-open');
+portfolioFiltersApplyBtn?.addEventListener('click', function () {
+    portfolioFilters.classList.remove('portfolio-catalog__filters--active')
+})
 
 document.querySelectorAll('.portfolio-catalog__filters-tab-item').forEach(function (tabsBtn) {
     tabsBtn.addEventListener('click', function (e) {
@@ -429,7 +475,40 @@ document.querySelectorAll('.swiper__productcard-img-small').forEach(function (ta
     })
 })
 
-// select
+// gemstones filters
+
+// open filters
+const gemstonesFilters = document.querySelector('.gemstones-catalog__filters');
+const gemstonesFiltersOpenBtn = document.querySelector('.gemstones-catalog__filters-open');
+gemstonesFiltersOpenBtn?.addEventListener('click', function () {
+    gemstonesFilters.classList.add('gemstones-catalog__filters--active')
+})
+
+// close filters
+const gemstonesFiltersCloseBtn = document.querySelector('.gemstones-catalog__filters-top__close-btn');
+gemstonesFiltersCloseBtn?.addEventListener('click', function () {
+    gemstonesFilters.classList.remove('gemstones-catalog__filters--active')
+})
+
+// close filter after applying
+const gemstonesFiltersApplyBtn = document.querySelector('.gemstones-catalog__filters-apply');
+gemstonesFiltersApplyBtn?.addEventListener('click', function () {
+    gemstonesFilters.classList.remove('gemstones-catalog__filters--active')
+})
+
+
+// gemstonesFilters accordion
+
+jQuery(document).ready(function ($) {
+    $("#gemstones-accordion").accordionjs({
+        activeIndex: false,
+        slideSpeed: 250,
+    });
+});
+
+
+
+// gemstones select
 
 const element = document.querySelectorAll('.gemstones-catalog__filters-select');
 element.forEach((item) => {

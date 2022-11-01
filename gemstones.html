@@ -34,8 +34,7 @@
                             <a href="/stock.html" class="header__left-nav-link">В наличии</a>
                         </li>
                         <li class="header__left-nav-item">
-                            <a href="/gemstones.html"
-                                class="header__left-nav-link header__left-nav-link--active">Драгоценные камни</a>
+                            <a href="/gemstones.html" class="header__left-nav-link">Драгоценные камни</a>
                         </li>
                         <li class="header__left-nav-item">
                             <a href="/b2bgeneral.html" class="header__left-nav-link">B2B</a>
@@ -132,34 +131,95 @@
                 <nav>
                     <ul class="header__mobile-menu__list">
                         <li class="header__mobile-menu__list-item">
-                            <a href="/portfolio.html">Портфолио</a>
+                            <a href="/portfolio.html" class="header__mobile-menu__list-item-link">Портфолио</a>
                         </li>
                         <li class="header__mobile-menu__list-item">
-                            <a href="/pricelist.html">Цены</a>
+                            <a href="/pricelist.html" class="header__mobile-menu__list-item-link">Цены</a>
                         </li>
                         <li class="header__mobile-menu__list-item">
-                            <a href="/stock.html">В наличии</a>
+                            <a href="/stock.html" class="header__mobile-menu__list-item-link">В наличии</a>
                         </li>
                         <li class="header__mobile-menu__list-item">
-                            <a href="/gemstones.html">Драгоценные камни</a>
+                            <a href="/gemstones.html" class="header__mobile-menu__list-item-link">Драгоценные камни</a>
                         </li>
                         <li class="header__mobile-menu__list-item">
-                            <a href="/b2bgeneral.html">B2B</a>
+                            <a href="/b2bgeneral.html" class="header__mobile-menu__list-item-link">B2B</a>
                         </li>
                         <li class="header__mobile-menu__list-item">
-                            <a href="/certificate.html">Купить сертификат</a>
+                            <a href="/certificate.html" class="header__mobile-menu__list-item-link">Купить сертификат</a>
                         </li>
                         <li class="header__mobile-menu__list-item">
-                            <a href="#">Ремонт</a>
+                            <ul id="header__mobile-menu__accordion" class="header__mobile-menu__accordion">
+                                <li class="header__mobile-menu__accordion-item">
+                                    <div class="header__mobile-menu__accordion-item-head">
+                                        <p>Ремонт</p>
+                                        <button>
+                                            <img src="images/svg/accordion-arrow.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="header__mobile-menu__accordion-item-content">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Ремонт золотых изделий</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ремонт изделий из жемчуга</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ремонт изделий из платины</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ремонт изделий из серебра</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ремонт изделий с камнями</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ремонт золотых изделий</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ремонт изделий из жемчуга</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ремонт изделий из платины</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ремонт изделий из серебра</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ремонт изделий с камнями</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ремонт изделий с камнями</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ремонт золотых изделий</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ремонт изделий из жемчуга</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ремонт изделий из платины</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ремонт изделий из серебра</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Ремонт изделий с камнями</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
                         </li>
                         <li class="header__mobile-menu__list-item">
-                            <a href="/feedback.html">Отзывы</a>
+                            <a href="/feedback.html" class="header__mobile-menu__list-item-link">Отзывы</a>
                         </li>
                         <li class="header__mobile-menu__list-item">
-                            <a href="/about.html">О бренде</a>
+                            <a href="/about.html" class="header__mobile-menu__list-item-link">О бренде</a>
                         </li>
                         <li class="header__mobile-menu__list-item">
-                            <a href="/contacts.html">Контакты</a>
+                            <a href="/contacts.html" class="header__mobile-menu__list-item-link">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -199,12 +259,18 @@
             <div class="container">
                 <p class="gemstones-catalog__heading">драгоценные камни</p>
             </div>
-            <button class="gemstones-catalog__filters-btn">
+            <button class="gemstones-catalog__filters-open">
                 <span>открыть</span>
                 <span>фильтры</span>
             </button>
             <div class="gemstones-catalog__filters">
                 <div class="container">
+                    <div class="gemstones-catalog__filters-top">
+                        <p class="gemstones-catalog__filters-top__heading">Фильтры</p>
+                        <button class="gemstones-catalog__filters-top__close-btn">
+                            <img src="images/svg/filters-close.svg" alt="">
+                        </button>
+                    </div>
                     <ul class="gemstones-catalog__filters-list">
                         <li class="gemstones-catalog__filters-item">
                             <select name="" id="" class="gemstones-catalog__filters-select">
@@ -240,6 +306,95 @@
                                 <option value="">октагон</option>
                             </select></li>
                     </ul>
+                    <ul class="gemstones-catalog__filters-list-mobile" id="gemstones-accordion">
+                        <li class="gemstones-catalog__filters-list-mobile__item">
+                            <div class="gemstones-catalog__filters-list-mobile__item-head">
+                                <p>Тип камня</p>
+                                <button>
+                                    <img src="images/svg/accordion-arrow.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="gemstones-catalog__filters-list-mobile__item-content">
+                                <ul class="gemstones-catalog__filters-list-mobile__item-content__list">
+                                    <li class="gemstones-catalog__filters-list-mobile__item-content__list-item">
+                                        <button>Сапфир</button>
+                                    </li>
+                                    <li class="gemstones-catalog__filters-list-mobile__item-content__list-item">
+                                        <button>Изумруд</button>
+                                    </li>
+                                    <li class="gemstones-catalog__filters-list-mobile__item-content__list-item">
+                                        <button>Жёлтый бриллиант</button>
+                                    </li>
+                                    <li class="gemstones-catalog__filters-list-mobile__item-content__list-item">
+                                        <button>Турмалин</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gemstones-catalog__filters-list-mobile__item">
+                            <div class="gemstones-catalog__filters-list-mobile__item-head">
+                                <p>Каратность</p>
+                                <button>
+                                    <img src="images/svg/accordion-arrow.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="gemstones-catalog__filters-list-mobile__item-content">
+                                <ul class="gemstones-catalog__filters-list-mobile__item-content__list">
+                                    <li class="gemstones-catalog__filters-list-mobile__item-content__list-item">
+                                        <button>4.29 CT</button>
+                                    </li>
+                                    <li class="gemstones-catalog__filters-list-mobile__item-content__list-item">
+                                        <button>4.29 CT</button>
+                                    </li>
+                                    <li class="gemstones-catalog__filters-list-mobile__item-content__list-item">
+                                        <button>4.29 CT</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gemstones-catalog__filters-list-mobile__item">
+                            <div class="gemstones-catalog__filters-list-mobile__item-head">
+                                <p>Цвет</p>
+                                <button>
+                                    <img src="images/svg/accordion-arrow.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="gemstones-catalog__filters-list-mobile__item-content">
+                                <ul class="gemstones-catalog__filters-list-mobile__item-content__list">
+                                    <li class="gemstones-catalog__filters-list-mobile__item-content__list-item">
+                                        <button>Strong green</button>
+                                    </li>
+                                    <li class="gemstones-catalog__filters-list-mobile__item-content__list-item">
+                                        <button>Strong green</button>
+                                    </li>
+                                    <li class="gemstones-catalog__filters-list-mobile__item-content__list-item">
+                                        <button>Strong green</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gemstones-catalog__filters-list-mobile__item">
+                            <div class="gemstones-catalog__filters-list-mobile__item-head">
+                                <p>огранка</p>
+                                <button>
+                                    <img src="images/svg/accordion-arrow.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="gemstones-catalog__filters-list-mobile__item-content">
+                                <ul class="gemstones-catalog__filters-list-mobile__item-content__list">
+                                    <li class="gemstones-catalog__filters-list-mobile__item-content__list-item">
+                                        <button>Октагон</button>
+                                    </li>
+                                    <li class="gemstones-catalog__filters-list-mobile__item-content__list-item">
+                                        <button>Октагон</button>
+                                    </li>
+                                    <li class="gemstones-catalog__filters-list-mobile__item-content__list-item">
+                                        <button>Октагон</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
                     <div class="gemstones-catalog__filters-slider">
                         <div class="gemstones-catalog__filters-values">
                             <span class="price">Цена</span>
@@ -259,6 +414,11 @@
                     </div>
                     <button class="gemstones-catalog__filters-reset">
                         <img src="images/svg/resetFilters.svg" alt="">
+                    </button>
+                    <button class="gemstones-catalog__filters-reset-mobile">Сбросить все</button>
+                    <button class="gemstones-catalog__filters-apply">
+                        <span>показать все</span>
+                        <span>N товаров</span>
                     </button>
                 </div>
             </div>
@@ -626,6 +786,8 @@
             <p class="footer__bottom-copyright">Все права защищены 2017-2022 GRIGOF JEWELLERY Studio</p>
         </div>
     </footer>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script defer src="js/accordion.min.js"></script>
     <script defer src="js/choices.min.js"></script>
     <script defer src="js/swiper-bundle.min.js"></script>
     <script defer src="js/inputmask.min.js"></script>

@@ -1,8 +1,9 @@
 // q&a
 
 jQuery(document).ready(function ($) {
-    $("#my-accordion").accordionjs({
+    $("#certificate-accordion").accordionjs({
         activeIndex: false,
         slideSpeed: 250,
     });
 });
+
