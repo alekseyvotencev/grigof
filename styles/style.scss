@@ -392,7 +392,7 @@ body {
         min-height: 100vh;
         display: none;
         background-color: #090909;
-        z-index: 2;
+        z-index: 4;
         border-bottom: 1px solid #FFF;
         opacity: 0;
         transform: scaleY(0);
@@ -6769,12 +6769,13 @@ body {
     }
 
     .modal {
-        overflow: scroll;
 
         &__content {
-            padding: 10rem 4rem 5rem 4rem;
+            padding: 10rem 4rem 6rem 4rem;
             min-width: auto;
             width: 67rem;
+            max-height: calc(100vh - 5rem);
+            overflow-y: auto;
         }
 
         &__close-btn {
