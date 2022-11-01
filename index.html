@@ -146,7 +146,8 @@
                             <a href="/b2bgeneral.html" class="header__mobile-menu__list-item-link">B2B</a>
                         </li>
                         <li class="header__mobile-menu__list-item">
-                            <a href="/certificate.html" class="header__mobile-menu__list-item-link">Купить сертификат</a>
+                            <a href="/certificate.html" class="header__mobile-menu__list-item-link">Купить
+                                сертификат</a>
                         </li>
                         <li class="header__mobile-menu__list-item">
                             <ul id="header__mobile-menu__accordion" class="header__mobile-menu__accordion">
@@ -554,39 +555,11 @@
                 <p class="examples__heading">наши работы</p>
             </div>
 
-            <div class="examples__background examples__background--active" data-target="ring">
+            <div class="examples__background examples__background--active">
                 <img src="images/examples1.png" alt="" class="examples__background-img">
                 <p class="examples__background-name">помолвочное кольцо</p>
                 <p class="examples__background-detail">585 проба</p>
                 <p class="examples__background-pagination">01</p>
-            </div>
-
-            <div class="examples__background" data-target="bracelets">
-                <img src="images/examples1.png" alt="" class="examples__background-img">
-                <p class="examples__background-name">помолвочное кольцо</p>
-                <p class="examples__background-detail">585 проба</p>
-                <p class="examples__background-pagination">02</p>
-            </div>
-
-            <div class="examples__background" data-target="earrings">
-                <img src="images/examples1.png" alt="" class="examples__background-img">
-                <p class="examples__background-name">помолвочное кольцо</p>
-                <p class="examples__background-detail">585 проба</p>
-                <p class="examples__background-pagination">03</p>
-            </div>
-
-            <div class="examples__background" data-target="4">
-                <img src="images/examples1.png" alt="" class="examples__background-img">
-                <p class="examples__background-name">помолвочное кольцо</p>
-                <p class="examples__background-detail">585 проба</p>
-                <p class="examples__background-pagination">04</p>
-            </div>
-
-            <div class="examples__background" data-target="5">
-                <img src="images/examples1.png" alt="" class="examples__background-img">
-                <p class="examples__background-name">помолвочное кольцо</p>
-                <p class="examples__background-detail">585 проба</p>
-                <p class="examples__background-pagination">05</p>
             </div>
 
             <div class="examples__video">
@@ -599,7 +572,7 @@
                                 <div class="swiper__video-card">
                                     <img src="images/swiperVideo1.png" alt="" class="swiper__video-img">
                                     <div class="swiper__video-text">
-                                        <button href="#" class="swiper__video-btn" data-path="ring">
+                                        <button href="#" class="swiper__video-btn">
                                             <img src="images/svg/triangleBtn.svg" alt="Включить видео">
                                         </button>
                                         <p class="swiper__video-name">Кольцо <br><span>с бриллиантами</span></p>
@@ -611,7 +584,7 @@
                                 <div class="swiper__video-card">
                                     <img src="images/swiperVideo2.png" alt="" class="swiper__video-img">
                                     <div class="swiper__video-text">
-                                        <button href="#" class="swiper__video-btn" data-path="bracelets">
+                                        <button href="#" class="swiper__video-btn">
                                             <img src="images/svg/triangleBtn.svg" alt="Включить видео">
                                         </button>
                                         <p class="swiper__video-name">Кольцо <br><span>с бриллиантами</span></p>
@@ -623,7 +596,7 @@
                                 <div class="swiper__video-card">
                                     <img src="images/swiperVideo3.png" alt="" class="swiper__video-img">
                                     <div class="swiper__video-text">
-                                        <button href="#" class="swiper__video-btn" data-path="earrings">
+                                        <button href="#" class="swiper__video-btn">
                                             <img src="images/svg/triangleBtn.svg" alt="Включить видео">
                                         </button>
                                         <p class="swiper__video-name">Кольцо <br><span>с бриллиантами</span></p>
@@ -635,7 +608,7 @@
                                 <div class="swiper__video-card">
                                     <img src="images/swiperVideo1.png" alt="" class="swiper__video-img">
                                     <div class="swiper__video-text">
-                                        <button href="#" class="swiper__video-btn" data-path="4">
+                                        <button href="#" class="swiper__video-btn">
                                             <img src="images/svg/triangleBtn.svg" alt="Включить видео">
                                         </button>
                                         <p class="swiper__video-name">Кольцо <br><span>с бриллиантами</span></p>
@@ -647,7 +620,7 @@
                                 <div class="swiper__video-card">
                                     <img src="images/swiperVideo2.png" alt="" class="swiper__video-img">
                                     <div class="swiper__video-text">
-                                        <button href="#" class="swiper__video-btn" data-path="5">
+                                        <button href="#" class="swiper__video-btn">
                                             <img src="images/svg/triangleBtn.svg" alt="Включить видео">
                                         </button>
                                         <p class="swiper__video-name">Кольцо <br><span>с бриллиантами</span></p>
@@ -967,6 +940,15 @@
             </div>
         </div>
     </footer>
+    <div class="modal-video">
+        <div class="modal-video__item">
+            <iframe width="100%" height="100%" class="video-player" src="https://www.youtube.com/embed/AP35cM1Ta38"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <button class="modal-video__item__close">закрыть видео</button>
+        </div>
+    </div>
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script defer src="js/accordion.min.js"></script>
     <script defer src="js/choices.min.js"></script>

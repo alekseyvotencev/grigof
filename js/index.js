@@ -107,7 +107,7 @@ const swiperPrice = new Swiper('.swiper__price', {
 
 const swiperVideo = new Swiper('.swiper__video', {
     direction: 'horizontal',
-    loop: false,
+    loop: true,
     navigation: {
         nextEl: '.swiper__video-next',
         prevEl: '.swiper__video-prev',
@@ -120,10 +120,24 @@ const swiperVideo = new Swiper('.swiper__video', {
             slidesPerView: 'auto',
         },
         769: {
-            slidesPerView: 3,
+            slidesPerView: 'auto',
         }
     }
 });
+
+
+// video
+const videoExample = document.querySelector('.video-player');
+if (videoExample) {
+    document.querySelectorAll('.swiper__video-btn').forEach(btn => {
+        btn.addEventListener('click', function () {
+            document.querySelector('.modal-video').classList.add('modal-video--active')
+        })
+    })
+    document.querySelector('.modal-video__item__close').addEventListener('click', function () {
+        document.querySelector('.modal-video').classList.remove('modal-video--active')
+    })
+}
 
 // main reviews screenshots slider
 
@@ -329,20 +343,6 @@ document.querySelectorAll('.pricelist__tab-btn').forEach(function (tabsBtn) {
 
         document.querySelectorAll(`[data-target="${path}"]`).forEach(function (tab) {
             tab.classList.add('pricelist__content--active');
-        })
-    });
-});
-
-document.querySelectorAll('.swiper__video-btn').forEach(function (tabsBtn) {
-    tabsBtn.addEventListener('click', function (e) {
-        const path = e.currentTarget.dataset.path;
-
-        document.querySelectorAll('.examples__background').forEach(function (tab) {
-            tab.classList.remove('examples__background--active')
-        });
-
-        document.querySelectorAll(`[data-target="${path}"]`).forEach(function (tab) {
-            tab.classList.add('examples__background--active');
         })
     });
 });

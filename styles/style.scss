@@ -175,6 +175,44 @@ body {
     }
 }
 
+.modal-video {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba($color: #FFF, $alpha: .5);
+    z-index: 4;
+
+    &--active {
+        display: flex;
+    }
+
+    &__item {
+        width: calc(100vw - 70rem);
+        height: calc(100vh - 30rem);
+    }
+
+    &__item__close {
+        margin-top: 1rem;
+        position: relative;
+        left: 50%;
+        font-family: 'FuturaPT';
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        text-align: center;
+        color: #090909;
+        transform: translateX(-50%);
+        cursor: pointer;
+    }
+}
+
 .just-validate-error-field {
     border-bottom: 1px solid #BF1717 !important;
 }
@@ -1449,7 +1487,6 @@ body {
         }
     }
 
-
     &__video {
         padding: 5.6rem 6rem;
         position: absolute;
@@ -1477,15 +1514,19 @@ body {
             margin-bottom: 4.2rem;
             z-index: 2;
 
+            .swiper-wrapper {
+                margin-left: -2rem;
+            }
+
             &-slide {
                 padding-left: 2rem;
                 padding-right: 2rem;
                 display: flex;
                 position: relative;
-                width: 24.3rem;
+                width: 26.3rem;
                 height: 28rem;
                 align-items: flex-end;
-                justify-content: flex-start;
+                justify-content: center;
 
                 &:first-child {
                     padding-left: 0;
@@ -1499,13 +1540,17 @@ body {
             }
 
             &-card {
+                padding: 1.5rem;
                 width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: flex-end;
             }
 
             &-img {
                 position: absolute;
                 top: 0;
-                left: 0;
+                left: 2rem;
                 width: 22.3rem;
                 height: 100%;
                 object-fit: contain;
@@ -1513,9 +1558,8 @@ body {
             }
 
             &-text {
-                padding-left: 1.5rem;
-                padding-bottom: 1.5rem;
                 display: flex;
+                width: 100%;
                 align-items: center;
                 z-index: 2;
             }
