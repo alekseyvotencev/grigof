@@ -131,11 +131,13 @@ const videoExample = document.querySelector('.video-player');
 if (videoExample) {
     document.querySelectorAll('.swiper__video-btn').forEach(btn => {
         btn.addEventListener('click', function () {
-            document.querySelector('.modal-video').classList.add('modal-video--active')
+            document.querySelector('.modal-video').classList.add('modal-video--active');
+            document.body.classList.add('overflow');
         })
     })
     document.querySelector('.modal-video__item__close').addEventListener('click', function () {
-        document.querySelector('.modal-video').classList.remove('modal-video--active')
+        document.querySelector('.modal-video').classList.remove('modal-video--active');
+        document.body.classList.remove('overflow');
     })
 }
 
