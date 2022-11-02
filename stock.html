@@ -31,7 +31,7 @@
                             <a href="/pricelist.html" class="header__left-nav-link">Цены</a>
                         </li>
                         <li class="header__left-nav-item">
-                            <a href="/stock.html" class="header__left-nav-link">В наличии</a>
+                            <a href="/stock.html" class="header__left-nav-link header__left-nav-link--active">В наличии</a>
                         </li>
                         <li class="header__left-nav-item">
                             <a href="/gemstones.html" class="header__left-nav-link">Драгоценные камни</a>
@@ -266,7 +266,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-container swiper__carousel">
+                <div class="swiper-container swiper__carousel swiper__carousel1">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide swiper__carousel-slide">
                             <div class="swiper__carousel-card">
@@ -298,18 +298,29 @@
                                 <p class="swiper__carousel-price">575 000 <span>&#8381;</span></p>
                             </div>
                         </div>
+                        <div class="swiper-slide swiper__carousel-slide">
+                            <div class="swiper__carousel-card">
+                                <a href="/stone.html" class="swiper__carousel-link">
+                                    <img src="images/svg/swiperArrow.svg" alt="">
+                                </a>
+                                <img src="images/earrings.png" alt="" class="swiper__carousel-img">
+                                <p class="swiper__carousel-name">кольцо с жемчугом</p>
+                                <p class="swiper__carousel-price">575 000 <span>&#8381;</span></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="swiper__stock-control">
-                    <div class="swiper__stock-prev">
+                <div class="swiper-pagination swiper__stock-pagination"></div>
+                <div class="swiper__carousel-control">
+                    <div class="swiper__carousel-prev">
                         <img src="images/svg/swiperArrow.svg" alt="">
                     </div>
-                    <div class="swiper-pagination swiper__stock-pagination"></div>
-                    <div class="swiper__stock-next">
+                    <div class="swiper-pagination swiper__carousel-pagination"></div>
+                    <div class="swiper__carousel-next">
                         <img src="images/svg/swiperArrow.svg" alt="">
                     </div>
                 </div>
-                <div class="swiper-container swiper__carousel">
+                <div class="swiper-container swiper__carousel swiper__carousel2">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide swiper__carousel-slide">
                             <div class="swiper__carousel-card">
@@ -738,12 +749,12 @@
             <p class="footer__bottom-copyright">Все права защищены 2017-2022 GRIGOF JEWELLERY Studio</p>
         </div>
     </footer>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script defer src="js/accordion.min.js"></script>
     <script defer src="js/choices.min.js"></script>
     <script defer src="js/swiper-bundle.min.js"></script>
     <script defer src="js/inputmask.min.js"></script>
     <script defer src="js/just-validate.production.min.js"></script>
-    <script defer src="js/priceSlider.js"></script>
-    <script defer src="js/validate-feedback-form.js"></script>
     <script defer src="js/index.js"></script>
 </body>
 

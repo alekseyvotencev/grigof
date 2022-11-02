@@ -526,7 +526,7 @@ body {
   min-height: 100vh;
   display: none;
   background-color: #090909;
-  z-index: 4;
+  z-index: 5;
   border-bottom: 1px solid #FFF;
   opacity: 0;
   transform: scaleY(0);
@@ -3105,7 +3105,7 @@ body {
   width: 0.6rem;
   transform: translateY(-50%);
 }
-.stock .swiper-pagination-bullet {
+.stock .swiper__stock-pagination .swiper-pagination-bullet {
   margin: 0;
   width: 0.6rem;
   height: 0.6rem;
@@ -3114,15 +3114,11 @@ body {
   background-color: transparent;
   opacity: 0.3;
 }
-.stock .swiper-pagination-bullet:not(:last-child) {
+.stock .swiper__stock-pagination .swiper-pagination-bullet:not(:last-child) {
   margin-bottom: 1.2rem;
 }
-.stock .swiper-pagination-bullet-active {
+.stock .swiper__stock-pagination .swiper-pagination-bullet-active {
   opacity: 1;
-}
-.stock .swiper__stock-prev,
-.stock .swiper__stock-next {
-  display: none;
 }
 .stock .swiper__carousel {
   margin: 0;
@@ -3132,12 +3128,6 @@ body {
 .stock .swiper__carousel .swiper-wrapper {
   margin-top: 27rem;
   flex-direction: column;
-}
-.stock .swiper__carousel:last-child {
-  margin-left: auto;
-}
-.stock .swiper__carousel:last-child .swiper-wrapper {
-  margin-top: 11.7rem;
 }
 .stock .swiper__carousel-slide {
   padding-top: 5rem;
@@ -3195,6 +3185,15 @@ body {
 }
 .stock .swiper__carousel-price {
   margin-top: 0.7rem;
+}
+.stock .swiper__carousel2 {
+  margin-left: auto;
+}
+.stock .swiper__carousel2 .swiper-wrapper {
+  margin-top: 11.7rem;
+}
+.stock .swiper__carousel-control {
+  display: none;
 }
 
 .catalog {
@@ -6111,7 +6110,7 @@ body {
     letter-spacing: 0.1em;
   }
   .just-validate-error-label {
-    bottom: -4rem;
+    bottom: -4.5rem;
     font-size: 2.8rem;
     line-height: 3.6rem;
     letter-spacing: 0.1em;
@@ -6840,7 +6839,7 @@ body {
     letter-spacing: 0.1em;
   }
   .feedback__input-big-container {
-    margin-bottom: 7rem;
+    margin-bottom: 10.4rem;
   }
   .feedback__form-btn {
     width: 25.4rem;
@@ -8407,6 +8406,7 @@ body {
   .stones__right .swiper__stones-control .swiper__stones-pagination {
     display: flex;
     position: relative;
+    z-index: 3;
   }
   .stones__right .swiper__stones-control .swiper__stones-pagination .swiper-pagination-bullet {
     width: 1.2rem;
@@ -9177,6 +9177,9 @@ body {
     line-height: 3.6rem;
     letter-spacing: 0.1em;
   }
+  .stock .swiper__stock-pagination {
+    display: none;
+  }
   .stock .swiper__carousel {
     margin-bottom: 11rem;
     width: 100%;
@@ -9186,9 +9189,6 @@ body {
     margin-top: 0;
     margin-left: 13rem;
     flex-direction: row;
-  }
-  .stock .swiper__carousel:last-child {
-    display: none;
   }
   .stock .swiper__carousel-slide {
     padding: 0;
@@ -9224,45 +9224,52 @@ body {
     line-height: 3.6rem;
     letter-spacing: 0.1em;
   }
-  .stock .swiper__stock-control {
+  .stock .swiper__carousel2 {
+    display: none;
+  }
+  .stock .swiper__carousel-control {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
     width: 100%;
   }
-  .stock .swiper__stock-control .swiper__stock-pagination {
+  .stock .swiper__carousel-control .swiper__carousel-prev,
+.stock .swiper__carousel-control .swiper__carousel-next {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+  }
+  .stock .swiper__carousel-control .swiper__carousel-prev img,
+.stock .swiper__carousel-control .swiper__carousel-next img {
+    width: 8.2rem;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .stock .swiper__carousel-control .swiper__carousel-prev img {
+    transform: scaleX(-1);
+  }
+  .stock .swiper__carousel-pagination {
     top: auto;
     left: auto;
     width: auto;
     position: relative;
     display: flex;
     flex-direction: row;
-    transform: none;
-    z-index: 2;
+    z-index: 3;
   }
-  .stock .swiper__stock-control .swiper__stock-pagination .swiper-pagination-bullet {
+  .stock .swiper__carousel-pagination .swiper-pagination-bullet {
     width: 1.2rem;
     height: 1.2rem;
+    background-color: transparent;
+    border: 1px solid #FFF;
+    opacity: 0.3;
   }
-  .stock .swiper__stock-control .swiper__stock-pagination .swiper-pagination-bullet:not(:last-child) {
-    margin-bottom: 0;
+  .stock .swiper__carousel-pagination .swiper-pagination-bullet-active {
+    opacity: 1;
+  }
+  .stock .swiper__carousel-pagination .swiper-pagination-bullet:not(:last-child) {
     margin-right: 2.4rem;
-  }
-  .stock .swiper__stock-control .swiper__stock-prev,
-.stock .swiper__stock-control .swiper__stock-next {
-    position: relative;
-    display: inline-block;
-    z-index: 2;
-  }
-  .stock .swiper__stock-control .swiper__stock-prev img,
-.stock .swiper__stock-control .swiper__stock-next img {
-    width: 8.2rem;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-  .stock .swiper__stock-control .swiper__stock-prev img {
-    transform: scaleX(-1);
   }
   .catalog {
     padding-top: 24rem;
