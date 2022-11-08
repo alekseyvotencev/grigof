@@ -34,7 +34,8 @@
                             <a href="/stock.html" class="header__left-nav-link">В наличии</a>
                         </li>
                         <li class="header__left-nav-item">
-                            <a href="/gemstones.html" class="header__left-nav-link header__left-nav-link--active">Драгоценные камни</a>
+                            <a href="/gemstones.html"
+                                class="header__left-nav-link header__left-nav-link--active">Драгоценные камни</a>
                         </li>
                         <li class="header__left-nav-item">
                             <a href="/b2bgeneral.html" class="header__left-nav-link">B2B</a>
@@ -146,7 +147,8 @@
                             <a href="/b2bgeneral.html" class="header__mobile-menu__list-item-link">B2B</a>
                         </li>
                         <li class="header__mobile-menu__list-item">
-                            <a href="/certificate.html" class="header__mobile-menu__list-item-link">Купить сертификат</a>
+                            <a href="/certificate.html" class="header__mobile-menu__list-item-link">Купить
+                                сертификат</a>
                         </li>
                         <li class="header__mobile-menu__list-item">
                             <ul id="header__mobile-menu__accordion" class="header__mobile-menu__accordion">
@@ -309,31 +311,32 @@
                     <ul class="gemstones-catalog__filters-list-mobile" id="gemstones-accordion">
                         <li class="gemstones-catalog__filters-list-mobile__item">
                             <div class="gemstones-catalog__filters-list-mobile__item-head">
-                                <p>Тип камня</p>
+                                <input type="text" value="Тип камня" readonly data-path="type">
                                 <button>
                                     <img src="images/svg/accordion-arrow.svg" alt="">
                                 </button>
                             </div>
                             <div class="gemstones-catalog__filters-list-mobile__item-content">
+
                                 <ul class="gemstones-catalog__filters-list-mobile__item-content__list">
                                     <li class="gemstones-catalog__filters-list-mobile__item-content__list-item">
-                                        <button>Сапфир</button>
+                                        <button data-target="type">Сапфир</button>
                                     </li>
                                     <li class="gemstones-catalog__filters-list-mobile__item-content__list-item">
-                                        <button>Изумруд</button>
+                                        <button data-target="type">Изумруд</button>
                                     </li>
                                     <li class="gemstones-catalog__filters-list-mobile__item-content__list-item">
-                                        <button>Жёлтый бриллиант</button>
+                                        <button data-target="type">Жёлтый бриллиант</button>
                                     </li>
                                     <li class="gemstones-catalog__filters-list-mobile__item-content__list-item">
-                                        <button>Турмалин</button>
+                                        <button data-target="type">Турмалин</button>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                         <li class="gemstones-catalog__filters-list-mobile__item">
                             <div class="gemstones-catalog__filters-list-mobile__item-head">
-                                <p>Каратность</p>
+                                <input type="text" value="Каратность" data-path="ogranka" readonly>
                                 <button>
                                     <img src="images/svg/accordion-arrow.svg" alt="">
                                 </button>
@@ -341,20 +344,20 @@
                             <div class="gemstones-catalog__filters-list-mobile__item-content">
                                 <ul class="gemstones-catalog__filters-list-mobile__item-content__list">
                                     <li class="gemstones-catalog__filters-list-mobile__item-content__list-item">
-                                        <button>4.29 CT</button>
+                                        <button data-target="carat">4.29 CT</button>
                                     </li>
                                     <li class="gemstones-catalog__filters-list-mobile__item-content__list-item">
-                                        <button>4.29 CT</button>
+                                        <button data-target="carat">4.29 CT</button>
                                     </li>
                                     <li class="gemstones-catalog__filters-list-mobile__item-content__list-item">
-                                        <button>4.29 CT</button>
+                                        <button data-target="carat">4.29 CT</button>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                         <li class="gemstones-catalog__filters-list-mobile__item">
                             <div class="gemstones-catalog__filters-list-mobile__item-head">
-                                <p>Цвет</p>
+                                <input type="text" value="Цвет" readonly data-path="color">
                                 <button>
                                     <img src="images/svg/accordion-arrow.svg" alt="">
                                 </button>
@@ -362,20 +365,20 @@
                             <div class="gemstones-catalog__filters-list-mobile__item-content">
                                 <ul class="gemstones-catalog__filters-list-mobile__item-content__list">
                                     <li class="gemstones-catalog__filters-list-mobile__item-content__list-item">
-                                        <button>Strong green</button>
+                                        <button data-target="color">Strong green</button>
                                     </li>
                                     <li class="gemstones-catalog__filters-list-mobile__item-content__list-item">
-                                        <button>Strong green</button>
+                                        <button data-target="color">Strong green</button>
                                     </li>
                                     <li class="gemstones-catalog__filters-list-mobile__item-content__list-item">
-                                        <button>Strong green</button>
+                                        <button data-target="color">Strong green</button>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                         <li class="gemstones-catalog__filters-list-mobile__item">
                             <div class="gemstones-catalog__filters-list-mobile__item-head">
-                                <p>огранка</p>
+                                <input type="text" value="огранка" data-path="ogranka" readonly>
                                 <button>
                                     <img src="images/svg/accordion-arrow.svg" alt="">
                                 </button>
@@ -383,13 +386,13 @@
                             <div class="gemstones-catalog__filters-list-mobile__item-content">
                                 <ul class="gemstones-catalog__filters-list-mobile__item-content__list">
                                     <li class="gemstones-catalog__filters-list-mobile__item-content__list-item">
-                                        <button>Октагон</button>
+                                        <button data-target="ogranka">Октагон</button>
                                     </li>
                                     <li class="gemstones-catalog__filters-list-mobile__item-content__list-item">
-                                        <button>Октагон</button>
+                                        <button data-target="ogranka">Октагон</button>
                                     </li>
                                     <li class="gemstones-catalog__filters-list-mobile__item-content__list-item">
-                                        <button>Октагон</button>
+                                        <button data-target="ogranka">Октагон</button>
                                     </li>
                                 </ul>
                             </div>

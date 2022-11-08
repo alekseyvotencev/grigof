@@ -197,6 +197,8 @@ if (document.querySelector('.swiper__screenshots') && document.querySelector('.s
             },
         }
     });
+
+    swiperScreenshots.thumbs.swiperReviews;
 }
 
 // если много текста в отзыве в слайдере - ставится многоточие
@@ -210,47 +212,6 @@ if (document.querySelector('.swiper__reviews-item')) {
         }
     })
 }
-
-// validation feedback form
-
-if (document.querySelector('.feedback__form')) {
-    const validation = new JustValidate('.feedback__form');
-    validation
-        .addField('#name', [
-            {
-                rule: 'required',
-                errorMessage: 'Введите имя'
-            },
-            {
-                rule: 'customRegexp',
-                value: '^((?=.*[А-Я])||(?=.*[а-я]).{2,30})$',
-                errorMessage: 'Недопустимый формат'
-            },
-        ])
-        .addField('#message', [
-            {
-                rule: 'required',
-                errorMessage: 'Введите сообщение'
-            }
-        ])
-        .addField('#phone', [
-            {
-                rule: 'required',
-                errorMessage: 'Введите номер телефона'
-            }
-        ])
-        .addField('#email', [
-            {
-                rule: 'required',
-                errorMessage: 'Введите e-mail'
-            }
-        ])
-        .onSuccess((event) => {
-            console.log("Отправка запроса");
-            event.preventDefault();
-        });
-}
-
 
 // STONE.HTML
 
@@ -637,6 +598,19 @@ gemstonesFiltersApplyBtn?.addEventListener('click', function () {
 })
 
 
+// filters
+const gemstonesFiltersItems = document.querySelectorAll('.gemstones-catalog__filters-list-mobile__item-content__list-item button');
+if (gemstonesFiltersItems) {
+    gemstonesFiltersItems.forEach(btn => {
+        btn.addEventListener('click', function (e) {
+            const target = e.currentTarget.dataset.target;
+            const value = e.currentTarget.innerText;
+            document.querySelector(`[data-path="${target}"]`).value = value;
+        })
+    })
+}
+
+
 // gemstonesFilters accordion
 
 jQuery(document).ready(function ($) {
@@ -734,33 +708,6 @@ if (modalApplication) {
         document.body.classList.remove('overflow');
         modalApplication.classList.remove('modal--active');
     })
-
-    const validationModalApp = new JustValidate('.modal__form');
-    validationModalApp
-        .addField('#modal-name', [
-            {
-                rule: 'required',
-                errorMessage: 'Введите имя'
-            }
-        ])
-        .addField('#modal-message', [
-            {
-                rule: 'required',
-                errorMessage: 'Введите сообщение'
-            }
-        ])
-        .addField('#modal-tel', [
-            {
-                rule: 'required',
-                errorMessage: 'Введите номер телефона'
-            }
-        ])
-        .addField('#modal-email', [
-            {
-                rule: 'required',
-                errorMessage: 'Введите e-mail'
-            }
-        ])
 }
 
 // modal calculate
@@ -779,32 +726,4 @@ if (modalCalculate) {
         document.body.classList.remove('overflow');
         modalCalculate.classList.remove('modal--active');
     })
-
-    const validationModalCalculate = new JustValidate('.modal__form');
-    validationModalCalculate
-        .addField('#modal-name', [
-            {
-                rule: 'required',
-                errorMessage: 'Введите имя'
-            }
-        ])
-        .addField('#modal-message', [
-            {
-                rule: 'required',
-                errorMessage: 'Введите сообщение'
-            }
-        ])
-        .addField('#modal-tel', [
-            {
-                rule: 'required',
-                errorMessage: 'Номер указан некорректно'
-            }
-        ])
-        .addField('#modal-email', [
-            {
-                rule: 'required',
-                errorMessage: 'Введите e-mail'
-            }
-        ])
-
 }

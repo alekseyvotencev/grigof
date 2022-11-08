@@ -660,8 +660,12 @@ body {
     .swiper__hero {
         padding-top: 10rem;
         width: 100%;
-        min-height: 61.5rem;
+        max-height: 61.5rem;
         overflow: visible;
+
+        .swiper-wrapper {
+            height: auto;
+        }
 
         &-number {
             position: absolute;
@@ -671,7 +675,6 @@ body {
             text-align: center;
             letter-spacing: 0.16em;
             text-transform: uppercase;
-
         }
 
         .swiper-slide {
@@ -9505,12 +9508,16 @@ body {
                         width: 100%;
                         border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 
-                        p {
+                        input {
+                            width: 80%;
                             font-family: 'FuturaPT';
                             font-size: 2.8rem;
                             text-align: left;
                             letter-spacing: 0.1em;
+                            color: #FFF;
                             text-transform: uppercase;
+                            border: none;
+                            background-color: transparent;
                         }
 
                         button {
@@ -10738,7 +10745,7 @@ body {
                 margin-left: 13rem;
                 flex-direction: row;
             }
-            
+
             &-slide {
                 padding: 0;
                 padding-left: 2rem;
