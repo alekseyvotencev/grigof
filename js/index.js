@@ -710,6 +710,11 @@ if (modalApplication) {
         document.body.classList.remove('overflow');
         modalApplication.classList.remove('modal--active');
     })
+
+    const modalSubmitBtn = document.querySelector('.modal__bottom-btn');
+    modalSubmitBtn.addEventListener('click', function () {
+        document.body.classList.remove('overflow');
+    })
 }
 
 // modal calculate
@@ -727,5 +732,10 @@ if (modalCalculate) {
         modalCalculate.querySelector('.modal__form').reset();
         document.body.classList.remove('overflow');
         modalCalculate.classList.remove('modal--active');
+    })
+
+    const modalSubmitBtn = document.querySelector('.modal__bottom-btn');
+    modalSubmitBtn.addEventListener('click', function () {
+        document.body.classList.remove('overflow');
     })
 }
