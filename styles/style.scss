@@ -9519,7 +9519,7 @@ body {
                             border: none;
                             background-color: transparent;
 
-                            ::placeholder {
+                            &::placeholder {
                                 color: #FFF;
                             }
                         }

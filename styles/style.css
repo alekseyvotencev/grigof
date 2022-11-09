@@ -8193,13 +8193,13 @@ body {
     border: none;
     background-color: transparent;
   }
-  .gemstones-catalog__filters-list-mobile__item-head input ::-moz-placeholder {
+  .gemstones-catalog__filters-list-mobile__item-head input::-moz-placeholder {
     color: #FFF;
   }
-  .gemstones-catalog__filters-list-mobile__item-head input :-ms-input-placeholder {
+  .gemstones-catalog__filters-list-mobile__item-head input:-ms-input-placeholder {
     color: #FFF;
   }
-  .gemstones-catalog__filters-list-mobile__item-head input ::placeholder {
+  .gemstones-catalog__filters-list-mobile__item-head input::placeholder {
     color: #FFF;
   }
   .gemstones-catalog__filters-list-mobile__item-head button img {
