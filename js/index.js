@@ -708,6 +708,7 @@ if (modalApplication) {
     modalApplicationCloseBtn?.addEventListener('click', () => {
         modalApplication.querySelector('.modal__form').reset();
         document.body.classList.remove('overflow');
+        modalApplication.classList.remove('modal--active');
     })
 }
 
@@ -725,5 +726,6 @@ if (modalCalculate) {
     modalCalculateCloseBtn?.addEventListener('click', () => {
         modalCalculate.querySelector('.modal__form').reset();
         document.body.classList.remove('overflow');
+        modalCalculate.classList.remove('modal--active');
     })
 }
