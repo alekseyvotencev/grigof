@@ -9518,6 +9518,10 @@ body {
                             text-transform: uppercase;
                             border: none;
                             background-color: transparent;
+
+                            ::placeholder {
+                                color: #FFF;
+                            }
                         }
 
                         button {

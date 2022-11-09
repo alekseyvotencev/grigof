@@ -443,19 +443,19 @@ if (document.querySelector('.pricelist__tab-btn')) {
 const catalogFiltersOpenBtn = document.querySelector('.catalog__filters-open');
 const catalogFilters = document.querySelector('.catalog__filters')
 catalogFiltersOpenBtn?.addEventListener('click', function () {
-    catalogFilters.classList.add('catalog__filters--active')
+    catalogFilters.classList.add('catalog__filters--active');
 })
 
 // close filters
 const catalogFiltersCloseBtn = document.querySelector('.catalog__filters-top__close-btn');
 catalogFiltersCloseBtn?.addEventListener('click', function () {
-    catalogFilters.classList.remove('catalog__filters--active')
+    catalogFilters.classList.remove('catalog__filters--active');
 })
 
 // close filters after applying
 const catalogFiltersApplyBtn = document.querySelector('.catalog__filters-apply');
 catalogFiltersApplyBtn?.addEventListener('click', function () {
-    // catalogFilters.classList.remove('catalog__filters--active')
+    catalogFilters.classList.remove('catalog__filters--active');
 })
 
 if (document.querySelector('.catalog__filters-tab-item')) {
@@ -486,19 +486,19 @@ if (document.querySelector('.catalog__filters-tab-item')) {
 const portfolioFilters = document.querySelector('.portfolio-catalog__filters');
 const portfolioFiltersOpenBtn = document.querySelector('.portfolio-catalog__filters-open');
 portfolioFiltersOpenBtn?.addEventListener('click', function () {
-    portfolioFilters.classList.add('portfolio-catalog__filters--active')
+    portfolioFilters.classList.add('portfolio-catalog__filters--active');
 })
 
 // close filters
 const portfolioFiltersCloseBtn = document.querySelector('.portfolio-catalog__filters-top__close-btn');
 portfolioFiltersCloseBtn?.addEventListener('click', function () {
-    portfolioFilters.classList.remove('portfolio-catalog__filters--active')
+    portfolioFilters.classList.remove('portfolio-catalog__filters--active');
 })
 
 // close filters after applying
 const portfolioFiltersApplyBtn = document.querySelector('.portfolio-catalog__filters-apply');
 portfolioFiltersApplyBtn?.addEventListener('click', function () {
-    // portfolioFilters.classList.remove('portfolio-catalog__filters--active')
+    portfolioFilters.classList.remove('portfolio-catalog__filters--active');
 })
 
 if (document.querySelector('.portfolio-catalog__filters-tab-item')) {
@@ -605,7 +605,9 @@ if (gemstonesFiltersItems) {
         btn.addEventListener('click', function (e) {
             const target = e.currentTarget.dataset.target;
             const value = e.currentTarget.innerText;
-            document.querySelector(`[data-path="${target}"]`).value = value;
+            const element = document.querySelector(`[data-path="${target}"]`);
+            element.value = value;
+            element.dispatchEvent(new Event('change'));
         })
     })
 }
