@@ -714,7 +714,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const modalSubmitBtn = document.querySelector('.modal__bottom-btn');
         modalSubmitBtn.addEventListener('click', function () {
-            event.preventDefault();
             document.body.classList.remove('overflow');
         })
     }
@@ -737,8 +736,7 @@ document.addEventListener('DOMContentLoaded', function () {
         })
 
         const modalSubmitBtn = document.querySelector('.modal__bottom-btn');
-        modalSubmitBtn.addEventListener('click', function (event) {
-            event.preventDefault();
+        modalSubmitBtn.addEventListener('click', function () {
             document.body.classList.remove('overflow');
         })
     }
