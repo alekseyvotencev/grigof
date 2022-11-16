@@ -361,17 +361,18 @@ body {
   cursor: pointer;
 }
 
-.just-validate-error-field {
-  border-bottom: 1px solid #BF1717 !important;
-}
-
-.just-validate-error-label {
-  position: absolute;
-  bottom: -3rem;
+.errortext {
   font-family: "FuturaPT";
   font-size: 1.5rem;
   line-height: 2.2rem;
-  color: #BF1717 !important;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.mf-ok-text .success {
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
 }
@@ -6112,8 +6113,12 @@ body {
     line-height: 4.4rem;
     letter-spacing: 0.1em;
   }
-  .just-validate-error-label {
-    bottom: -4.5rem;
+  .errortext {
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+    letter-spacing: 0.1em;
+  }
+  .mf-ok-text .success {
     font-size: 2.8rem;
     line-height: 3.6rem;
     letter-spacing: 0.1em;
