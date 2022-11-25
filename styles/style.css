@@ -167,6 +167,16 @@ body {
   background-color: #080808;
 }
 
+@media (min-width: 48.01em) {
+  .mobile {
+    display: none;
+  }
+}
+@media (max-width: 48em) {
+  .desktop {
+    display: none;
+  }
+}
 .modal {
   display: none;
   justify-content: center;
@@ -2210,6 +2220,9 @@ body {
 .stones__left-btn span:last-of-type {
   transform: translate(-1.5rem, 1rem);
 }
+.stones__left-btn2 {
+  margin-bottom: 25rem;
+}
 .stones__left-images {
   margin-top: auto;
   display: flex;
@@ -2313,6 +2326,12 @@ body {
   margin: 0;
   width: 64.4rem;
 }
+.swiper__stones2 {
+  margin-top: -4.5rem;
+}
+.swiper__stones .swiper-wrapper {
+  position: relative;
+}
 .swiper__stones-center-img2 {
   margin-bottom: 7.8rem;
 }
@@ -2321,9 +2340,6 @@ body {
   justify-content: center;
 }
 .swiper__stones-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   position: relative;
 }
 .swiper__stones-center-img {
@@ -2341,10 +2357,13 @@ body {
      object-fit: contain;
 }
 .swiper__stones-name {
-  margin-top: -2rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
   font-size: 7rem;
   line-height: 11.1rem;
   text-transform: uppercase;
+  transform: translateX(-50%);
 }
 
 .warranty {
@@ -5828,7 +5847,7 @@ body {
 .productcard-hero .container {
   display: flex;
   position: relative;
-  align-items: flex-start;
+  align-items: stretch;
 }
 .productcard-hero__left {
   margin-top: 9rem;
@@ -5934,11 +5953,14 @@ body {
      object-fit: contain;
 }
 .productcard-hero .swiper__productcard-name {
-  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
   font-size: 7rem;
   line-height: 8.3rem;
   text-align: center;
   text-transform: uppercase;
+  transform: translateX(-50%);
 }
 .productcard-hero__right {
   margin-top: 9rem;
@@ -6933,6 +6955,9 @@ body {
     font-size: 3.2rem;
     line-height: 4.4rem;
   }
+  .productcard-hero {
+    padding-top: 12rem;
+  }
   .productcard-hero .container {
     flex-direction: column;
     align-items: center;
@@ -6966,8 +6991,12 @@ body {
   }
   .productcard-hero .swiper__productcard-name {
     margin-bottom: 5rem;
+    position: relative;
+    left: auto;
+    bottom: auto;
     font-size: 6rem;
     line-height: 8.2rem;
+    transform: none;
   }
   .productcard-hero__control {
     margin-bottom: 12rem;
@@ -8408,6 +8437,15 @@ body {
     width: 100%;
     align-items: center;
   }
+  .stones__right .swiper__stones-name {
+    margin-bottom: 6.8rem;
+    position: relative;
+    left: auto;
+    bottom: auto;
+    transform: none;
+    text-align: center;
+    order: 2;
+  }
   .stones__right .swiper__stones-control {
     margin-bottom: 8.4rem;
     width: 100%;
@@ -8457,12 +8495,12 @@ body {
     margin-right: 0;
   }
   .stones__right-price {
-    order: 3;
+    order: 4;
   }
   .stones__right-list {
     margin-bottom: 16rem;
     width: 100%;
-    order: 2;
+    order: 3;
   }
   .stones__right-list-item {
     display: flex;
@@ -8524,6 +8562,9 @@ body {
   .stones .swiper__stones {
     margin-bottom: 4rem;
     width: 100%;
+  }
+  .stones .swiper__stones2 {
+    margin-top: 0;
   }
   .stones .swiper__stones-center-img {
     max-width: 57rem;
