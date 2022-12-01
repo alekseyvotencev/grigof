@@ -1153,7 +1153,7 @@ body {
             z-index: 2;
         }
 
-        &-heading {
+        h1 {
             margin-bottom: 4.1rem;
             font-size: 4rem;
             line-height: 5.6rem;
@@ -2571,7 +2571,7 @@ body {
         }
     }
 
-    &-name {
+    h1 {
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -3055,7 +3055,7 @@ body {
         flex-direction: column;
     }
 
-    &__heading {
+    h1 {
         margin-bottom: 3.5rem;
         width: 50.4rem;
         font-size: 7rem;
@@ -3452,7 +3452,7 @@ body {
             object-fit: contain;
         }
 
-        &-name {
+        h1 {
             font-size: 4rem;
             line-height: 4.8rem;
             text-transform: uppercase;
@@ -4591,7 +4591,7 @@ body {
         display: none;
     }
 
-    &__name {
+    h1 {
         margin-bottom: 1rem;
         font-size: 4rem;
         line-height: 5.6rem;
@@ -4777,7 +4777,7 @@ body {
         }
     }
 
-    &__heading {
+    h1 {
         margin-bottom: 19rem;
         font-size: 7rem;
         line-height: 8.3rem;
@@ -6718,7 +6718,7 @@ body {
             object-fit: contain;
         }
 
-        &-name {
+        h1{
             position: absolute;
             bottom: 0;
             left: 50%;
@@ -7331,7 +7331,7 @@ body {
                 width: 100%;
             }
 
-            &-heading {
+            h1 {
                 margin-bottom: 6rem;
                 width: 44.2rem;
                 font-size: 4.4rem;
@@ -8062,7 +8062,7 @@ body {
                 }
             }
 
-            &-name {
+            h1 {
                 margin-bottom: 5rem;
                 position: relative;
                 left: auto;
@@ -8478,7 +8478,7 @@ body {
             flex-direction: column;
         }
 
-        &__heading {
+        h1 {
             display: none;
         }
 
@@ -8818,7 +8818,7 @@ body {
             flex-direction: column;
         }
 
-        &__heading {
+        h1 {
             margin-bottom: 6.4rem;
             width: 100%;
             font-size: 6rem;
@@ -9811,6 +9811,10 @@ body {
                     transform: translate(-2.5rem, 2rem);
                 }
             }
+
+            &-btn2 {
+                margin-bottom: 0;
+            }
         }
 
         &__right {
@@ -9818,13 +9822,16 @@ body {
             width: 100%;
             align-items: center;
 
-            .swiper__stones-name {
+            h1 {
                 margin-bottom: 6.8rem;
                 position: relative;
                 left: auto;
                 bottom: auto;
-                transform: none;
+                font-size: 6rem;
+                line-height: 8.2rem;
                 text-align: center;
+                text-transform: uppercase;
+                transform: none;
                 order: 2;
             }
 
@@ -9987,6 +9994,10 @@ body {
                     max-width: 57rem;
                     max-height: 60rem;
                 }
+            }
+
+            h1 {
+                display: none;
             }
         }
     }
@@ -10762,7 +10773,7 @@ body {
                 flex-direction: column-reverse;
             }
 
-            &-name {
+            h1 {
                 margin-bottom: 8.2rem;
                 width: 100%;
                 font-size: 6rem;
@@ -11576,7 +11587,7 @@ body {
             order: 0;
         }
 
-        &__name {
+        h1 {
             margin-bottom: 1.2rem;
             font-size: 6rem;
             line-height: 8.2rem;

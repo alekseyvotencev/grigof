@@ -1125,7 +1125,7 @@ body {
           backdrop-filter: blur(40px);
   z-index: 2;
 }
-.services__content-heading {
+.services__content h1 {
   margin-bottom: 4.1rem;
   font-size: 4rem;
   line-height: 5.6rem;
@@ -2356,7 +2356,7 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
 }
-.swiper__stones-name {
+.swiper__stones h1 {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -2774,7 +2774,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.prices-hero__heading {
+.prices-hero h1 {
   margin-bottom: 3.5rem;
   width: 50.4rem;
   font-size: 7rem;
@@ -3119,7 +3119,7 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
 }
-.stock .swiper__stock-name {
+.stock .swiper__stock h1 {
   font-size: 4rem;
   line-height: 4.8rem;
   text-transform: uppercase;
@@ -4105,7 +4105,7 @@ body {
 .b2bspecial-card__right-mobile {
   display: none;
 }
-.b2bspecial-card__name {
+.b2bspecial-card h1 {
   margin-bottom: 1rem;
   font-size: 4rem;
   line-height: 5.6rem;
@@ -4262,7 +4262,7 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
 }
-.feedback-hero__heading {
+.feedback-hero h1 {
   margin-bottom: 19rem;
   font-size: 7rem;
   line-height: 8.3rem;
@@ -5952,7 +5952,7 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
 }
-.productcard-hero .swiper__productcard-name {
+.productcard-hero .swiper__productcard h1 {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -6415,7 +6415,7 @@ body {
     margin-bottom: 8.4rem;
     width: 100%;
   }
-  .services__content-heading {
+  .services__content h1 {
     margin-bottom: 6rem;
     width: 44.2rem;
     font-size: 4.4rem;
@@ -6989,7 +6989,7 @@ body {
     margin-bottom: 6rem;
     width: 60rem;
   }
-  .productcard-hero .swiper__productcard-name {
+  .productcard-hero .swiper__productcard h1 {
     margin-bottom: 5rem;
     position: relative;
     left: auto;
@@ -7330,7 +7330,7 @@ body {
   .feedback-hero .container {
     flex-direction: column;
   }
-  .feedback-hero__heading {
+  .feedback-hero h1 {
     display: none;
   }
   .feedback-hero__heading-mobile {
@@ -7613,7 +7613,7 @@ body {
     display: flex;
     flex-direction: column;
   }
-  .prices-hero__heading {
+  .prices-hero h1 {
     margin-bottom: 6.4rem;
     width: 100%;
     font-size: 6rem;
@@ -8432,18 +8432,24 @@ body {
   .stones__left-btn span:last-child {
     transform: translate(-2.5rem, 2rem);
   }
+  .stones__left-btn2 {
+    margin-bottom: 0;
+  }
   .stones__right {
     margin-left: 0;
     width: 100%;
     align-items: center;
   }
-  .stones__right .swiper__stones-name {
+  .stones__right h1 {
     margin-bottom: 6.8rem;
     position: relative;
     left: auto;
     bottom: auto;
-    transform: none;
+    font-size: 6rem;
+    line-height: 8.2rem;
     text-align: center;
+    text-transform: uppercase;
+    transform: none;
     order: 2;
   }
   .stones__right .swiper__stones-control {
@@ -8573,6 +8579,9 @@ body {
   .stones .swiper__stones-center-img2 {
     max-width: 57rem;
     max-height: 60rem;
+  }
+  .stones .swiper__stones h1 {
+    display: none;
   }
   .certificate-hero {
     padding-top: 12rem;
@@ -9213,7 +9222,7 @@ body {
     height: 100%;
     flex-direction: column-reverse;
   }
-  .stock .swiper__stock-name {
+  .stock .swiper__stock h1 {
     margin-bottom: 8.2rem;
     width: 100%;
     font-size: 6rem;
@@ -9890,7 +9899,7 @@ body {
     width: 100%;
     order: 0;
   }
-  .b2bspecial-card__name {
+  .b2bspecial-card h1 {
     margin-bottom: 1.2rem;
     font-size: 6rem;
     line-height: 8.2rem;
