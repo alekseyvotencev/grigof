@@ -823,6 +823,17 @@ body {
   left: 2rem;
   bottom: 15rem;
 }
+.hero .swiper__hero h1 {
+  position: absolute;
+  bottom: 25rem;
+  right: 16rem;
+  width: 19.2rem;
+  font-size: 4rem;
+  line-height: 4.7rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+}
 .hero .swiper__hero-heading {
   position: absolute;
   bottom: 25rem;
@@ -1129,7 +1140,7 @@ body {
           backdrop-filter: blur(40px);
   z-index: 2;
 }
-.services__content h1 {
+.services__content-heading {
   margin-bottom: 4.1rem;
   font-size: 4rem;
   line-height: 5.6rem;
@@ -2499,6 +2510,12 @@ body {
   line-height: 8.3rem;
   text-transform: uppercase;
 }
+.repair h1 {
+  margin-bottom: 4.2rem;
+  font-size: 7rem;
+  line-height: 8.3rem;
+  text-transform: uppercase;
+}
 .repair__description {
   position: absolute;
   left: 40.6rem;
@@ -2698,6 +2715,12 @@ body {
 }
 .description__right {
   width: 100rem;
+}
+.description h2 {
+  margin-bottom: 4.8rem;
+  font-size: 7rem;
+  line-height: 8.3rem;
+  text-transform: uppercase;
 }
 .description__heading {
   margin-bottom: 4.8rem;
@@ -3976,6 +3999,11 @@ body {
   margin-bottom: 24.6rem;
   font-size: 7rem;
   line-height: 8.3rem;
+  text-transform: uppercase;
+}
+.b2b-hero h1 {
+  font-size: 4rem;
+  line-height: 5.6rem;
   text-transform: uppercase;
 }
 .b2b-hero__subheading {
@@ -5337,6 +5365,13 @@ body {
      object-fit: contain;
   z-index: -2;
 }
+.contacts-hero h1 {
+  margin-bottom: 4.5rem;
+  width: 41.7rem;
+  font-size: 7rem;
+  line-height: 8.3rem;
+  text-transform: uppercase;
+}
 .contacts-hero__heading {
   margin-bottom: 4.5rem;
   width: 41.7rem;
@@ -5491,6 +5526,21 @@ body {
   bottom: 7rem;
   width: 42.2rem;
   height: 45.4rem;
+}
+.certificate-hero h1 {
+  margin-bottom: 18rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 7rem;
+  line-height: 12rem;
+  text-transform: uppercase;
+}
+.certificate-hero h1 span:first-child {
+  letter-spacing: 0.145em;
+}
+.certificate-hero h1 span:last-child {
+  letter-spacing: 0.14em;
 }
 .certificate-hero__heading {
   margin-bottom: 18rem;
@@ -6266,6 +6316,15 @@ body {
     max-width: 38rem;
     max-height: 34rem;
   }
+  .hero .swiper__hero h1 {
+    top: -30rem;
+    right: unset;
+    bottom: unset;
+    width: 75rem;
+    font-size: 4.4rem;
+    line-height: 5.2rem;
+    text-align: center;
+  }
   .hero .swiper__hero-heading {
     top: -30rem;
     right: unset;
@@ -6430,7 +6489,7 @@ body {
     margin-bottom: 8.4rem;
     width: 100%;
   }
-  .services__content h1 {
+  .services__content-heading {
     margin-bottom: 6rem;
     width: 44.2rem;
     font-size: 4.4rem;
@@ -7537,6 +7596,13 @@ body {
     line-height: 4.4rem;
     text-align: center;
   }
+  .contacts-hero h1 {
+    margin-bottom: 6rem;
+    width: 100%;
+    text-align: center;
+    font-size: 6rem;
+    line-height: 8.2rem;
+  }
   .contacts-hero__heading {
     margin-bottom: 6rem;
     width: 100%;
@@ -8601,6 +8667,19 @@ body {
   .certificate-hero {
     padding-top: 12rem;
     padding-bottom: 0;
+  }
+  .certificate-hero h1 {
+    margin-bottom: 7.2rem;
+    flex-direction: column;
+    font-size: 6rem;
+    line-height: 8.2rem;
+    text-align: center;
+  }
+  .certificate-hero h1 span:first-child {
+    letter-spacing: normal;
+  }
+  .certificate-hero h1 span:last-child {
+    letter-spacing: normal;
   }
   .certificate-hero__heading {
     margin-bottom: 7.2rem;
@@ -9756,6 +9835,11 @@ body {
     width: 100%;
     order: 0;
   }
+  .description h2 {
+    margin-bottom: 8rem;
+    font-size: 6rem;
+    line-height: 8.2rem;
+  }
   .description__heading {
     margin-bottom: 8rem;
     font-size: 6rem;
@@ -9831,6 +9915,12 @@ body {
   }
   .b2b-hero__left {
     width: 100%;
+  }
+  .b2b-hero h1 {
+    margin-bottom: 0.8rem;
+    font-size: 4.4rem;
+    line-height: 5.2rem;
+    order: 0;
   }
   .b2b-hero__subheading {
     margin-bottom: 0.8rem;
