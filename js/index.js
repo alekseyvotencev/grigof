@@ -17,6 +17,20 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     })
 
+    // footer dropdown menu
+
+    const footerDropdownMenu = document.querySelector('.footer__nav-dropdown__menu');
+    const footerBtn = document.querySelector('button.footer__nav-link');
+
+    footerBtn.addEventListener('click', function () {
+        footerDropdownMenu.classList.toggle('footer__nav-dropdown__menu--active');
+        document.addEventListener('click', function (event) {
+            if (event.target != footerBtn && event.target != footerDropdownMenu && !footerDropdownMenu.contains(event.target)) {
+                footerDropdownMenu.classList.remove('footer__nav-dropdown__menu--active');
+            }
+        })
+    })
+
     // mobile menu
 
     const burger = document.querySelector('.header__burger');
@@ -30,6 +44,14 @@ document.addEventListener('DOMContentLoaded', function () {
     // mobile menu accordion
     jQuery(document).ready(function ($) {
         $("#header__mobile-menu__accordion").accordionjs({
+            activeIndex: false,
+            slideSpeed: 350,
+        });
+    });
+
+     // mobile footer menu accordion
+     jQuery(document).ready(function ($) {
+        $("#footer__nav-accordion").accordionjs({
             activeIndex: false,
             slideSpeed: 350,
         });

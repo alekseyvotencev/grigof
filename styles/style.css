@@ -196,7 +196,7 @@ body {
   padding: 14.5rem 9.5rem 4.5rem 9.5rem;
   position: relative;
   min-width: 123rem;
-  background-color: #FFF;
+  background-color: #fff;
 }
 .modal__heading {
   margin-bottom: 2rem;
@@ -259,13 +259,6 @@ body {
   -moz-transition: transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
 }
-.modal__form-input:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.5);
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  -ms-transition: transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out;
-}
 .modal__form-input::placeholder {
   color: rgba(0, 0, 0, 0.5);
   letter-spacing: 0.16em;
@@ -312,7 +305,7 @@ body {
           backdrop-filter: blur(15px);
   transform: rotate(10deg);
   border-bottom: 1px solid #797979;
-  border-top: 1px solid #ADADAD;
+  border-top: 1px solid #adadad;
   background-size: 100% 1px;
   background-repeat: no-repeat;
   z-index: -1;
@@ -436,7 +429,7 @@ body {
   width: 100%;
   height: 1px;
   bottom: -0.9rem;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .header__logo img {
   width: 19.4rem;
@@ -480,7 +473,7 @@ body {
   width: 100%;
   height: 1px;
   bottom: -0.9rem;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
 }
@@ -492,7 +485,7 @@ body {
   position: absolute;
   top: 100%;
   right: 14rem;
-  background-color: #FFF;
+  background-color: #fff;
   z-index: 2;
   opacity: 0;
   transform: scaleY(0);
@@ -545,7 +538,7 @@ body {
   display: none;
   background-color: #090909;
   z-index: 5;
-  border-bottom: 1px solid #FFF;
+  border-bottom: 1px solid #fff;
   opacity: 0;
   transform: scaleY(0);
   transform-origin: top;
@@ -809,8 +802,8 @@ body {
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
   border-bottom: 1px solid #797979;
-  border-top: 1px solid #ADADAD;
-  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD), linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD);
+  border-top: 1px solid #adadad;
+  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad), linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad);
   background-size: 100% 1px;
   background-repeat: no-repeat;
   z-index: -1;
@@ -938,7 +931,7 @@ body {
 .categories .swiper__categories-pagination .swiper-pagination-bullet {
   width: 0.6rem;
   height: 0.6rem;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   background: transparent;
   opacity: 0.3;
   cursor: pointer;
@@ -1009,8 +1002,7 @@ body {
   margin: 0;
   top: 21.5rem;
   left: -4.7rem;
-  -ms-writing-mode: tb-lr;
-      writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
   transform: scale(-1, -1);
 }
 .categories .swiper__categories-item {
@@ -1105,7 +1097,7 @@ body {
   margin-right: 11.6rem;
 }
 .services__tabs-btn--active {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .services__tabs-btn:hover {
   cursor: pointer;
@@ -1199,8 +1191,7 @@ body {
   height: 29.2rem;
   text-align: left;
   text-transform: uppercase;
-  -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   transform: scale(-1);
   vertical-align: middle;
 }
@@ -1252,7 +1243,7 @@ body {
   width: 0.6rem;
   height: 0.6rem;
   background-color: transparent;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   opacity: 0.3;
   cursor: pointer;
 }
@@ -1347,7 +1338,7 @@ body {
   cursor: pointer;
 }
 .stages__tabs-btn--active {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .stages__tabs-btn:not(:last-child) {
   margin-right: 11.6rem;
@@ -1747,8 +1738,8 @@ body {
           backdrop-filter: blur(15px);
   transform: rotate(10deg);
   border-bottom: 1px solid #797979;
-  border-top: 1px solid #ADADAD;
-  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD), linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD);
+  border-top: 1px solid #adadad;
+  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad), linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad);
   background-size: 100% 1px;
   background-repeat: no-repeat;
   z-index: -1;
@@ -1899,15 +1890,14 @@ body {
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.5);
-  -ms-writing-mode: tb-lr;
-      writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
   transform: scale(-1, -1);
 }
 .feedback__notice-mobile .line {
   margin-bottom: 1.6rem;
   width: 1px;
   height: 6.2rem;
-  background-color: #A6A6B8;
+  background-color: #a6a6b8;
 }
 .feedback__right-img {
   position: absolute;
@@ -1983,8 +1973,8 @@ body {
           backdrop-filter: blur(15px);
   transform: rotate(10deg);
   border-bottom: 1px solid #797979;
-  border-top: 1px solid #ADADAD;
-  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD), linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD);
+  border-top: 1px solid #adadad;
+  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad), linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad);
   background-size: 100% 1px;
   background-repeat: no-repeat;
   z-index: -1;
@@ -2015,16 +2005,13 @@ body {
   font-family: "FuturaPT";
   font-size: 1.9rem;
   line-height: 2.6rem;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: transparent;
   border-radius: 0;
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 .feedback__input::-moz-placeholder, .feedback__input-big::-moz-placeholder {
-  color: transparent;
-}
-.feedback__input:-ms-input-placeholder, .feedback__input-big:-ms-input-placeholder {
   color: transparent;
 }
 .feedback__input::placeholder, .feedback__input-big::placeholder {
@@ -2037,9 +2024,6 @@ body {
   transform: translateY(0);
 }
 .feedback__input:not(:-moz-placeholder-shown) + .feedback__placeholder, .feedback__input-big:not(:-moz-placeholder-shown) + .feedback__placeholder {
-  transform: translateY(0);
-}
-.feedback__input:not(:-ms-input-placeholder) + .feedback__placeholder, .feedback__input-big:not(:-ms-input-placeholder) + .feedback__placeholder {
   transform: translateY(0);
 }
 .feedback__input:not(:placeholder-shown) + .feedback__placeholder, .feedback__input-big:not(:placeholder-shown) + .feedback__placeholder {
@@ -2084,14 +2068,53 @@ body {
 .footer__nav-list:not(:last-child) {
   margin-right: 15rem;
 }
+.footer__nav-item {
+  position: relative;
+}
 .footer__nav-item:not(:last-child) {
   margin-bottom: 2rem;
+}
+.footer__nav-dropdown__menu {
+  padding: 4.4rem 4.8rem 6rem 4.9rem;
+  position: absolute;
+  top: calc(100% + 2rem);
+  left: 0;
+  min-width: 59rem;
+  background-color: #fff;
+  z-index: 2;
+  opacity: 0;
+  transform: scaleY(0);
+  transition-property: opacity, transform;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transform-origin: top;
+}
+.footer__nav-dropdown__menu--active {
+  opacity: 1;
+  transform: scaleY(1);
+}
+.footer__nav-sublist {
+  display: grid;
+  grid-template-columns: auto auto;
+  -moz-column-gap: 6.7rem;
+       column-gap: 6.7rem;
+  row-gap: 3rem;
+}
+.footer__nav-sublist__item a {
+  font-family: "FuturaPT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.9rem;
+  line-height: 2.6rem;
+  color: #090909;
+  opacity: 0.5;
 }
 .footer__nav-link {
   font-family: "FuturaPT";
   font-size: 1.9rem;
   line-height: 2.6rem;
   color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
 }
 .footer__info {
   margin-left: auto;
@@ -2223,8 +2246,8 @@ body {
           backdrop-filter: blur(15px);
   transform: rotate(10deg);
   border-bottom: 1px solid #797979;
-  border-top: 1px solid #ADADAD;
-  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD), linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD);
+  border-top: 1px solid #adadad;
+  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad), linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad);
   background-size: 100% 1px;
   background-repeat: no-repeat;
   z-index: -1;
@@ -2560,8 +2583,8 @@ body {
           backdrop-filter: blur(15px);
   transform: rotate(10deg);
   border-bottom: 1px solid #797979;
-  border-top: 1px solid #ADADAD;
-  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD), linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD);
+  border-top: 1px solid #adadad;
+  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad), linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad);
   background-size: 100% 1px;
   background-repeat: no-repeat;
   z-index: -1;
@@ -2612,10 +2635,10 @@ body {
   justify-content: space-between;
   padding-top: 4.8rem;
   padding-bottom: 4.8rem;
-  border-top: 1px solid #FFF;
+  border-top: 1px solid #fff;
 }
 .repair-pricelist__list-item:last-child {
-  border-bottom: 1px solid #FFF;
+  border-bottom: 1px solid #fff;
 }
 .repair-pricelist__list-number {
   font-size: 4rem;
@@ -2842,8 +2865,8 @@ body {
           backdrop-filter: blur(15px);
   transform: rotate(10deg);
   border-bottom: 1px solid #797979;
-  border-top: 1px solid #ADADAD;
-  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD), linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD);
+  border-top: 1px solid #adadad;
+  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad), linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad);
   background-size: 100% 1px;
   background-repeat: no-repeat;
   z-index: -1;
@@ -2933,12 +2956,11 @@ body {
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
 }
 .pricelist__tab-btn--active {
-  color: #FFF;
+  color: #fff;
 }
 .pricelist__tab-btn:not(:last-child) {
   margin-right: 5rem;
@@ -2955,10 +2977,10 @@ body {
   justify-content: space-between;
   padding-top: 4.8rem;
   padding-bottom: 4.8rem;
-  border-top: 1px solid #FFF;
+  border-top: 1px solid #fff;
 }
 .pricelist__list-item:last-child {
-  border-bottom: 1px solid #FFF;
+  border-bottom: 1px solid #fff;
 }
 .pricelist__list-number {
   font-size: 4rem;
@@ -3027,8 +3049,8 @@ body {
           backdrop-filter: blur(15px);
   transform: rotate(10deg);
   border-bottom: 1px solid #797979;
-  border-top: 1px solid #ADADAD;
-  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD), linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD);
+  border-top: 1px solid #adadad;
+  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad), linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad);
   background-size: 100% 1px;
   background-repeat: no-repeat;
   z-index: -1;
@@ -3049,8 +3071,7 @@ body {
   display: inline-block;
   font-size: 7rem;
   line-height: 9rem;
-  -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   transform: scale(-1);
   text-transform: uppercase;
 }
@@ -3091,7 +3112,7 @@ body {
   bottom: 0;
   height: 14.7rem;
   width: 1px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .stock .container .horizontal {
   position: absolute;
@@ -3099,7 +3120,7 @@ body {
   bottom: 2rem;
   width: 8.4rem;
   height: 1px;
-  background-color: #FFF;
+  background-color: #fff;
 }
 .stock .swiper__stock {
   position: relative;
@@ -3169,7 +3190,7 @@ body {
   width: 0.6rem;
   height: 0.6rem;
   border-radius: 50%;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   background-color: transparent;
   opacity: 0.3;
 }
@@ -3317,7 +3338,7 @@ body {
   margin-right: 8rem;
 }
 .catalog__filters-tab-item--active {
-  color: #FFF;
+  color: #fff;
 }
 .catalog__filters-slider {
   margin-right: 4.6rem;
@@ -3362,7 +3383,7 @@ body {
   -webkit-appearance: none;
   height: 1.3rem;
   width: 1.3rem;
-  background-color: #FFF;
+  background-color: #fff;
   cursor: pointer;
   pointer-events: auto;
   border-radius: 50%;
@@ -3371,7 +3392,7 @@ body {
   -webkit-appearance: none;
   height: 1.3rem;
   width: 1.3rem;
-  background-color: #FFF;
+  background-color: #fff;
   cursor: pointer;
   pointer-events: auto;
   border-radius: 50%;
@@ -3380,7 +3401,7 @@ body {
   -webkit-appearance: none;
   height: 1.3rem;
   width: 1.3rem;
-  background-color: #FFF;
+  background-color: #fff;
   cursor: pointer;
   pointer-events: auto;
   border-radius: 50%;
@@ -3424,7 +3445,7 @@ body {
   height: 43.6rem;
   position: relative;
   align-items: flex-end;
-  background-color: #0F0F0F;
+  background-color: #0f0f0f;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 .catalog__products-btn {
@@ -3509,8 +3530,8 @@ body {
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
   border-bottom: 1px solid #797979;
-  border-top: 1px solid #ADADAD;
-  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD), linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD);
+  border-top: 1px solid #adadad;
+  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad), linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad);
   background-size: 100% 1px;
   background-repeat: no-repeat;
   z-index: -1;
@@ -3565,8 +3586,8 @@ body {
           backdrop-filter: blur(15px);
   transform: rotate(10deg);
   border-bottom: 1px solid #797979;
-  border-top: 1px solid #ADADAD;
-  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD), linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD);
+  border-top: 1px solid #adadad;
+  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad), linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad);
   background-size: 100% 1px;
   background-repeat: no-repeat;
   z-index: -1;
@@ -3613,7 +3634,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 18.5rem;
-  background: #0F0F0F;
+  background: #0f0f0f;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 146px;
 }
@@ -3694,7 +3715,7 @@ body {
   color: rgb(255, 255, 255);
 }
 .gemstones-catalog__filters .choices.is-open::before {
-  border-color: #FFF;
+  border-color: #fff;
 }
 .gemstones-catalog__filters .choices[data-type*=select-one]::after {
   display: none;
@@ -3749,7 +3770,7 @@ body {
   margin-top: 5.7rem;
   min-width: 43.2rem;
   border-radius: 0;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
 .gemstones-catalog__filters .container {
   display: flex;
@@ -3828,7 +3849,7 @@ body {
   -webkit-appearance: none;
   height: 1.3rem;
   width: 1.3rem;
-  background-color: #FFF;
+  background-color: #fff;
   cursor: pointer;
   pointer-events: auto;
   border-radius: 50%;
@@ -3837,7 +3858,7 @@ body {
   -webkit-appearance: none;
   height: 1.3rem;
   width: 1.3rem;
-  background-color: #FFF;
+  background-color: #fff;
   cursor: pointer;
   pointer-events: auto;
   border-radius: 50%;
@@ -3846,7 +3867,7 @@ body {
   -webkit-appearance: none;
   height: 1.3rem;
   width: 1.3rem;
-  background-color: #FFF;
+  background-color: #fff;
   cursor: pointer;
   pointer-events: auto;
   border-radius: 50%;
@@ -3874,7 +3895,7 @@ body {
   width: 100%;
   height: 43.6rem;
   display: flex;
-  background-color: #0F0F0F;
+  background-color: #0f0f0f;
   align-items: flex-end;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
@@ -3967,8 +3988,8 @@ body {
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
   border-bottom: 1px solid #797979;
-  border-top: 1px solid #ADADAD;
-  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD), linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD);
+  border-top: 1px solid #adadad;
+  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad), linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad);
   background-size: 100% 1px;
   background-repeat: no-repeat;
   z-index: -1;
@@ -4166,7 +4187,7 @@ body {
   line-height: 2.2rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #FFF;
+  color: #fff;
 }
 .b2bspecial-card__description-heading::before {
   content: "";
@@ -4175,7 +4196,7 @@ body {
   top: 50%;
   width: 1px;
   height: 1.5rem;
-  background-color: #FFF;
+  background-color: #fff;
   transform: translateY(-50%);
 }
 .b2bspecial-card__description {
@@ -4240,8 +4261,8 @@ body {
           backdrop-filter: blur(15px);
   transform: rotate(10deg);
   border-bottom: 1px solid #797979;
-  border-top: 1px solid #ADADAD;
-  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD), linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD);
+  border-top: 1px solid #adadad;
+  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad), linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad);
   background-size: 100% 1px;
   background-repeat: no-repeat;
   z-index: -1;
@@ -4352,8 +4373,8 @@ body {
           backdrop-filter: blur(15px);
   transform: rotate(10deg);
   border-bottom: 1px solid #797979;
-  border-top: 1px solid #ADADAD;
-  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD), linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD);
+  border-top: 1px solid #adadad;
+  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad), linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad);
   background-size: 100% 1px;
   background-repeat: no-repeat;
   z-index: -1;
@@ -4420,7 +4441,7 @@ body {
   cursor: pointer;
 }
 .feedback-reviews__type-item--active {
-  color: #FFF;
+  color: #fff;
 }
 .feedback-reviews__type-item:not(:last-child) {
   margin-right: 8rem;
@@ -4703,7 +4724,7 @@ body {
   margin-right: 8rem;
 }
 .portfolio-catalog__filters-tab-item--active {
-  color: #FFF;
+  color: #fff;
 }
 .portfolio-catalog__filters-slider {
   margin-right: 4.6rem;
@@ -4748,7 +4769,7 @@ body {
   -webkit-appearance: none;
   height: 1.3rem;
   width: 1.3rem;
-  background-color: #FFF;
+  background-color: #fff;
   cursor: pointer;
   pointer-events: auto;
   border-radius: 50%;
@@ -4757,7 +4778,7 @@ body {
   -webkit-appearance: none;
   height: 1.3rem;
   width: 1.3rem;
-  background-color: #FFF;
+  background-color: #fff;
   cursor: pointer;
   pointer-events: auto;
   border-radius: 50%;
@@ -4766,7 +4787,7 @@ body {
   -webkit-appearance: none;
   height: 1.3rem;
   width: 1.3rem;
-  background-color: #FFF;
+  background-color: #fff;
   cursor: pointer;
   pointer-events: auto;
   border-radius: 50%;
@@ -4817,7 +4838,7 @@ body {
   height: 43.6rem;
   position: relative;
   align-items: flex-end;
-  background-color: #0F0F0F;
+  background-color: #0f0f0f;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 .portfolio-catalog__products-btn {
@@ -4913,8 +4934,8 @@ body {
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
   border-bottom: 1px solid #797979;
-  border-top: 1px solid #ADADAD;
-  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD), linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD);
+  border-top: 1px solid #adadad;
+  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad), linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad);
   background-size: 100% 1px;
   background-repeat: no-repeat;
   z-index: -1;
@@ -5085,8 +5106,8 @@ body {
           backdrop-filter: blur(15px);
   transform: rotate(10deg);
   border-bottom: 1px solid #797979;
-  border-top: 1px solid #ADADAD;
-  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD), linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD);
+  border-top: 1px solid #adadad;
+  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad), linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad);
   background-size: 100% 1px;
   background-repeat: no-repeat;
   z-index: -1;
@@ -5255,7 +5276,7 @@ body {
   width: 0.6rem;
   height: 0.6rem;
   background-color: transparent;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   opacity: 0.3;
 }
 .about-team .swiper__about-pagination .swiper-pagination-bullet-active {
@@ -5352,8 +5373,8 @@ body {
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
   border-bottom: 1px solid #797979;
-  border-top: 1px solid #ADADAD;
-  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD), linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD);
+  border-top: 1px solid #adadad;
+  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad), linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad);
   background-size: 100% 1px;
   background-repeat: no-repeat;
   z-index: -1;
@@ -5474,8 +5495,8 @@ body {
           backdrop-filter: blur(15px);
   transform: rotate(10deg);
   border-bottom: 1px solid #797979;
-  border-top: 1px solid #ADADAD;
-  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD), linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD);
+  border-top: 1px solid #adadad;
+  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad), linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad);
   background-size: 100% 1px;
   background-repeat: no-repeat;
   z-index: -1;
@@ -5588,7 +5609,7 @@ body {
   line-height: 2.2rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .certificate-hero__list-item p:last-child {
   width: 28.6rem;
@@ -5640,8 +5661,8 @@ body {
           backdrop-filter: blur(15px);
   transform: rotate(10deg);
   border-bottom: 1px solid #797979;
-  border-top: 1px solid #ADADAD;
-  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD), linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD);
+  border-top: 1px solid #adadad;
+  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad), linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad);
   background-size: 100% 1px;
   background-repeat: no-repeat;
   z-index: -1;
@@ -5712,8 +5733,8 @@ body {
           backdrop-filter: blur(15px);
   transform: rotate(10deg);
   border-bottom: 1px solid #797979;
-  border-top: 1px solid #ADADAD;
-  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD), linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD);
+  border-top: 1px solid #adadad;
+  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad), linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad);
   background-size: 100% 1px;
   background-repeat: no-repeat;
   z-index: -1;
@@ -5847,7 +5868,7 @@ body {
   height: 43.6rem;
   position: relative;
   align-items: flex-end;
-  background-color: #0F0F0F;
+  background-color: #0f0f0f;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 .similar-products__list-btn {
@@ -5979,8 +6000,8 @@ body {
           backdrop-filter: blur(15px);
   transform: rotate(10deg);
   border-bottom: 1px solid #797979;
-  border-top: 1px solid #ADADAD;
-  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD), linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD);
+  border-top: 1px solid #adadad;
+  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad), linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad);
   background-size: 100% 1px;
   background-repeat: no-repeat;
   z-index: -1;
@@ -6594,7 +6615,7 @@ body {
     width: 67rem;
   }
   .price .swiper__price-prev img,
-.price .swiper__price-next img {
+  .price .swiper__price-next img {
     width: 8.2rem;
   }
   .stages {
@@ -6942,9 +6963,6 @@ body {
   .feedback__input:not(:-moz-placeholder-shown) + .feedback__placeholder, .feedback__input-big:not(:-moz-placeholder-shown) + .feedback__placeholder {
     transform: translateY(-3rem);
   }
-  .feedback__input:not(:-ms-input-placeholder) + .feedback__placeholder, .feedback__input-big:not(:-ms-input-placeholder) + .feedback__placeholder {
-    transform: translateY(-3rem);
-  }
   .feedback__input:not(:placeholder-shown) + .feedback__placeholder, .feedback__input-big:not(:placeholder-shown) + .feedback__placeholder {
     transform: translateY(-3rem);
   }
@@ -7009,6 +7027,45 @@ body {
   }
   .footer__nav-item:not(:last-child) {
     margin-bottom: 6rem;
+  }
+  .footer__nav-accordion__item.acc_active .footer__nav-accordion__item-head button svg {
+    transform: rotate(90deg);
+  }
+  .footer__nav-accordion__item-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer__nav-accordion__item-head p {
+    margin-right: 3rem;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    font-family: "FuturaPT";
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .footer__nav-accordion__item-head button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer__nav-accordion__item-head button svg {
+    width: 1.6rem;
+    height: 2.8rem;
+    -o-object-fit: contain;
+       object-fit: contain;
+    transition: transform 0.35s ease-in-out;
+  }
+  .footer__nav-accordion__item-content ul {
+    padding-top: 3rem;
+  }
+  .footer__nav-accordion__item-content ul li:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  .footer__nav-accordion__item-content ul li a {
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    font-family: "FuturaPT";
+    color: rgba(255, 255, 255, 0.5);
   }
   .footer__nav-link {
     font-size: 3.2rem;
@@ -7099,7 +7156,7 @@ body {
     width: 1.2rem;
     height: 1.2rem;
     background-color: transparent;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #ffffff;
     opacity: 0.3;
   }
   .productcard-hero__pagination .swiper-pagination-bullet-active {
@@ -7209,8 +7266,8 @@ body {
             backdrop-filter: blur(15px);
     transform: rotate(10deg);
     border-bottom: 1px solid #797979;
-    border-top: 1px solid #ADADAD;
-    background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD), linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD);
+    border-top: 1px solid #adadad;
+    background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad), linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad);
     background-size: 100% 1px;
     background-repeat: no-repeat;
     z-index: -1;
@@ -7576,8 +7633,8 @@ body {
             backdrop-filter: blur(15px);
     transform: rotate(10deg);
     border-bottom: 1px solid #797979;
-    border-top: 1px solid #ADADAD;
-    background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD), linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD);
+    border-top: 1px solid #adadad;
+    background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad), linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad);
     background-size: 100% 1px;
     background-repeat: no-repeat;
     z-index: -1;
@@ -7659,7 +7716,7 @@ body {
     line-height: 3.6rem;
   }
   .contacts-hero__right-list-item p:last-child,
-.contacts-hero__right-list-item a {
+  .contacts-hero__right-list-item a {
     font-size: 3.2rem;
     line-height: 4.4rem;
   }
@@ -8102,7 +8159,7 @@ body {
     margin-right: 2.4rem;
   }
   .about-team .swiper__about-prev img,
-.about-team .swiper__about-next img {
+  .about-team .swiper__about-next img {
     width: 8.2rem;
   }
   .gemstones-hero {
@@ -8231,8 +8288,8 @@ body {
             backdrop-filter: blur(15px);
     transform: rotate(10deg);
     border-bottom: 1px solid #797979;
-    border-top: 1px solid #ADADAD;
-    background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD), linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD);
+    border-top: 1px solid #adadad;
+    background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad), linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad);
     background-size: 100% 1px;
     background-repeat: no-repeat;
     z-index: -1;
@@ -8315,19 +8372,16 @@ body {
     font-size: 2.8rem;
     text-align: left;
     letter-spacing: 0.1em;
-    color: #FFF;
+    color: #fff;
     text-transform: uppercase;
     border: none;
     background-color: transparent;
   }
   .gemstones-catalog__filters-list-mobile__item-head input::-moz-placeholder {
-    color: #FFF;
-  }
-  .gemstones-catalog__filters-list-mobile__item-head input:-ms-input-placeholder {
-    color: #FFF;
+    color: #fff;
   }
   .gemstones-catalog__filters-list-mobile__item-head input::placeholder {
-    color: #FFF;
+    color: #fff;
   }
   .gemstones-catalog__filters-list-mobile__item-head button img {
     width: 1.8rem;
@@ -8382,7 +8436,7 @@ body {
     -webkit-appearance: none;
     height: 2.6rem;
     width: 2.6rem;
-    background-color: #FFF;
+    background-color: #fff;
     cursor: pointer;
     pointer-events: auto;
     border-radius: 50%;
@@ -8391,7 +8445,7 @@ body {
     -webkit-appearance: none;
     height: 2.6rem;
     width: 2.6rem;
-    background-color: #FFF;
+    background-color: #fff;
     cursor: pointer;
     pointer-events: auto;
     border-radius: 50%;
@@ -8400,7 +8454,7 @@ body {
     -webkit-appearance: none;
     height: 2.6rem;
     width: 2.6rem;
-    background-color: #FFF;
+    background-color: #fff;
     cursor: pointer;
     pointer-events: auto;
     border-radius: 50%;
@@ -8443,8 +8497,8 @@ body {
             backdrop-filter: blur(15px);
     transform: rotate(5deg);
     border-bottom: 1px solid #797979;
-    border-top: 1px solid #ADADAD;
-    background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD), linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD);
+    border-top: 1px solid #adadad;
+    background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad), linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad);
     background-size: 100% 1px;
     background-repeat: no-repeat;
     z-index: -1;
@@ -8540,7 +8594,7 @@ body {
     line-height: 8.2rem;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #ffffff;
     order: 2;
   }
   .stones__right .swiper__stones-control {
@@ -8558,7 +8612,7 @@ body {
     margin-right: 0;
   }
   .stones__right .swiper__stones-control .swiper__stones-prev img,
-.stones__right .swiper__stones-control .swiper__stones-next img {
+  .stones__right .swiper__stones-control .swiper__stones-next img {
     width: 8.2rem;
   }
   .stones__right .swiper__stones-control .swiper__stones-pagination {
@@ -8570,7 +8624,7 @@ body {
     width: 1.2rem;
     height: 1.2rem;
     background-color: transparent;
-    border: 1px solid #FFF;
+    border: 1px solid #fff;
     opacity: 0.3;
   }
   .stones__right .swiper__stones-control .swiper__stones-pagination .swiper-pagination-bullet:not(:last-child) {
@@ -8779,7 +8833,7 @@ body {
     width: 100%;
     font-size: 3.2rem;
     line-height: 4.4rem;
-    color: #FFF;
+    color: #fff;
   }
   .certificate-hero__list-item:not(:last-child) {
     margin-right: 0;
@@ -9010,8 +9064,8 @@ body {
             backdrop-filter: blur(15px);
     transform: rotate(10deg);
     border-bottom: 1px solid #797979;
-    border-top: 1px solid #ADADAD;
-    background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD), linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD);
+    border-top: 1px solid #adadad;
+    background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad), linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad);
     background-size: 100% 1px;
     background-repeat: no-repeat;
     z-index: -1;
@@ -9116,7 +9170,7 @@ body {
     -webkit-appearance: none;
     height: 2.6rem;
     width: 2.6rem;
-    background-color: #FFF;
+    background-color: #fff;
     cursor: pointer;
     pointer-events: auto;
     border-radius: 50%;
@@ -9125,7 +9179,7 @@ body {
     -webkit-appearance: none;
     height: 2.6rem;
     width: 2.6rem;
-    background-color: #FFF;
+    background-color: #fff;
     cursor: pointer;
     pointer-events: auto;
     border-radius: 50%;
@@ -9134,7 +9188,7 @@ body {
     -webkit-appearance: none;
     height: 2.6rem;
     width: 2.6rem;
-    background-color: #FFF;
+    background-color: #fff;
     cursor: pointer;
     pointer-events: auto;
     border-radius: 50%;
@@ -9177,8 +9231,8 @@ body {
             backdrop-filter: blur(15px);
     transform: rotate(5deg);
     border-bottom: 1px solid #797979;
-    border-top: 1px solid #ADADAD;
-    background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD), linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD);
+    border-top: 1px solid #adadad;
+    background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad), linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad);
     background-size: 100% 1px;
     background-repeat: no-repeat;
     z-index: -1;
@@ -9425,13 +9479,13 @@ body {
     width: 100%;
   }
   .stock .swiper__carousel-control .swiper__carousel-prev,
-.stock .swiper__carousel-control .swiper__carousel-next {
+  .stock .swiper__carousel-control .swiper__carousel-next {
     position: relative;
     display: inline-block;
     z-index: 2;
   }
   .stock .swiper__carousel-control .swiper__carousel-prev img,
-.stock .swiper__carousel-control .swiper__carousel-next img {
+  .stock .swiper__carousel-control .swiper__carousel-next img {
     width: 8.2rem;
     -o-object-fit: contain;
        object-fit: contain;
@@ -9452,7 +9506,7 @@ body {
     width: 1.2rem;
     height: 1.2rem;
     background-color: transparent;
-    border: 1px solid #FFF;
+    border: 1px solid #fff;
     opacity: 0.3;
   }
   .stock .swiper__carousel-pagination .swiper-pagination-bullet-active {
@@ -9500,8 +9554,8 @@ body {
             backdrop-filter: blur(15px);
     transform: rotate(10deg);
     border-bottom: 1px solid #797979;
-    border-top: 1px solid #ADADAD;
-    background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD), linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD);
+    border-top: 1px solid #adadad;
+    background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad), linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad);
     background-size: 100% 1px;
     background-repeat: no-repeat;
     z-index: -1;
@@ -9605,7 +9659,7 @@ body {
     -webkit-appearance: none;
     height: 2.6rem;
     width: 2.6rem;
-    background-color: #FFF;
+    background-color: #fff;
     cursor: pointer;
     pointer-events: auto;
     border-radius: 50%;
@@ -9614,7 +9668,7 @@ body {
     -webkit-appearance: none;
     height: 2.6rem;
     width: 2.6rem;
-    background-color: #FFF;
+    background-color: #fff;
     cursor: pointer;
     pointer-events: auto;
     border-radius: 50%;
@@ -9623,7 +9677,7 @@ body {
     -webkit-appearance: none;
     height: 2.6rem;
     width: 2.6rem;
-    background-color: #FFF;
+    background-color: #fff;
     cursor: pointer;
     pointer-events: auto;
     border-radius: 50%;
@@ -9666,8 +9720,8 @@ body {
             backdrop-filter: blur(15px);
     transform: rotate(5deg);
     border-bottom: 1px solid #797979;
-    border-top: 1px solid #ADADAD;
-    background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD), linear-gradient(45deg, rgba(121, 121, 121, 0), #ADADAD);
+    border-top: 1px solid #adadad;
+    background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad), linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad);
     background-size: 100% 1px;
     background-repeat: no-repeat;
     z-index: -1;
@@ -10092,7 +10146,7 @@ body {
     top: 50%;
     width: 1px;
     height: 2.8rem;
-    background-color: #FFF;
+    background-color: #fff;
     transform: translateY(-50%);
   }
   .b2bspecial-card__description-mobile {
