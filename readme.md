@@ -28,6 +28,8 @@
 
 - [x] О бренде - https://alekseyvotencev.github.io/grigof/about.html + мобилка
 
+- [x] Изделия на заказ - https://alekseyvotencev.github.io/grigof/custom-products.html + мобилка
+
 - [x] Форма Рассчитать стоимость
 
 - [x] Форма Заявка

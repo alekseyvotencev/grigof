@@ -744,12 +744,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const modalCalculate = document.querySelector('.calculate-price');
     if (modalCalculate) {
-        const modalCalculateOpenBtn = document.querySelector('.calculate-price__btn');
-        modalCalculateOpenBtn?.addEventListener('click', () => {
-            document.body.classList.add('overflow');
-            modalCalculate.classList.add('modal--active');
+        const modalCalculateOpenBtns = document.querySelectorAll('.calculate-price__btn');
+        modalCalculateOpenBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.body.classList.add('overflow');
+                modalCalculate.classList.add('modal--active');
+            })
         })
-
+    
         const modalCalculateCloseBtn = document.querySelector('.modal__close-btn');
         modalCalculateCloseBtn?.addEventListener('click', () => {
             modalCalculate.querySelector('.modal__form').reset();

@@ -5008,7 +5008,6 @@ body {
 .portfolio-making__text-right {
   margin-left: auto;
   width: 58rem;
-  align-self: flex-end;
 }
 
 .about-hero {
@@ -6151,6 +6150,564 @@ body {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.custom-hero {
+  display: flex;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.custom-hero__left {
+  padding: 26.5rem 14rem 24.9rem 14rem;
+  width: 120rem;
+}
+.custom-hero__left-heading {
+  margin-bottom: 3.2rem;
+  font-weight: 400;
+  font-size: 7rem;
+  line-height: 8.5rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.custom-hero__left-description {
+  margin-bottom: 6rem;
+  width: 62.6rem;
+  font-family: "FuturaPT";
+  font-weight: 450;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.custom-hero__left-bottom {
+  display: flex;
+  align-items: center;
+}
+.custom-hero__left-btn {
+  margin-right: 14rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25.3rem;
+  height: 10rem;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.custom-hero__left-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  transform: rotate(10deg);
+  border-bottom: 1px solid #797979;
+  border-top: 1px solid #adadad;
+  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad), linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad);
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.custom-hero__left-btn span:first-child {
+  margin-bottom: 0.5rem;
+  transform: translate(3rem, -1rem);
+}
+.custom-hero__left-btn span:last-child {
+  transform: translate(-2.5rem, 1rem);
+}
+.custom-hero__left-link {
+  display: flex;
+  align-items: center;
+}
+.custom-hero__left-link span {
+  margin-right: 1.7rem;
+  font-family: "FuturaPT";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.custom-hero__left-link img {
+  width: 4.2rem;
+  height: 1rem;
+}
+.custom-hero__right {
+  width: 72rem;
+}
+.custom-hero__right-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 48em) {
+  .custom-hero {
+    flex-direction: column;
+    border: none;
+    position: relative;
+  }
+  .custom-hero__left {
+    padding: 10rem 4rem 9rem 4rem;
+    width: 100%;
+  }
+  .custom-hero__left-heading {
+    margin-bottom: 6rem;
+    font-size: 6rem;
+    line-height: 8.2rem;
+  }
+  .custom-hero__left-description {
+    margin-bottom: 9rem;
+    width: 100%;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+    letter-spacing: 0.1em;
+  }
+  .custom-hero__left-btn {
+    position: absolute;
+    bottom: 18rem;
+    left: 50%;
+    width: 41rem;
+    height: 14.8rem;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+    letter-spacing: 0.1em;
+    transform: translateX(-50%);
+  }
+  .custom-hero__left-btn span:first-child {
+    transform: translate(4.5rem, -1.5rem);
+  }
+  .custom-hero__left-btn span:last-child {
+    transform: translate(-3.5rem, 2rem);
+  }
+  .custom-hero__left-link span {
+    margin-right: 4.6rem;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+  }
+  .custom-hero__left-link img {
+    width: 8.4rem;
+    height: 2rem;
+  }
+  .custom-hero__right {
+    width: 100%;
+    height: 54.2rem;
+  }
+}
+
+.custom-making {
+  padding-top: 20rem;
+}
+.custom-making .container {
+  position: relative;
+}
+.custom-making__subheading {
+  margin-bottom: 1.3rem;
+  font-family: "FuturaPT";
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.custom-making__heading {
+  margin: 0 auto;
+  margin-bottom: 48.5rem;
+  width: 94.8rem;
+  font-size: 7rem;
+  line-height: 9rem;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.custom-making__img {
+  position: absolute;
+  left: 0;
+  top: 17.3rem;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: -1;
+}
+.custom-making__text {
+  display: flex;
+  width: 100%;
+}
+.custom-making__text-left, .custom-making__text-center, .custom-making__text-right {
+  display: inline-block;
+  font-family: "FuturaPT";
+  font-size: 1.9rem;
+  line-height: 2.5rem;
+}
+.custom-making__text-left {
+  font-family: inherit;
+  margin-right: 12.3rem;
+  width: 28.1rem;
+  text-transform: uppercase;
+}
+.custom-making__text-center {
+  width: 57rem;
+}
+.custom-making__text-right {
+  margin-left: auto;
+  width: 58.1rem;
+}
+@media (max-width: 48em) {
+  .custom-making {
+    padding-top: 24rem;
+  }
+  .custom-making__subheading {
+    margin-bottom: 1.6rem;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+    letter-spacing: 0.1em;
+  }
+  .custom-making__heading {
+    margin-bottom: 67.2rem;
+    width: 100%;
+    font-size: 6rem;
+    line-height: 8.2rem;
+  }
+  .custom-making__img {
+    height: 62.8rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .custom-making__text {
+    flex-direction: column;
+  }
+  .custom-making__text-left {
+    margin-right: 0;
+    margin-bottom: 6.8rem;
+    width: 100%;
+    font-size: 3rem;
+    line-height: 4.4rem;
+    letter-spacing: 0.02em;
+  }
+  .custom-making__text-center {
+    margin-bottom: 6.2rem;
+    width: 100%;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+  }
+  .custom-making__text-right {
+    margin-left: 0;
+    align-self: unset;
+    width: 100%;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+  }
+}
+
+.custom-pricelist {
+  padding-top: 20rem;
+}
+.custom-pricelist__heading {
+  margin-bottom: 1.6rem;
+  font-size: 7rem;
+  line-height: 9rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.custom-pricelist__description {
+  margin-bottom: 4rem;
+  font-family: "FuturaPT";
+  font-weight: 450;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.custom-pricelist__list-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 5.7rem;
+  padding-bottom: 5.7rem;
+  border-top: 1px solid #fff;
+}
+.custom-pricelist__list-item:last-child {
+  border-bottom: 1px solid #fff;
+}
+.custom-pricelist__list-number {
+  margin-right: 7rem;
+  font-size: 4rem;
+  line-height: 1;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+.custom-pricelist__list-title {
+  width: 108.5rem;
+  font-size: 4rem;
+  line-height: 5.6rem;
+  text-transform: uppercase;
+}
+.custom-pricelist__list-price {
+  margin-left: auto;
+  font-size: 4rem;
+  line-height: 1;
+}
+.custom-pricelist__list-price span:first-child {
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.custom-pricelist__list-price span:last-child {
+  font-size: 2rem;
+  line-height: 3.5rem;
+  vertical-align: top;
+}
+@media (max-width: 48em) {
+  .custom-pricelist {
+    padding-top: 24rem;
+  }
+  .custom-pricelist__heading {
+    margin-bottom: 6rem;
+    font-size: 6rem;
+    line-height: 8.2rem;
+  }
+  .custom-pricelist__description {
+    margin-bottom: 8rem;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+  }
+  .custom-pricelist__list-item {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .custom-pricelist__list-number {
+    margin-bottom: 2rem;
+    width: 100%;
+    font-size: 4.4rem;
+    line-height: 5.2rem;
+  }
+  .custom-pricelist__list-title {
+    width: 42.4rem;
+    font-size: 4.4rem;
+    line-height: 5.2rem;
+  }
+  .custom-pricelist__list-price {
+    font-size: 4.4rem;
+    line-height: 5.2rem;
+  }
+  .custom-pricelist__list-price span:first-child {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+  }
+  .custom-pricelist__list-price span:last-child {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+  }
+}
+
+.custom-dependence {
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+}
+.custom-dependence .container {
+  position: relative;
+}
+.custom-dependence__heading {
+  margin-bottom: 6.5rem;
+  width: 73rem;
+  font-size: 7rem;
+  line-height: 9rem;
+  text-transform: uppercase;
+}
+.custom-dependence__btn {
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25.3rem;
+  height: 10rem;
+  font-family: "FuturaPT";
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.custom-dependence__btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  transform: rotate(10deg);
+  border-bottom: 1px solid #797979;
+  border-top: 1px solid #adadad;
+  background-image: linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad), linear-gradient(45deg, rgba(121, 121, 121, 0), #adadad);
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.custom-dependence__btn span:first-child {
+  margin-bottom: 0.5rem;
+  transform: translate(3rem, -1rem);
+}
+.custom-dependence__btn span:last-child {
+  transform: translate(-2.5rem, 1rem);
+}
+.custom-dependence__block {
+  display: flex;
+}
+.custom-dependence__block-heading {
+  margin-left: 0;
+  margin-right: 3.8rem;
+  display: inline-block;
+  font-size: 7rem;
+  line-height: 9rem;
+  writing-mode: vertical-rl;
+  transform: scale(-1);
+  text-transform: uppercase;
+}
+.custom-dependence__block-img {
+  margin-right: 5.5rem;
+  width: 67.1rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.custom-dependence__text {
+  align-self: center;
+}
+.custom-dependence__text-heading {
+  margin-bottom: 2rem;
+  font-family: "FuturaPT";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.custom-dependence__text-list {
+  margin-bottom: 6rem;
+}
+.custom-dependence__text-list__item {
+  position: relative;
+  padding-left: 2rem;
+}
+.custom-dependence__text-list__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1.3rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.custom-dependence__text-list__item:not(:last-child) {
+  margin-bottom: 0.4rem;
+}
+.custom-dependence__text-list__item p {
+  font-family: "FuturaPT";
+  font-weight: 400;
+  font-size: 1.9rem;
+  line-height: 2.6rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.custom-dependence__text-description {
+  font-family: "FuturaPT";
+  font-weight: 400;
+  font-size: 1.9rem;
+  line-height: 2.6rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+@media (max-width: 48em) {
+  .custom-dependence__heading {
+    margin-bottom: 7.6rem;
+    width: 100%;
+    font-size: 6rem;
+    line-height: 8.2rem;
+  }
+  .custom-dependence__block {
+    flex-wrap: wrap;
+  }
+  .custom-dependence__block-heading {
+    margin-bottom: 9rem;
+    margin-left: -2rem;
+    margin-right: 2rem;
+    font-size: 6rem;
+    line-height: 8.2rem;
+  }
+  .custom-dependence__block-img {
+    margin-right: 0;
+    margin-bottom: 9rem;
+    width: 58.4rem;
+  }
+  .custom-dependence__btn {
+    position: relative;
+    width: 41rem;
+    height: 14.8rem;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+    letter-spacing: 0.1em;
+  }
+  .custom-dependence__btn span:first-child {
+    transform: translate(4.5rem, -1.5rem);
+  }
+  .custom-dependence__btn span:last-child {
+    transform: translate(-3.5rem, 2rem);
+  }
+  .custom-dependence__text {
+    margin-bottom: 4rem;
+    width: 100%;
+  }
+  .custom-dependence__text-heading {
+    margin-bottom: 2.4rem;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+  }
+  .custom-dependence__text-list {
+    margin-bottom: 8rem;
+  }
+  .custom-dependence__text-list__item {
+    padding-left: 3.2rem;
+  }
+  .custom-dependence__text-list__item::before {
+    top: 2.2rem;
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+  .custom-dependence__text-list__item:not(:last-child) {
+    margin-bottom: 0.8rem;
+  }
+  .custom-dependence__text-list__item p {
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+  }
+  .custom-dependence__text-description {
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+  }
 }
 
 @media (max-width: 48em) {
