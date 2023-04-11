@@ -2892,7 +2892,9 @@ body {
         &-title {
             font-size: 4rem;
             line-height: 5.6rem;
+            max-width: 96.7rem;
             text-transform: uppercase;
+            text-align: center;
         }
 
         &-price {
@@ -3070,7 +3072,7 @@ body {
 
         &-number {
             font-size: 7rem;
-            line-height: 12.3rem;
+            line-height: 8.5rem;
             text-transform: uppercase;
         }
 
@@ -12170,7 +12172,9 @@ body {
             }
 
             &-title {
-                width: 41rem;
+                width: 43rem;
+                max-width: none;
+                text-align: left;
                 font-size: 4.4rem;
                 line-height: 5.2rem;
             }
@@ -12556,4 +12560,299 @@ body {
             }
         }
     }
+}
+
+.jewelry-engraving__hero {
+    display: flex;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+    &-left {
+        padding: 11.5rem 9.8rem 11.5rem 14rem;
+        width: 119.8rem;
+
+        h1 {
+            margin-bottom: 3rem;
+            font-size: 7rem;
+            line-height: 8.5rem;
+            text-transform: uppercase;
+        }
+
+        &__subheading {
+            margin-bottom: 7.5rem;
+            width: 55.6rem;
+            font-family: "FuturaPT";
+            font-size: 1.9rem;
+            line-height: 2.6rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        &__list {
+            width: 54.6rem;
+
+            &-item {
+                &:not(:last-child) {
+                    margin-bottom: 3.3rem;
+                }
+
+                p {
+                    &:first-child {
+                        margin-bottom: 0.8rem;
+                        font-family: "FuturaPT";
+                        font-weight: 450;
+                        font-size: 1.9rem;
+                        line-height: 2.2rem;
+                        color: rgba(255, 255, 255, 0.5);
+                    }
+
+                    &:last-child {
+                        font-family: "FuturaPT";
+                        font-weight: 450;
+                        font-size: 1.5rem;
+                        line-height: 2.2rem;
+                        letter-spacing: 0.16em;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+
+    &-right {
+        width: 72.2rem;
+        height: 85.4rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    @media (max-width: 48em) {
+        flex-direction: column;
+        border-bottom: none;
+
+        &-left {
+            padding: 12rem 4rem 10rem 4rem;
+            width: 100%;
+
+            h1 {
+                margin-bottom: 6rem;
+                font-size: 6rem;
+                line-height: 8.2rem;
+            }
+
+            &__subheading {
+                margin-bottom: 10rem;
+                width: 100%;
+                font-size: 3.2rem;
+                line-height: 4.4rem;
+            }
+
+            &__list {
+                width: 100%;
+
+                &-item {
+                    &:not(:last-child) {
+                        margin-bottom: 6.6rem;
+                    }
+
+                    p {
+                        &:first-child {
+                            margin-bottom: 1.6rem;
+                            font-size: 3.2rem;
+                            line-height: 4.4rem;
+                        }
+
+                        &:last-child {
+                            font-size: 2.8rem;
+                            line-height: 3.6rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-right {
+            width: 100%;
+            height: 54rem;
+        }
+    }
+}
+
+.jewelry-engraving__price {
+    padding-top: 20rem;
+
+    @media (max-width: 48em) {
+        padding-top: 24rem;
+    }
+}
+
+.jewelry-engraving__stages {
+    padding-top: 20rem;
+
+    @media (max-width: 48em) {
+        padding-top: 24rem;
+    }
+}
+
+.jewelry-engraving__services {
+    padding-top: 20rem;
+
+    &-heading {
+        margin-bottom: 7.5rem;
+        font-size: 7rem;
+        line-height: 9rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &__item {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 79.4rem;
+
+            &:not(:nth-last-child(-n + 2)) {
+                margin-bottom: 8rem;
+            }
+
+            &-left {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 37.2rem;
+                height: 48.8rem;
+                background-color: #000;
+                border: 1px solid rgba(255, 255, 255, 0.5);
+
+                img {
+                    max-width: 36.8rem;
+                    max-height: 36.8rem;
+                    object-fit: contain;
+                }
+            }
+
+            &-right {
+                width: 37.2rem;
+            }
+
+            &-title {
+                margin-bottom: 2.8rem;
+                font-size: 4rem;
+                line-height: 4.6rem;
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+            }
+
+            &-description {
+                margin-bottom: 4rem;
+                font-family: "FuturaPT";
+                font-size: 1.9rem;
+                line-height: 2.6rem;
+                color: rgba(255, 255, 255, 0.5);
+            }
+
+            &-link {
+                display: flex;
+                align-items: center;
+
+                span {
+                    margin-right: 2.4rem;
+                    font-family: "FuturaPT";
+                    font-weight: 450;
+                    font-size: 1.5rem;
+                    line-height: 2.2rem;
+                    letter-spacing: 0.16em;
+                    text-transform: uppercase;
+                }
+
+                img {
+                    width: 4.3rem;
+                    height: 1rem;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 48em) {
+        padding-top: 24rem;
+
+        &-heading {
+            margin-bottom: 8rem;
+            font-size: 6rem;
+            line-height: 8.2rem;
+            text-align: left;
+        }
+
+        &-list {
+            flex-direction: column;
+            justify-content: flex-start;
+
+            &__item {
+                width: 100%;
+                flex-direction: column;
+
+                &:not(:nth-last-child(-n+2)) {
+                    margin-bottom: 0;
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 10rem;
+                }
+
+                &-left {
+                    margin-bottom: 4rem;
+                    width: 100%;
+
+                    img {
+                        max-width: 40rem;
+                        max-height: 40rem;
+                    }
+                    
+                }
+
+                &-right {
+                    width: 100%;
+                }
+
+                &-title {
+                    margin-bottom: 3.2rem;
+                    font-size: 4.4rem;
+                    line-height: 5.2rem;
+                }
+
+                &-description {
+                    margin-bottom: 6rem;
+                    font-size: 3.2rem;
+                    line-height: 4.4rem;
+                }
+
+                &-link {
+                    span {
+                        margin-right: 4.8rem;
+                        font-size: 2.8rem;
+                        line-height: 3.6rem;
+                    }
+
+                    img {
+                        width: 8.6rem;
+                        height: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.jewelry-examples {
+    margin-top: 20rem;
+    margin-bottom: 20rem;
 }
