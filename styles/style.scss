@@ -12856,3 +12856,138 @@ body {
     margin-top: 20rem;
     margin-bottom: 20rem;
 }
+
+.bracelets-engraving__types {
+    padding-top: 20rem;
+
+    &-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:not(:last-child) {
+            margin-bottom: 6.2rem;
+        }
+
+        &__img {
+            width: 49.4rem;
+            height: 58rem;
+            object-fit: contain;
+        }
+
+        &__right {
+            width: 102.5rem;
+        }
+
+        &__title {
+            margin-bottom: 4.8rem;
+            font-size: 7rem;
+            line-height: 8.5rem;
+            text-transform: uppercase;
+        }
+
+        &__description {
+            margin-bottom: 6.7rem;
+            font-family: 'FuturaPT';
+            font-size: 1.9rem;
+            line-height: 2.6rem;
+        }
+
+        &__bottom {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__list-heading {
+            margin-bottom: 1rem;
+            width: 44rem;
+            font-family: 'FuturaPT';
+            font-size: 1.9rem;
+            line-height: 2.6rem;
+        }
+
+
+        &__list {
+            width: 44rem;
+
+            &-item {
+                padding-left: 1.5rem;
+                position: relative;
+                font-family: 'FuturaPT';
+                font-size: 1.9rem;
+                line-height: 2.6rem;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 1rem;
+                    left: 0;
+                    width: .5rem;
+                    height: .5rem;
+                    background-color: #FFF;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 48em) {
+
+        &-item {
+            flex-direction: column;
+            justify-content: flex-start;
+
+            &:not(:last-child) {
+                margin-bottom: 18rem;
+            }
+
+            &__img {
+                justify-self: center;
+                width: 66.2rem;
+                height: 52.6rem;
+            }
+
+            &__right {
+                width: 100%;
+            }
+
+            &__title {
+                margin-bottom: 8rem;
+                font-size: 6rem;
+                line-height: 8.2rem;
+            }
+
+            &__description {
+                margin-bottom: 6.8rem;
+                font-size: 3.2rem;
+                line-height: 4.4rem;
+            }
+
+            &__bottom {
+                flex-direction: column;
+            }
+
+            &__list-heading {
+                width: 100%;
+                font-size: 3.2rem;
+                line-height: 4.4rem;
+            }
+
+            &__list {
+                width: 100%;
+
+                &-item {
+                    padding-left: 2.5rem;
+                    font-size: 3.2rem;
+                    line-height: 4.4rem;
+
+                    &::before {
+                        top: 1.6rem;
+                        width: 1rem;
+                        height: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
