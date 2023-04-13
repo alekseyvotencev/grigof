@@ -2623,6 +2623,7 @@ body {
   padding-top: 20rem;
 }
 .repair-pricelist__heading {
+  margin: 0 auto;
   margin-bottom: 4.8rem;
   font-size: 7rem;
   line-height: 9rem;
@@ -2800,13 +2801,14 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 .repair-stages__list-number {
+  margin-bottom: 3.4rem;
   font-size: 7rem;
   line-height: 8.5rem;
   text-transform: uppercase;
 }
 .repair-stages__list-title {
-  font-family: "FuturaPT";
   margin-bottom: 3.2rem;
+  font-family: "FuturaPT";
   font-size: 1.5rem;
   line-height: 2.2rem;
   text-transform: uppercase;
@@ -10441,6 +10443,7 @@ body {
   }
   .repair-pricelist__heading {
     margin-bottom: 8.6rem;
+    max-width: 100%;
     font-size: 6rem;
     line-height: 8.2rem;
   }
@@ -10921,6 +10924,10 @@ body {
   background-color: #000;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
+.jewelry-engraving__services-list__item-left.design img {
+  max-width: 36.8rem;
+  max-height: 39rem;
+}
 .jewelry-engraving__services-list__item-left img {
   max-width: 36.8rem;
   max-height: 36.8rem;
@@ -10991,6 +10998,10 @@ body {
     margin-bottom: 4rem;
     width: 100%;
   }
+  .jewelry-engraving__services-list__item-left.design img {
+    max-width: 100%;
+    max-height: 100%;
+  }
   .jewelry-engraving__services-list__item-left img {
     max-width: 40rem;
     max-height: 40rem;
@@ -11040,6 +11051,10 @@ body {
   height: 58rem;
   -o-object-fit: contain;
      object-fit: contain;
+}
+.bracelets-engraving__types-item__img.design {
+  width: 55.5rem;
+  height: 69.7rem;
 }
 .bracelets-engraving__types-item__right {
   width: 102.5rem;
@@ -11099,6 +11114,13 @@ body {
     justify-self: center;
     width: 66.2rem;
     height: 52.6rem;
+  }
+  .bracelets-engraving__types-item__img.design {
+    margin-bottom: 9.6rem;
+    width: 100%;
+    height: 66.2rem;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .bracelets-engraving__types-item__right {
     width: 100%;
