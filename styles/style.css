@@ -2407,6 +2407,9 @@ body {
 .warranty {
   padding-top: 20rem;
 }
+.warranty.rign-design {
+  margin-bottom: 21rem;
+}
 .warranty__image {
   position: absolute;
   top: 50%;
@@ -7861,6 +7864,9 @@ body {
     padding-top: 24rem;
     padding-bottom: 3rem;
     overflow: hidden;
+  }
+  .warranty.rign-design {
+    margin-bottom: 24rem;
   }
   .warranty__image {
     left: -4rem;
